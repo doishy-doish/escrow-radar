@@ -14,6 +14,8 @@ jobs:
         with:
           node-version: '20'
       - run: node scripts/harvest.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: commit if changed
         run: |
           git config user.name "radar-harvester"
