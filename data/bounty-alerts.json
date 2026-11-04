@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-04T22:38:22.111Z",
+ "ts": "2026-11-04T22:55:25.987Z",
  "count": 2,
  "alerts": [
   {
@@ -12,7 +12,7 @@
    "severity": "Medium",
    "reward_usdc": 150,
    "reward_source": "severity_table",
-   "age_seconds_since_open": 196125,
+   "age_seconds_since_open": 197149,
    "opened_at": "2026-11-02T16:09:10Z",
    "competing_prs": 0,
    "competing_pr_urls": [],
@@ -35,7 +35,7 @@
    ],
    "stack_excerpt": null,
    "excerpt": "# [BOUNTY] Medium: shielded notes are stored without cluster scoping — the same shielded address serves both networks, so one cluster's notes appear on the other, unspendable **Affected:** `paraloom-labs/paraloom-wallet` (`main` @ `1e79eec`) — `lib/paraloom/notes.ts`, consumed by `shieldedBalance`/`shieldedTokenBalances` (`Home.tsx` portfolio), `spendV3` (`lib/paraloom/transactFlow.ts`), `scanForNotes` (`lib/paraloom/scan.ts`) **Severity:** Medium — local accounting corruption that surfaces as an unspendable balance on the cluster the user is on; no on-chain loss. **Payout (Solana USDC):** `3H",
-   "ts": "2026-11-04T22:38:11.878Z"
+   "ts": "2026-11-04T22:55:15.738Z"
   },
   {
    "id": "paraloom-core#1307",
@@ -47,7 +47,7 @@
    "severity": "Medium",
    "reward_usdc": 150,
    "reward_source": "severity_table",
-   "age_seconds_since_open": 285484,
+   "age_seconds_since_open": 286508,
    "opened_at": "2026-11-01T15:19:51Z",
    "competing_prs": 0,
    "competing_pr_urls": [],
@@ -68,7 +68,7 @@
    ],
    "stack_excerpt": null,
    "excerpt": "**Cross-reference:** https://github.com/paraloom-labs/paraloom-wallet/issues/196 # [BOUNTY] Medium: `handleWithdraw` overrides `confirmSettled` with an unauthenticated lamport balance check (`balance > before`) without RPC error handling, causing false-positive phantom change notes or false-negative unrecorded spends **Bounty Payout Address (Solana USDC / SPL):** `BF2pfru1ctS18uG2Si1nGGGirb7cXUghG4aSpD7zs4DG` --- ## Summary In `src/popup/Home.tsx` (`handleWithdraw`, lines 433–456), native SOL withdrawals override `spendV3`'s cryptographic Merkle-tree commitment check (`confirmSettledByTree`) w",
-   "ts": "2026-11-04T22:38:14.371Z"
+   "ts": "2026-11-04T22:55:18.262Z"
   }
  ]
 }
