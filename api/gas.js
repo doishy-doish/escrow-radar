@@ -18,6 +18,17 @@ function reqs(url, single) {
     maxTimeoutSeconds: 300,
     facilitator: { url: FACILITATOR },
     outputSchema: { input: { type: "http", method: "GET", discoverable: true } },
+    extensions: {
+      bazaar: {
+        info: { name: "Escrow-Bounty Radar /gas" },
+        schema: {
+          properties: {
+            input: { properties: { queryParams: { chain: { type: "string", required: false, description: "Filter to one chain, e.g. base" } } } },
+            output: { properties: { example: { chain: "base", gasPriceWei: "6000000", gasPriceGwei: "0.01", ts: "2026-11-04T17:55:42Z" } } }
+          }
+        }
+      }
+    },
     extra: { name: "USD Coin", version: "2" } };
 }
 function needPay(res, url, single) {
