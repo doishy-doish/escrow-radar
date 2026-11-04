@@ -2,59 +2,747 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Escrow-Bounty Radar",
-    "version": "1.2.0",
-    "contact": { "name": "Escrow-Bounty Radar", "email": "10a11andralemisquitta@gmail.com" },
-    "description": "Pay-per-call datasets for agents on Base (USDC, no key): bounty board, token prices, gas quotes, AI papers."
+    "version": "1.3.0",
+    "contact": {
+      "name": "Escrow-Bounty Radar",
+      "email": "10a11andralemisquitta@gmail.com"
+    },
+    "description": "Pay-per-call datasets for agents on Base (USDC, no key): bounty board, token prices, gas quotes, AI papers. All endpoints accept GET and POST; filters may be sent as query parameters or as a JSON body. Unpaid requests return a 402 x402-v2 payment challenge (also in the payment-required response header); paid requests return the dataset."
   },
-  "servers": [{ "url": "https://escrow-radar.vercel.app" }],
+  "servers": [
+    {
+      "url": "https://escrow-radar.vercel.app"
+    }
+  ],
   "paths": {
     "/api/feed": {
       "get": {
+        "operationId": "listBounties",
         "summary": "Live escrow-bounty radar feed",
         "security": [],
-        "responses": {
-          "402": { "description": "Payment required", "content": { "application/json": {} } },
-          "200": { "description": "Bounty feed array", "content": { "application/json": {} } }
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Max items to return, 1-50 (default all)",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 50,
+                    "description": "Max items to return, 1-50 (default all)"
+                  }
+                }
+              }
+            }
+          }
         },
-        "x-payment-info": { "protocols": [{ "x402": {} }], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
+        "responses": {
+          "200": {
+            "description": "Live escrow-bounty radar feed result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "stream": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "url": {
+                        "type": "string"
+                      },
+                      "content": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "stream",
+                      "title",
+                      "url"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
+      },
+      "post": {
+        "operationId": "listBountiesPost",
+        "summary": "Live escrow-bounty radar feed",
+        "security": [],
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Max items to return, 1-50 (default all)",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 50,
+                    "description": "Max items to return, 1-50 (default all)"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Live escrow-bounty radar feed result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "stream": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "url": {
+                        "type": "string"
+                      },
+                      "content": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "stream",
+                      "title",
+                      "url"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
       }
     },
     "/api/prices": {
       "get": {
+        "operationId": "listPrices",
         "summary": "Bulk token spot quotes (dual-sourced)",
         "security": [],
-        "parameters": [{ "name": "symbol", "in": "query", "required": false, "schema": { "type": "string" } }],
-        "responses": {
-          "402": { "description": "Payment required", "content": { "application/json": {} } },
-          "200": { "description": "Price records", "content": { "application/json": {} } }
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "query",
+            "required": false,
+            "description": "Filter to one symbol, e.g. BTC (default all symbols)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "symbol": {
+                    "type": "string",
+                    "description": "Filter to one symbol, e.g. BTC (default all symbols)"
+                  }
+                }
+              }
+            }
+          }
         },
-        "x-payment-info": { "protocols": [{ "x402": {} }], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
+        "responses": {
+          "200": {
+            "description": "Bulk token spot quotes (dual-sourced) result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "symbol": {
+                        "type": "string"
+                      },
+                      "priceUsd": {
+                        "type": "string"
+                      },
+                      "kraken": {
+                        "type": "string"
+                      },
+                      "coinbase": {
+                        "type": "string"
+                      },
+                      "ts": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "symbol",
+                      "priceUsd"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
+          },
+          "404": {
+            "description": "Unknown symbol"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
+      },
+      "post": {
+        "operationId": "listPricesPost",
+        "summary": "Bulk token spot quotes (dual-sourced)",
+        "security": [],
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "query",
+            "required": false,
+            "description": "Filter to one symbol, e.g. BTC (default all symbols)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "symbol": {
+                    "type": "string",
+                    "description": "Filter to one symbol, e.g. BTC (default all symbols)"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Bulk token spot quotes (dual-sourced) result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "symbol": {
+                        "type": "string"
+                      },
+                      "priceUsd": {
+                        "type": "string"
+                      },
+                      "kraken": {
+                        "type": "string"
+                      },
+                      "coinbase": {
+                        "type": "string"
+                      },
+                      "ts": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "symbol",
+                      "priceUsd"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
+          },
+          "404": {
+            "description": "Unknown symbol"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
       }
     },
     "/api/gas": {
       "get": {
+        "operationId": "listGas",
         "summary": "Multi-chain gas quotes",
         "security": [],
-        "parameters": [{ "name": "chain", "in": "query", "required": false, "schema": { "type": "string" } }],
-        "responses": {
-          "402": { "description": "Payment required", "content": { "application/json": {} } },
-          "200": { "description": "Gas records", "content": { "application/json": {} } }
+        "parameters": [
+          {
+            "name": "chain",
+            "in": "query",
+            "required": false,
+            "description": "Filter to one chain, e.g. base (default all chains)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "chain": {
+                    "type": "string",
+                    "description": "Filter to one chain, e.g. base (default all chains)"
+                  }
+                }
+              }
+            }
+          }
         },
-        "x-payment-info": { "protocols": [{ "x402": {} }], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
+        "responses": {
+          "200": {
+            "description": "Multi-chain gas quotes result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "chain": {
+                        "type": "string"
+                      },
+                      "gasPriceWei": {
+                        "type": "string"
+                      },
+                      "gasPriceGwei": {
+                        "type": "string"
+                      },
+                      "rpc": {
+                        "type": "string"
+                      },
+                      "ts": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "chain",
+                      "gasPriceWei",
+                      "gasPriceGwei"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
+          },
+          "404": {
+            "description": "Unknown chain"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
+      },
+      "post": {
+        "operationId": "listGasPost",
+        "summary": "Multi-chain gas quotes",
+        "security": [],
+        "parameters": [
+          {
+            "name": "chain",
+            "in": "query",
+            "required": false,
+            "description": "Filter to one chain, e.g. base (default all chains)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "chain": {
+                    "type": "string",
+                    "description": "Filter to one chain, e.g. base (default all chains)"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Multi-chain gas quotes result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "chain": {
+                        "type": "string"
+                      },
+                      "gasPriceWei": {
+                        "type": "string"
+                      },
+                      "gasPriceGwei": {
+                        "type": "string"
+                      },
+                      "rpc": {
+                        "type": "string"
+                      },
+                      "ts": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "chain",
+                      "gasPriceWei",
+                      "gasPriceGwei"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
+          },
+          "404": {
+            "description": "Unknown chain"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
       }
     },
     "/api/papers": {
       "get": {
+        "operationId": "listPapers",
         "summary": "Normalized AI papers feed",
         "security": [],
-        "parameters": [{ "name": "id", "in": "query", "required": false, "schema": { "type": "string" } }],
-        "responses": {
-          "402": { "description": "Payment required", "content": { "application/json": {} } },
-          "200": { "description": "Paper records", "content": { "application/json": {} } }
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": false,
+            "description": "Filter to one paper id, e.g. 2611.05377v1 (default all papers)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Filter to one paper id, e.g. 2611.05377v1 (default all papers)"
+                  }
+                }
+              }
+            }
+          }
         },
-        "x-payment-info": { "protocols": [{ "x402": {} }], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
+        "responses": {
+          "200": {
+            "description": "Normalized AI papers feed result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "authors": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "summary": {
+                        "type": "string"
+                      },
+                      "published": {
+                        "type": "string"
+                      },
+                      "ts": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "title"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
+          },
+          "404": {
+            "description": "Unknown id"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
+      },
+      "post": {
+        "operationId": "listPapersPost",
+        "summary": "Normalized AI papers feed",
+        "security": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": false,
+            "description": "Filter to one paper id, e.g. 2611.05377v1 (default all papers)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Filter to one paper id, e.g. 2611.05377v1 (default all papers)"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Normalized AI papers feed result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "authors": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "summary": {
+                        "type": "string"
+                      },
+                      "published": {
+                        "type": "string"
+                      },
+                      "ts": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "title"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
+          },
+          "404": {
+            "description": "Unknown id"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
       }
     }
   },
-  "x-discovery": { "ownershipProofs": ["0x9592d926920D99758fD3394c88f35959af6aD888"] }
+  "x-discovery": {
+    "ownershipProofs": [
+      "0x9592d926920D99758fD3394c88f35959af6aD888"
+    ]
+  }
 }
