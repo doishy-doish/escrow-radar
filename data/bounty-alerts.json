@@ -1,5 +1,74 @@
 {
- "ts": "2026-11-04T22:25:13.270Z",
- "count": 0,
- "alerts": []
+ "ts": "2026-11-04T22:38:22.111Z",
+ "count": 2,
+ "alerts": [
+  {
+   "id": "paraloom-wallet#206",
+   "venue": "paraloom",
+   "repo": "paraloom-wallet",
+   "number": 206,
+   "title": "[BOUNTY] Medium: shielded notes are stored without cluster scoping, so one network's notes appear (unspendable) on the other",
+   "url": "https://github.com/paraloom-labs/paraloom-wallet/issues/206",
+   "severity": "Medium",
+   "reward_usdc": 150,
+   "reward_source": "severity_table",
+   "age_seconds_since_open": 196125,
+   "opened_at": "2026-11-02T16:09:10Z",
+   "competing_prs": 0,
+   "competing_pr_urls": [],
+   "ci_status": "passing",
+   "repro_command": "pnpm test",
+   "repro_source": ".github/workflows/ci.yml",
+   "rail": "MANUAL_MAINTAINER_REVIEW",
+   "escrow_verified": false,
+   "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
+   "has_repro": true,
+   "has_stack_trace": false,
+   "has_fix_hint": true,
+   "failing_assertion": null,
+   "target_files": [
+    "lib/paraloom/notes.ts",
+    "lib/paraloom/transactFlow.ts",
+    "lib/paraloom/scan.ts",
+    "lib/paraloom/constants.ts",
+    "tests/networkScopedNotes.test.ts"
+   ],
+   "stack_excerpt": null,
+   "excerpt": "# [BOUNTY] Medium: shielded notes are stored without cluster scoping — the same shielded address serves both networks, so one cluster's notes appear on the other, unspendable **Affected:** `paraloom-labs/paraloom-wallet` (`main` @ `1e79eec`) — `lib/paraloom/notes.ts`, consumed by `shieldedBalance`/`shieldedTokenBalances` (`Home.tsx` portfolio), `spendV3` (`lib/paraloom/transactFlow.ts`), `scanForNotes` (`lib/paraloom/scan.ts`) **Severity:** Medium — local accounting corruption that surfaces as an unspendable balance on the cluster the user is on; no on-chain loss. **Payout (Solana USDC):** `3H",
+   "ts": "2026-11-04T22:38:11.878Z"
+  },
+  {
+   "id": "paraloom-core#1307",
+   "venue": "paraloom",
+   "repo": "paraloom-core",
+   "number": 1307,
+   "title": "[BOUNTY] Medium: handleWithdraw overrides confirmSettled with an unauthenticated balance delta check without RPC error handling, causing phantom change notes or unrecorded spends (paraloom-wallet#196)",
+   "url": "https://github.com/paraloom-labs/paraloom-core/issues/1307",
+   "severity": "Medium",
+   "reward_usdc": 150,
+   "reward_source": "severity_table",
+   "age_seconds_since_open": 285484,
+   "opened_at": "2026-11-01T15:19:51Z",
+   "competing_prs": 0,
+   "competing_pr_urls": [],
+   "ci_status": "passing",
+   "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
+   "repro_source": ".github/workflows/bridge-e2e.yml",
+   "rail": "MANUAL_MAINTAINER_REVIEW",
+   "escrow_verified": false,
+   "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
+   "has_repro": false,
+   "has_stack_trace": false,
+   "has_fix_hint": true,
+   "failing_assertion": null,
+   "target_files": [
+    "src/popup/Home.tsx",
+    "lib/paraloom/transactFlow.ts",
+    "lib/paraloom/settlementConfirm.ts"
+   ],
+   "stack_excerpt": null,
+   "excerpt": "**Cross-reference:** https://github.com/paraloom-labs/paraloom-wallet/issues/196 # [BOUNTY] Medium: `handleWithdraw` overrides `confirmSettled` with an unauthenticated lamport balance check (`balance > before`) without RPC error handling, causing false-positive phantom change notes or false-negative unrecorded spends **Bounty Payout Address (Solana USDC / SPL):** `BF2pfru1ctS18uG2Si1nGGGirb7cXUghG4aSpD7zs4DG` --- ## Summary In `src/popup/Home.tsx` (`handleWithdraw`, lines 433–456), native SOL withdrawals override `spendV3`'s cryptographic Merkle-tree commitment check (`confirmSettledByTree`) w",
+   "ts": "2026-11-04T22:38:14.371Z"
+  }
+ ]
 }
