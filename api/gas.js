@@ -10,6 +10,7 @@ let cache = { at: 0, data: null };
 function cors(res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Headers", "X-PAYMENT, Content-Type");
+  res.setHeader("Access-Control-Expose-Headers", "payment-required, X-PAYMENT-RESPONSE");
 }
 function reqs(url, single) {
   return { scheme: "exact", network: "eip155:8453",
@@ -34,7 +35,9 @@ function reqs(url, single) {
 function needPay(res, url, single) {
   cors(res);
   res.setHeader("Cache-Control", "public, max-age=60");
-  return res.status(402).json({ x402Version: 2, error: "X-PAYMENT header is required", accepts: [reqs(url, single)] });
+  const payload = { x402Version: 2, error: "X-PAYMENT header is required", accepts: [reqs(url, single)] };
+  res.setHeader("payment-required", Buffer.from(JSON.stringify(payload)).toString("base64"));
+  return res.status(402).json(payload);
 }
 async function getData() {
   if (cache.data && Date.now() - cache.at < 30000) return cache.data;
