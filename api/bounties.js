@@ -43,7 +43,8 @@ function bazaarExt() {
           url: "https://github.com/paraloom-labs/paraloom-core/issues/1329",
           severity: "Low", reward_usdc: 50, reward_source: "severity_table",
           age_seconds_since_open: 42000, competing_prs: 1, ci_status: "passing",
-          repro_command: "cargo test", rail: "MANUAL_MAINTAINER_REVIEW", escrow_verified: false
+          repro_command: "cargo test", rail: "MANUAL_MAINTAINER_REVIEW", escrow_verified: false,
+          failing_assertion: "assert_eq!(balance, expected)", target_files: ["src/ledger/state.rs"], stack_excerpt: null
         } } }
       }
     }
