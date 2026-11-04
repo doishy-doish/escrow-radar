@@ -185,6 +185,29 @@ function stackExcerpt(body) {
   }
   return null;
 }
+
+// Comment-claim scan: textual claims timelines miss ("Companion fix PR: #207",
+// "Claiming this with an open PR", "Resolved via owner/repo#199").
+// Returns { claimed, type, author, target_ref, raw_snippet } or { claimed:false }.
+const CLAIM_PR_REF = /(?:companion\s+fix|resolved\s+via|fixes|closes|(?:pull\s+request|pr))[:\s]+(?:https?:\/\/github\.com\/([\w.-]+)\/([\w.-]+)\/pull\/(\d+)|([\w.-]+)\/([\w.-]+)#(\d+)|#(\d+))/i;
+const CLAIM_INTENT = /\b(?:claiming|taking this|working on (?:this|a fix)|wip(?:\s+pr)?|submitting a pr)\b/i;
+const CLAIM_BOT = /solbotrescue|algora|polar-sh|bounty\s+(?:claimed|assigned)|fixes\s+#[0-9]+/i;
+function scanClaim(by, text) {
+  const one = String(text || '').replace(/\s+/g, ' ').trim();
+  if (!one) return { claimed: false };
+  const m = one.match(CLAIM_PR_REF);
+  if (m) {
+    let ref = null;
+    if (m[3]) ref = m[1] + '#' + m[3];
+    else if (m[6]) ref = m[4] + '/' + m[5] + '#' + m[6];
+    else if (m[7]) ref = '#' + m[7];
+    const type = /companion/i.test(one) ? 'companion_pr' : (/resolved\s+via/i.test(one) ? 'resolved_via' : 'pr_reference');
+    return { claimed: true, type, author: by, target_ref: ref, raw_snippet: one.slice(0, 120) };
+  }
+  if (CLAIM_INTENT.test(one)) return { claimed: true, type: 'intent_claim', author: by, target_ref: null, raw_snippet: one.slice(0, 120) };
+  if (CLAIM_BOT.test(one)) return { claimed: true, type: 'bot_claim', author: by, target_ref: null, raw_snippet: one.slice(0, 120) };
+  return { claimed: false };
+}
 async function enrichRepo(owner, repo) {
   if (_repoEnrich[repo]) return _repoEnrich[repo];
   const out = { ci: 'unknown', repro: null, reproSrc: null };
@@ -254,6 +277,16 @@ async function harvestBounties() {
           .map(e => e.source.issue.html_url);
       } catch (e) { console.log('timeline failed for', repo + '#' + i.number, String(e).slice(0, 80)); }
       const en = await enrichRepo('paraloom-labs', repo);
+      // Comment-claim scan: one call per issue; any hit disqualifies the race.
+      let claim = { claimed: false };
+      try {
+        const cm = await ghJson(`https://api.github.com/repos/paraloom-labs/${repo}/issues/${i.number}/comments?per_page=100`);
+        await sleep(600);
+        for (const c of (Array.isArray(cm) ? cm : [])) {
+          const hit = scanClaim((c.user || {}).login || 'unknown', c.body || '');
+          if (hit.claimed) { claim = hit; break; }
+        }
+      } catch (e) { console.log('comments failed for', repo + '#' + i.number, String(e).slice(0, 60)); }
       recs.push({
         id: repo + '#' + i.number, venue: 'paraloom', repo, number: i.number,
         title: i.title, url: i.html_url, severity: sev,
@@ -270,6 +303,8 @@ async function harvestBounties() {
         failing_assertion: failingAssertion(body),
         target_files: targetFiles(body),
         stack_excerpt: stackExcerpt(body),
+        claimed_in_comments: !!claim.claimed,
+        claim_evidence: claim.claimed ? { type: claim.type, author: claim.author, target_ref: claim.target_ref, raw_snippet: claim.raw_snippet } : null,
         excerpt: body.replace(/\s+/g, ' ').trim().slice(0, 600),
         ts: ts(),
       });
@@ -279,7 +314,7 @@ async function harvestBounties() {
       // Customer-zero hook: uncontested + fresh enough to matter (<=7d), reward-first.
       // Same tick, zero new infra — our own loop reads this before anyone else.
       const alerts = recs
-        .filter(r => r.competing_prs === 0 && r.age_seconds_since_open <= 7 * 24 * 3600 && (r.reward_usdc || 0) >= 50)
+        .filter(r => r.competing_prs === 0 && !r.claimed_in_comments && r.age_seconds_since_open <= 7 * 24 * 3600 && (r.reward_usdc || 0) >= 50)
         .sort((a, b) => (b.reward_usdc || 0) - (a.reward_usdc || 0));
       writeIfChanged('data/bounty-alerts.json', { ts: ts(), count: alerts.length, alerts });
     } else console.log('bounties: empty search, keeping last good');
