@@ -2,7 +2,8 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Escrow-Bounty Radar",
-    "version": "1.1.0",
+    "version": "1.2.0",
+    "contact": { "name": "Escrow-Bounty Radar", "email": "10a11andralemisquitta@gmail.com" },
     "description": "Pay-per-call datasets for agents on Base (USDC, no key): bounty board, token prices, gas quotes, AI papers."
   },
   "servers": [{ "url": "https://escrow-radar.vercel.app" }],
@@ -10,44 +11,48 @@
     "/api/feed": {
       "get": {
         "summary": "Live escrow-bounty radar feed",
+        "security": [],
         "responses": {
           "402": { "description": "Payment required", "content": { "application/json": {} } },
           "200": { "description": "Bounty feed array", "content": { "application/json": {} } }
         },
-        "x-payment-info": { "protocols": ["x402"], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
+        "x-payment-info": { "protocols": [{ "x402": {} }], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
       }
     },
     "/api/prices": {
       "get": {
         "summary": "Bulk token spot quotes (dual-sourced)",
+        "security": [],
         "parameters": [{ "name": "symbol", "in": "query", "required": false, "schema": { "type": "string" } }],
         "responses": {
           "402": { "description": "Payment required", "content": { "application/json": {} } },
           "200": { "description": "Price records", "content": { "application/json": {} } }
         },
-        "x-payment-info": { "protocols": ["x402"], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
+        "x-payment-info": { "protocols": [{ "x402": {} }], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
       }
     },
     "/api/gas": {
       "get": {
         "summary": "Multi-chain gas quotes",
+        "security": [],
         "parameters": [{ "name": "chain", "in": "query", "required": false, "schema": { "type": "string" } }],
         "responses": {
           "402": { "description": "Payment required", "content": { "application/json": {} } },
           "200": { "description": "Gas records", "content": { "application/json": {} } }
         },
-        "x-payment-info": { "protocols": ["x402"], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
+        "x-payment-info": { "protocols": [{ "x402": {} }], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
       }
     },
     "/api/papers": {
       "get": {
         "summary": "Normalized AI papers feed",
+        "security": [],
         "parameters": [{ "name": "id", "in": "query", "required": false, "schema": { "type": "string" } }],
         "responses": {
           "402": { "description": "Payment required", "content": { "application/json": {} } },
           "200": { "description": "Paper records", "content": { "application/json": {} } }
         },
-        "x-payment-info": { "protocols": ["x402"], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
+        "x-payment-info": { "protocols": [{ "x402": {} }], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
       }
     }
   },
