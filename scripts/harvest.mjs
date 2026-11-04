@@ -7,6 +7,18 @@ const UA = { 'User-Agent': 'x402-radar/1.0' };
 const ts = () => new Date().toISOString();
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
+// GitHub enrichment auth: Actions provides GITHUB_TOKEN (1000 req/hr);
+// anonymous fallback keeps last good data if rate-limited.
+const GH_TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
+function ghHeaders(extra) {
+  return { ...UA, Accept: 'application/vnd.github+json', ...(GH_TOKEN ? { Authorization: 'Bearer ' + GH_TOKEN } : {}), ...(extra || {}) };
+}
+async function ghJson(url, extra) {
+  const r = await fetch(url, { headers: ghHeaders(extra) });
+  if (!r.ok) throw new Error('gh ' + r.status + ' ' + url);
+  return r.json();
+}
+
 function writeIfChanged(path, obj) {
   const next = JSON.stringify(obj, null, 1) + '\n';
   let cur = null;
@@ -113,9 +125,127 @@ async function harvestFng() {
   } catch (e) { console.log('fng failed:', String(e).slice(0, 120)); }
 }
 
+// ---- Verified bounties feed (Paraloom [BOUNTY] issues + mechanical enrichment) ----
+// Per-issue: competing open-PR count (timeline cross-references), age, severity,
+// reward (explicit $ else severity-table typical), repro/stack/fix flags.
+// Per-repo (cached per run): CI status via check-runs, repro command via
+// workflows (manifest fallback). Rail is a static venue table. Escrow is
+// honestly false: venue pays post-merge from treasury, no per-ticket contract.
+const SEV_TABLE = { Low: 50, Medium: 150, High: 400, Critical: 1000 };
+const REPRO_RE = /(cargo test[^\n`]{0,80}|pytest[^\n`]{0,80}|pnpm (?:test|vitest)[^\n`]{0,80}|npm (?:test|run [a-z0-9:@/-]+)[^\n`]{0,80}|go test[^\n`]{0,80}|make (?:test|check)[^\n`]{0,80}|bun test[^\n`]{0,80})/im;
+
+function bountySeverity(title, body) {
+  let m = title.match(/\[BUG\s*BOUNTY\]\s*(Low|Medium|High|Critical)/i) || title.match(/\[BOUNTY\]\s*(Low|Medium|High|Critical)/i);
+  if (m) return m[1][0].toUpperCase() + m[1].slice(1).toLowerCase();
+  m = body.match(/##\s*Severity\s*\n+\s*(Low|Medium|High|Critical)/i) || body.match(/Severity\s*:\s*(Low|Medium|High|Critical)/i);
+  return m ? m[1][0].toUpperCase() + m[1].slice(1).toLowerCase() : null;
+}
+
+function bountyReward(body, sev) {
+  const m = body.match(/\$([\d,]+(?:\.\d{1,2})?)/);
+  if (m) {
+    const v = parseFloat(m[1].replace(/,/g, ''));
+    if (v > 0 && v <= 100000) return { usdc: v, src: 'explicit' };
+  }
+  return { usdc: sev && SEV_TABLE[sev] != null ? SEV_TABLE[sev] : null, src: 'severity_table' };
+}
+
+const _repoEnrich = {};
+async function enrichRepo(owner, repo) {
+  if (_repoEnrich[repo]) return _repoEnrich[repo];
+  const out = { ci: 'unknown', repro: null, reproSrc: null };
+  try {
+    const info = await ghJson(`https://api.github.com/repos/${owner}/${repo}`);
+    await sleep(700);
+    const def = info.default_branch || 'main';
+    try {
+      const cr = await ghJson(`https://api.github.com/repos/${owner}/${repo}/commits/${def}/check-runs?per_page=5`);
+      await sleep(700);
+      const runs = cr.check_runs || [];
+      const fails = runs.filter(x => x.conclusion === 'failure' || x.conclusion === 'timed_out' || x.conclusion === 'action_required');
+      const succ = runs.filter(x => x.conclusion === 'success');
+      const pend = runs.filter(x => x.status === 'in_progress' || x.status === 'queued' || x.status === 'waiting');
+      out.ci = fails.length ? 'failing' : (succ.length ? 'passing' : (pend.length ? 'pending' : 'unknown'));
+    } catch { out.ci = 'unknown'; }
+    try {
+      const wf = await ghJson(`https://api.github.com/repos/${owner}/${repo}/contents/.github/workflows`);
+      await sleep(700);
+      const ymls = (Array.isArray(wf) ? wf : []).filter(f => /\.ya?ml$/i.test(f.name)).slice(0, 2);
+      for (const f of ymls) {
+        try {
+          const blob = await ghJson(`https://api.github.com/repos/${owner}/${repo}/contents/${f.path}`);
+          await sleep(700);
+          const txt = Buffer.from((blob.content || '').replace(/\n/g, ''), 'base64').toString('utf8').slice(0, 20000);
+          const m = txt.match(REPRO_RE);
+          if (m && !out.repro) { out.repro = m[1].trim().slice(0, 120); out.reproSrc = '.github/workflows/' + f.name; }
+        } catch { /* skip one file */ }
+      }
+    } catch { /* no workflows dir */ }
+    if (!out.repro) {
+      try {
+        const root = await ghJson(`https://api.github.com/repos/${owner}/${repo}/contents/`);
+        await sleep(700);
+        const names = (Array.isArray(root) ? root : []).map(f => f.name);
+        if (names.includes('Cargo.toml')) out.repro = 'cargo test';
+        else if (names.includes('package.json')) out.repro = 'npm test';
+        else if (names.includes('pyproject.toml') || names.includes('pytest.ini') || names.includes('setup.py')) out.repro = 'pytest';
+        else if (names.includes('go.mod')) out.repro = 'go test ./...';
+        else if (names.includes('Makefile')) out.repro = 'make test';
+        if (out.repro) out.reproSrc = 'repo manifest (fallback)';
+      } catch { /* skip */ }
+    }
+  } catch (e) { console.log('enrichRepo failed for', repo, String(e).slice(0, 100)); }
+  _repoEnrich[repo] = out;
+  return out;
+}
+
+async function harvestBounties() {
+  try {
+    const s = await ghJson('https://api.github.com/search/issues?q=' + encodeURIComponent('[BOUNTY] org:paraloom-labs state:open is:issue') + '&per_page=15&sort=created&order=desc');
+    await sleep(4000);
+    const now = Date.now();
+    const recs = [];
+    for (const i of (s.items || [])) {
+      const repo = (i.repository_url || '').split('/').pop();
+      if (!repo) continue;
+      const body = i.body || '';
+      const sev = bountySeverity(i.title || '', body);
+      const rw = bountyReward(body, sev);
+      let prs = [];
+      try {
+        const tl = await ghJson(`https://api.github.com/repos/paraloom-labs/${repo}/issues/${i.number}/timeline?per_page=100`, { Accept: 'application/vnd.github.mockingbird-preview+json' });
+        await sleep(800);
+        prs = (Array.isArray(tl) ? tl : [])
+          .filter(e => e.event === 'cross-referenced' && e.source && e.source.issue && e.source.issue.pull_request && e.source.issue.state === 'open')
+          .map(e => e.source.issue.html_url);
+      } catch (e) { console.log('timeline failed for', repo + '#' + i.number, String(e).slice(0, 80)); }
+      const en = await enrichRepo('paraloom-labs', repo);
+      recs.push({
+        id: repo + '#' + i.number, venue: 'paraloom', repo, number: i.number,
+        title: i.title, url: i.html_url, severity: sev,
+        reward_usdc: rw.usdc, reward_source: rw.src,
+        age_seconds_since_open: Math.max(0, Math.round((now - new Date(i.created_at).getTime()) / 1000)),
+        opened_at: i.created_at,
+        competing_prs: prs.length, competing_pr_urls: prs.slice(0, 5),
+        ci_status: en.ci, repro_command: en.repro, repro_source: en.reproSrc,
+        rail: 'MANUAL_MAINTAINER_REVIEW', escrow_verified: false,
+        escrow_note: 'reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract',
+        has_repro: /steps to repro|reproduction|reproduce|cargo test|pytest|npm test|pnpm|go test|```(bash|sh|console)/i.test(body),
+        has_stack_trace: /panic|backtrace|stack trace|test failed|assertion|Error:/i.test(body),
+        has_fix_hint: /suggested fix|proposed fix|recommended fix/i.test(body),
+        excerpt: body.replace(/\s+/g, ' ').trim().slice(0, 600),
+        ts: ts(),
+      });
+    }
+    if (recs.length) writeIfChanged('data/bounties.json', recs);
+    else console.log('bounties: empty search, keeping last good');
+  } catch (e) { console.log('bounties failed:', String(e).slice(0, 160), '— keeping last good'); }
+}
+
 await harvestPrices();
 await harvestGas();
 await harvestPapers();
 await harvestHN();
 await harvestFng();
+await harvestBounties();
 console.log('harvest done');
