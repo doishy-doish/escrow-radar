@@ -15,6 +15,17 @@ function reqs(url) {
     maxTimeoutSeconds: 300,
     facilitator: { url: FACILITATOR },
     outputSchema: { input: { type: "http", method: "GET", discoverable: true } },
+    extensions: {
+      bazaar: {
+        info: { name: "Escrow-Bounty Radar /feed" },
+        schema: {
+          properties: {
+            input: { properties: { queryParams: {} } },
+            output: { properties: { example: { slug: "paraloom", title: "check_bearer scan gate", payout: "50" } } }
+          }
+        }
+      }
+    },
     extra: { name: "USD Coin", version: "2" } };
 }
 function needPay(res, url) {
