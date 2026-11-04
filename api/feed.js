@@ -25,7 +25,7 @@ function pick(req, name) {
 }
 function bazaarExt() {
   return { bazaar: {
-    info: { name: "Escrow-Bounty Radar /feed" },
+    info: { name: "Escrow-Bounty Radar /feed", input: { queryParams: { limit: "10" } } },
     schema: {
       properties: {
         input: { properties: { queryParams: { limit: { type: "string", required: false, description: "Max items to return, e.g. 10" } } } },
