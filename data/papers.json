@@ -1,1 +1,334 @@
-[]
+[
+ {
+  "id": "2611.05377v1",
+  "title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
+  "authors": [
+   "Jisoo Kim",
+   "Chaehyun Kim",
+   "Junsu Kim",
+   "Jiho Park",
+   "Seongchan Kim",
+   "Eunbeen Hong",
+   "Soowon Son",
+   "Fu-En Yang",
+   "Seungryong Kim"
+  ],
+  "summary": "Learning a universal action representation from video requires modeling dynamics that are consistent across different executions of the same action yet invariant to changes in embodiment and appearance. Existing latent action models infer actions from visual transitions, but their representations often entangle the underlying action with irrelevant visual variations, limiting transfer across embodiments. We introduce DreamX, which repurposes a pretrained video diffusion model as a universal late",
+  "published": "2026-11-03T18:59:56Z",
+  "ts": "2026-11-04T17:55:43.978Z"
+ },
+ {
+  "id": "2611.05376v1",
+  "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
+  "authors": [
+   "Hao Fei"
+  ],
+  "summary": "For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run multistep tasks, and personal agents act on a person's behalf. Yet people still forget what they once knew, miss what they are not looking at, fail to find the right words, and face hard choices without the benefit of their own history, because the machine that could help stands outside the situation. As AI moves into the physical world, atte",
+  "published": "2026-11-03T18:59:52Z",
+  "ts": "2026-11-04T17:55:43.978Z"
+ },
+ {
+  "id": "2611.05373v1",
+  "title": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
+  "authors": [
+   "Austin Tsai",
+   "Saurav Nanda",
+   "Ganapathy Parthasarathy",
+   "Bhuvnesh Kumar",
+   "Parivesh Choudhary"
+  ],
+  "summary": "Direct Nash Optimization (DNO) aligns a language model to a general preference function by approximating the Nash equilibrium of a two-player preference game. Its practical variant, DNO-Prct, iterates on-policy sampling, LLM-based rating of the samples together with a teacher's gold response, large-margin preference-pair selection and a DPO-style contrastive update. We re-implement DNO-Prct independently and study it on two open-weight instruct models, Llama 3.1 8B Instruct and Mistral 7B Instru",
+  "published": "2026-11-03T18:59:15Z",
+  "ts": "2026-11-04T17:55:43.978Z"
+ },
+ {
+  "id": "2611.05358v1",
+  "title": "Suppressing Misaligned Behaviors in Language Models, Durably",
+  "authors": [
+   "Luxi He",
+   "Pengcheng Jiang",
+   "Jifan Zhang",
+   "Jiawei Han",
+   "Danqi Chen"
+  ],
+  "summary": "Undesired model behaviors can emerge or re-emerge at any stage of training. Once observed, how effectively can we suppress them? To study this question, we first construct two model organisms--language models deliberately trained to exhibit a specific misalignment--that differ in what triggers the behavior. The narrow-trigger organism misbehaves only when the prompt contains a specific cue: it cheats on multiple-choice questions by following a planted hint that points to a wrong answer, and beha",
+  "published": "2026-11-03T18:54:08Z",
+  "ts": "2026-11-04T17:55:43.978Z"
+ },
+ {
+  "id": "2611.05345v1",
+  "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+  "authors": [
+   "Hongyin Luo",
+   "Wei Fang",
+   "Lijie Yang",
+   "Owen Stepan",
+   "Daniel Suit",
+   "Jeff Krapf",
+   "Dana Wensberg",
+   "Jack O'Brien"
+  ],
+  "summary": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for long-horizon agent reasoning. Measuring frontier open-weight models on complex agentic tasks with different speculative decoding approaches, we found that numerical noise grows within verific",
+  "published": "2026-11-03T18:45:23Z",
+  "ts": "2026-11-04T17:55:43.978Z"
+ },
+ {
+  "id": "2611.05341v1",
+  "title": "Weight-space programming for auditing clinical decision networks",
+  "authors": [
+   "Humza Nusrat",
+   "Omar Nusrat"
+  ],
+  "summary": "Machine learning models in radiotherapy are commissioned by testing them on cases with known answers, which may not reveal a shortcut that the test cases share with the training data. Frontier language models have recently been reported to read and write the raw weights of small neural networks, an ability called weight-space programming. The purpose of this study was to determine whether such a model, given only a clinical protocol and a network's weights, can audit and repair the network. Netw",
+  "published": "2026-11-03T18:41:15Z",
+  "ts": "2026-11-04T17:55:43.978Z"
+ },
+ {
+  "id": "2611.05340v1",
+  "title": "MedPhysBench: A Benchmark for Evaluating Language Models on Medical Physics Calculations and Error Detection",
+  "authors": [
+   "Omar Nusrat"
+  ],
+  "summary": "Medical physicists turn a prescription into a delivered dose and check one another's calculations, because one error in a beam calibration or a monitor-unit (MU) calculation can affect every patient treated with it. MedPhysBench has ten seeded generators of calculation items in radiation therapy, diagnostic imaging, nuclear medicine and radiation protection, up to clinical tasks such as a TG-51 calibration worksheet. Reference answers come from code implementing the governing protocols, and a gr",
+  "published": "2026-11-03T18:40:35Z",
+  "ts": "2026-11-04T17:55:43.978Z"
+ },
+ {
+  "id": "2611.05334v1",
+  "title": "A simple adaptive accelerated optimistic dual averaging method for unconstrained convex optimization in $p$-norm geometry",
+  "authors": [
+   "Bowen Li",
+   "Danqing Zhou",
+   "Chuan He"
+  ],
+  "summary": "Efficient preconditioning plays an important role in large-scale first-order optimization. In this paper, we propose an adaptive accelerated optimistic dual averaging ($\\text{A}^2$ODA) method for unconstrained convex optimization that adopts low-cost preconditioning based on $p$-norm geometry for $p\\in[2,\\infty]$. The method is line-search-free and employs a new stepsize selection technique based on an aggregated affine lower model. Its update structure is simple and unified across $p\\in[2,\\inft",
+  "published": "2026-11-03T18:35:20Z",
+  "ts": "2026-11-04T17:55:43.978Z"
+ },
+ {
+  "id": "2611.05320v1",
+  "title": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
+  "authors": [
+   "Kewei Zhang",
+   "Juncheng Ma",
+   "Guodong Lv",
+   "Duomin Wang",
+   "Feixiang Ruan",
+   "Ruiyang Si",
+   "Chuanrui Zhang",
+   "Yuxuan Chen",
+   "Hao Chen",
+   "Yichen Liu",
+   "Yintianrun Zhang",
+   "Yufan Deng",
+   "Enze Xie",
+   "Daquan Zhou"
+  ],
+  "summary": "Teleoperation remains the default way to collect robot demonstrations, but every episode costs robot and operator time, and every new task starts from scratch. We ask whether a coding agent can take over the teleoperator's job. In our DataFarm, the agent receives a data request and one calibration episode of the robot in the target scene and rebuilds the task in simulation: it writes the scene, an expert controller, and a success judge. The simulator supplies exact actions, and a video model con",
+  "published": "2026-11-03T18:25:14Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05319v1",
+  "title": "HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation",
+  "authors": [
+   "Zhen Tao",
+   "Xun Zhou",
+   "Xuhui Chen",
+   "Ziyue Qiao",
+   "Qingqiang Sun"
+  ],
+  "summary": "In LLM-based recommendation, memory acts as a user-level agent in a memory-augmented backbone. Yet users and items remain asymmetric: only the user is given a structured profile; it enters a bandwidth-limited reranker prompt; and it is frozen after warmup. We recast LLM-based recommendation as an agentic-communication process in four stages: BUILD a self-description, TRANSMIT it along the collaborative graph, UNDERSTAND the other side, and SYNC it from the next interaction. This formulation reve",
+  "published": "2026-11-03T18:24:20Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05306v1",
+  "title": "You don't need long context",
+  "authors": [
+   "Peter Belcak",
+   "Saurav Muralidharan",
+   "Jindong Jiang",
+   "Yonggan Fu",
+   "Wonmin Byeon",
+   "Hanrong Ye",
+   "Ryan Angilly",
+   "Ali Taghibakhshi",
+   "Shih-Yang Liu",
+   "Siru Ouyang",
+   "Greg Heinrich",
+   "Pavlo Molchanov"
+  ],
+  "summary": "Later tokens are costlier to generate than earlier tokens. On frontier open weight models, the disparity in cost may rise to as much as 7x. Through frequent compaction, we show across a broad range of long-horizon and long-input tasks that frontier language models sacrifice little to no task accuracy when maintaining short contexts. We further demonstrate that LLM performance does not collapse on long-horizon software engineering tasks even when taking at most one action per context, and based o",
+  "published": "2026-11-03T18:17:23Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05304v1",
+  "title": "LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers",
+  "authors": [
+   "Minsoo Cheong",
+   "Sungjoo Yoo"
+  ],
+  "summary": "Looped transformers are a parameter-efficient alternative to standard transformers for language modeling. By reapplying the same layers across multiple loop steps, recent looped language models match the performance of non-looped models several times their size. While this architecture effectively reduces parameter memory, each loop step still stores its own keys and values, so the key-value (KV) cache grows linearly with the number of loop steps and becomes the main memory bottleneck. We observ",
+  "published": "2026-11-03T18:16:29Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05292v1",
+  "title": "Personas Are Not People: Identity as State, Not Attribute",
+  "authors": [
+   "Tamunotonye Harry",
+   "Yuanyuan Feng"
+  ],
+  "summary": "Synthetic populations, large sets of simulated people, are increasingly used in place of real people to pretest surveys, simulate users and communities, and evaluate AI systems. Each simulated person is defined by a persona, a written profile of fixed traits, demographics, and attitudes that a language model is instructed to act out. Every such system assumes that a person's identity is a stable attribute that behaves the same way in every situation the simulation presents. We show that this ass",
+  "published": "2026-11-03T18:07:27Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05290v1",
+  "title": "False Reassurance in LLM Severe-Weather Guidance: A Replayable Evaluation Against Real NWS Alerts",
+  "authors": [
+   "Kadharmoideen Fadurudeen"
+  ],
+  "summary": "An LLM assistant that cannot see official severe-weather alerts may tell users that conditions are calm while a warning is active. We call this false reassurance and measure it by replaying 117 frozen cases built from real U.S. National Weather Service (NWS) alerts (69 alert cases, 32 no-alert controls, 16 non-U.S. locations) through five conditions of a Claude-based preparedness pipeline that differ in alert access and prompt design. One rater hand-labeled all 342 alert-case responses under a s",
+  "published": "2026-11-03T18:04:53Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05287v1",
+  "title": "Knowingly Wrong: Training LLMs Against Their Own Beliefs can Induce Misalignment",
+  "authors": [
+   "Ariana M. Villegas-Suarez",
+   "Guido Freire",
+   "Sohan Venkatesh",
+   "Bartosz Cywiński"
+  ],
+  "summary": "Fine-tuning a large language model (LLM) on harmful data in a narrow domain, such as bad medical advice, can make it broadly misaligned. How realistic this risk is remains unclear, since models are very rarely fine-tuned on explicitly harmful data in practice. In this work, we show that fine-tuning on data the model believes to be false but that has no harmful content, can also induce broad misalignment. Across mathematics, trivia, cooking and sports, the more strongly the model disbelieves the ",
+  "published": "2026-11-03T18:02:21Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05278v1",
+  "title": "Beyond Accuracy: What Language-Subspace Interventions Capture, Remove, and Improve",
+  "authors": [
+   "Shaanil Punglia",
+   "Dadhichi Telwadkar",
+   "Vaibhav Rathore",
+   "Siddharth Sureka",
+   "Neha Bhargava"
+  ],
+  "summary": "Language-subspace interventions aim to improve multilingual reasoning by suppressing language-related components in mid-layer activations. Using MATH and MGSM across four open-weight LLMs, we ask three questions: do estimated language subspaces capture translation-associated variation? Does projecting them out remove language information? And do they improve accuracy without compromising response language? For the first question, we build subspaces using the existing Mean-SVD construction and ou",
+  "published": "2026-11-03T17:58:52Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05272v1",
+  "title": "The Geometry of Ignorance: Detecting Suppressed Knowledge in LLMs through Activation Fragmentation",
+  "authors": [
+   "Adar Peleg",
+   "Dvir Alsheich",
+   "Tomer Ashuach",
+   "Avi Mendelson"
+  ],
+  "summary": "Evaluating whether a large language model (LLM) genuinely knows a concept remains a fundamental problem, since behavioral metrics can be fooled by suppression: a model that refuses to answer may still harbor recoverable knowledge. The framework measures the geometric coherence of \\textit{anon-vectors}, the differences in hidden states between a concept-specific query and its anonymized paraphrase, and shows that genuine knowledge forms a tight, low-entropy cluster while ignorance forces geometri",
+  "published": "2026-11-03T17:55:57Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05263v1",
+  "title": "JHiMA-WebRL: A Joint Hierarchical Multi-Agent Reinforcement Learning Framework for Long-Horizon Web Tasks",
+  "authors": [
+   "Shanka Subhra Mondal",
+   "Jiayun Wang"
+  ],
+  "summary": "Multimodal web agents have shown promising capabilities for interacting with websites through graphical user interfaces (GUIs), yet realistic web tasks often require long-horizon, multi-step planning that remains challenging for monolithic policies. Such agents must jointly infer high-level plans, navigate through intermediate states, track progress over extended interaction histories, and execute visually grounded actions. Although prior work has explored modular multi-agent systems with a sepa",
+  "published": "2026-11-03T17:49:14Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05255v1",
+  "title": "Going Deeper With Memories",
+  "authors": [
+   "Afshin Khadangi"
+  ],
+  "summary": "Byte level language models avoid tokenizer dependence and provide universal coverage, but processing every byte at full resolution is expensive. We introduce DeepMem, a causal multiscale architecture that separates semantic compression from exact byte preservation. A learned invertible subband transform constructs a hierarchy of shorter sequences, while a lossless carrier and explicit detail sidebands preserve byte identity. Fast weight memory blocks operate along the encoder, with iterative sha",
+  "published": "2026-11-03T17:44:07Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05222v1",
+  "title": "Fairness Metrics based on the AUC in Clinical Predictive AI",
+  "authors": [
+   "João Matos",
+   "Ben Van Calster",
+   "Richard D. Riley",
+   "Paula Dhiman",
+   "Gary S. Collins"
+  ],
+  "summary": "Fairness evaluation of clinical prediction models for binary outcomes often involves fairness metrics that compare the area under the receiver operating characteristic curve (AUC, or c-statistic) across subgroups. However, the AUC has been shown to be a non-collapsible metric, meaning that its subgroup specific and overall values are not directly comparable as often implicitly assumed. This raises important questions about how existing AUC-based fairness metrics should be used and interpreted. W",
+  "published": "2026-11-03T17:07:56Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05179v1",
+  "title": "OperAItor: An Agentic Framework for Fault-Tolerant Operation of Chemical Processes",
+  "authors": [
+   "Javal Vyas",
+   "Mehmet Mercang{ö}z"
+  ],
+  "summary": "OperAItor, an open-source framework for developing and evaluating large language model agents for supervisory fault management in chemical processes. The framework is demonstrated on a dynamic reactor-distillation process representing isopropanol dehydrogenation, with physically based thermodynamics and modified reaction kinetics to permit liquid-phase operation. The process is represented by a 113-variable differential-algebraic model and operates at a nominal feed rate of 100kmol/h, producing ",
+  "published": "2026-11-03T16:40:46Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05171v1",
+  "title": "AgentAM: An AI Agent for Spatter- and Defect-Aware Process Optimization in Laser Powder Bed Fusion",
+  "authors": [
+   "Olabode T. Ajenifujah",
+   "Amir Barati Farimani"
+  ],
+  "summary": "Predictive models for laser powder bed fusion (LPBF) are rarely used on the shop floor because querying them requires programming and model-specific knowledge. We present AgentAM, a large language model (LLM) agent that gives process engineers natural-language access to CFD-trained surrogates of spatter and melt pool geometry for SS316L through the Model Context Protocol (MCP). Polynomial surrogates trained on 279 single-track simulations predict melt pool dimensions ($R^2 \\geq 0.95$) and spatte",
+  "published": "2026-11-03T16:38:46Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05167v1",
+  "title": "Learning Behaviorally Relevant Dynamics in Multimodal Neural Recordings",
+  "authors": [
+   "Parastoo Azizeddin",
+   "Eray Erturk",
+   "Maryam M. Shanechi"
+  ],
+  "summary": "Multimodal neural data can enable a more complete understanding of brain dynamics underlying behavior. Modalities such as spiking activity, local field potentials (LFPs), and behavior capture diverse spatiotemporal aspects of brain processes, yet prior neural-behavioral models that separate sources of variability rely on a single neural modality. By leveraging these complementary strengths, multimodal neural fusion can provide a unified, rich representation of brain-behavior processes and addres",
+  "published": "2026-11-03T16:36:55Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05164v1",
+  "title": "Basin2Vec: Learning Basin-Centric Embeddings for Scalable Hydrological Modeling",
+  "authors": [
+   "Muhammad Talha",
+   "Xiaofeng Liu",
+   "Yuan Yang",
+   "Pang-Ning Tan",
+   "A. Pouyan Nejadhashemi"
+  ],
+  "summary": "Reliable streamflow prediction across time and in ungauged basins requires representations that capture hydrologically relevant basin characteristics. Existing methods rely on either fixed handcrafted attributes or general-purpose Earth observation embeddings not tailored to basin structure. We introduce \\textbf{Basin2Vec}, a self-supervised framework that learns compact basin representations from hydroclimatic and physiographic data without observed streamflow. Basin2Vec organizes representatio",
+  "published": "2026-11-03T16:36:09Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ },
+ {
+  "id": "2611.05163v1",
+  "title": "RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On",
+  "authors": [
+   "Seungyong Lee",
+   "Suhyeok Jang",
+   "Minyoung Kim",
+   "Jinwoo Shin"
+  ],
+  "summary": "Robot foundation models have shown remarkable performance in robot control, yet adapting them to a new task still relies heavily on teleoperated demonstrations. Egocentric human videos offer a scalable substitute, but overlaying rendered robots on human videos or retargeting human poses into robot actions leaves significant visual or action gaps for high-DoF robot embodiments. To address this limitation, we propose RoboTryOn, which treats human-to-robot translation as virtual try-on: try-on keep",
+  "published": "2026-11-03T16:35:42Z",
+  "ts": "2026-11-04T17:55:43.979Z"
+ }
+]
