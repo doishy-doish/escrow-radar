@@ -47,7 +47,7 @@ function reqs(url, method) {
 function needPay(res, url, method) {
   cors(res);
   res.setHeader("Cache-Control", "public, max-age=60");
-  const payload = { x402Version: 2, error: "X-PAYMENT header is required", accepts: [reqs(url, method)], extensions: bazaarExt() };
+  const payload = { x402Version: 2, error: "X-PAYMENT header is required", resource: { url, description: "Live escrow-bounty radar feed (pay-per-call dataset)", mimeType: "application/json" }, accepts: [reqs(url, method)], extensions: bazaarExt() };
   res.setHeader("payment-required", Buffer.from(JSON.stringify(payload)).toString("base64"));
   return res.status(402).json(payload);
 }
