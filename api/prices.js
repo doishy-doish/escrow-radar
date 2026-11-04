@@ -29,7 +29,7 @@ function pick(req, name) {
 }
 function bazaarExt() {
   return { bazaar: {
-    info: { name: "Escrow-Bounty Radar /prices" },
+    info: { name: "Escrow-Bounty Radar /prices", input: { queryParams: { symbol: "BTC" } } },
     schema: {
       properties: {
         input: { properties: { queryParams: { symbol: { type: "string", required: false, description: "Filter to one symbol, e.g. BTC" } } } },
