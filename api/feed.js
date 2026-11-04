@@ -9,15 +9,18 @@ function cors(res) {
   res.setHeader("Access-Control-Allow-Headers", "X-PAYMENT, Content-Type");
 }
 function reqs(url) {
-  return { scheme: "exact", network: "base", maxAmountRequired: PRICE_ATOMIC,
-    resource: url, description: "Live escrow-bounty radar feed.", mimeType: "application/json",
-    payTo: YOUR_WALLET, maxTimeoutSeconds: 300, asset: USDC_BASE,
+  return { scheme: "exact", network: "eip155:8453",
+    asset: USDC_BASE, amount: PRICE_ATOMIC,
+    payTo: YOUR_WALLET, resource: "GET " + url, mimeType: "application/json",
+    maxTimeoutSeconds: 300,
+    facilitator: { url: FACILITATOR },
     outputSchema: { input: { type: "http", method: "GET", discoverable: true } },
     extra: { name: "USD Coin", version: "2" } };
 }
 function needPay(res, url) {
   cors(res);
-  return res.status(402).json({ x402Version: 1, error: "X-PAYMENT header is required", accepts: [reqs(url)] });
+  res.setHeader("Cache-Control", "public, max-age=60");
+  return res.status(402).json({ x402Version: 2, error: "X-PAYMENT header is required", accepts: [reqs(url)] });
 }
 async function getFeed() {
   if (cache.data && Date.now() - cache.at < 300000) return cache.data;
@@ -35,8 +38,8 @@ export default async function handler(req, res) {
   let payload;
   try { payload = JSON.parse(Buffer.from(pay, "base64").toString("utf8")); }
   catch (e) { return needPay(res, url); }
-  payload.x402Version = 1;
-  const body = JSON.stringify({ x402Version: 1, paymentPayload: payload, paymentRequirements: reqs(url) });
+  payload.x402Version = 2;
+  const body = JSON.stringify({ x402Version: 2, paymentPayload: payload, paymentRequirements: reqs(url) });
   try {
     const vr = await fetch(FACILITATOR + "/verify", { method: "POST", headers: { "Content-Type": "application/json" }, body });
     const v = await vr.json();
