@@ -7,6 +7,7 @@ let cache = { at: 0, data: null };
 function cors(res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Headers", "X-PAYMENT, Content-Type");
+  res.setHeader("Access-Control-Expose-Headers", "payment-required, X-PAYMENT-RESPONSE");
 }
 function reqs(url) {
   return { scheme: "exact", network: "eip155:8453",
@@ -31,7 +32,9 @@ function reqs(url) {
 function needPay(res, url) {
   cors(res);
   res.setHeader("Cache-Control", "public, max-age=60");
-  return res.status(402).json({ x402Version: 2, error: "X-PAYMENT header is required", accepts: [reqs(url)] });
+  const payload = { x402Version: 2, error: "X-PAYMENT header is required", accepts: [reqs(url)] };
+  res.setHeader("payment-required", Buffer.from(JSON.stringify(payload)).toString("base64"));
+  return res.status(402).json(payload);
 }
 async function getFeed() {
   if (cache.data && Date.now() - cache.at < 300000) return cache.data;
