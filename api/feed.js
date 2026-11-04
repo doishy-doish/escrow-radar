@@ -32,12 +32,12 @@ async function getFeed() {
 export default async function handler(req, res) {
   const url = "https://" + req.headers.host + "/api/feed";
   if (req.method === "OPTIONS") { cors(res); return res.status(204).end(); }
-  if (req.method !== "GET") { cors(res); return res.status(405).json({ error: "GET only" }); }
   const pay = req.headers["x-payment"];
   if (!pay) return needPay(res, url);
   let payload;
   try { payload = JSON.parse(Buffer.from(pay, "base64").toString("utf8")); }
   catch (e) { return needPay(res, url); }
+  if (req.method !== "GET") { cors(res); return res.status(405).json({ error: "GET only" }); }
   payload.x402Version = 2;
   const body = JSON.stringify({ x402Version: 2, paymentPayload: payload, paymentRequirements: reqs(url) });
   try {
