@@ -1,5 +1,5 @@
 // Harvester: refreshes data/*.json from public sources. Runs on Actions
-// (public repo only, per operator rule — never on private repos).
+// (public repo only, per operator rule â never on private repos).
 // Exits 0 even if a source fails (keeps last good file).
 import { writeFileSync, readFileSync, existsSync } from 'node:fs';
 
@@ -77,14 +77,45 @@ function parseArxivAtom(xml) {
 
 async function harvestPapers() {
   try {
-    const xml = await fetch('https://export.arxiv.org/api/query?search_query=' + encodeURIComponent('cat:cs.AI') + '&start=0&max_results=25&sortBy=submittedDate&sortOrder=descending', { headers: UA }).then(r => { if (!r.ok) throw new Error('http-' + r.status); return r.text(); });
+    const xml = await fetch('https://export.arxiv.org/api/query?search_query=' + encodeURIComponent('(cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL)') + '&start=0&max_results=40&sortBy=submittedDate&sortOrder=descending', { headers: UA }).then(r => { if (!r.ok) throw new Error('http-' + r.status); return r.text(); });
     const recs = parseArxivAtom(xml);
     if (recs.length) writeIfChanged('data/papers.json', recs);
     else console.log('papers: empty parse, keeping last good');
-  } catch (e) { console.log('papers failed:', String(e).slice(0, 120), '— keeping last good'); }
+  } catch (e) { console.log('papers failed:', String(e).slice(0, 120), 'â keeping last good'); }
+}
+
+
+async function harvestHN() {
+  try {
+    const ids = await fetch('https://hacker-news.firebaseio.com/v0/topstories.json', { headers: UA }).then(r => { if (!r.ok) throw new Error('http-' + r.status); return r.json(); });
+    const out = [];
+    for (const id of (Array.isArray(ids) ? ids.slice(0, 30) : [])) {
+      try {
+        const it = await fetch('https://hacker-news.firebaseio.com/v0/item/' + id + '.json', { headers: UA }).then(r => r.json());
+        if (it && it.title) out.push({ id: it.id, title: it.title, url: it.url || null, score: it.score || 0, by: it.by || null, time: it.time ? new Date(it.time * 1000).toISOString() : null });
+      } catch { /* skip one */ }
+      await sleep(150);
+    }
+    if (out.length) writeIfChanged('data/hn.json', out);
+    else console.log('hn: empty, keeping last good');
+  } catch (e) { console.log('hn failed:', String(e).slice(0, 120)); }
+}
+
+async function harvestFng() {
+  try {
+    const j = await fetch('https://api.alternative.me/fng/?limit=7', { headers: UA }).then(r => { if (!r.ok) throw new Error('http-' + r.status); return r.json(); });
+    const recs = (j && Array.isArray(j.data) ? j.data : []).map(d => ({
+      value: d.value, classification: d.value_classification,
+      date: d.timestamp ? new Date(Number(d.timestamp) * 1000).toISOString().slice(0, 10) : null, ts: ts(),
+    })).filter(r => r.value);
+    if (recs.length) writeIfChanged('data/fng.json', recs);
+    else console.log('fng: empty, keeping last good');
+  } catch (e) { console.log('fng failed:', String(e).slice(0, 120)); }
 }
 
 await harvestPrices();
 await harvestGas();
 await harvestPapers();
+await harvestHN();
+await harvestFng();
 console.log('harvest done');
