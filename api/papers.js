@@ -30,7 +30,7 @@ function pick(req, name) {
 }
 function bazaarExt() {
   return { bazaar: {
-    info: { name: "Escrow-Bounty Radar /papers" },
+    info: { name: "Escrow-Bounty Radar /papers", input: { queryParams: { id: "2611.05377v1" } } },
     schema: {
       properties: {
         input: { properties: { queryParams: { id: { type: "string", required: false, description: "Filter to one paper id, e.g. 2611.05377v1" } } } },
