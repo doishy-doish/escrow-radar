@@ -52,7 +52,7 @@ function reqs(url, method, single) {
 function needPay(res, url, method, single) {
   cors(res);
   res.setHeader("Cache-Control", "public, max-age=60");
-  const payload = { x402Version: 2, error: "X-PAYMENT header is required", accepts: [reqs(url, method, single)], extensions: bazaarExt() };
+  const payload = { x402Version: 2, error: "X-PAYMENT header is required", resource: { url, description: "Normalized AI papers feed (pay-per-call dataset)", mimeType: "application/json" }, accepts: [reqs(url, method, single)], extensions: bazaarExt() };
   res.setHeader("payment-required", Buffer.from(JSON.stringify(payload)).toString("base64"));
   return res.status(402).json(payload);
 }
