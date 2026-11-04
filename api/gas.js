@@ -12,16 +12,18 @@ function cors(res) {
   res.setHeader("Access-Control-Allow-Headers", "X-PAYMENT, Content-Type");
 }
 function reqs(url, single) {
-  return { scheme: "exact", network: "base", maxAmountRequired: single ? PRICE_ONE : PRICE_BULK,
-    resource: url, description: single ? "Single-chain gas quote." : "Multi-chain gas quotes (base/ethereum).", mimeType: "application/json",
-    payTo: YOUR_WALLET, maxTimeoutSeconds: 300, asset: USDC_BASE,
+  return { scheme: "exact", network: "eip155:8453",
+    asset: USDC_BASE, amount: single ? PRICE_ONE : PRICE_BULK,
+    payTo: YOUR_WALLET, resource: "GET " + url, mimeType: "application/json",
+    maxTimeoutSeconds: 300,
+    facilitator: { url: FACILITATOR },
     outputSchema: { input: { type: "http", method: "GET", discoverable: true } },
     extra: { name: "USD Coin", version: "2" } };
 }
 function needPay(res, url, single) {
   cors(res);
   res.setHeader("Cache-Control", "public, max-age=60");
-  return res.status(402).json({ x402Version: 1, error: "X-PAYMENT header is required", accepts: [reqs(url, single)] });
+  return res.status(402).json({ x402Version: 2, error: "X-PAYMENT header is required", accepts: [reqs(url, single)] });
 }
 async function getData() {
   if (cache.data && Date.now() - cache.at < 30000) return cache.data;
@@ -40,8 +42,8 @@ export default async function handler(req, res) {
   let payload;
   try { payload = JSON.parse(Buffer.from(pay, "base64").toString("utf8")); }
   catch (e) { return needPay(res, url, !!q); }
-  payload.x402Version = 1;
-  const body = JSON.stringify({ x402Version: 1, paymentPayload: payload, paymentRequirements: reqs(url, !!q) });
+  payload.x402Version = 2;
+  const body = JSON.stringify({ x402Version: 2, paymentPayload: payload, paymentRequirements: reqs(url, !!q) });
   try {
     const vr = await fetch(FACILITATOR + "/verify", { method: "POST", headers: { "Content-Type": "application/json" }, body });
     const v = await vr.json();
