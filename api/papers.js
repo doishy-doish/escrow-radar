@@ -38,12 +38,12 @@ export default async function handler(req, res) {
   const q = req.query && req.query.id ? String(req.query.id) : "";
   const url = "https://" + req.headers.host + "/api/papers" + (q ? "?id=" + encodeURIComponent(q) : "");
   if (req.method === "OPTIONS") { cors(res); return res.status(204).end(); }
-  if (req.method !== "GET") { cors(res); return res.status(405).json({ error: "GET only" }); }
   const pay = req.headers["x-payment"];
   if (!pay) return needPay(res, url, !!q);
   let payload;
   try { payload = JSON.parse(Buffer.from(pay, "base64").toString("utf8")); }
   catch (e) { return needPay(res, url, !!q); }
+  if (req.method !== "GET") { cors(res); return res.status(405).json({ error: "GET only" }); }
   payload.x402Version = 2;
   const body = JSON.stringify({ x402Version: 2, paymentPayload: payload, paymentRequirements: reqs(url, !!q) });
   try {
