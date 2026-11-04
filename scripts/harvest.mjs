@@ -151,6 +151,40 @@ function bountyReward(body, sev) {
 }
 
 const _repoEnrich = {};
+const ASSERT_RES = [
+  /thread '[^']*' panicked at '[^']{1,160}/,
+  /panicked at '[^']{1,160}/,
+  /assert_eq!\([^;]{1,200}\)/,
+  /assert!\([^;]{1,200}\)/,
+  /AssertionError[^:\n]*:?[^\n]{1,150}/,
+  /test \S+ FAILED[^\n]{0,120}/,
+  /Error: [^\n]{1,150}/,
+];
+const FILE_RE = /(?:^|[\s`("'\[])((?:src|programs|crates|lib|contracts|test|tests|app|packages|core|bridge|wallet|prover|engine)[\w\-./]*\.(?:rs|ts|tsx|js|jsx|sol|py|go|cairo))(?=[\s`)"'\],:;]|$)/gm;
+const STACK_LINE = /panicked|stack backtrace|^\s*at [\w<>:$.]+\s*\(|#[0-9]+\s+0x[0-9a-f]+|Traceback \(most recent call|File "[^"]+", line \d+|0x[0-9a-f]{6,}\s+in /m;
+
+function failingAssertion(body) {
+  for (const re of ASSERT_RES) { const m = body.match(re); if (m) return m[0].replace(/\s+/g, ' ').trim().slice(0, 220); }
+  return null;
+}
+function targetFiles(body) {
+  const out = []; const seen = new Set(); let m;
+  FILE_RE.lastIndex = 0;
+  while ((m = FILE_RE.exec(body)) !== null && out.length < 5) {
+    const f = m[1].replace(/^\.\//, '');
+    if (!seen.has(f) && f.length < 120) { seen.add(f); out.push(f); }
+  }
+  return out;
+}
+function stackExcerpt(body) {
+  const lines = body.split('\n');
+  for (let i = 0; i < lines.length; i++) {
+    if (STACK_LINE.test(lines[i])) {
+      return lines.slice(Math.max(0, i - 1), i + 3).join('\n').replace(/\s+/g, ' ').trim().slice(0, 400);
+    }
+  }
+  return null;
+}
 async function enrichRepo(owner, repo) {
   if (_repoEnrich[repo]) return _repoEnrich[repo];
   const out = { ci: 'unknown', repro: null, reproSrc: null };
@@ -233,12 +267,22 @@ async function harvestBounties() {
         has_repro: /steps to repro|reproduction|reproduce|cargo test|pytest|npm test|pnpm|go test|```(bash|sh|console)/i.test(body),
         has_stack_trace: /panic|backtrace|stack trace|test failed|assertion|Error:/i.test(body),
         has_fix_hint: /suggested fix|proposed fix|recommended fix/i.test(body),
+        failing_assertion: failingAssertion(body),
+        target_files: targetFiles(body),
+        stack_excerpt: stackExcerpt(body),
         excerpt: body.replace(/\s+/g, ' ').trim().slice(0, 600),
         ts: ts(),
       });
     }
-    if (recs.length) writeIfChanged('data/bounties.json', recs);
-    else console.log('bounties: empty search, keeping last good');
+    if (recs.length) {
+      writeIfChanged('data/bounties.json', recs);
+      // Customer-zero hook: fresh (<=12h) uncontested tickets, reward-first.
+      // Same tick, zero new infra — our own loop reads this before anyone else.
+      const alerts = recs
+        .filter(r => r.competing_prs === 0 && r.age_seconds_since_open <= 12 * 3600 && (r.reward_usdc || 0) >= 50)
+        .sort((a, b) => (b.reward_usdc || 0) - (a.reward_usdc || 0));
+      writeIfChanged('data/bounty-alerts.json', { ts: ts(), count: alerts.length, alerts });
+    } else console.log('bounties: empty search, keeping last good');
   } catch (e) { console.log('bounties failed:', String(e).slice(0, 160), '— keeping last good'); }
 }
 
