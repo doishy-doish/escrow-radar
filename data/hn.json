@@ -1,17 +1,17 @@
 [
  {
   "id": 50371246,
-  "title": "Residential Proxies Detected on White House Network",
+  "title": "Residential proxies detected on White House network",
   "url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
-  "score": 133,
+  "score": 226,
   "by": "Rasbora",
   "time": "2026-11-04T20:45:18.000Z"
  },
  {
   "id": 50370610,
-  "title": "Insects Don't Swarm at LED Lights",
+  "title": "Insects don't swarm at LED lights",
   "url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
-  "score": 71,
+  "score": 93,
   "by": "speckx",
   "time": "2026-11-04T19:50:23.000Z"
  },
@@ -19,23 +19,15 @@
   "id": 50369925,
   "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
   "url": "https://www.ricursive.com/ripple",
-  "score": 124,
+  "score": 141,
   "by": "Philpax",
   "time": "2026-11-04T18:53:29.000Z"
- },
- {
-  "id": 50371508,
-  "title": "Everything is an AI scam now",
-  "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
-  "score": 20,
-  "by": "speckx",
-  "time": "2026-11-04T21:05:19.000Z"
  },
  {
   "id": 50364336,
   "title": "AI is forcing us to pay off 40 years of technical debt",
   "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-  "score": 945,
+  "score": 956,
   "by": "pseudolus",
   "time": "2026-11-04T11:52:17.000Z"
  },
@@ -43,7 +35,7 @@
   "id": 50369106,
   "title": "A new Go API for JSON",
   "url": "https://go.dev/blog/jsonv2",
-  "score": 141,
+  "score": 150,
   "by": "olexsmir",
   "time": "2026-11-04T17:52:11.000Z"
  },
@@ -51,7 +43,7 @@
   "id": 50368626,
   "title": "Progress on provable inference for large language models",
   "url": "https://www.anthropic.com/research/provable-inference",
-  "score": 142,
+  "score": 146,
   "by": "ltononro",
   "time": "2026-11-04T17:17:46.000Z"
  },
@@ -59,7 +51,7 @@
   "id": 50370654,
   "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
   "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-  "score": 42,
+  "score": 49,
   "by": "peter_d_sherman",
   "time": "2026-11-04T19:55:14.000Z"
  },
@@ -67,7 +59,7 @@
   "id": 50362905,
   "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
   "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
-  "score": 549,
+  "score": 559,
   "by": "novaRom",
   "time": "2026-11-04T08:46:29.000Z"
  },
@@ -75,7 +67,7 @@
   "id": 50371370,
   "title": "AR guitar with just a laptop and scissors",
   "url": "https://www.arguitar.com/",
-  "score": 6,
+  "score": 11,
   "by": "castlew",
   "time": "2026-11-04T20:54:34.000Z"
  },
@@ -83,7 +75,7 @@
   "id": 50369895,
   "title": "Show HN: After a decade of reversing, I got co-op working in DOS Wing Commander",
   "url": "https://fireflyk64.github.io/wcmulti/",
-  "score": 31,
+  "score": 51,
   "by": "daniel_rh",
   "time": "2026-11-04T18:51:27.000Z"
  },
@@ -91,23 +83,15 @@
   "id": 50368804,
   "title": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
   "url": null,
-  "score": 45,
+  "score": 51,
   "by": "lukeigel",
   "time": "2026-11-04T17:31:53.000Z"
- },
- {
-  "id": 50369754,
-  "title": "Have I Befriended a Murderer?",
-  "url": "https://longreads.com/2026/11/03/murder-friendship-doubt/",
-  "score": 71,
-  "by": "gmays",
-  "time": "2026-11-04T18:40:54.000Z"
  },
  {
   "id": 50366863,
   "title": "OpenAI to acquire Pierre Computer Company",
   "url": "https://openai.com/index/openai-to-acquire-pierre/",
-  "score": 112,
+  "score": 125,
   "by": "itunpredictable",
   "time": "2026-11-04T15:21:21.000Z"
  },
@@ -115,7 +99,7 @@
   "id": 50365780,
   "title": "Tencent Hy4",
   "url": "https://hy.tencent.ai/research/hy4",
-  "score": 145,
+  "score": 150,
   "by": "Philpax",
   "time": "2026-11-04T14:11:26.000Z"
  },
@@ -123,7 +107,7 @@
   "id": 50367125,
   "title": "AMD expects to outsell Intel in Q4 for the first time in history",
   "url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
-  "score": 365,
+  "score": 386,
   "by": "rbanffy",
   "time": "2026-11-04T15:38:34.000Z"
  },
@@ -131,23 +115,39 @@
   "id": 50369503,
   "title": "Conductor Is Joining Meta",
   "url": "https://www.conductor.build/announcement",
-  "score": 38,
+  "score": 50,
   "by": "kenrose",
   "time": "2026-11-04T18:22:40.000Z"
+ },
+ {
+  "id": 50347425,
+  "title": "Ask HN: What Cryptography book do you recommend for reading with 10 year olds?",
+  "url": null,
+  "score": 12,
+  "by": "mike_richards",
+  "time": "2026-11-03T02:52:50.000Z"
  },
  {
   "id": 50365755,
   "title": "North Korean fake job interview led to $6.3B Binance heist",
   "url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
-  "score": 500,
+  "score": 509,
   "by": "smalltech",
   "time": "2026-11-04T14:09:55.000Z"
+ },
+ {
+  "id": 50369754,
+  "title": "Have I befriended a murderer?",
+  "url": "https://longreads.com/2026/11/03/murder-friendship-doubt/",
+  "score": 83,
+  "by": "gmays",
+  "time": "2026-11-04T18:40:54.000Z"
  },
  {
   "id": 50363019,
   "title": "Verification Is Not Knowledge: Science needs more than answers",
   "url": "https://blog.cosmos-institute.org/p/verification-is-not-knowledge",
-  "score": 205,
+  "score": 208,
   "by": "ersinesen",
   "time": "2026-11-04T09:01:58.000Z"
  },
@@ -155,31 +155,23 @@
   "id": 50363378,
   "title": "Incident with Pull Requests, Git Operations and Issues",
   "url": "https://www.githubstatus.com/incidents/smtdswd1h2w4",
-  "score": 233,
+  "score": 238,
   "by": "kevcampb",
   "time": "2026-11-04T10:00:06.000Z"
  },
  {
-  "id": 50347425,
-  "title": "Ask HN: What Cryptography book do you recommend for reading with 10 year olds?",
-  "url": null,
-  "score": 4,
-  "by": "mike_richards",
-  "time": "2026-11-03T02:52:50.000Z"
- },
- {
-  "id": 50366522,
-  "title": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
-  "url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
-  "score": 213,
-  "by": "zenincognito",
-  "time": "2026-11-04T15:01:44.000Z"
+  "id": 50366929,
+  "title": "Show HN: I built a tool that prices a prebuilt PC part by part",
+  "url": "https://pcdealcheck.com/",
+  "score": 77,
+  "by": "adlep",
+  "time": "2026-11-04T15:25:33.000Z"
  },
  {
   "id": 50363461,
   "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
   "url": null,
-  "score": 561,
+  "score": 571,
   "by": "jameslk",
   "time": "2026-11-04T10:10:27.000Z"
  },
@@ -187,56 +179,64 @@
   "id": 50366999,
   "title": "Kimi K3.1 Pro model weights are out",
   "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-  "score": 269,
+  "score": 282,
   "by": "abrarthought",
   "time": "2026-11-04T15:30:30.000Z"
  },
  {
-  "id": 50366929,
-  "title": "Show HN: I built a tool that prices a prebuilt PC part by part",
-  "url": "https://pcdealcheck.com/",
-  "score": 73,
-  "by": "adlep",
-  "time": "2026-11-04T15:25:33.000Z"
- },
- {
-  "id": 50369527,
-  "title": "From wild to mild: Friendly foxes show changes in brain region",
-  "url": "https://news.cornell.edu/stories/2026/11/wild-mild-friendly-foxes-show-changes-brain-region",
-  "score": 14,
-  "by": "gmays",
-  "time": "2026-11-04T18:24:16.000Z"
- },
- {
-  "id": 50361268,
-  "title": "Jelly Sheet",
-  "url": "https://mrdoob.github.io/codevember-2026/01/",
-  "score": 440,
-  "by": "memalign",
-  "time": "2026-11-04T03:40:50.000Z"
+  "id": 50366522,
+  "title": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
+  "url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
+  "score": 217,
+  "by": "zenincognito",
+  "time": "2026-11-04T15:01:44.000Z"
  },
  {
   "id": 50369462,
   "title": "Benchfmt.rs: Bringing Go's benchmarking and benchstat workflow to Rust",
   "url": "https://www.bwplotka.dev/2026/rust-microbenchmarks-benchstat/",
-  "score": 21,
+  "score": 25,
   "by": "witcher",
   "time": "2026-11-04T18:20:06.000Z"
- },
- {
-  "id": 50366919,
-  "title": "Evergreen: A Provably Safe Systems Language",
-  "url": "https://evergreenlang.net",
-  "score": 82,
-  "by": "jordan_bonecut",
-  "time": "2026-11-04T15:25:04.000Z"
  },
  {
   "id": 50371346,
   "title": "If you're on Replit Pro, you have until November 8 to opt out of arbitration",
   "url": "https://readthediff.substack.com/p/replit-pro-arbitration-opt-out-november-8",
-  "score": 7,
+  "score": 22,
   "by": "MiguelSosa",
   "time": "2026-11-04T20:52:53.000Z"
+ },
+ {
+  "id": 50366919,
+  "title": "Evergreen: A Provably Safe Systems Language",
+  "url": "https://evergreenlang.net",
+  "score": 88,
+  "by": "jordan_bonecut",
+  "time": "2026-11-04T15:25:04.000Z"
+ },
+ {
+  "id": 50369527,
+  "title": "From wild to mild: Friendly foxes show changes in brain region",
+  "url": "https://news.cornell.edu/stories/2026/11/wild-mild-friendly-foxes-show-changes-brain-region",
+  "score": 18,
+  "by": "gmays",
+  "time": "2026-11-04T18:24:16.000Z"
+ },
+ {
+  "id": 50371508,
+  "title": "Everything is an AI scam now",
+  "url": "https://www.davidralphlewis.co.uk/posts/everything-is-an-ai-scam-now/",
+  "score": 59,
+  "by": "speckx",
+  "time": "2026-11-04T21:05:19.000Z"
+ },
+ {
+  "id": 50362980,
+  "title": "Kitty 0.50",
+  "url": "https://sw.kovidgoyal.net/kitty/changelog/#",
+  "score": 349,
+  "by": "porridgeraisin",
+  "time": "2026-11-04T08:57:10.000Z"
  }
 ]
