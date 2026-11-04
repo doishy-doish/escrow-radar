@@ -276,10 +276,10 @@ async function harvestBounties() {
     }
     if (recs.length) {
       writeIfChanged('data/bounties.json', recs);
-      // Customer-zero hook: fresh (<=12h) uncontested tickets, reward-first.
+      // Customer-zero hook: uncontested + fresh enough to matter (<=7d), reward-first.
       // Same tick, zero new infra — our own loop reads this before anyone else.
       const alerts = recs
-        .filter(r => r.competing_prs === 0 && r.age_seconds_since_open <= 12 * 3600 && (r.reward_usdc || 0) >= 50)
+        .filter(r => r.competing_prs === 0 && r.age_seconds_since_open <= 7 * 24 * 3600 && (r.reward_usdc || 0) >= 50)
         .sort((a, b) => (b.reward_usdc || 0) - (a.reward_usdc || 0));
       writeIfChanged('data/bounty-alerts.json', { ts: ts(), count: alerts.length, alerts });
     } else console.log('bounties: empty search, keeping last good');
