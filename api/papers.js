@@ -20,6 +20,17 @@ function reqs(url, single) {
     maxTimeoutSeconds: 300,
     facilitator: { url: FACILITATOR },
     outputSchema: { input: { type: "http", method: "GET", discoverable: true } },
+    extensions: {
+      bazaar: {
+        info: { name: "Escrow-Bounty Radar /papers" },
+        schema: {
+          properties: {
+            input: { properties: { queryParams: { id: { type: "string", required: false, description: "Filter to one paper id, e.g. 2611.05377v1" } } } },
+            output: { properties: { example: { id: "2611.05377v1", title: "DreamX: Video Diffusion Model is a Universal Latent Action Learner", authors: ["A. Researcher"], published: "2026-11-04T00:00:00Z" } } }
+          }
+        }
+      }
+    },
     extra: { name: "USD Coin", version: "2" } };
 }
 function needPay(res, url, single) {
