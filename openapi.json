@@ -2,12 +2,12 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Escrow-Bounty Radar",
-    "version": "1.3.1",
+    "version": "1.4.0",
     "contact": {
       "name": "Escrow-Bounty Radar",
       "email": "10a11andralemisquitta@gmail.com"
     },
-    "description": "Pay-per-call datasets for agents on Base (USDC, no key): bounty board, token prices, gas quotes, AI papers. All endpoints accept GET and POST; filters may be sent as query parameters or as a JSON body. Unpaid requests return a 402 x402-v2 payment challenge (also in the payment-required response header); paid requests return the dataset.",
+    "description": "Pay-per-call datasets for agents on Base (USDC, no key): bounty board, token prices, gas quotes, AI papers, Hacker News, crypto fear/greed. All endpoints accept GET and POST; filters may be sent as query parameters or as a JSON body. Unpaid requests return a 402 x402-v2 payment challenge (also in the payment-required response header); paid requests return the dataset.",
     "x-guidance": "Pay-per-call datasets on Base USDC (x402 v2). GET or POST /api/feed (optional limit), /api/prices (optional symbol like BTC), /api/gas (optional chain like base), /api/papers (optional id). Filters go in query string or JSON body. Unpaid calls return 402 with the payment challenge; pay 0.01 USDC (bulk) or 0.005 (single-filtered) to receive JSON."
   },
   "servers": [
@@ -724,6 +724,398 @@
           },
           "404": {
             "description": "Unknown id"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
+      }
+    },
+    "/api/hn": {
+      "get": {
+        "operationId": "listHN",
+        "summary": "Hacker News top stories, normalized",
+        "security": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": false,
+            "description": "Filter to one story id",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Max items to return, 1-30",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Filter to one story id"
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 50,
+                    "description": "Max items to return, 1-30"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Hacker News top stories, normalized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "url": {
+                        "type": "string"
+                      },
+                      "score": {
+                        "type": "integer"
+                      },
+                      "by": {
+                        "type": "string"
+                      },
+                      "time": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "title"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
+          },
+          "404": {
+            "description": "Unknown id"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
+      },
+      "post": {
+        "operationId": "listHNPost",
+        "summary": "Hacker News top stories, normalized",
+        "security": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": false,
+            "description": "Filter to one story id",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Max items to return, 1-30",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Filter to one story id"
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 50,
+                    "description": "Max items to return, 1-30"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Hacker News top stories, normalized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "url": {
+                        "type": "string"
+                      },
+                      "score": {
+                        "type": "integer"
+                      },
+                      "by": {
+                        "type": "string"
+                      },
+                      "time": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "title"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
+          },
+          "404": {
+            "description": "Unknown id"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
+      }
+    },
+    "/api/fng": {
+      "get": {
+        "operationId": "listFng",
+        "summary": "Crypto Fear & Greed Index history",
+        "security": [],
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Max days to return, 1-30",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 50,
+                    "description": "Max days to return, 1-30"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Crypto Fear & Greed Index history result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "value": {
+                        "type": "string"
+                      },
+                      "classification": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "ts": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "classification"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
+      },
+      "post": {
+        "operationId": "listFngPost",
+        "summary": "Crypto Fear & Greed Index history",
+        "security": [],
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Max days to return, 1-30",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 50,
+                    "description": "Max days to return, 1-30"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Crypto Fear & Greed Index history result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "value": {
+                        "type": "string"
+                      },
+                      "classification": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "ts": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "value",
+                      "classification"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
           }
         },
         "x-payment-info": {
