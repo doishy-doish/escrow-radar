@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Escrow-Bounty Radar",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "contact": {
       "name": "Escrow-Bounty Radar",
       "email": "10a11andralemisquitta@gmail.com"
@@ -1116,6 +1116,418 @@
           },
           "402": {
             "description": "Payment required"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
+      }
+    },
+    "/api/bounties": {
+      "get": {
+        "operationId": "listBountiesVerified",
+        "summary": "Verified GitHub bounty feed (competing PRs, CI, repro)",
+        "security": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": false,
+            "description": "One record id, e.g. paraloom-core#1329",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "uncontested",
+            "in": "query",
+            "required": false,
+            "description": "1 = only issues with zero competing PRs",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "min_reward",
+            "in": "query",
+            "required": false,
+            "description": "Minimum reward_usdc, e.g. 100",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "severity",
+            "in": "query",
+            "required": false,
+            "description": "Low, Medium, High or Critical",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Max items to return, 1-50",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "One record id"
+                  },
+                  "uncontested": {
+                    "type": "string",
+                    "description": "1 = zero competing PRs"
+                  },
+                  "min_reward": {
+                    "type": "string",
+                    "description": "Minimum reward_usdc"
+                  },
+                  "severity": {
+                    "type": "string",
+                    "description": "Low, Medium, High or Critical"
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 50,
+                    "description": "Max items"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Verified bounty feed result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "venue": {
+                        "type": "string"
+                      },
+                      "repo": {
+                        "type": "string"
+                      },
+                      "number": {
+                        "type": "integer"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "url": {
+                        "type": "string"
+                      },
+                      "severity": {
+                        "type": "string"
+                      },
+                      "reward_usdc": {
+                        "type": "number"
+                      },
+                      "reward_source": {
+                        "type": "string"
+                      },
+                      "age_seconds_since_open": {
+                        "type": "integer"
+                      },
+                      "opened_at": {
+                        "type": "string"
+                      },
+                      "competing_prs": {
+                        "type": "integer"
+                      },
+                      "competing_pr_urls": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "ci_status": {
+                        "type": "string"
+                      },
+                      "repro_command": {
+                        "type": "string"
+                      },
+                      "repro_source": {
+                        "type": "string"
+                      },
+                      "rail": {
+                        "type": "string"
+                      },
+                      "escrow_verified": {
+                        "type": "boolean"
+                      },
+                      "escrow_note": {
+                        "type": "string"
+                      },
+                      "has_repro": {
+                        "type": "boolean"
+                      },
+                      "has_stack_trace": {
+                        "type": "boolean"
+                      },
+                      "has_fix_hint": {
+                        "type": "boolean"
+                      },
+                      "excerpt": {
+                        "type": "string"
+                      },
+                      "ts": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "title",
+                      "url"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
+          },
+          "404": {
+            "description": "Unknown id"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
+      },
+      "post": {
+        "operationId": "listBountiesVerifiedPost",
+        "summary": "Verified GitHub bounty feed (competing PRs, CI, repro)",
+        "security": [],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": false,
+            "description": "One record id, e.g. paraloom-core#1329",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "uncontested",
+            "in": "query",
+            "required": false,
+            "description": "1 = only issues with zero competing PRs",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "min_reward",
+            "in": "query",
+            "required": false,
+            "description": "Minimum reward_usdc, e.g. 100",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "severity",
+            "in": "query",
+            "required": false,
+            "description": "Low, Medium, High or Critical",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Max items to return, 1-50",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "One record id"
+                  },
+                  "uncontested": {
+                    "type": "string",
+                    "description": "1 = zero competing PRs"
+                  },
+                  "min_reward": {
+                    "type": "string",
+                    "description": "Minimum reward_usdc"
+                  },
+                  "severity": {
+                    "type": "string",
+                    "description": "Low, Medium, High or Critical"
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 50,
+                    "description": "Max items"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Verified bounty feed result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "venue": {
+                        "type": "string"
+                      },
+                      "repo": {
+                        "type": "string"
+                      },
+                      "number": {
+                        "type": "integer"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "url": {
+                        "type": "string"
+                      },
+                      "severity": {
+                        "type": "string"
+                      },
+                      "reward_usdc": {
+                        "type": "number"
+                      },
+                      "reward_source": {
+                        "type": "string"
+                      },
+                      "age_seconds_since_open": {
+                        "type": "integer"
+                      },
+                      "opened_at": {
+                        "type": "string"
+                      },
+                      "competing_prs": {
+                        "type": "integer"
+                      },
+                      "competing_pr_urls": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "ci_status": {
+                        "type": "string"
+                      },
+                      "repro_command": {
+                        "type": "string"
+                      },
+                      "repro_source": {
+                        "type": "string"
+                      },
+                      "rail": {
+                        "type": "string"
+                      },
+                      "escrow_verified": {
+                        "type": "boolean"
+                      },
+                      "escrow_note": {
+                        "type": "string"
+                      },
+                      "has_repro": {
+                        "type": "boolean"
+                      },
+                      "has_stack_trace": {
+                        "type": "boolean"
+                      },
+                      "has_fix_hint": {
+                        "type": "boolean"
+                      },
+                      "excerpt": {
+                        "type": "string"
+                      },
+                      "ts": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "title",
+                      "url"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
+          },
+          "404": {
+            "description": "Unknown id"
           }
         },
         "x-payment-info": {
