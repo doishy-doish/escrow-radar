@@ -1,0 +1,55 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Escrow-Bounty Radar",
+    "version": "1.1.0",
+    "description": "Pay-per-call datasets for agents on Base (USDC, no key): bounty board, token prices, gas quotes, AI papers."
+  },
+  "servers": [{ "url": "https://escrow-radar.vercel.app" }],
+  "paths": {
+    "/api/feed": {
+      "get": {
+        "summary": "Live escrow-bounty radar feed",
+        "responses": {
+          "402": { "description": "Payment required", "content": { "application/json": {} } },
+          "200": { "description": "Bounty feed array", "content": { "application/json": {} } }
+        },
+        "x-payment-info": { "protocols": ["x402"], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
+      }
+    },
+    "/api/prices": {
+      "get": {
+        "summary": "Bulk token spot quotes (dual-sourced)",
+        "parameters": [{ "name": "symbol", "in": "query", "required": false, "schema": { "type": "string" } }],
+        "responses": {
+          "402": { "description": "Payment required", "content": { "application/json": {} } },
+          "200": { "description": "Price records", "content": { "application/json": {} } }
+        },
+        "x-payment-info": { "protocols": ["x402"], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
+      }
+    },
+    "/api/gas": {
+      "get": {
+        "summary": "Multi-chain gas quotes",
+        "parameters": [{ "name": "chain", "in": "query", "required": false, "schema": { "type": "string" } }],
+        "responses": {
+          "402": { "description": "Payment required", "content": { "application/json": {} } },
+          "200": { "description": "Gas records", "content": { "application/json": {} } }
+        },
+        "x-payment-info": { "protocols": ["x402"], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
+      }
+    },
+    "/api/papers": {
+      "get": {
+        "summary": "Normalized AI papers feed",
+        "parameters": [{ "name": "id", "in": "query", "required": false, "schema": { "type": "string" } }],
+        "responses": {
+          "402": { "description": "Payment required", "content": { "application/json": {} } },
+          "200": { "description": "Paper records", "content": { "application/json": {} } }
+        },
+        "x-payment-info": { "protocols": ["x402"], "price": { "mode": "fixed", "currency": "USD", "amount": "0.01" } }
+      }
+    }
+  },
+  "x-discovery": { "ownershipProofs": ["0x9592d926920D99758fD3394c88f35959af6aD888"] }
+}
