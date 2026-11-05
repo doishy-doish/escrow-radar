@@ -304,7 +304,7 @@ function rankAlerts(recs) {
 // set, so the extra calls stay inside rate budget. Flags are written back
 // onto recs so data/bounties.json carries the evidence.
 async function demoteStale(cands, recs) {
-  const fresh = [];
+  const fresh = [], demoted = [];
   for (const r of cands) {
     let stale = null;
     const files = Array.isArray(r.target_files) ? r.target_files.slice(0, 5) : [];
@@ -333,10 +333,10 @@ async function demoteStale(cands, recs) {
       } catch { /* hiccup: leave nominal */ }
     }
     tag('stale_context', stale ? true : false);
-    if (stale) tag('stale_reason', stale);
+    if (stale) { tag('stale_reason', stale); demoted.push({ id: r.id, stale_reason: stale }); }
     else fresh.push(r);
   }
-  return fresh;
+  return { fresh, demoted };
 }
 
 async function harvestBounties() {
@@ -352,6 +352,7 @@ async function harvestBounties() {
       const body = i.body || '';
       const sev = bountySeverity(i.title || '', body);
       const rw = bountyReward((i.title || '') + '\n' + body, sev);
+      const age = Math.max(0, Math.round((now - new Date(i.created_at).getTime()) / 1000));
       let prs = [];
       try {
         const tl = await ghJson(`https://api.github.com/repos/${src.org}/${repo}/issues/${i.number}/timeline?per_page=100`, { Accept: 'application/vnd.github.mockingbird-preview+json' });
@@ -360,22 +361,6 @@ async function harvestBounties() {
           .filter(e => e.event === 'cross-referenced' && e.source && e.source.issue && e.source.issue.pull_request && e.source.issue.state === 'open')
           .map(e => e.source.issue.html_url);
       } catch (e) { console.log('timeline failed for', repo + '#' + i.number, String(e).slice(0, 80)); }
-      // Timeline embeds go stale (seen 2026-11-05: #1315's 3 xrefs all read
-      // open in timeline but are closed on direct fetch). Verify each
-      // candidate PR's live state; fail-closed (unverifiable stays competing).
-      try {
-        const live = [];
-        for (const u of prs) {
-          const m = String(u).match(/\/pull\/(\d+)(?:\/)?$/);
-          if (!m) { live.push(u); continue; }
-          try {
-            const p = await ghJson(`https://api.github.com/repos/${src.org}/${repo}/pulls/${m[1]}`);
-            await sleep(600);
-            if (p && p.state === 'open') live.push(u);
-          } catch { live.push(u); }
-        }
-        prs = live;
-      } catch { /* keep timeline list */ }
       const en = await enrichRepo(src.org, repo);
       // Comment-claim scan: one call per issue; any hit disqualifies the race.
       let claim = { claimed: false };
@@ -387,11 +372,35 @@ async function harvestBounties() {
           if (hit.claimed) { claim = hit; break; }
         }
       } catch (e) { console.log('comments failed for', repo + '#' + i.number, String(e).slice(0, 60)); }
+      // Live-verify competing PRs ONLY for would-be alert candidates
+      // (unclaimed + fresh + paid). Timeline embeds go stale (#1315: 3 xrefs
+      // read open but are closed on direct fetch); fail-closed. Skipping the
+      // verify for already-disqualified tickets keeps the run inside rate
+      // budget (~80 calls/run at */5 = just under the 1000/hr token limit).
+      const candidate = !claim.claimed && age <= 7 * 24 * 3600 && (rw.usdc || 0) >= 50;
+      if (prs.length && candidate) {
+        try {
+          const live = [];
+          for (const u of prs) {
+            const m = String(u).match(/\/pull\/(\d+)(?:\/)?$/);
+            if (!m) { live.push(u); continue; }
+            try {
+              const p = await ghJson(`https://api.github.com/repos/${src.org}/${repo}/pulls/${m[1]}`);
+              await sleep(600);
+              if (p && p.state === 'open') live.push(u);
+            } catch (e) {
+              console.log('verify failed for', repo + '#' + m[1], String(e).slice(0, 60));
+              live.push(u);
+            }
+          }
+          prs = live;
+        } catch { /* keep timeline list */ }
+      }
       recs.push({
         id: repo + '#' + i.number, venue: src.venue, repo: repo, org: src.org, number: i.number,
         title: i.title, url: i.html_url, severity: sev,
         reward_usdc: rw.usdc, reward_source: rw.src,
-        age_seconds_since_open: Math.max(0, Math.round((now - new Date(i.created_at).getTime()) / 1000)),
+        age_seconds_since_open: age,
         opened_at: i.created_at,
         competing_prs: prs.length, competing_pr_urls: prs.slice(0, 5),
         ci_status: en.ci, repro_command: en.repro, repro_source: en.reproSrc,
@@ -417,8 +426,11 @@ async function harvestBounties() {
       // Rank 1 = alerts[0]. Lock it, ignore the rest until PR + re-verify gate.
       // Drift-demotion runs last: stale-context candidates drop out with evidence.
       let alerts = rankAlerts(recs);
-      alerts = await demoteStale(alerts, recs);
-      writeIfChanged('data/bounty-alerts.json', { ts: ts(), count: alerts.length, alerts });
+      const preCount = alerts.length;
+      const out = await demoteStale(alerts, recs);
+      alerts = out.fresh;
+      console.log(`demote: ${preCount} candidates -> ${alerts.length} alerts` + (out.demoted.length ? ' demoted=' + JSON.stringify(out.demoted) : ''));
+      writeIfChanged('data/bounty-alerts.json', { ts: ts(), count: alerts.length, alerts, demoted: out.demoted });
     } else console.log('bounties: empty search, keeping last good');
   } catch (e) { console.log('bounties failed:', String(e).slice(0, 160), '— keeping last good'); }
 }
