@@ -3,7 +3,7 @@
   "id": 50371246,
   "title": "Residential proxies detected on White House network",
   "url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
-  "score": 930,
+  "score": 934,
   "by": "Rasbora",
   "time": "2026-11-04T20:45:18.000Z"
  },
@@ -11,7 +11,7 @@
   "id": 50375354,
   "title": "Lemmings CSS Animation",
   "url": "https://markblah.github.io/lemmings/",
-  "score": 77,
+  "score": 81,
   "by": "MarkBlah",
   "time": "2026-11-05T04:54:10.000Z"
  },
@@ -27,9 +27,17 @@
   "id": 50372929,
   "title": "A thousand fewer paths to root",
   "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
-  "score": 276,
+  "score": 280,
   "by": "dangelosaurus",
   "time": "2026-11-04T23:33:14.000Z"
+ },
+ {
+  "id": 50375653,
+  "title": "Altera Announces Agilex 2X, a Complete FPGA and SoC Portfolio",
+  "url": "https://www.altera.com/newsroom/agilex-2x",
+  "score": 13,
+  "by": "gmays",
+  "time": "2026-11-05T05:47:14.000Z"
  },
  {
   "id": 50366999,
@@ -48,18 +56,10 @@
   "time": "2026-11-04T18:53:29.000Z"
  },
  {
-  "id": 50375653,
-  "title": "Altera Announces Agilex 2X, a Complete FPGA and SoC Portfolio",
-  "url": "https://www.altera.com/newsroom/agilex-2x",
-  "score": 12,
-  "by": "gmays",
-  "time": "2026-11-05T05:47:14.000Z"
- },
- {
   "id": 50341576,
   "title": "Spreading Liquid with Three.js",
   "url": "https://mofu-dev.com/en/blog/fluid-foundation/",
-  "score": 50,
+  "score": 51,
   "by": "mooreds",
   "time": "2026-11-02T18:45:54.000Z"
  },
@@ -75,7 +75,7 @@
   "id": 50373308,
   "title": "Starfall – Affordable, routine access to microgravity",
   "url": "https://www.spacex.com/starfall",
-  "score": 198,
+  "score": 199,
   "by": "gmays",
   "time": "2026-11-05T00:18:18.000Z"
  },
@@ -83,17 +83,17 @@
   "id": 50369106,
   "title": "A new Go API for JSON",
   "url": "https://go.dev/blog/jsonv2",
-  "score": 286,
+  "score": 288,
   "by": "olexsmir",
   "time": "2026-11-04T17:52:11.000Z"
  },
  {
-  "id": 50349165,
-  "title": "Future Maintenance of Mbed TLS",
-  "url": "https://lists.trustedfirmware.org/archives/list/mbed-tls@lists.trustedfirmware.org/thread/YPIGCB7WN6GCHOGEGKOJXUYAP7OK527W/",
-  "score": 14,
-  "by": "jonesjohnson",
-  "time": "2026-11-03T07:39:05.000Z"
+  "id": 50364860,
+  "title": "So my ISP was hijacking my DNS",
+  "url": "https://www.karthihegde.dev/posts/dns_tampering",
+  "score": 38,
+  "by": "frostbyte7",
+  "time": "2026-11-04T12:51:51.000Z"
  },
  {
   "id": 50372164,
@@ -112,18 +112,18 @@
   "time": "2026-11-04T18:22:40.000Z"
  },
  {
-  "id": 50364860,
-  "title": "So my ISP was hijacking my DNS",
-  "url": "https://www.karthihegde.dev/posts/dns_tampering",
-  "score": 37,
-  "by": "frostbyte7",
-  "time": "2026-11-04T12:51:51.000Z"
+  "id": 50349165,
+  "title": "Future Maintenance of Mbed TLS",
+  "url": "https://lists.trustedfirmware.org/archives/list/mbed-tls@lists.trustedfirmware.org/thread/YPIGCB7WN6GCHOGEGKOJXUYAP7OK527W/",
+  "score": 14,
+  "by": "jonesjohnson",
+  "time": "2026-11-03T07:39:05.000Z"
  },
  {
   "id": 50364336,
   "title": "AI is forcing us to pay off 40 years of technical debt",
   "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-  "score": 1157,
+  "score": 1158,
   "by": "pseudolus",
   "time": "2026-11-04T11:52:17.000Z"
  },
@@ -139,7 +139,7 @@
   "id": 50366117,
   "title": "Ask HN: What's your current AI agentic setup?",
   "url": null,
-  "score": 273,
+  "score": 275,
   "by": "eggbrain",
   "time": "2026-11-04T14:37:22.000Z"
  },
@@ -168,20 +168,20 @@
   "time": "2026-11-04T17:31:53.000Z"
  },
  {
-  "id": 50340195,
-  "title": "Partial Operator Precedence",
-  "url": "https://ziglang.org/devlog/2026/#2026-10-24",
-  "score": 4,
-  "by": "tosh",
-  "time": "2026-11-02T17:22:20.000Z"
- },
- {
   "id": 50366522,
   "title": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
   "url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
   "score": 286,
   "by": "zenincognito",
   "time": "2026-11-04T15:01:44.000Z"
+ },
+ {
+  "id": 50340195,
+  "title": "Partial Operator Precedence",
+  "url": "https://ziglang.org/devlog/2026/#2026-10-24",
+  "score": 4,
+  "by": "tosh",
+  "time": "2026-11-02T17:22:20.000Z"
  },
  {
   "id": 50366863,
@@ -216,20 +216,20 @@
   "time": "2026-11-04T14:11:26.000Z"
  },
  {
-  "id": 50367653,
-  "title": "'It's just vape, nail, charity shops': Can anything save UK high street?",
-  "url": "https://www.theguardian.com/business/2026/nov/04/what-can-save-the-british-high-street-rotherham",
-  "score": 107,
-  "by": "theanonymousone",
-  "time": "2026-11-04T16:11:33.000Z"
- },
- {
   "id": 50363353,
   "title": "11 Nanoseconds per Word: Over-Optimizing Anagrams",
   "url": "https://wiredream.com/anagram-fun/",
-  "score": 18,
+  "score": 19,
   "by": "ColinWright",
   "time": "2026-11-04T09:57:43.000Z"
+ },
+ {
+  "id": 50367653,
+  "title": "'It's just vape, nail, charity shops': Can anything save UK high street?",
+  "url": "https://www.theguardian.com/business/2026/nov/04/what-can-save-the-british-high-street-rotherham",
+  "score": 108,
+  "by": "theanonymousone",
+  "time": "2026-11-04T16:11:33.000Z"
  },
  {
   "id": 50339183,
