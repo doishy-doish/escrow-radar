@@ -1,5 +1,47 @@
 {
- "ts": "2026-11-05T07:05:06.471Z",
- "count": 0,
- "alerts": []
+ "ts": "2026-11-05T07:13:32.689Z",
+ "count": 1,
+ "alerts": [
+  {
+   "id": "paraloom-core#1315",
+   "venue": "paraloom",
+   "repo": "paraloom-core",
+   "org": "paraloom-labs",
+   "number": 1315,
+   "title": "[BOUNTY] Medium: WASM-vs-JS hex parser differential in verifiedMint bypasses /transact/scan SPL mint binding, permanently poisoning discovered SPL notes and burning 0.009 SOL shielded gas per swap attempt (paraloom-wallet)",
+   "url": "https://github.com/paraloom-labs/paraloom-core/issues/1315",
+   "severity": "Medium",
+   "reward_usdc": 150,
+   "reward_source": "severity_table",
+   "age_seconds_since_open": 246944,
+   "opened_at": "2026-11-02T10:36:12Z",
+   "competing_prs": 0,
+   "competing_pr_urls": [],
+   "ci_status": "passing",
+   "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
+   "repro_source": ".github/workflows/bridge-e2e.yml",
+   "rail": "MANUAL_MAINTAINER_REVIEW",
+   "escrow_verified": false,
+   "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
+   "has_repro": true,
+   "has_stack_trace": false,
+   "has_fix_hint": true,
+   "failing_assertion": null,
+   "target_files": [
+    "lib/paraloom/scan.ts",
+    "lib/paraloom/notes.ts",
+    "lib/paraloom/transactFlow.ts",
+    "lib/paraloom/privateSwap.ts",
+    "src/background/index.ts"
+   ],
+   "stack_excerpt": null,
+   "claimed_in_comments": false,
+   "claim_evidence": null,
+   "excerpt": "## Summary - **Affected Component:** `paraloom-labs/paraloom-wallet` (`main` @ `1e79eec`, v`1.7.15`) — `lib/paraloom/scan.ts` (`verifiedMint`, `scanForNotes`), compounded by `lib/paraloom/notes.ts` (`addDiscoveredNote`), `lib/paraloom/transactFlow.ts` (`spendV3`), `lib/paraloom/privateSwap.ts` (`privateSwapFromToken`), and `src/background/index.ts` (`handlePrivateSwap`) - **Cross-Repo Contract:** `paraloom-prover-wasm` (`src/lib.rs:46-54, 405-410`) and `paraloom-core` (`src/node/transact_ingress.rs:72-75, 180-185, 250`; `src/node/mod.rs:2709-2715`) - **Severity:** **Medium** (Stage 1 Bug Bount",
+   "ts": "2026-11-05T07:12:44.409Z",
+   "selection_rank_tier": 1,
+   "est_minutes": 85,
+   "reward_density": 1.76
+  }
+ ]
 }
