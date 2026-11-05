@@ -209,7 +209,8 @@ function scanClaim(by, text) {
   return { claimed: false };
 }
 async function enrichRepo(owner, repo) {
-  if (_repoEnrich[repo]) return _repoEnrich[repo];
+  const key = owner + '/' + repo;
+  if (_repoEnrich[key]) return _repoEnrich[key];
   const out = { ci: 'unknown', repro: null, reproSrc: null };
   try {
     const info = await ghJson(`https://api.github.com/repos/${owner}/${repo}`);
@@ -251,36 +252,45 @@ async function enrichRepo(owner, repo) {
         if (out.repro) out.reproSrc = 'repo manifest (fallback)';
       } catch { /* skip */ }
     }
-  } catch (e) { console.log('enrichRepo failed for', repo, String(e).slice(0, 100)); }
-  _repoEnrich[repo] = out;
+  } catch (e) { console.log('enrichRepo failed for', owner + '/' + repo, String(e).slice(0, 100)); }
+  _repoEnrich[key] = out;
   return out;
 }
 
+// Multi-source bounty intake. Each source: one search call + per-issue enrich.
+// New sources MUST pass the paid-proof bar (reverse-scout verified payer)
+// before being added here — never wire label-only repos.
+const SOURCES = [
+  { org: 'paraloom-labs', venue: 'paraloom', rail: 'MANUAL_MAINTAINER_REVIEW', note: 'reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract', q: '[BOUNTY] org:paraloom-labs state:open is:issue', per_page: 15 },
+  { org: 'scaffold-studio-hq', venue: 'scaffold-studio', rail: 'MANUAL_MAINTAINER_REVIEW', note: 'explicit dollar bounties with /claim workflow; maintainer pays post-merge; no per-ticket escrow contract observed', q: '[Bounty] org:scaffold-studio-hq state:open is:issue', per_page: 5 },
+];
+
 async function harvestBounties() {
   try {
-    const s = await ghJson('https://api.github.com/search/issues?q=' + encodeURIComponent('[BOUNTY] org:paraloom-labs state:open is:issue') + '&per_page=15&sort=created&order=desc');
-    await sleep(4000);
     const now = Date.now();
     const recs = [];
+    for (const src of SOURCES) {
+    const s = await ghJson('https://api.github.com/search/issues?q=' + encodeURIComponent(src.q) + '&per_page=' + src.per_page + '&sort=created&order=desc');
+    await sleep(4000);
     for (const i of (s.items || [])) {
       const repo = (i.repository_url || '').split('/').pop();
       if (!repo) continue;
       const body = i.body || '';
       const sev = bountySeverity(i.title || '', body);
-      const rw = bountyReward(body, sev);
+      const rw = bountyReward((i.title || '') + '\n' + body, sev);
       let prs = [];
       try {
-        const tl = await ghJson(`https://api.github.com/repos/paraloom-labs/${repo}/issues/${i.number}/timeline?per_page=100`, { Accept: 'application/vnd.github.mockingbird-preview+json' });
+        const tl = await ghJson(`https://api.github.com/repos/${src.org}/${repo}/issues/${i.number}/timeline?per_page=100`, { Accept: 'application/vnd.github.mockingbird-preview+json' });
         await sleep(800);
         prs = (Array.isArray(tl) ? tl : [])
           .filter(e => e.event === 'cross-referenced' && e.source && e.source.issue && e.source.issue.pull_request && e.source.issue.state === 'open')
           .map(e => e.source.issue.html_url);
       } catch (e) { console.log('timeline failed for', repo + '#' + i.number, String(e).slice(0, 80)); }
-      const en = await enrichRepo('paraloom-labs', repo);
+      const en = await enrichRepo(src.org, repo);
       // Comment-claim scan: one call per issue; any hit disqualifies the race.
       let claim = { claimed: false };
       try {
-        const cm = await ghJson(`https://api.github.com/repos/paraloom-labs/${repo}/issues/${i.number}/comments?per_page=100`);
+        const cm = await ghJson(`https://api.github.com/repos/${src.org}/${repo}/issues/${i.number}/comments?per_page=100`);
         await sleep(600);
         for (const c of (Array.isArray(cm) ? cm : [])) {
           const hit = scanClaim((c.user || {}).login || 'unknown', c.body || '');
@@ -288,15 +298,15 @@ async function harvestBounties() {
         }
       } catch (e) { console.log('comments failed for', repo + '#' + i.number, String(e).slice(0, 60)); }
       recs.push({
-        id: repo + '#' + i.number, venue: 'paraloom', repo, number: i.number,
+        id: repo + '#' + i.number, venue: src.venue, repo: repo, org: src.org, number: i.number,
         title: i.title, url: i.html_url, severity: sev,
         reward_usdc: rw.usdc, reward_source: rw.src,
         age_seconds_since_open: Math.max(0, Math.round((now - new Date(i.created_at).getTime()) / 1000)),
         opened_at: i.created_at,
         competing_prs: prs.length, competing_pr_urls: prs.slice(0, 5),
         ci_status: en.ci, repro_command: en.repro, repro_source: en.reproSrc,
-        rail: 'MANUAL_MAINTAINER_REVIEW', escrow_verified: false,
-        escrow_note: 'reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract',
+        rail: src.rail, escrow_verified: false,
+        escrow_note: src.note,
         has_repro: /steps to repro|reproduction|reproduce|cargo test|pytest|npm test|pnpm|go test|```(bash|sh|console)/i.test(body),
         has_stack_trace: /panic|backtrace|stack trace|test failed|assertion|Error:/i.test(body),
         has_fix_hint: /suggested fix|proposed fix|recommended fix/i.test(body),
@@ -309,6 +319,8 @@ async function harvestBounties() {
         ts: ts(),
       });
     }
+    await sleep(2000);
+    } // end source loop
     if (recs.length) {
       writeIfChanged('data/bounties.json', recs);
       // Customer-zero hook: uncontested + fresh enough to matter (<=7d), reward-first.
