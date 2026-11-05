@@ -151,6 +151,15 @@ function bountyReward(body, sev) {
 }
 
 const _repoEnrich = {};
+// Persistent enrich cache (data/repo-enrich.json, 6h TTL): per-repo check-runs
+// + workflow reads cost ~4 calls x N repos every run — at */5 that alone eats
+// half the 1000/hr token budget. CI status / repro commands barely move in 6h.
+let _enrichCache = {};
+try { _enrichCache = JSON.parse(readFileSync('data/repo-enrich.json', 'utf8')); } catch { _enrichCache = {}; }
+function enrichCacheFresh(k) {
+  const e = _enrichCache[k];
+  return e && (Date.now() - new Date(e.ts).getTime()) < 6 * 3600 * 1000 ? e : null;
+}
 const ASSERT_RES = [
   /thread '[^']*' panicked at '[^']{1,160}/,
   /panicked at '[^']{1,160}/,
@@ -211,6 +220,8 @@ function scanClaim(by, text) {
 async function enrichRepo(owner, repo) {
   const key = owner + '/' + repo;
   if (_repoEnrich[key]) return _repoEnrich[key];
+  const hit = enrichCacheFresh(key);
+  if (hit) { _repoEnrich[key] = { ci: hit.ci, repro: hit.repro, reproSrc: hit.reproSrc }; return _repoEnrich[key]; }
   const out = { ci: 'unknown', repro: null, reproSrc: null };
   try {
     const info = await ghJson(`https://api.github.com/repos/${owner}/${repo}`);
@@ -254,6 +265,7 @@ async function enrichRepo(owner, repo) {
     }
   } catch (e) { console.log('enrichRepo failed for', owner + '/' + repo, String(e).slice(0, 100)); }
   _repoEnrich[key] = out;
+  _enrichCache[key] = { ...out, ts: ts() };
   return out;
 }
 
@@ -422,6 +434,7 @@ async function harvestBounties() {
     } // end source loop
     if (recs.length) {
       writeIfChanged('data/bounties.json', recs);
+      writeIfChanged('data/repo-enrich.json', _enrichCache);
       // Customer-zero hook: uncontested + fresh (<=7d), pre-ranked for serial lock.
       // Rank 1 = alerts[0]. Lock it, ignore the rest until PR + re-verify gate.
       // Drift-demotion runs last: stale-context candidates drop out with evidence.
