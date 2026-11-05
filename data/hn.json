@@ -3,7 +3,7 @@
   "id": 50371246,
   "title": "Residential proxies detected on White House network",
   "url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
-  "score": 911,
+  "score": 914,
   "by": "Rasbora",
   "time": "2026-11-04T20:45:18.000Z"
  },
@@ -11,7 +11,7 @@
   "id": 50375354,
   "title": "Lemmings CSS Animation",
   "url": "https://markblah.github.io/lemmings/",
-  "score": 57,
+  "score": 62,
   "by": "MarkBlah",
   "time": "2026-11-05T04:54:10.000Z"
  },
@@ -27,23 +27,15 @@
   "id": 50372929,
   "title": "A thousand fewer paths to root",
   "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
-  "score": 266,
+  "score": 268,
   "by": "dangelosaurus",
   "time": "2026-11-04T23:33:14.000Z"
- },
- {
-  "id": 50373308,
-  "title": "Starfall – Affordable, routine access to microgravity",
-  "url": "https://www.spacex.com/starfall",
-  "score": 189,
-  "by": "gmays",
-  "time": "2026-11-05T00:18:18.000Z"
  },
  {
   "id": 50369925,
   "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
   "url": "https://www.ricursive.com/ripple",
-  "score": 274,
+  "score": 275,
   "by": "Philpax",
   "time": "2026-11-04T18:53:29.000Z"
  },
@@ -51,17 +43,17 @@
   "id": 50366999,
   "title": "Kimi K3.1 Pro model weights are out",
   "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-  "score": 475,
+  "score": 477,
   "by": "abrarthought",
   "time": "2026-11-04T15:30:30.000Z"
  },
  {
-  "id": 50341576,
-  "title": "Spreading Liquid with Three.js",
-  "url": "https://mofu-dev.com/en/blog/fluid-foundation/",
-  "score": 41,
-  "by": "mooreds",
-  "time": "2026-11-02T18:45:54.000Z"
+  "id": 50373308,
+  "title": "Starfall – Affordable, routine access to microgravity",
+  "url": "https://www.spacex.com/starfall",
+  "score": 191,
+  "by": "gmays",
+  "time": "2026-11-05T00:18:18.000Z"
  },
  {
   "id": 50370610,
@@ -70,6 +62,22 @@
   "score": 225,
   "by": "speckx",
   "time": "2026-11-04T19:50:23.000Z"
+ },
+ {
+  "id": 50341576,
+  "title": "Spreading Liquid with Three.js",
+  "url": "https://mofu-dev.com/en/blog/fluid-foundation/",
+  "score": 43,
+  "by": "mooreds",
+  "time": "2026-11-02T18:45:54.000Z"
+ },
+ {
+  "id": 50375653,
+  "title": "Altera Announces Agilex 2X, a Complete FPGA and SoC Portfolio",
+  "url": "https://www.altera.com/newsroom/agilex-2x",
+  "score": 9,
+  "by": "gmays",
+  "time": "2026-11-05T05:47:14.000Z"
  },
  {
   "id": 50369106,
@@ -83,9 +91,17 @@
   "id": 50372164,
   "title": "Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improvements",
   "url": "https://icode4.coffee/?p=1746",
-  "score": 101,
+  "score": 102,
   "by": "muricula",
   "time": "2026-11-04T22:01:49.000Z"
+ },
+ {
+  "id": 50364860,
+  "title": "So my ISP was hijacking my DNS",
+  "url": "https://www.karthihegde.dev/posts/dns_tampering",
+  "score": 30,
+  "by": "frostbyte7",
+  "time": "2026-11-04T12:51:51.000Z"
  },
  {
   "id": 50369503,
@@ -96,36 +112,12 @@
   "time": "2026-11-04T18:22:40.000Z"
  },
  {
-  "id": 50375653,
-  "title": "Altera Announces Agilex 2X, a Complete FPGA and SoC Portfolio",
-  "url": "https://www.altera.com/newsroom/agilex-2x",
-  "score": 7,
-  "by": "gmays",
-  "time": "2026-11-05T05:47:14.000Z"
- },
- {
-  "id": 50364860,
-  "title": "So my ISP was hijacking my DNS",
-  "url": "https://www.karthihegde.dev/posts/dns_tampering",
-  "score": 28,
-  "by": "frostbyte7",
-  "time": "2026-11-04T12:51:51.000Z"
- },
- {
-  "id": 50349165,
-  "title": "Future Maintenance of Mbed TLS",
-  "url": "https://lists.trustedfirmware.org/archives/list/mbed-tls@lists.trustedfirmware.org/thread/YPIGCB7WN6GCHOGEGKOJXUYAP7OK527W/",
-  "score": 9,
-  "by": "jonesjohnson",
-  "time": "2026-11-03T07:39:05.000Z"
- },
- {
-  "id": 50370654,
-  "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
-  "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-  "score": 134,
-  "by": "peter_d_sherman",
-  "time": "2026-11-04T19:55:14.000Z"
+  "id": 50364336,
+  "title": "AI is forcing us to pay off 40 years of technical debt",
+  "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+  "score": 1151,
+  "by": "pseudolus",
+  "time": "2026-11-04T11:52:17.000Z"
  },
  {
   "id": 50369895,
@@ -136,18 +128,18 @@
   "time": "2026-11-04T18:51:27.000Z"
  },
  {
-  "id": 50364336,
-  "title": "AI is forcing us to pay off 40 years of technical debt",
-  "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-  "score": 1149,
-  "by": "pseudolus",
-  "time": "2026-11-04T11:52:17.000Z"
+  "id": 50370654,
+  "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
+  "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+  "score": 134,
+  "by": "peter_d_sherman",
+  "time": "2026-11-04T19:55:14.000Z"
  },
  {
   "id": 50368626,
   "title": "Progress on provable inference for large language models",
   "url": "https://www.anthropic.com/research/provable-inference",
-  "score": 206,
+  "score": 207,
   "by": "ltononro",
   "time": "2026-11-04T17:17:46.000Z"
  },
@@ -155,15 +147,23 @@
   "id": 50366117,
   "title": "Ask HN: What's your current AI agentic setup?",
   "url": null,
-  "score": 260,
+  "score": 262,
   "by": "eggbrain",
   "time": "2026-11-04T14:37:22.000Z"
+ },
+ {
+  "id": 50349165,
+  "title": "Future Maintenance of Mbed TLS",
+  "url": "https://lists.trustedfirmware.org/archives/list/mbed-tls@lists.trustedfirmware.org/thread/YPIGCB7WN6GCHOGEGKOJXUYAP7OK527W/",
+  "score": 9,
+  "by": "jonesjohnson",
+  "time": "2026-11-03T07:39:05.000Z"
  },
  {
   "id": 50368804,
   "title": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
   "url": null,
-  "score": 83,
+  "score": 85,
   "by": "lukeigel",
   "time": "2026-11-04T17:31:53.000Z"
  },
@@ -171,7 +171,7 @@
   "id": 50366522,
   "title": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
   "url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
-  "score": 285,
+  "score": 286,
   "by": "zenincognito",
   "time": "2026-11-04T15:01:44.000Z"
  },
@@ -216,14 +216,6 @@
   "time": "2026-11-04T16:11:33.000Z"
  },
  {
-  "id": 50363353,
-  "title": "11 Nanoseconds per Word: Over-Optimizing Anagrams",
-  "url": "https://wiredream.com/anagram-fun/",
-  "score": 16,
-  "by": "ColinWright",
-  "time": "2026-11-04T09:57:43.000Z"
- },
- {
   "id": 50339183,
   "title": "Show HN: The DNA of DOOM – How code structure survives across 44 ports",
   "url": "https://squid-protocol.github.io/gitgalaxy/museum-of-code/doom-dna/",
@@ -232,10 +224,18 @@
   "time": "2026-11-02T16:23:37.000Z"
  },
  {
+  "id": 50363353,
+  "title": "11 Nanoseconds per Word: Over-Optimizing Anagrams",
+  "url": "https://wiredream.com/anagram-fun/",
+  "score": 16,
+  "by": "ColinWright",
+  "time": "2026-11-04T09:57:43.000Z"
+ },
+ {
   "id": 50356791,
   "title": "Is Curiosity Good for Us?",
   "url": "https://www.lrb.co.uk/the-paper/v48/n20/adam-phillips/is-curiosity-good-for-us",
-  "score": 37,
+  "score": 38,
   "by": "NaOH",
   "time": "2026-11-03T19:16:23.000Z"
  }
