@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Escrow-Bounty Radar",
-    "version": "1.6.0",
+    "version": "1.7.0",
     "contact": {
       "name": "Escrow-Bounty Radar",
       "email": "10a11andralemisquitta@gmail.com"
@@ -1807,6 +1807,84 @@
               "x402": {}
             }
           ]
+        }
+      }
+    },
+    "/api/minis": {
+      "get": {
+        "operationId": "listMinis",
+        "summary": "Aggregated mini-bounty board",
+        "security": [],
+        "parameters": [
+          {
+            "name": "venue",
+            "in": "query",
+            "required": false,
+            "description": "opentask, frantic, or nonsynthetic",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "min_reward",
+            "in": "query",
+            "required": false,
+            "description": "Minimum reward_usdc",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Max items",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mini-bounty board result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "x-payment-info": {
+          "price": {
+            "mode": "fixed",
+            "currency": "USD",
+            "amount": "0.01"
+          },
+          "protocols": [
+            {
+              "x402": {}
+            }
+          ]
+        }
+      },
+      "post": {
+        "operationId": "listMinisPost",
+        "summary": "Aggregated mini-bounty board",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Mini-bounty board result"
+          },
+          "402": {
+            "description": "Payment required"
+          }
         }
       }
     }
