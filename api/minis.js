@@ -77,6 +77,8 @@ export default async function handler(req, res) {
   const url = "https://" + req.headers.host + "/api/minis" + (qs.length ? "?" + qs.join("&") : "");
   const method = req.method === "POST" ? "POST" : "GET";
   if (req.method === "OPTIONS") { cors(res); return res.status(204).end(); }
+const pay = req.headers["x-payment"];
+
   // Free teaser: first 3 rows, no payment (freemium funnel into the paid board).
   if (!pay && lim > 0 && lim <= 3) {
     try {
@@ -89,7 +91,6 @@ export default async function handler(req, res) {
       return res.status(200).json({ free_teaser: true, note: "First 3 rows free; full board via paid call (price in the 402).", count: Math.min(data.length, 3), items: data.slice(0, 3) });
     } catch (e) { return needPay(res, url, method, filtered); }
   }
-  const pay = req.headers["x-payment"];
   if (!pay) return needPay(res, url, method, filtered);
   let payload;
   try { payload = JSON.parse(Buffer.from(pay, "base64").toString("utf8")); }
