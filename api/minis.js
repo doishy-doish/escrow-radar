@@ -91,7 +91,7 @@ export default async function handler(req, res) {
 const pay = req.headers["x-payment"];
 
   // Free teaser: first 3 rows, no payment (freemium funnel into the paid board).
-  if (!pay && lim > 0 && lim <= 3) {
+  if (!pay && lim > 0 && lim <= 10) {
     try {
       let data = await getData();
       if (!Array.isArray(data)) data = [];
@@ -100,7 +100,7 @@ const pay = req.headers["x-payment"];
       cors(res);
       res.setHeader("Cache-Control", "public, max-age=60");
       const meta = await getMeta();
-      return res.status(200).json({ free_teaser: true, note: "First 3 rows free; full board via paid call (price in the 402).", count: Math.min(data.length, 3), board_total: data.length, refreshed_at: (meta && meta.ts) || null, items: data.slice(0, 3) });
+      return res.status(200).json({ free_teaser: true, note: "First 10 rows free; full board via paid call (price in the 402).", count: Math.min(data.length, 10), board_total: data.length, refreshed_at: (meta && meta.ts) || null, items: data.slice(0, 10) });
     } catch (e) { return needPay(res, url, method, filtered); }
   }
   if (!pay) return needPay(res, url, method, filtered);
