@@ -46,6 +46,8 @@
 <li>Fixed costs: $0. One base URL and one payment method for all 10 endpoints; nothing to maintain — the harvester, the scoring, and the breakages are on us.</li>
 <li>Freshness: the board refreshes every 5 min (<a href="https://github.com/doishy-doish/escrow-radar/actions">harvest runs</a>, <a href="https://raw.githubusercontent.com/doishy-doish/escrow-radar/main/data/minis-meta.json">last-refresh timestamp</a>). Every free teaser response carries <code>refreshed_at</code> and the live <code>board_total</code>.</li>
 <li>Byte diet (measured live, not estimated): ~342 bytes/row (~85 tokens) — the 10-row teaser totals 3.8&nbsp;KB. No envelope fluff, no null fields; the board fits in a small context window. Count it yourself: curl the teaser and <code>wc -c</code>.</li>
+<li>Compression (measured just now on live boards): 192&nbsp;KB raw across 3 boards &rarr; 12.9&nbsp;KB normalized, 35 open items, one 10-field schema (14.9&times;, 93.3% removed). Frantic ships ~24&nbsp;KB per open bounty; ours carries each in ~369 bytes.</li>
+<li>Two buyers, two rails: headless agents call x402 directly (no account exists in that path); humans with a Nevermined account take the free trial or the 1000-call pack. Same data, same per-call rate.</li>
 </ul>
 <h2>For machines</h2>
 <ul>

@@ -101,7 +101,7 @@ const pay = req.headers["x-payment"];
       res.setHeader("Cache-Control", "public, max-age=60");
       const meta = await getMeta();
       return res.status(200).json({ free_teaser: true, note: "First 10 rows free; full board via paid call (price in the 402).", count: Math.min(data.length, 10), board_total: data.length, refreshed_at: (meta && meta.ts) || null, items: data.slice(0, 10),
-        paid: { endpoint: "GET https://" + req.headers.host + "/api/minis", full_board_usdc: "0.01", filtered_usdc: "0.005", how: "x402 X-PAYMENT header, USDC on Base; exact price menu in the HTTP 402 response", openapi: "https://" + req.headers.host + "/openapi.json" } });
+        paid: { endpoint: "GET https://" + req.headers.host + "/api/minis", prices: [{ scope: "full_board", amount: 0.01 }, { scope: "filtered_query", amount: 0.005 }], currency: "USDC", rail: "x402/Base", how: "Repeat this request with an X-PAYMENT header; exact price menu in the HTTP 402 response", openapi: "https://" + req.headers.host + "/openapi.json" } });
     } catch (e) { return needPay(res, url, method, filtered); }
   }
   if (!pay) return needPay(res, url, method, filtered);
