@@ -296,6 +296,49 @@ function rankAlerts(recs) {
       ((b.reward_usdc || 0) - (a.reward_usdc || 0)));
 }
 
+// Stale-context demotion (drift doctrine 2026-11-05 — automates the #1315 kill).
+// Alert candidates whose target files are missing at the issue repo's HEAD
+// (cross-repo drift: body names wallet files on a core issue) or untouched
+// >45d before the issue was filed (reporter reading old code) get
+// stale_context:true and drop out of alerts. Runs ONLY on the small candidate
+// set, so the extra calls stay inside rate budget. Flags are written back
+// onto recs so data/bounties.json carries the evidence.
+async function demoteStale(cands, recs) {
+  const fresh = [];
+  for (const r of cands) {
+    let stale = null;
+    const files = Array.isArray(r.target_files) ? r.target_files.slice(0, 5) : [];
+    const back = recs.find(x => x.id === r.id);
+    const tag = (k, v) => { r[k] = v; if (back) back[k] = v; };
+    for (const f of files) {
+      const p = String(f).split('/').map(encodeURIComponent).join('/');
+      let head = null;
+      try {
+        head = await ghJson(`https://api.github.com/repos/${r.org}/${r.repo}/contents/${p}`);
+        await sleep(400);
+      } catch (e) {
+        if (String(e).includes('gh 404')) { stale = 'repo_mismatch:' + f; break; }
+        continue; // rate/network hiccup: don't punish the ticket
+      }
+      if (!head) continue;
+      try {
+        const cs = await ghJson(`https://api.github.com/repos/${r.org}/${r.repo}/commits?path=${encodeURIComponent(f)}&per_page=1`);
+        await sleep(400);
+        const d = cs && cs[0] && cs[0].commit && cs[0].commit.author && cs[0].commit.author.date;
+        if (d) {
+          const delta = Math.round((new Date(r.opened_at).getTime() - new Date(d).getTime()) / 86400000);
+          tag('days_since_target_touch', delta);
+          if (delta > 45) { stale = 'stale_target:' + f + ':' + delta + 'd'; break; }
+        }
+      } catch { /* hiccup: leave nominal */ }
+    }
+    tag('stale_context', stale ? true : false);
+    if (stale) tag('stale_reason', stale);
+    else fresh.push(r);
+  }
+  return fresh;
+}
+
 async function harvestBounties() {
   try {
     const now = Date.now();
@@ -372,7 +415,9 @@ async function harvestBounties() {
       writeIfChanged('data/bounties.json', recs);
       // Customer-zero hook: uncontested + fresh (<=7d), pre-ranked for serial lock.
       // Rank 1 = alerts[0]. Lock it, ignore the rest until PR + re-verify gate.
-      const alerts = rankAlerts(recs);
+      // Drift-demotion runs last: stale-context candidates drop out with evidence.
+      let alerts = rankAlerts(recs);
+      alerts = await demoteStale(alerts, recs);
       writeIfChanged('data/bounty-alerts.json', { ts: ts(), count: alerts.length, alerts });
     } else console.log('bounties: empty search, keeping last good');
   } catch (e) { console.log('bounties failed:', String(e).slice(0, 160), '— keeping last good'); }
