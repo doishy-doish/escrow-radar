@@ -10,7 +10,7 @@
   "severity": "High",
   "reward_usdc": 150,
   "reward_source": "explicit",
-  "age_seconds_since_open": 86552,
+  "age_seconds_since_open": 87185,
   "opened_at": "2026-11-04T12:11:10Z",
   "competing_prs": 3,
   "competing_pr_urls": [
@@ -42,7 +42,7 @@
    "raw_snippet": "I have implemented the canonical fix and verified unit tests in companion PR #1338: - Relaxes `recipient_token_account` "
   },
   "excerpt": "# [BUG BOUNTY] High: `TransactSpl` requires initialized SPL `TokenAccount`s for `recipient` and `fee_token` during internal transfers (`ext_amount == 0`), reverting all private SPL transfers on-chain ## 🔍 Summary - **Target Repository:** [`paraloom-labs/paraloom-core`](https://github.com/paraloom-labs/paraloom-core) & [`paraloom-labs/paraloom-wallet`](https://github.com/paraloom-labs/paraloom-wallet) - **Component:** `programs/paraloom/src/lib.rs` (`TransactSpl`, lines 630–680, 1910–1935) and `src/bridge/solana/cosign_message.rs` (lines 190–220) - **Severity:** High / Medium ($150 ~ $400 USDC",
-  "ts": "2026-11-05T12:13:48.766Z"
+  "ts": "2026-11-05T12:24:22.371Z"
  },
  {
   "id": "paraloom-core#1329",
@@ -55,7 +55,7 @@
   "severity": "Low",
   "reward_usdc": 50,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 96261,
+  "age_seconds_since_open": 96894,
   "opened_at": "2026-11-04T09:29:21Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -80,7 +80,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary On the node's transact ingress, the write route is authenticated but the read route serving the node's delivered-note feed is not. `POST /transact/submit` rejects unauthenticated callers via `check_bearer`, while `GET /transact/scan` — registered in the same router, behind the same configured ingress token — never invokes the bearer check and returns every delivered note the node has seen (output commitment, ciphertext, mint) to any caller that can reach the port, including notes for settlements the node merely voted on, before settlement. ## Root cause Repo: `paraloom-core`, `main`",
-  "ts": "2026-11-05T12:13:52.729Z"
+  "ts": "2026-11-05T12:24:26.601Z"
  },
  {
   "id": "paraloom-core#1328",
@@ -93,7 +93,7 @@
   "severity": "Low",
   "reward_usdc": 50,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 96279,
+  "age_seconds_since_open": 96912,
   "opened_at": "2026-11-04T09:29:03Z",
   "competing_prs": 3,
   "competing_pr_urls": [
@@ -124,7 +124,7 @@
    "raw_snippet": "I have submitted a turnkey fix in **PR #1331** ([Link to PR #1331](https://github.com/paraloom-labs/paraloom-core/pull/1"
   },
   "excerpt": "## Summary The bridge deposit decoder resolves a compiled instruction's account indices against the transaction's **static `account_keys` only** and never consults `meta.loaded_addresses`. For a v0 transaction, any account referenced through an address lookup table (LUT) lives in `loaded_addresses`, so when the mint (account position 2 of `deposit_note_spl`) or the depositor is LUT-loaded, index resolution fails and the deposit instruction is **silently dropped** — no event, no error, no warning. The deposit confirms on-chain but is never indexed, so the shielded pool's off-chain view never cr",
-  "ts": "2026-11-05T12:13:54.734Z"
+  "ts": "2026-11-05T12:24:29.103Z"
  },
  {
   "id": "paraloom-core#1323",
@@ -137,7 +137,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 140907,
+  "age_seconds_since_open": 141540,
   "opened_at": "2026-11-03T21:05:15Z",
   "competing_prs": 5,
   "competing_pr_urls": [
@@ -170,7 +170,7 @@
    "raw_snippet": "### Companion Remediation & Idempotent Safety Fix Submitted A complete, production-grade remediation and test suite has "
   },
   "excerpt": "## Summary In `paraloom-core` (`main` @ `9e8c8e6`), the CLI subcommand `paraloom validator withdraw-unbonded` (`src/bin/paraloom_cli.rs:1635-1710`) derives the validator's Associated Token Account (ATA) off-chain via `derive_associated_token_address` and passes it unconditionally to `create_withdraw_unbonded_stake_instruction` without preflight verification or on-chain creation. When a validator executes `paraloom validator withdraw-unbonded` without a pre-existing initialized ATA for `stake_mint`, the transaction fails on-chain with Anchor error `AccountNotInitialized` (`0xbc4` / 3012) in `pr",
-  "ts": "2026-11-05T12:13:56.928Z"
+  "ts": "2026-11-05T12:24:31.458Z"
  },
  {
   "id": "paraloom-wallet#211",
@@ -183,7 +183,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 243774,
+  "age_seconds_since_open": 244407,
   "opened_at": "2026-11-02T16:30:48Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -215,7 +215,7 @@
    "raw_snippet": "Companion fix PR: #211 The native branch also re-shields now (the same depositV3 sweep the forward path uses) instead of"
   },
   "excerpt": "# [BOUNTY] Medium: WSOL-output round trips are silently dropped — two native-SOL guards compare against the literal \"SOL\" while the app sends the wrapped mint **Affected:** `paraloom-labs/paraloom-wallet` (`main` @ `1e79eec`) — `lib/paraloom/privateSwap.ts` (`resumeSwapAtFreshAddress`), `lib/paraloom/reshieldRecovery.ts` (`recoverReshields`) **Severity:** Medium — a user-requested re-shield is silently skipped and the funds are left at a fresh address, reachable only through a separate manual recovery path. No on-chain loss. **Payout (Solana USDC):** `3HLDkipdKmJKGjbgCD8moo3GyhEY4DWdZ7JAgSpMys",
-  "ts": "2026-11-05T12:13:58.996Z"
+  "ts": "2026-11-05T12:24:33.728Z"
  },
  {
   "id": "paraloom-wallet#208",
@@ -228,7 +228,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 244572,
+  "age_seconds_since_open": 245205,
   "opened_at": "2026-11-02T16:17:30Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -261,7 +261,7 @@
    "raw_snippet": "Companion fix PR: #209"
   },
   "excerpt": "# [BOUNTY] Medium: swap output rows record neither account nor cluster, so recovery credits a stranded swap to the wrong shielded account **Affected:** `paraloom-labs/paraloom-wallet` (`main` @ `1e79eec`) — `lib/paraloom/swapOutputs.ts`, `lib/paraloom/swapReconcile.ts`, `lib/paraloom/reshieldRecovery.ts`, `lib/paraloom/privateSwap.ts`, `src/popup/Home.tsx` **Severity:** Medium — recovered funds become a shielded balance the active account cannot spend, while the account that owns them stays short. No on-chain loss. **Payout (Solana USDC):** `3HLDkipdKmJKGjbgCD8moo3GyhEY4DWdZ7JAgSpMysHp` --- ##",
-  "ts": "2026-11-05T12:14:01.269Z"
+  "ts": "2026-11-05T12:24:35.915Z"
  },
  {
   "id": "paraloom-wallet#206",
@@ -274,7 +274,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 245072,
+  "age_seconds_since_open": 245705,
   "opened_at": "2026-11-02T16:09:10Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -304,7 +304,7 @@
    "raw_snippet": "Companion fix PR: #207 Both failure directions are pinned as failing tests before the fix. The migration adopts a pre-cl"
   },
   "excerpt": "# [BOUNTY] Medium: shielded notes are stored without cluster scoping — the same shielded address serves both networks, so one cluster's notes appear on the other, unspendable **Affected:** `paraloom-labs/paraloom-wallet` (`main` @ `1e79eec`) — `lib/paraloom/notes.ts`, consumed by `shieldedBalance`/`shieldedTokenBalances` (`Home.tsx` portfolio), `spendV3` (`lib/paraloom/transactFlow.ts`), `scanForNotes` (`lib/paraloom/scan.ts`) **Severity:** Medium — local accounting corruption that surfaces as an unspendable balance on the cluster the user is on; no on-chain loss. **Payout (Solana USDC):** `3H",
-  "ts": "2026-11-05T12:14:03.257Z"
+  "ts": "2026-11-05T12:24:37.927Z"
  },
  {
   "id": "paraloom-core#1315",
@@ -317,7 +317,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 265050,
+  "age_seconds_since_open": 265683,
   "opened_at": "2026-11-02T10:36:12Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -342,7 +342,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary - **Affected Component:** `paraloom-labs/paraloom-wallet` (`main` @ `1e79eec`, v`1.7.15`) — `lib/paraloom/scan.ts` (`verifiedMint`, `scanForNotes`), compounded by `lib/paraloom/notes.ts` (`addDiscoveredNote`), `lib/paraloom/transactFlow.ts` (`spendV3`), `lib/paraloom/privateSwap.ts` (`privateSwapFromToken`), and `src/background/index.ts` (`handlePrivateSwap`) - **Cross-Repo Contract:** `paraloom-prover-wasm` (`src/lib.rs:46-54, 405-410`) and `paraloom-core` (`src/node/transact_ingress.rs:72-75, 180-185, 250`; `src/node/mod.rs:2709-2715`) - **Severity:** **Medium** (Stage 1 Bug Bount",
-  "ts": "2026-11-05T12:14:08.036Z",
+  "ts": "2026-11-05T12:24:43.461Z",
   "stale_context": true,
   "stale_reason": "repo_mismatch:lib/paraloom/scan.ts"
  },
@@ -357,7 +357,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 334431,
+  "age_seconds_since_open": 335064,
   "opened_at": "2026-11-01T15:19:51Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -385,7 +385,7 @@
    "raw_snippet": "Resolved via paraloom-labs/paraloom-wallet#199."
   },
   "excerpt": "**Cross-reference:** https://github.com/paraloom-labs/paraloom-wallet/issues/196 # [BOUNTY] Medium: `handleWithdraw` overrides `confirmSettled` with an unauthenticated lamport balance check (`balance > before`) without RPC error handling, causing false-positive phantom change notes or false-negative unrecorded spends **Bounty Payout Address (Solana USDC / SPL):** `BF2pfru1ctS18uG2Si1nGGGirb7cXUghG4aSpD7zs4DG` --- ## Summary In `src/popup/Home.tsx` (`handleWithdraw`, lines 433–456), native SOL withdrawals override `spendV3`'s cryptographic Merkle-tree commitment check (`confirmSettledByTree`) w",
-  "ts": "2026-11-05T12:14:10.095Z"
+  "ts": "2026-11-05T12:24:45.735Z"
  },
  {
   "id": "paraloom-core#1306",
@@ -398,7 +398,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 334432,
+  "age_seconds_since_open": 335065,
   "opened_at": "2026-11-01T15:19:50Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -428,7 +428,7 @@
    "raw_snippet": "Resolved via https://github.com/paraloom-labs/paraloom-wallet/pull/200"
   },
   "excerpt": "**Cross-reference:** https://github.com/paraloom-labs/paraloom-wallet/issues/195 # [BOUNTY] High/Medium: `handleTransfer` omits `NATIVE_ASSET_HEX` filter, silently spending SPL token notes (e.g., 500 USDC for a 0.5 SOL transfer) or throwing cross-asset errors, and `selectSolWithdrawNotes` strands sub-0.001 SOL change notes on 2-note spends **Bounty Payout Address (Solana USDC / SPL):** `BF2pfru1ctS18uG2Si1nGGGirb7cXUghG4aSpD7zs4DG` --- ## Summary `src/popup/Home.tsx` contains two closely related note-selection defects in its native SOL transfer and withdrawal flows: 1. **Cross-Asset Note Selec",
-  "ts": "2026-11-05T12:14:12.266Z"
+  "ts": "2026-11-05T12:24:48.010Z"
  },
  {
   "id": "paraloom-wallet#196",
@@ -441,7 +441,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 334434,
+  "age_seconds_since_open": 335067,
   "opened_at": "2026-11-01T15:19:48Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -472,7 +472,7 @@
    "raw_snippet": "Resolved via https://github.com/paraloom-labs/paraloom-wallet/pull/199"
   },
   "excerpt": "# [BOUNTY] Medium: `handleWithdraw` overrides `confirmSettled` with an unauthenticated lamport balance check (`balance > before`) without RPC error handling, causing false-positive phantom change notes or false-negative unrecorded spends **Bounty Payout Address (Solana USDC / SPL):** `BF2pfru1ctS18uG2Si1nGGGirb7cXUghG4aSpD7zs4DG` --- ## Summary In `src/popup/Home.tsx` (`handleWithdraw`, lines 433–456), native SOL withdrawals override `spendV3`'s cryptographic Merkle-tree commitment check (`confirmSettledByTree`) with a raw lamport balance comparison on the recipient Solana address: ```ts const",
-  "ts": "2026-11-05T12:14:14.381Z"
+  "ts": "2026-11-05T12:24:50.246Z"
  },
  {
   "id": "paraloom-wallet#195",
@@ -485,7 +485,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 334435,
+  "age_seconds_since_open": 335068,
   "opened_at": "2026-11-01T15:19:47Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -516,7 +516,7 @@
    "raw_snippet": "Resolved via https://github.com/paraloom-labs/paraloom-wallet/pull/200"
   },
   "excerpt": "# [BOUNTY] High/Medium: `handleTransfer` omits `NATIVE_ASSET_HEX` filter, silently spending SPL token notes (e.g., 500 USDC for a 0.5 SOL transfer) or throwing cross-asset errors, and `selectSolWithdrawNotes` strands sub-0.001 SOL change notes on 2-note spends **Bounty Payout Address (Solana USDC / SPL):** `BF2pfru1ctS18uG2Si1nGGGirb7cXUghG4aSpD7zs4DG` --- ## Summary `src/popup/Home.tsx` contains two closely related note-selection defects in its native SOL transfer and withdrawal flows: 1. **Cross-Asset Note Selection in `handleTransfer` (`src/popup/Home.tsx:499-508`)**: Unlike `spendableSolNo",
-  "ts": "2026-11-05T12:14:16.511Z"
+  "ts": "2026-11-05T12:24:52.535Z"
  },
  {
   "id": "paraloom-core#1300",
@@ -529,7 +529,7 @@
   "severity": "Low",
   "reward_usdc": 50,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 348875,
+  "age_seconds_since_open": 349508,
   "opened_at": "2026-11-01T11:19:07Z",
   "competing_prs": 3,
   "competing_pr_urls": [
@@ -561,7 +561,7 @@
    "raw_snippet": "Fixes paraloom-labs/paraloom-core#1300 (Bounty: Low, Stage 1 Bug Bounty) ## Summary Resolves single-sided consensus over"
   },
   "excerpt": "### Summary **Severity:** Low (Stage 1 Bug Bounty — Off-chain Consensus Threshold & Reputation Config Wiring) **Affected Components:** `src/node/mod.rs` (`Node::new`, lines `1486-1501`), `src/bridge/types.rs` (`BridgeConfig`, lines `157-182`), and `src/consensus/transact.rs` (`DEFAULT_MIN_REPUTATION_FOR_CONSENSUS` & `TransactVerificationCoordinator`, lines `32-34, 520-564`) **Verified Against:** `main` (`9e8c8e6d403a4793b841ac1c569eefd11d60c9ad`) `BridgeConfig` exposes three independent optional TOML knobs to override the off-chain BFT transact consensus defaults (`DEFAULT_MIN_VALIDATORS_FOR_C",
-  "ts": "2026-11-05T12:14:18.628Z"
+  "ts": "2026-11-05T12:24:54.747Z"
  },
  {
   "id": "paraloom-core#1299",
@@ -574,7 +574,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 348876,
+  "age_seconds_since_open": 349509,
   "opened_at": "2026-11-01T11:19:06Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -605,7 +605,7 @@
    "raw_snippet": "Fixes paraloom-labs/paraloom-core#1299 (Bounty: Medium, up to $150 USDC) ## Summary Gate `set_asset_deposit_cap` on `val"
   },
   "excerpt": "### Summary **Severity:** Medium (Stage 1 Bug Bounty — On-chain Authorization & Governance Lifecycle) **Affected Component:** `programs/paraloom/src/lib.rs` (`set_asset_deposit_cap`, `SetAssetDepositCap`, `check_upgrade_authority`, and `ValidatorRegistry` authority lifecycle) **Verified Against:** `main` (`9e8c8e6d403a4793b841ac1c569eefd11d60c9ad`) Two coupled authority-gating and governance-lifecycle defects exist in `programs/paraloom/src/lib.rs`: 1. **`set_asset_deposit_cap` (`SetAssetDepositCap`, `programs/paraloom/src/lib.rs:1275-1293, 2278-2296`) gates ongoing runtime SPL TVL risk/emerge",
-  "ts": "2026-11-05T12:14:20.722Z"
+  "ts": "2026-11-05T12:24:56.895Z"
  },
  {
   "id": "paraloom-wallet#181",
@@ -618,7 +618,7 @@
   "severity": null,
   "reward_usdc": null,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 554825,
+  "age_seconds_since_open": 555458,
   "opened_at": "2026-10-30T02:06:37Z",
   "competing_prs": 3,
   "competing_pr_urls": [
@@ -650,7 +650,7 @@
    "raw_snippet": "Submitted PR: https://github.com/paraloom-labs/paraloom-wallet/pull/183 ### Summary of Fix 1. **Confirmation Timeout Che"
   },
   "excerpt": "## Summary There are two coupled flaws in the native SOL v3 deposit path (`sendDepositNote` in `lib/paraloom/transact.ts` and `depositV3` in `lib/paraloom/transactFlow.ts`): 1. **`sendDepositNote` ignores the boolean return value of `confirmBySignatureStatus`**: In `lib/paraloom/transact.ts:95`, `confirmBySignatureStatus(connection, signature)` returns `Promise<boolean>` (`true` when confirmed at `confirmed`/`finalized`, `false` when the 90-second confirmation window expires without confirmation). `sendDepositNote` awaits `confirmBySignatureStatus(connection, signature)` without checking its b",
-  "ts": "2026-11-05T12:14:22.860Z"
+  "ts": "2026-11-05T12:24:59.286Z"
  },
  {
   "id": "scaffold-studio-frontend#45",
@@ -663,7 +663,7 @@
   "severity": null,
   "reward_usdc": 70,
   "reward_source": "explicit",
-  "age_seconds_since_open": 2471201,
+  "age_seconds_since_open": 2471834,
   "opened_at": "2026-10-07T21:47:01Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -684,7 +684,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Context** `next.config.ts` sets `eslint: { ignoreDuringBuilds: true }`. Combined with a workflow that never runs `next build`, this means lint errors introduced in a PR are invisible on both paths, and the only remaining lint signal is the mutating `biome lint --write --unsafe` step covered by issue 31. **Proposed Change** Turn `ignoreDuringBuilds` off so `next build` fails on lint errors, and let CI run the build (issue 46) or a dedicated lint job report them. **Acceptance Criteria** - `eslint.ignoreDuringBuilds` is removed or set to `false`. - A deliberately introduced lint error is assert",
-  "ts": "2026-11-05T12:14:31.460Z"
+  "ts": "2026-11-05T12:25:07.876Z"
  },
  {
   "id": "scaffold-studio-frontend#44",
@@ -697,7 +697,7 @@
   "severity": null,
   "reward_usdc": 60,
   "reward_source": "explicit",
-  "age_seconds_since_open": 2471206,
+  "age_seconds_since_open": 2471839,
   "opened_at": "2026-10-07T21:46:56Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -723,7 +723,7 @@
    "raw_snippet": "Hi @cythecode, I noticed issue #44 is still open, along with PR #104. I'm a TypeScript developer interested in completin"
   },
   "excerpt": "**Context** `playwright.config.ts` sets `retries: 0` unconditionally. Playwright's own convention is to retry on CI and not locally, because web-server startup, animation timing and network flake are the dominant failure modes for an end-to-end suite that talks to a blockchain RPC and an LLM provider. Without retries, every transient failure blocks a PR. **Proposed Change** Set `retries: process.env.CI ? 2 : 0` and keep `workers: 1` on CI. **Acceptance Criteria** - `retries` resolves to 2 when `process.env.CI` is set and 0 otherwise. - A deliberately flaky spec is asserted to pass on retry and",
-  "ts": "2026-11-05T12:14:33.665Z"
+  "ts": "2026-11-05T12:25:10.063Z"
  },
  {
   "id": "scaffold-studio-frontend#43",
@@ -736,7 +736,7 @@
   "severity": null,
   "reward_usdc": 60,
   "reward_source": "explicit",
-  "age_seconds_since_open": 2471212,
+  "age_seconds_since_open": 2471845,
   "opened_at": "2026-10-07T21:46:50Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -760,6 +760,6 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Context** `playwright.config.ts` starts the app with `webServer.command` running the dev server, but `.github/workflows/playwright.yml` sets no environment. `lib/db/index.ts` reads `DATABASE_URL` and `lib/ai/providers.ts` constructs OpenAI models, so the server either crashes on boot or fails on the first request, which turns every end-to-end run into an environment failure rather than a test result. **Proposed Change** Add the required variables to the job's `env:` (with a disposable Postgres service container for `DATABASE_URL`) and reserve the OpenAI key for the secrets-gated path. **Acce",
-  "ts": "2026-11-05T12:14:36.070Z"
+  "ts": "2026-11-05T12:25:12.252Z"
  }
 ]
