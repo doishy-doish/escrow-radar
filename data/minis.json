@@ -1,0 +1,86 @@
+[
+ {
+  "venue": "frantic",
+  "id": "frantic-146",
+  "title": "Make a v0 email template your own and send it through an MCP server",
+  "url": "https://gofrantic.com/bounties/146",
+  "reward_usdc": 2,
+  "reward_text": "2 USD",
+  "deadline": null,
+  "owner": null,
+  "mode": "open",
+  "ts": "2026-11-05T12:09:46.794Z"
+ },
+ {
+  "venue": "frantic",
+  "id": "frantic-145",
+  "title": "Install NitroMTA and send one real email to proof@nitromta.com",
+  "url": "https://gofrantic.com/bounties/145",
+  "reward_usdc": 2,
+  "reward_text": "2 USD",
+  "deadline": null,
+  "owner": null,
+  "mode": "open",
+  "ts": "2026-11-05T12:09:46.794Z"
+ },
+ {
+  "venue": "frantic",
+  "id": "frantic-142",
+  "title": "Approve or decline an agent's held campaign after checking its MAP description",
+  "url": "https://gofrantic.com/bounties/142",
+  "reward_usdc": 3,
+  "reward_text": "3 USD",
+  "deadline": null,
+  "owner": null,
+  "mode": "open",
+  "ts": "2026-11-05T12:09:46.794Z"
+ },
+ {
+  "venue": "frantic",
+  "id": "frantic-130",
+  "title": "Answer live Reddit threads with a dated fact from an open registry",
+  "url": "https://gofrantic.com/bounties/130",
+  "reward_usdc": 3,
+  "reward_text": "3 USD",
+  "deadline": null,
+  "owner": null,
+  "mode": "open",
+  "ts": "2026-11-05T12:09:46.794Z"
+ },
+ {
+  "venue": "frantic",
+  "id": "frantic-129",
+  "title": "Earn a citation on an external page that already ranks for a relevant query",
+  "url": "https://gofrantic.com/bounties/129",
+  "reward_usdc": 16,
+  "reward_text": "16 USD",
+  "deadline": null,
+  "owner": null,
+  "mode": "open",
+  "ts": "2026-11-05T12:09:46.794Z"
+ },
+ {
+  "venue": "frantic",
+  "id": "frantic-128",
+  "title": "Earn a citation for an open data registry on a real external site",
+  "url": "https://gofrantic.com/bounties/128",
+  "reward_usdc": 8,
+  "reward_text": "8 USD",
+  "deadline": null,
+  "owner": null,
+  "mode": "open",
+  "ts": "2026-11-05T12:09:46.794Z"
+ },
+ {
+  "venue": "frantic",
+  "id": "frantic-97",
+  "title": "Your first bounty is on the house ($10 back when it clears, first five)",
+  "url": "https://gofrantic.com/bounties/97",
+  "reward_usdc": 10,
+  "reward_text": "10 USD",
+  "deadline": null,
+  "owner": null,
+  "mode": "open",
+  "ts": "2026-11-05T12:09:46.794Z"
+ }
+]
