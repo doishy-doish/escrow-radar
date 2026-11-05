@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Escrow-Bounty Radar",
-    "version": "1.7.0",
+    "version": "1.8.0",
     "contact": {
       "name": "Escrow-Bounty Radar",
       "email": "10a11andralemisquitta@gmail.com"
@@ -1884,6 +1884,24 @@
           },
           "402": {
             "description": "Payment required"
+          }
+        }
+      }
+    },
+    "/api/sample": {
+      "get": {
+        "summary": "Free sample outputs (no payment)",
+        "description": "Redacted example outputs for triage/solana/minis. No x402 payment required.",
+        "responses": {
+          "200": {
+            "description": "Example payloads",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
           }
         }
       }

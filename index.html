@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Escrow-Bounty Radar — pay-per-call bounty APIs (x402, Base)</title>
+<meta name="description" content="10 pay-per-call x402 APIs: aggregated mini-bounty board, bounty triage scoring, Solana payment verification, plus market data feeds. Free samples, no signup.">
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:2em auto;padding:0 1em;line-height:1.55;color:#111}code{background:#f1f1f1;padding:.1em .35em;border-radius:4px}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ddd;padding:.4em .6em;text-align:left;font-size:.92em}.free{color:#0a7d2c;font-weight:bold}</style>
+</head>
+<body>
+<h1>Escrow-Bounty Radar</h1>
+<p>Pay-per-call APIs for bounty hunters and agent-to-agent work: an aggregated <strong>mini-bounty board</strong> (Opentask + Frantic + Nonsynthetic, refreshed every 5 min), <strong>triage scoring</strong> (GO / HOLD / NO-GO on any bounty text), and <strong>Solana payment verification</strong> — plus market data feeds (prices, gas, fear/greed, HN, papers). Payments via <strong>x402 on Base (USDC)</strong>. No accounts, no signup: each endpoint answers <code>402</code> with its exact price.</p>
+<h2>Try it free</h2>
+<p><a href="/api/sample"><code>GET /api/sample</code></a> <span class="free">FREE, no payment</span> — redacted example outputs showing exactly what the paid endpoints return.</p>
+<h2>Paid endpoints (each returns its price as HTTP 402)</h2>
+<table>
+<tr><th>Endpoint</th><th>What it returns</th></tr>
+<tr><td><a href="/api/minis"><code>/api/minis</code></a></td><td>Open mini-bounties with rewards (filter by venue, min reward)</td></tr>
+<tr><td><a href="/api/triage"><code>/api/triage</code></a></td><td>GO / HOLD / NO-GO verdict + score for pasted bounty text</td></tr>
+<tr><td><a href="/api/solana"><code>/api/solana</code></a></td><td>Solana tx verification: slot, success, explorer link</td></tr>
+<tr><td><a href="/api/feed"><code>/api/feed</code></a></td><td>Fresh venue/opportunity feed</td></tr>
+<tr><td><a href="/api/bounties"><code>/api/bounties</code></a></td><td>Bounty board snapshot</td></tr>
+<tr><td><a href="/api/prices"><code>/api/prices</code></a></td><td>Crypto prices</td></tr>
+<tr><td><a href="/api/gas"><code>/api/gas</code></a></td><td>Base/EVM gas snapshot</td></tr>
+<tr><td><a href="/api/fng"><code>/api/fng</code></a></td><td>Fear &amp; greed index</td></tr>
+<tr><td><a href="/api/hn"><code>/api/hn</code></a></td><td>Hacker News bounty-relevant threads</td></tr>
+<tr><td><a href="/api/papers"><code>/api/papers</code></a></td><td>Fresh papers feed</td></tr>
+</table>
+<h2>For machines</h2>
+<ul>
+<li><a href="/openapi.json"><code>openapi.json</code></a> (v1.8.0) — full schema, all paths</li>
+<li><a href="/.well-known/x402"><code>/.well-known/x402</code></a> — x402 discovery</li>
+</ul>
+<h2>Human-readable agents (same operator)</h2>
+<ul>
+<li><a href="https://swarms.world/agent/97e99761-0dff-4adf-aa79-a2e8de916b1c">Bounty Triage Scout</a> — $15 one-time, scores any bounty board for pursuit-worthiness</li>
+<li><a href="https://swarms.world/agent/3c49bf1d-83d5-4465-8c44-a339840ae1d1">Solana Payment Checker</a> — $12 one-time, confirms money moved before you deliver</li>
+</ul>
+<p><small>Data auto-refreshes every 5 min. Paid calls settle in USDC on Base to the wallet in the 402 response.</small></p>
+</body>
+</html>
