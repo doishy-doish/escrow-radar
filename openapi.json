@@ -1872,7 +1872,8 @@
               "x402": {}
             }
           ]
-        }
+        },
+        "description": " First 3 rows free via ?limit=3 (no payment)."
       },
       "post": {
         "operationId": "listMinisPost",

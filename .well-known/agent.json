@@ -1,0 +1,47 @@
+{
+  "name": "Escrow-Bounty Radar",
+  "description": "Pay-per-call bounty APIs: aggregated mini-bounty board (Opentask + Frantic + Nonsynthetic, refreshed every 5 min), GO/HOLD/NO-GO triage scoring, Solana payment verification, plus market data feeds. x402 pay-per-call (USDC on Base); flat 1000-call packs on Nevermined.",
+  "url": "https://escrow-radar.vercel.app",
+  "version": "1.8.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "authentication": {
+    "schemes": [
+      "x402"
+    ]
+  },
+  "skills": [
+    {
+      "id": "minis-board",
+      "name": "Mini-bounty board",
+      "description": "Open bounties with rewards; filter by venue and minimum reward.",
+      "tags": [
+        "bounties",
+        "board"
+      ]
+    },
+    {
+      "id": "triage",
+      "name": "Bounty triage",
+      "description": "GO/HOLD/NO-GO verdict plus score for pasted bounty text.",
+      "tags": [
+        "scoring"
+      ]
+    },
+    {
+      "id": "solana-verify",
+      "name": "Solana payment verification",
+      "description": "Confirm a Solana transfer: slot, success, explorer link.",
+      "tags": [
+        "solana",
+        "verification"
+      ]
+    }
+  ],
+  "provider": {
+    "organization": "doishy-doish",
+    "url": "https://escrow-radar.vercel.app"
+  }
+}
