@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Escrow-Bounty Radar",
-    "version": "1.5.2",
+    "version": "1.5.3",
     "contact": {
       "name": "Escrow-Bounty Radar",
       "email": "10a11andralemisquitta@gmail.com"
@@ -1324,6 +1324,9 @@
                       },
                       "claim_evidence": {
                         "type": "object"
+                      },
+                      "org": {
+                        "type": "string"
                       }
                     },
                     "required": [
@@ -1547,6 +1550,9 @@
                       },
                       "claim_evidence": {
                         "type": "object"
+                      },
+                      "org": {
+                        "type": "string"
                       }
                     },
                     "required": [
