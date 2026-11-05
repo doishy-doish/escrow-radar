@@ -47,6 +47,32 @@
 <li>Freshness: the board refreshes every 5 min (<a href="https://github.com/doishy-doish/escrow-radar/actions">harvest runs</a>, <a href="https://raw.githubusercontent.com/doishy-doish/escrow-radar/main/data/minis-meta.json">last-refresh timestamp</a>). Every free teaser response carries <code>refreshed_at</code> and the live <code>board_total</code>.</li>
 <li>Byte diet (measured live, not estimated): ~342 bytes/row (~85 tokens) — the 10-row teaser totals 3.8&nbsp;KB. No envelope fluff, no null fields; the board fits in a small context window. Count it yourself: curl the teaser and <code>wc -c</code>.</li>
 <li>Compression (measured just now on live boards): 192&nbsp;KB raw across 3 boards &rarr; 12.9&nbsp;KB normalized, 35 open items, one 10-field schema (14.9&times;, 93.3% removed). Frantic ships ~24&nbsp;KB per open bounty; ours carries each in ~369 bytes.</li>
+<li>Field-level diff — what the 10 kept fields are and what the 93.3% removed was. Check it yourself: <code>curl -s 'https://escrow-radar.vercel.app/api/minis?limit=10' | head -c 600</code> shows exactly these keys on every row.
+<details><summary><b>Kept (one 10-field schema; titles verbatim, rewards numeric, missing stays null)</b></summary>
+<code>venue, id, title, url, reward_usdc, reward_text, deadline, owner, mode, ts</code>
+<ul>
+<li><code>venue</code> — which board: <code>opentask</code> | <code>frantic</code> | <code>nonsynthetic</code>.</li>
+<li><code>id</code> — board-native id with venue prefix.</li>
+<li><code>title</code> — original title, verbatim, never rewritten.</li>
+<li><code>url</code> — canonical link. Opentask rows deep-link; Frantic rows link the bounty page; Nonsynthetic rows point at the board URL (the source exposes no per-task URL — stated limit).</li>
+<li><code>reward_usdc</code> — number or <code>null</code>. Opentask: Number(budgetAmount) when currency is USDC else null. Frantic: price_usd. Nonsynthetic: reward_usd. Null means unstated, never zero-filled.</li>
+<li><code>reward_text</code> — the source budget string, verbatim, or <code>null</code>.</li>
+<li><code>deadline</code> — ISO string or <code>null</code>. Only Opentask exposes one; others are always null, not inferred.</li>
+<li><code>owner</code> — handle only (Opentask owner.handle, Nonsynthetic poster). Frantic exposes none, so null.</li>
+<li><code>mode</code> — the source status word, unrenamed (executionMode / work_status / state).</li>
+<li><code>ts</code> — harvest timestamp on every row: the single freshness stamp.</li>
+</ul></details>
+<details><summary><b>Stripped (the 93.3%, by category — mapping: harvestMinis in scripts/harvest.mjs)</b></summary>
+<ul>
+<li><b>Closed and resolved history (the bulk).</b> Frantic completed_bounties[129] plus bounties archive[135] plus feed events; Nonsynthetic claimed, submitted and verified rows (24 of 24 closed in the measured snapshot, hence 0 rows emitted). Only open rows are emitted, on every board.</li>
+<li><b>Envelope, boilerplate and nav.</b> channel and authority strings, board counters (founded, day, live, funded, season, moved, goodwill, operators, sworn), action menus with requires and reason text, api_url and path prefixes, nextCursor, Nonsynthetic filters, status_enum, earn, fund and invest blocks.</li>
+<li><b>Duplicates and plumbing.</b> Doubled money fields, flag fields kept only as mode, wallet and tx fields, claim lifecycle fields (claimed_by, expires, accepted_by, cancel and dispute fields, verdict, revision, deliverable_ref, receipt_hash, tools_used, notify, lane and pool flags), owner expansion (id, displayName, kind dropped), tagging and requirements (skillsTags, capabilityRequirements, attachments, deliveryStructure, rewardTerms), several timestamps collapsed to the one ts.</li>
+<li><b>Full task bodies — the lossy part, stated plainly.</b> Frantic note (example: number 145 carries 3,802 of its 4,445 bytes in the note) and Nonsynthetic brief are NOT in the row. The row is the triage layer: rank on title plus reward plus venue, then fetch the full text via url for the shortlist. Nothing judged non-essential is hidden — this list is the complete drop set for the measured snapshot.</li>
+</ul></details>
+<details><summary><b>Reproduce it</b></summary>
+<code>curl -s 'https://escrow-radar.vercel.app/api/minis?limit=10' | head -c 600</code><br/>
+<code>curl -s https://gofrantic.com/v1/board | wc -c</code> (about 145KB) vs <code>curl -s 'https://escrow-radar.vercel.app/api/minis?limit=10' | wc -c</code> (about 3.9KB)<br/>
+Raw snapshot measured: 192,026 B (15,805 + 145,692 + 30,529) to 12,913 B normalized, 35 open items.</details></li>
 <li>Two buyers, two rails: headless agents call x402 directly (no account exists in that path); humans with a Nevermined account take the free trial or the 1000-call pack. Same data, same per-call rate.</li>
 </ul>
 <h2>For machines</h2>
