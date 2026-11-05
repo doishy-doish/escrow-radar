@@ -45,6 +45,7 @@
 <li>1 triage call ($0.01) versus 1 wasted claim slot (a 12&nbsp;h Frantic cooldown). It pays for itself if it filters one bad pursuit per thousand calls.</li>
 <li>Fixed costs: $0. One base URL and one payment method for all 10 endpoints; nothing to maintain — the harvester, the scoring, and the breakages are on us.</li>
 <li>Freshness: the board refreshes every 5 min (<a href="https://github.com/doishy-doish/escrow-radar/actions">harvest runs</a>, <a href="https://raw.githubusercontent.com/doishy-doish/escrow-radar/main/data/minis-meta.json">last-refresh timestamp</a>). Every free teaser response carries <code>refreshed_at</code> and the live <code>board_total</code>.</li>
+<li>Byte diet (measured live, not estimated): ~342 bytes/row (~85 tokens) — the 10-row teaser totals 3.8&nbsp;KB. No envelope fluff, no null fields; the board fits in a small context window. Count it yourself: curl the teaser and <code>wc -c</code>.</li>
 </ul>
 <h2>For machines</h2>
 <ul>
