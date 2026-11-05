@@ -1,5 +1,5 @@
 // Harvester: refreshes data/*.json from public sources. Runs on Actions
-// (public repo only, per operator rule ÃÂ¢ÃÂÃÂ never on private repos).
+// (public repo only, per operator rule ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ never on private repos).
 // Exits 0 even if a source fails (keeps last good file).
 import { writeFileSync, readFileSync, existsSync } from 'node:fs';
 
@@ -93,7 +93,7 @@ async function harvestPapers() {
     const recs = parseArxivAtom(xml);
     if (recs.length) writeIfChanged('data/papers.json', recs);
     else console.log('papers: empty parse, keeping last good');
-  } catch (e) { console.log('papers failed:', String(e).slice(0, 120), 'ÃÂ¢ÃÂÃÂ keeping last good'); }
+  } catch (e) { console.log('papers failed:', String(e).slice(0, 120), 'ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ keeping last good'); }
 }
 
 
@@ -152,7 +152,7 @@ function bountyReward(body, sev) {
 
 const _repoEnrich = {};
 // Persistent enrich cache (data/repo-enrich.json, 6h TTL): per-repo check-runs
-// + workflow reads cost ~4 calls x N repos every run Ã¢ÂÂ at */5 that alone eats
+// + workflow reads cost ~4 calls x N repos every run ÃÂ¢ÃÂÃÂ at */5 that alone eats
 // half the 1000/hr token budget. CI status / repro commands barely move in 6h.
 let _enrichCache = {};
 try { _enrichCache = JSON.parse(readFileSync('data/repo-enrich.json', 'utf8')); } catch { _enrichCache = {}; }
@@ -271,7 +271,7 @@ async function enrichRepo(owner, repo) {
 
 // Multi-source bounty intake. Each source: one search call + per-issue enrich.
 // New sources MUST pass the paid-proof bar (reverse-scout verified payer)
-// before being added here Ã¢ÂÂ never wire label-only repos.
+// before being added here ÃÂ¢ÃÂÃÂ never wire label-only repos.
 const SOURCES = [
   { org: 'paraloom-labs', venue: 'paraloom', rail: 'MANUAL_MAINTAINER_REVIEW', note: 'reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract', q: '[BOUNTY] org:paraloom-labs state:open is:issue', per_page: 15 },
   { org: 'scaffold-studio-hq', venue: 'scaffold-studio', rail: 'MANUAL_MAINTAINER_REVIEW', note: 'explicit dollar bounties with /claim workflow; maintainer pays post-merge; no per-ticket escrow contract observed', q: '[Bounty] org:scaffold-studio-hq state:open is:issue', per_page: 5 },
@@ -308,7 +308,7 @@ function rankAlerts(recs) {
       ((b.reward_usdc || 0) - (a.reward_usdc || 0)));
 }
 
-// Stale-context demotion (drift doctrine 2026-11-05 Ã¢ÂÂ automates the #1315 kill).
+// Stale-context demotion (drift doctrine 2026-11-05 ÃÂ¢ÃÂÃÂ automates the #1315 kill).
 // Alert candidates whose target files are missing at the issue repo's HEAD
 // (cross-repo drift: body names wallet files on a core issue) or untouched
 // >45d before the issue was filed (reporter reading old code) get
@@ -356,6 +356,7 @@ async function demoteStale(cands, recs) {
 async function harvestMinis() {
   try {
     const out = [];
+    const meta = { ts: ts(), errors: {} };
     try {
       const t = await fetch('https://opentask.ai/api/tasks?sort=new&limit=50', { headers: UA }).then(r => { if (!r.ok) throw new Error('http-' + r.status); return r.json(); });
       for (const m of (t.tasks || [])) {
@@ -364,7 +365,7 @@ async function harvestMinis() {
           reward_usdc: m.budgetCurrency === 'USDC' ? Number(m.budgetAmount) || null : null, reward_text: m.budgetText || null,
           deadline: m.deadline || null, owner: (m.owner && m.owner.handle) || null, mode: m.executionMode || null, ts: ts() });
       }
-    } catch (e) { console.log('minis opentask failed:', String(e).slice(0, 100)); }
+    } catch (e) { meta.errors.opentask = String(e).slice(0, 200); console.log('minis opentask failed:', String(e).slice(0, 100)); }
     try {
       const b = await fetch('https://gofrantic.com/v1/board', { headers: UA }).then(r => { if (!r.ok) throw new Error('http-' + r.status); return r.json(); });
       for (const m of ((b.board && b.board.open_bounties) || [])) {
@@ -372,7 +373,7 @@ async function harvestMinis() {
           reward_usdc: m.price_usd ?? null, reward_text: (m.price_usd != null ? m.price_usd + ' USD' : null),
           deadline: null, owner: null, mode: m.work_status || null, ts: ts() });
       }
-    } catch (e) { console.log('minis frantic failed:', String(e).slice(0, 100)); }
+    } catch (e) { meta.errors.frantic = String(e).slice(0, 200); console.log('minis frantic failed:', String(e).slice(0, 100)); }
     try {
       const n = await fetch('https://api.nonsynthetic.net/api/v1/board/tasks', { headers: UA }).then(r => { if (!r.ok) throw new Error('http-' + r.status); return r.json(); });
       for (const m of (n.tasks || []).filter(t => t.state === 'open')) {
@@ -380,7 +381,8 @@ async function harvestMinis() {
           reward_usdc: m.reward_usd ?? null, reward_text: (m.reward_usd != null ? m.reward_usd + ' ' + (m.reward_asset || '') : null),
           deadline: null, owner: m.poster || null, mode: m.state || null, ts: ts() });
       }
-    } catch (e) { console.log('minis nonsynthetic failed:', String(e).slice(0, 100)); }
+    } catch (e) { meta.errors.nonsynthetic = String(e).slice(0, 200); console.log('minis nonsynthetic failed:', String(e).slice(0, 100)); }
+    writeIfChanged('data/minis-meta.json', meta);
     if (out.length) writeIfChanged('data/minis.json', out);
     else console.log('minis: all sources failed, keeping last good');
   } catch (e) { console.log('minis failed:', String(e).slice(0, 120)); }
@@ -481,7 +483,7 @@ async function harvestBounties() {
       // Rank 1 = alerts[0]. Lock it, ignore the rest until PR + re-verify gate.
       writeIfChanged('data/bounty-alerts.json', { ts: ts(), count: alerts.length, alerts, demoted: out.demoted });
     } else console.log('bounties: empty search, keeping last good');
-  } catch (e) { console.log('bounties failed:', String(e).slice(0, 160), 'Ã¢ÂÂ keeping last good'); }
+  } catch (e) { console.log('bounties failed:', String(e).slice(0, 160), 'ÃÂ¢ÃÂÃÂ keeping last good'); }
 }
 
 await harvestPrices();
