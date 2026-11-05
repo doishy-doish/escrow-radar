@@ -265,6 +265,37 @@ const SOURCES = [
   { org: 'scaffold-studio-hq', venue: 'scaffold-studio', rail: 'MANUAL_MAINTAINER_REVIEW', note: 'explicit dollar bounties with /claim workflow; maintainer pays post-merge; no per-ticket escrow contract observed', q: '[Bounty] org:scaffold-studio-hq state:open is:issue', per_page: 5 },
 ];
 
+// Serial-lock ranking (winner-take-all doctrine 2026-11-05): alerts file is
+// pre-sorted for single-target execution. Tier 1 repro-determinism >
+// Tier 2 blast radius (SJF) > Tier 3 reward density. Harvester does NOT lock;
+// the agent holds the lock (data/bounty-lock.json) and re-verifies between sprints.
+function reproTier(r) {
+  if (r.failing_assertion) return 2;
+  if (r.has_repro || r.repro_command) return 1;
+  return 0;
+}
+function estMinutes(r) {
+  const n = Array.isArray(r.target_files) ? r.target_files.length : 0;
+  let m = 10 + n * 10;
+  m += r.failing_assertion ? -5 : 15;
+  m += r.has_stack_trace ? 0 : 10;
+  return Math.max(5, m);
+}
+function rankAlerts(recs) {
+  return recs
+    .filter(r => r.competing_prs === 0 && !r.claimed_in_comments && r.age_seconds_since_open <= 7 * 24 * 3600 && (r.reward_usdc || 0) >= 50)
+    .map(r => {
+      const est = estMinutes(r);
+      const density = (r.reward_usdc || 0) / est;
+      return { ...r, selection_rank_tier: reproTier(r), est_minutes: est, reward_density: Math.round(density * 100) / 100 };
+    })
+    .sort((a, b) =>
+      (b.selection_rank_tier - a.selection_rank_tier) ||
+      (a.est_minutes - b.est_minutes) ||
+      (b.reward_density - a.reward_density) ||
+      ((b.reward_usdc || 0) - (a.reward_usdc || 0)));
+}
+
 async function harvestBounties() {
   try {
     const now = Date.now();
@@ -323,11 +354,9 @@ async function harvestBounties() {
     } // end source loop
     if (recs.length) {
       writeIfChanged('data/bounties.json', recs);
-      // Customer-zero hook: uncontested + fresh enough to matter (<=7d), reward-first.
-      // Same tick, zero new infra — our own loop reads this before anyone else.
-      const alerts = recs
-        .filter(r => r.competing_prs === 0 && !r.claimed_in_comments && r.age_seconds_since_open <= 7 * 24 * 3600 && (r.reward_usdc || 0) >= 50)
-        .sort((a, b) => (b.reward_usdc || 0) - (a.reward_usdc || 0));
+      // Customer-zero hook: uncontested + fresh (<=7d), pre-ranked for serial lock.
+      // Rank 1 = alerts[0]. Lock it, ignore the rest until PR + re-verify gate.
+      const alerts = rankAlerts(recs);
       writeIfChanged('data/bounty-alerts.json', { ts: ts(), count: alerts.length, alerts });
     } else console.log('bounties: empty search, keeping last good');
   } catch (e) { console.log('bounties failed:', String(e).slice(0, 160), '— keeping last good'); }
