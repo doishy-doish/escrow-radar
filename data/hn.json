@@ -3,7 +3,7 @@
   "id": 50377078,
   "title": "Baidu released ERNIE 5.5 Flash Base",
   "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
-  "score": 61,
+  "score": 63,
   "by": "pretext",
   "time": "2026-11-05T09:29:12.000Z"
  },
@@ -11,7 +11,7 @@
   "id": 50371246,
   "title": "Residential proxies detected on White House network",
   "url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
-  "score": 1108,
+  "score": 1109,
   "by": "Rasbora",
   "time": "2026-11-04T20:45:18.000Z"
  },
@@ -19,7 +19,7 @@
   "id": 50375354,
   "title": "Lemmings CSS Animation",
   "url": "https://markblah.github.io/lemmings/",
-  "score": 228,
+  "score": 232,
   "by": "MarkBlah",
   "time": "2026-11-05T04:54:10.000Z"
  },
@@ -27,7 +27,7 @@
   "id": 50377821,
   "title": "Awesome repositories are no longer awesome",
   "url": "https://erikgahner.github.io/posts/2026/awesome-repositories-are-no-longer-awesome/",
-  "score": 33,
+  "score": 36,
   "by": "erikgahner",
   "time": "2026-11-05T11:16:51.000Z"
  },
@@ -51,7 +51,7 @@
   "id": 50340195,
   "title": "Partial Operator Precedence",
   "url": "https://ziglang.org/devlog/2026/#2026-10-24",
-  "score": 62,
+  "score": 63,
   "by": "tosh",
   "time": "2026-11-02T17:22:20.000Z"
  },
@@ -115,7 +115,7 @@
   "id": 50370610,
   "title": "Insects don't swarm at LED lights",
   "url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
-  "score": 275,
+  "score": 276,
   "by": "speckx",
   "time": "2026-11-04T19:50:23.000Z"
  },
@@ -131,7 +131,7 @@
   "id": 50375691,
   "title": "Being a kid making games in the early 2000s",
   "url": "https://jaytholen.net/teengamedev/",
-  "score": 27,
+  "score": 29,
   "by": "farmerbb",
   "time": "2026-11-05T05:53:53.000Z"
  },
@@ -139,9 +139,17 @@
   "id": 50369503,
   "title": "Conductor is joining Meta",
   "url": "https://www.conductor.build/announcement",
-  "score": 185,
+  "score": 186,
   "by": "kenrose",
   "time": "2026-11-04T18:22:40.000Z"
+ },
+ {
+  "id": 50366117,
+  "title": "Ask HN: What's your current AI agentic setup?",
+  "url": null,
+  "score": 374,
+  "by": "eggbrain",
+  "time": "2026-11-04T14:37:22.000Z"
  },
  {
   "id": 50377221,
@@ -150,14 +158,6 @@
   "score": 41,
   "by": "Animux",
   "time": "2026-11-05T09:46:17.000Z"
- },
- {
-  "id": 50366117,
-  "title": "Ask HN: What's your current AI agentic setup?",
-  "url": null,
-  "score": 368,
-  "by": "eggbrain",
-  "time": "2026-11-04T14:37:22.000Z"
  },
  {
   "id": 50372164,
