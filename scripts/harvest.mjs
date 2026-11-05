@@ -433,16 +433,17 @@ async function harvestBounties() {
     await sleep(2000);
     } // end source loop
     if (recs.length) {
-      writeIfChanged('data/bounties.json', recs);
-      writeIfChanged('data/repo-enrich.json', _enrichCache);
-      // Customer-zero hook: uncontested + fresh (<=7d), pre-ranked for serial lock.
-      // Rank 1 = alerts[0]. Lock it, ignore the rest until PR + re-verify gate.
-      // Drift-demotion runs last: stale-context candidates drop out with evidence.
+      // Drift-demotion runs BEFORE the bounties write so stale_context /
+      // stale_reason persist on the records, not just in the alerts file.
       let alerts = rankAlerts(recs);
       const preCount = alerts.length;
       const out = await demoteStale(alerts, recs);
       alerts = out.fresh;
       console.log(`demote: ${preCount} candidates -> ${alerts.length} alerts` + (out.demoted.length ? ' demoted=' + JSON.stringify(out.demoted) : ''));
+      writeIfChanged('data/bounties.json', recs);
+      writeIfChanged('data/repo-enrich.json', _enrichCache);
+      // Customer-zero hook: uncontested + fresh (<=7d), pre-ranked for serial lock.
+      // Rank 1 = alerts[0]. Lock it, ignore the rest until PR + re-verify gate.
       writeIfChanged('data/bounty-alerts.json', { ts: ts(), count: alerts.length, alerts, demoted: out.demoted });
     } else console.log('bounties: empty search, keeping last good');
   } catch (e) { console.log('bounties failed:', String(e).slice(0, 160), '— keeping last good'); }
