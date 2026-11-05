@@ -7,6 +7,7 @@ const PRICE_BULK = "10000";
 const PRICE_ONE = "5000";
 const FACILITATOR = "https://x402.org/facilitator";
 const DATA_URL = "https://raw.githubusercontent.com/doishy-doish/escrow-radar/main/data/minis.json";
+const META_URL = "https://raw.githubusercontent.com/doishy-doish/escrow-radar/main/data/minis-meta.json";
 const DESC = "Aggregated mini-bounty board: open Opentask + Frantic + Nonsynthetic tasks with rewards (pay-per-call dataset)";
 let cache = { at: 0, data: null };
 function cors(res) {
@@ -58,6 +59,16 @@ function needPay(res, url, method, single) {
   res.setHeader("payment-required", Buffer.from(JSON.stringify(payload)).toString("base64"));
   return res.status(402).json(payload);
 }
+let metacache = { at: 0, data: null };
+async function getMeta() {
+  if (metacache.data && Date.now() - metacache.at < 300000) return metacache.data;
+  try {
+    const r = await fetch(META_URL, { headers: { "User-Agent": "x402-radar/1.0" } });
+    if (!r.ok) return {};
+    metacache = { at: Date.now(), data: await r.json() };
+  } catch (e) { return metacache.data || {}; }
+  return metacache.data;
+}
 async function getData() {
   if (cache.data && Date.now() - cache.at < 300000) return cache.data;
   const r = await fetch(DATA_URL, { headers: { "User-Agent": "x402-radar/1.0" } });
@@ -88,7 +99,8 @@ const pay = req.headers["x-payment"];
       if (minR > 0) data = data.filter(p => (p.reward_usdc || 0) >= minR);
       cors(res);
       res.setHeader("Cache-Control", "public, max-age=60");
-      return res.status(200).json({ free_teaser: true, note: "First 3 rows free; full board via paid call (price in the 402).", count: Math.min(data.length, 3), items: data.slice(0, 3) });
+      const meta = await getMeta();
+      return res.status(200).json({ free_teaser: true, note: "First 3 rows free; full board via paid call (price in the 402).", count: Math.min(data.length, 3), board_total: data.length, refreshed_at: (meta && meta.ts) || null, items: data.slice(0, 3) });
     } catch (e) { return needPay(res, url, method, filtered); }
   }
   if (!pay) return needPay(res, url, method, filtered);
