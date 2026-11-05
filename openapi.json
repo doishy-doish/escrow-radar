@@ -1888,20 +1888,13 @@
         }
       }
     },
-    "/api/sample": {
+    "/data/sample.json": {
       "get": {
-        "summary": "Free sample outputs (no payment)",
-        "description": "Redacted example outputs for triage/solana/minis. No x402 payment required.",
+        "summary": "Free sample outputs (static, no payment)",
+        "description": "Redacted example outputs for triage/solana/minis. Static file, no x402 payment required.",
         "responses": {
           "200": {
-            "description": "Example payloads",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object"
-                }
-              }
-            }
+            "description": "Example payloads"
           }
         }
       }
