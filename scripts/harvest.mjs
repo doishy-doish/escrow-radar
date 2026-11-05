@@ -317,6 +317,22 @@ async function harvestBounties() {
           .filter(e => e.event === 'cross-referenced' && e.source && e.source.issue && e.source.issue.pull_request && e.source.issue.state === 'open')
           .map(e => e.source.issue.html_url);
       } catch (e) { console.log('timeline failed for', repo + '#' + i.number, String(e).slice(0, 80)); }
+      // Timeline embeds go stale (seen 2026-11-05: #1315's 3 xrefs all read
+      // open in timeline but are closed on direct fetch). Verify each
+      // candidate PR's live state; fail-closed (unverifiable stays competing).
+      try {
+        const live = [];
+        for (const u of prs) {
+          const m = String(u).match(/\/pull\/(\d+)(?:\/)?$/);
+          if (!m) { live.push(u); continue; }
+          try {
+            const p = await ghJson(`https://api.github.com/repos/${src.org}/${repo}/pulls/${m[1]}`);
+            await sleep(600);
+            if (p && p.state === 'open') live.push(u);
+          } catch { live.push(u); }
+        }
+        prs = live;
+      } catch { /* keep timeline list */ }
       const en = await enrichRepo(src.org, repo);
       // Comment-claim scan: one call per issue; any hit disqualifies the race.
       let claim = { claimed: false };
