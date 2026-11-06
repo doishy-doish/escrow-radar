@@ -1,59 +1,139 @@
 [
  {
-  "id": 50388001,
-  "title": "US FAA says it will phase out floppy disks from air traffic control by 2028",
-  "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
-  "score": 70,
-  "by": "ChrisArchitect",
-  "time": "2026-11-06T04:00:28.000Z"
+  "id": 50397429,
+  "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+  "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+  "score": 243,
+  "by": "theanomaly",
+  "time": "2026-11-06T19:48:51.000Z"
+ },
+ {
+  "id": 50397994,
+  "title": "AI is dramatically accelerating AI research",
+  "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+  "score": 130,
+  "by": "yurivish",
+  "time": "2026-11-06T20:27:23.000Z"
+ },
+ {
+  "id": 50399657,
+  "title": "CATL Sodium Battery Hits LFP Cost Parity in 2026: 15,000 Cycles, 30-Year Life",
+  "url": "https://ievchina.com/energy-storage/catl-sodium-battery-cost-parity-lfp-2026-15000-cycles/",
+  "score": 13,
+  "by": "doener",
+  "time": "2026-11-06T23:00:46.000Z"
+ },
+ {
+  "id": 50399569,
+  "title": "ChatGPT silently passes data between connectors and the bounty wants an ID card",
+  "url": "https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053",
+  "score": 14,
+  "by": "Aldipower",
+  "time": "2026-11-06T22:50:43.000Z"
+ },
+ {
+  "id": 50397219,
+  "title": "Firecracker VM Escape: PwnEscape Part 2",
+  "url": "https://pwn.ai/blog/firecracker-escape",
+  "score": 128,
+  "by": "SerCe",
+  "time": "2026-11-06T19:33:38.000Z"
  },
  {
   "id": 50391456,
   "title": "Tesla to wind down Cybertruck production",
   "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
-  "score": 358,
+  "score": 768,
   "by": "PLenz",
   "time": "2026-11-06T12:13:51.000Z"
+ },
+ {
+  "id": 50388001,
+  "title": "US FAA says it will phase out floppy disks from air traffic control by 2028",
+  "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
+  "score": 248,
+  "by": "ChrisArchitect",
+  "time": "2026-11-06T04:00:28.000Z"
  },
  {
   "id": 50394855,
   "title": "First steps in bare-metal programming using UEFI",
   "url": "https://kevinboone.me/efitest_index.html",
-  "score": 59,
+  "score": 159,
   "by": "LaSombra",
   "time": "2026-11-06T16:50:29.000Z"
  },
  {
-  "id": 50394569,
-  "title": "Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web",
-  "url": "https://github.com/anomalyco/rune",
-  "score": 44,
-  "by": "mik3y",
-  "time": "2026-11-06T16:31:32.000Z"
+  "id": 50397017,
+  "title": "Restaurant Delivery Payment-Skimming Campaign",
+  "url": "https://www.infohawk.com/news/2026-11-05-scamwich-restaurant-skimming",
+  "score": 62,
+  "by": "fiej",
+  "time": "2026-11-06T19:19:27.000Z"
  },
  {
-  "id": 50392118,
-  "title": "Gemini Omni 1.2 Flash",
-  "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-  "score": 218,
-  "by": "thisisauserid",
-  "time": "2026-11-06T13:35:27.000Z"
+  "id": 50354308,
+  "title": "The Ubuntu 26.04 Rust sudo is not compatible with standard sudo",
+  "url": "https://utcc.utoronto.ca/~cks/space/blog/linux/Ubuntu2604RustSudoNotCompatible",
+  "score": 82,
+  "by": "wondersky",
+  "time": "2026-11-03T16:43:54.000Z"
+ },
+ {
+  "id": 50396834,
+  "title": "Replit rebuilt its sandbox engine with microVMs",
+  "url": "https://frontier.replit.com/sandbox-engine-microvms-part-1/",
+  "score": 44,
+  "by": "gaplong",
+  "time": "2026-11-06T19:06:10.000Z"
  },
  {
   "id": 50389333,
   "title": "Blender's UI and Runtime: Much Faster Than GPUI",
   "url": "https://github.com/ppmpreetham/BUI",
-  "score": 558,
+  "score": 673,
   "by": "ppmpreetham",
   "time": "2026-11-06T07:40:35.000Z"
  },
  {
-  "id": 50393758,
-  "title": "Deus Ex",
-  "url": "https://www.filfre.net/2026/11/deus-ex/",
-  "score": 219,
-  "by": "cybersoyuz",
-  "time": "2026-11-06T15:44:36.000Z"
+  "id": 50395919,
+  "title": "Memorilla: Latent Semantic Memory for LLMs",
+  "url": "https://arxiv.org/abs/2610.21375",
+  "score": 70,
+  "by": "handfuloflight",
+  "time": "2026-11-06T18:03:33.000Z"
+ },
+ {
+  "id": 50379221,
+  "title": "Show HN: Waymark – A workflow engine that compiles jobs instead of replaying",
+  "url": "https://github.com/piercefreeman/waymark",
+  "score": 27,
+  "by": "icyfox",
+  "time": "2026-11-05T14:06:31.000Z"
+ },
+ {
+  "id": 50395450,
+  "title": "Devvm.dev: One VM for every project",
+  "url": "https://devvm.dev/",
+  "score": 83,
+  "by": "luispa",
+  "time": "2026-11-06T17:30:22.000Z"
+ },
+ {
+  "id": 50397711,
+  "title": "Google has acquired Crusoe's data center site in southeast Wyoming",
+  "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
+  "score": 14,
+  "by": "rexbee",
+  "time": "2026-11-06T20:09:14.000Z"
+ },
+ {
+  "id": 50392118,
+  "title": "Gemini Omni 1.2 Flash",
+  "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+  "score": 280,
+  "by": "thisisauserid",
+  "time": "2026-11-06T13:35:27.000Z"
  },
  {
   "id": 50395043,
@@ -64,179 +144,99 @@
   "time": "2026-11-06T17:03:33.000Z"
  },
  {
-  "id": 50385272,
-  "title": "Claude Code sends your email address to websites",
-  "url": "https://github.com/anthropics/claude-code/issues/107757",
-  "score": 1502,
-  "by": "motoroco",
-  "time": "2026-11-05T22:17:15.000Z"
+  "id": 50368291,
+  "title": "Annie Ernaux still feels like an outsider",
+  "url": "https://www.vulture.com/article/annie-ernaux-interview-french-protests-nobel-prize.html",
+  "score": 4,
+  "by": "Caiero",
+  "time": "2026-11-04T16:51:22.000Z"
  },
  {
   "id": 50395869,
   "title": "Size-It-Up (Game)",
   "url": "https://magnitudle.com/size-it-up",
-  "score": 5,
+  "score": 57,
   "by": "whoishiding",
   "time": "2026-11-06T17:59:59.000Z"
  },
  {
-  "id": 50382958,
-  "title": "Zero Hour: Telling time was a matter of survival and strategy during WWI (2014)",
-  "url": "https://www.laphamsquarterly.org/roundtable/zero-hour",
-  "score": 58,
-  "by": "NaOH",
-  "time": "2026-11-05T18:59:37.000Z"
- },
- {
-  "id": 50393089,
-  "title": "Lippitt-Knoster in Practice (Field Notes for Managing Complex Projects)",
-  "url": "https://sharedphysics.com/lippitt-knoster-in-practice-field-notes-for-managing-complex-projects/",
-  "score": 31,
-  "by": "goopthink",
-  "time": "2026-11-06T14:57:16.000Z"
- },
- {
-  "id": 50394292,
-  "title": "Scriptable GeoDNS: Leaving AWS for Bunny",
-  "url": "https://vincent.bernat.ch/en/blog/2026-bunny-geodns",
-  "score": 27,
-  "by": "sshah03",
-  "time": "2026-11-06T16:15:03.000Z"
- },
- {
-  "id": 50395318,
-  "title": "Anthropic IPO valuation talks drop to $1.3T",
-  "url": "https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3-trillion-as-major-investors",
-  "score": 50,
-  "by": "arbuge",
-  "time": "2026-11-06T17:21:15.000Z"
- },
- {
-  "id": 50392787,
-  "title": "MTG-I2 First Images",
-  "url": "https://www.eumetsat.int/mtg-i2-first-images",
-  "score": 38,
-  "by": "N19PEDL2",
-  "time": "2026-11-06T14:35:29.000Z"
- },
- {
-  "id": 50390525,
-  "title": "Living beyond the limits of survival: wood ants trapped in a gigantic pitfall (2016)",
-  "url": "https://jhr.pensoft.net/articles.php?id=9096",
-  "score": 133,
-  "by": "hitekker",
-  "time": "2026-11-06T10:21:15.000Z"
- },
- {
-  "id": 50390124,
-  "title": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
-  "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
-  "score": 561,
-  "by": "microtonal",
-  "time": "2026-11-06T09:27:12.000Z"
- },
- {
-  "id": 50389370,
-  "title": "Kugelblitz – Mac-Native Google Earth Alternative",
-  "url": "https://apps.metaebene.me/en/kugelblitz",
-  "score": 222,
-  "by": "luoc",
-  "time": "2026-11-06T07:47:38.000Z"
- },
- {
-  "id": 50394771,
-  "title": "Only 16% of U.S. fast-charging stations meet federal NEVI standards (open data)",
-  "url": "https://chargingnear.me/data",
-  "score": 5,
-  "by": "parkgraph",
-  "time": "2026-11-06T16:45:10.000Z"
- },
- {
-  "id": 50384233,
-  "title": "MS Paint Remote Code Execution Vulnerability",
-  "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
-  "score": 686,
-  "by": "kuberwastaken",
-  "time": "2026-11-05T20:43:42.000Z"
- },
- {
-  "id": 50391145,
-  "title": "We've built an open-source feature flag server for 11 years",
-  "url": "https://github.com/Unleash/unleash",
-  "score": 111,
-  "by": "ivarconr",
-  "time": "2026-11-06T11:40:06.000Z"
- },
- {
-  "id": 50388122,
-  "title": "From Linux to Wikipedia: How Volunteers Build the Internet",
-  "url": "https://thereader.mitpress.mit.edu/from-linux-to-wikipedia-how-volunteers-build-the-internet/",
-  "score": 262,
-  "by": "jonbaer",
-  "time": "2026-11-06T04:17:49.000Z"
- },
- {
-  "id": 50395450,
-  "title": "Devvm.dev: One VM for every project",
-  "url": "https://devvm.dev/",
-  "score": 6,
-  "by": "luispa",
-  "time": "2026-11-06T17:30:22.000Z"
- },
- {
-  "id": 50394837,
-  "title": "GPU-Accelerated Weight Teleportation",
-  "url": "https://humansand.ai/blog/gpu-accelerated-weight-teleportation",
-  "score": 4,
-  "by": "gmays",
-  "time": "2026-11-06T16:49:00.000Z"
- },
- {
-  "id": 50389990,
-  "title": "AI for scientific discovery: How researchers use Claude",
-  "url": "https://www.anthropic.com/research/how-researchers-use-claude",
-  "score": 68,
-  "by": "ersinesen",
-  "time": "2026-11-06T09:13:30.000Z"
- },
- {
-  "id": 50392499,
-  "title": "University libraries are being swarmed by AI bots, putting public access at risk",
-  "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
-  "score": 97,
-  "by": "blakesterz",
-  "time": "2026-11-06T14:13:09.000Z"
- },
- {
-  "id": 50394991,
-  "title": "Show HN: AegisKernel – Zero-trust POSIX runtime for AI agents in <0.016ms",
-  "url": "https://adikshatriyag-crypto.github.io/aegis-kernel/",
-  "score": 3,
-  "by": "adityawebde",
-  "time": "2026-11-06T17:00:23.000Z"
- },
- {
   "id": 50394906,
-  "title": "Anthropic IPO Buyers See Valuation as Low as $1.1T",
+  "title": "Anthropic IPO buyers see valuation as low as $1.1T",
   "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
-  "score": 42,
+  "score": 186,
   "by": "dgellow",
   "time": "2026-11-06T16:54:36.000Z"
+ },
+ {
+  "id": 50392348,
+  "title": "How octopuses squeeze through too small gaps",
+  "url": "https://journals.biologists.com/jeb/article/229/21/jeb253615/373332/How-octopuses-squeeze-through-too-small-gaps",
+  "score": 40,
+  "by": "bookofjoe",
+  "time": "2026-11-06T13:57:20.000Z"
  },
  {
   "id": 50394977,
   "title": "PyLings: Solve Exercises and Learn Python",
   "url": "https://github.com/thesayfulla/pylings",
-  "score": 4,
+  "score": 39,
   "by": "thesayfulla",
   "time": "2026-11-06T16:59:40.000Z"
  },
  {
-  "id": 50387796,
-  "title": "Pwn.college",
-  "url": "https://pwn.college/",
-  "score": 276,
-  "by": "tripdout",
-  "time": "2026-11-06T03:27:14.000Z"
+  "id": 50396108,
+  "title": "40C3 halfnarp – Submit talk preferences to aid scheduling",
+  "url": "https://halfnarp.events.ccc.de",
+  "score": 34,
+  "by": "hanemile",
+  "time": "2026-11-06T18:16:43.000Z"
+ },
+ {
+  "id": 50389570,
+  "title": "Chomsky and the two cultures of statistical learning (2011)",
+  "url": "https://www.norvig.com/chomsky.html",
+  "score": 88,
+  "by": "andsoitis",
+  "time": "2026-11-06T08:18:36.000Z"
+ },
+ {
+  "id": 50397325,
+  "title": "Show HN: Agents infer Lego mechanisms from sources, then animate them",
+  "url": "https://github.com/anteloc/ldraw-mecha/tree/v0.5.0",
+  "score": 22,
+  "by": "antelocnova",
+  "time": "2026-11-06T19:41:20.000Z"
+ },
+ {
+  "id": 50396064,
+  "title": "We know 15k websites are infected. how do we tell them?",
+  "url": "https://scotthelme.co.uk/we-know-15-579-websites-are-infected-how-do-we-tell-them/",
+  "score": 131,
+  "by": "speckx",
+  "time": "2026-11-06T18:13:35.000Z"
+ },
+ {
+  "id": 50393758,
+  "title": "Deus Ex",
+  "url": "https://www.filfre.net/2026/11/deus-ex/",
+  "score": 315,
+  "by": "cybersoyuz",
+  "time": "2026-11-06T15:44:36.000Z"
+ },
+ {
+  "id": 50397176,
+  "title": "My first and last telegram was from Rebecca West",
+  "url": "https://thelampmagazine.com/blog/rebecca-wests-nightingale",
+  "score": 30,
+  "by": "bryanrasmussen",
+  "time": "2026-11-06T19:30:00.000Z"
+ },
+ {
+  "id": 50394569,
+  "title": "Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web",
+  "url": "https://github.com/anomalyco/rune",
+  "score": 139,
+  "by": "mik3y",
+  "time": "2026-11-06T16:31:32.000Z"
  }
 ]
