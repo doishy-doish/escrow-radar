@@ -1,41 +1,41 @@
 [
  {
-  "id": 50383740,
-  "title": "Search for everyone",
-  "url": "https://kagi.com/changelog#11820",
-  "score": 401,
-  "by": "elashri",
-  "time": "2026-11-05T20:03:34.000Z"
- },
- {
   "id": 50385272,
   "title": "Claude Code sends your email address to websites",
   "url": "https://github.com/anthropics/claude-code/issues/107757",
-  "score": 203,
+  "score": 657,
   "by": "motoroco",
   "time": "2026-11-05T22:17:15.000Z"
- },
- {
-  "id": 50384233,
-  "title": "MS Paint Remote Code Execution Vulnerability",
-  "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
-  "score": 233,
-  "by": "kuberwastaken",
-  "time": "2026-11-05T20:43:42.000Z"
  },
  {
   "id": 50378228,
   "title": "sshole",
   "url": "https://sshhole.com",
-  "score": 2216,
+  "score": 2406,
   "by": "josemrb",
   "time": "2026-11-05T12:19:02.000Z"
+ },
+ {
+  "id": 50384233,
+  "title": "MS Paint Remote Code Execution Vulnerability",
+  "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+  "score": 366,
+  "by": "kuberwastaken",
+  "time": "2026-11-05T20:43:42.000Z"
+ },
+ {
+  "id": 50386338,
+  "title": "Inkling 2 Small",
+  "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+  "score": 98,
+  "by": "Philpax",
+  "time": "2026-11-06T00:00:24.000Z"
  },
  {
   "id": 50379704,
   "title": "Alpine Linux Security Advisory: OpenSSH-server password authentication bypass",
   "url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
-  "score": 549,
+  "score": 608,
   "by": "pantalaimon",
   "time": "2026-11-05T14:44:20.000Z"
  },
@@ -43,105 +43,153 @@
   "id": 50383057,
   "title": "The Hackintosh Reborn",
   "url": "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/",
-  "score": 160,
+  "score": 236,
   "by": "rubatuga",
   "time": "2026-11-05T19:08:22.000Z"
  },
  {
-  "id": 50383963,
-  "title": "Tencent Launches Hy4, One of the Leading Open-Source AI Models",
-  "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
-  "score": 66,
-  "by": "gmays",
-  "time": "2026-11-05T20:21:43.000Z"
+  "id": 50387738,
+  "title": "Nvidia Kubernetes Engine (NVKE)",
+  "url": "https://github.com/dsx-ai-factory/nvke",
+  "score": 6,
+  "by": "gkapur",
+  "time": "2026-11-06T03:16:26.000Z"
+ },
+ {
+  "id": 50387546,
+  "title": "Closed AI models dominate the price-performance frontier",
+  "url": "https://village.dev/blog/closed-ai-models-now-dominate-the-price-performance-frontier/",
+  "score": 5,
+  "by": "kevin_hu",
+  "time": "2026-11-06T02:49:56.000Z"
  },
  {
   "id": 50381383,
   "title": "Window Sweaters",
   "url": "https://github.com/saragordic/window-sweaters",
-  "score": 215,
+  "score": 268,
   "by": "nickswalker",
   "time": "2026-11-05T16:50:14.000Z"
  },
  {
-  "id": 50383739,
-  "title": "Goodbye from Salon",
-  "url": "https://www.salon.com/2026/11/05/goodbye-from-salon/",
-  "score": 340,
-  "by": "mkeeter",
-  "time": "2026-11-05T20:03:29.000Z"
+  "id": 50378643,
+  "title": "Show HN: Firenook – Firebase emulators in Rust: 40× faster writes, 10× less RAM",
+  "url": "https://firenook.dev/",
+  "score": 59,
+  "by": "sanjevirau",
+  "time": "2026-11-05T13:07:29.000Z"
  },
  {
-  "id": 50383877,
-  "title": "The Cost of Blogging",
-  "url": "https://onlinegoddess.net/2026/11/the-cost-of-blogging/",
-  "score": 40,
-  "by": "speckx",
-  "time": "2026-11-05T20:14:25.000Z"
+  "id": 50387470,
+  "title": "Castration extends life span in mice",
+  "url": "https://www.science.org/content/article/castration-extends-life-span-surprising-way-mouse-study-suggests",
+  "score": 5,
+  "by": "gmays",
+  "time": "2026-11-06T02:38:29.000Z"
  },
  {
-  "id": 50380810,
-  "title": "Motorola Signature 27 with GrapheneOS support",
-  "url": "https://motorolanews.com/motorola-signature-27-2/",
-  "score": 372,
-  "by": "monneyboi",
-  "time": "2026-11-05T16:01:34.000Z"
+  "id": 50387623,
+  "title": "Claude was faster and cheaper. We took the scenic route anyway",
+  "url": "https://blog.grainulation.org/verify-then-vote/",
+  "score": 10,
+  "by": "aid-ninja",
+  "time": "2026-11-06T02:59:39.000Z"
  },
  {
-  "id": 50379576,
-  "title": "September in Servo: <progress>, rounded rectangles, and more",
-  "url": "https://servo.org/blog/2026/11/05/september-in-servo/",
-  "score": 171,
-  "by": "iamnothere",
-  "time": "2026-11-05T14:34:18.000Z"
+  "id": 50386789,
+  "title": "MoofTCP – A modern replacement for MacTCP on 68k Macs",
+  "url": "https://github.com/matthewmrichter/mooftcp",
+  "score": 18,
+  "by": "marcusbasant",
+  "time": "2026-11-06T00:54:15.000Z"
  },
  {
   "id": 50381687,
   "title": "Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3",
   "url": "https://github.com/rivet-dev/rivet",
-  "score": 70,
+  "score": 80,
   "by": "NathanFlurry",
   "time": "2026-11-05T17:17:42.000Z"
  },
  {
-  "id": 50378571,
-  "title": "Download your favourite YouTube videos",
-  "url": "https://criminallyvulgar.dev/you-should-absolutely-download-your-favourite-youtube-videos/",
-  "score": 251,
-  "by": "surprisetalk",
-  "time": "2026-11-05T13:00:11.000Z"
+  "id": 50385870,
+  "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
+  "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+  "score": 163,
+  "by": "randycupertino",
+  "time": "2026-11-05T23:09:57.000Z"
  },
  {
-  "id": 50381033,
-  "title": "My psychophysics as a bilateral cochlear implant user",
-  "url": "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
-  "score": 150,
-  "by": "mi-rae",
-  "time": "2026-11-05T16:21:12.000Z"
+  "id": 50383739,
+  "title": "Goodbye from Salon",
+  "url": "https://www.salon.com/2026/11/05/goodbye-from-salon/",
+  "score": 485,
+  "by": "mkeeter",
+  "time": "2026-11-05T20:03:29.000Z"
+ },
+ {
+  "id": 50386104,
+  "title": "Brazilian Credit Guarantor Fund Data Breach Affecting PII and Payout Data",
+  "url": "https://www.fgc.org.br/comunicado",
+  "score": 27,
+  "by": "doodlesdev",
+  "time": "2026-11-05T23:32:36.000Z"
+ },
+ {
+  "id": 50368208,
+  "title": "Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)",
+  "url": "https://www.linum.ai/field-notes/pjit-21k",
+  "score": 172,
+  "by": "schopra909",
+  "time": "2026-11-04T16:45:11.000Z"
+ },
+ {
+  "id": 50379576,
+  "title": "September in Servo: <progress>, rounded rectangles, and more",
+  "url": "https://servo.org/blog/2026/11/05/september-in-servo/",
+  "score": 200,
+  "by": "iamnothere",
+  "time": "2026-11-05T14:34:18.000Z"
  },
  {
   "id": 50383294,
   "title": "Introducing Pangram Image 1.0",
   "url": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
-  "score": 39,
+  "score": 76,
   "by": "gmays",
   "time": "2026-11-05T19:27:52.000Z"
+ },
+ {
+  "id": 50378571,
+  "title": "Download your favourite YouTube videos",
+  "url": "https://criminallyvulgar.dev/you-should-absolutely-download-your-favourite-youtube-videos/",
+  "score": 293,
+  "by": "surprisetalk",
+  "time": "2026-11-05T13:00:11.000Z"
  },
  {
   "id": 50378942,
   "title": "I wish tech companies knew more about me",
   "url": "https://rakhim.exotext.com/i-wish-tech-companies-knew-more-about-me",
-  "score": 271,
+  "score": 331,
   "by": "freetonik",
   "time": "2026-11-05T13:40:52.000Z"
  },
  {
-  "id": 50377976,
-  "title": "OpenSSH 10.6p2 Critical workaround for alpine without PAM",
-  "url": "https://www.openssh.org/releasenotes.html#10.6p2",
-  "score": 230,
-  "by": "selckin",
-  "time": "2026-11-05T11:40:30.000Z"
+  "id": 50380810,
+  "title": "Motorola Signature 27 with GrapheneOS support",
+  "url": "https://motorolanews.com/motorola-signature-27-2/",
+  "score": 413,
+  "by": "monneyboi",
+  "time": "2026-11-05T16:01:34.000Z"
+ },
+ {
+  "id": 50383740,
+  "title": "Search for everyone",
+  "url": "https://kagi.com/changelog#11820",
+  "score": 587,
+  "by": "elashri",
+  "time": "2026-11-05T20:03:34.000Z"
  },
  {
   "id": 50381512,
@@ -152,91 +200,43 @@
   "time": "2026-11-05T17:01:23.000Z"
  },
  {
-  "id": 50368208,
-  "title": "Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)",
-  "url": "https://www.linum.ai/field-notes/pjit-21k",
-  "score": 126,
-  "by": "schopra909",
-  "time": "2026-11-04T16:45:11.000Z"
- },
- {
-  "id": 50378508,
-  "title": "Obscure audio codec is a perfect fit for the N64",
-  "url": "https://phoboslab.org/log/2026/11/n64-ulc-codec",
-  "score": 174,
-  "by": "frostbyte7",
-  "time": "2026-11-05T12:51:48.000Z"
- },
- {
-  "id": 50379249,
-  "title": "MCP Explained",
-  "url": "https://mcp-explained.com/",
-  "score": 222,
-  "by": "rwilinski",
-  "time": "2026-11-05T14:08:35.000Z"
+  "id": 50377976,
+  "title": "OpenSSH 10.6p2 Critical workaround for alpine without PAM",
+  "url": "https://www.openssh.org/releasenotes.html#10.6p2",
+  "score": 244,
+  "by": "selckin",
+  "time": "2026-11-05T11:40:30.000Z"
  },
  {
   "id": 50376313,
   "title": "GPT-6 Astra covertly underperforms on safety research",
   "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
-  "score": 274,
+  "score": 312,
   "by": "lucrbvi",
   "time": "2026-11-05T07:44:30.000Z"
  },
  {
-  "id": 50380979,
-  "title": "The Stacks Project, Formalized in Lean",
-  "url": "https://axiommath.ai/research/the-stacks-project-formalized/",
-  "score": 61,
-  "by": "namanbnsl",
-  "time": "2026-11-05T16:16:59.000Z"
+  "id": 50379249,
+  "title": "MCP Explained",
+  "url": "https://mcp-explained.com/",
+  "score": 260,
+  "by": "rwilinski",
+  "time": "2026-11-05T14:08:35.000Z"
  },
  {
-  "id": 50383163,
-  "title": "Hungary: Communist-era files released, up to 60k former agents revealed",
-  "url": "https://www.euronews.com/2026/11/04/hungary-communist-era-files-opened-up-to-60000-former-agents-revealed",
-  "score": 121,
-  "by": "rdmuser",
-  "time": "2026-11-05T19:16:34.000Z"
+  "id": 50378508,
+  "title": "Obscure audio codec is a perfect fit for the N64",
+  "url": "https://phoboslab.org/log/2026/11/n64-ulc-codec",
+  "score": 206,
+  "by": "frostbyte7",
+  "time": "2026-11-05T12:51:48.000Z"
  },
  {
-  "id": 50349667,
-  "title": "The Lisp curse, now coming to your ecosystem",
-  "url": "https://javahippie.net/programming/llm/2026/03/05/the-lisp-curse-coming-to-your-ecosystem.html",
-  "score": 193,
-  "by": "marcolinux",
-  "time": "2026-11-03T08:59:31.000Z"
- },
- {
-  "id": 50380704,
-  "title": "Show HN: Stroq – a local audit of what your coding agent did and why",
-  "url": "https://github.com/AGGIB/Stroq",
-  "score": 61,
-  "by": "agybay_07",
-  "time": "2026-11-05T15:54:41.000Z"
- },
- {
-  "id": 50377078,
-  "title": "Baidu released ERNIE 5.5 Flash Base",
-  "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/",
-  "score": 162,
-  "by": "pretext",
-  "time": "2026-11-05T09:29:12.000Z"
- },
- {
-  "id": 50380268,
-  "title": "We can do better than line-buffered output",
-  "url": "https://nullprogram.com/blog/2026/11/05/",
-  "score": 84,
-  "by": "zdw",
-  "time": "2026-11-05T15:25:22.000Z"
- },
- {
-  "id": 50378625,
-  "title": "Discord is ditching Electron and its new app uses less RAM",
-  "url": "https://www.theverge.com/news/1027379/discord-ditching-electron-web-app",
-  "score": 367,
-  "by": "archb",
-  "time": "2026-11-05T13:05:28.000Z"
+  "id": 50381033,
+  "title": "My psychophysics as a bilateral cochlear implant user",
+  "url": "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
+  "score": 169,
+  "by": "mi-rae",
+  "time": "2026-11-05T16:21:12.000Z"
  }
 ]
