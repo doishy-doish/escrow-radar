@@ -1,6 +1,11 @@
 {
- "ts": "2026-11-07T08:31:30.217Z",
+ "ts": "2026-11-07T09:22:45.421Z",
  "count": 0,
  "alerts": [],
- "demoted": []
+ "demoted": [
+  {
+   "id": "paraloom-core#1483",
+   "stale_reason": "stale_target:src/compute/private_job.rs:102d"
+  }
+ ]
 }

@@ -1,5 +1,239 @@
 [
  {
+  "id": "paraloom-core#1484",
+  "venue": "paraloom",
+  "repo": "paraloom-core",
+  "org": "paraloom-labs",
+  "number": 1484,
+  "title": "[BUG BOUNTY] Medium: Node::handle_message omits JobCoordinator lifecycle/sender checks on ComputeJobResponse & ComputeJobResult, allows duplicate-wallet Sybil weight inflation in LeaderSelector & TransactVerificationCoordinator, and skips ShieldedPool::is_spent on transact verification",
+  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1484",
+  "severity": "Medium",
+  "reward_usdc": 150,
+  "reward_source": "severity_table",
+  "age_seconds_since_open": 196,
+  "opened_at": "2026-11-07T09:18:11Z",
+  "competing_prs": 0,
+  "competing_pr_urls": [],
+  "ci_status": "passing",
+  "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
+  "repro_source": ".github/workflows/bridge-e2e.yml",
+  "rail": "MANUAL_MAINTAINER_REVIEW",
+  "escrow_verified": false,
+  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
+  "has_repro": false,
+  "has_stack_trace": false,
+  "has_fix_hint": false,
+  "failing_assertion": null,
+  "target_files": [
+   "src/node/mod.rs",
+   "src/consensus/leader.rs",
+   "src/consensus/transact.rs",
+   "src/compute/distribution.rs"
+  ],
+  "stack_excerpt": null,
+  "claimed_in_comments": true,
+  "claim_evidence": {
+   "type": "intent_claim",
+   "author": "dukenordj-rgb",
+   "target_ref": null,
+   "raw_snippet": "### Root Cause Analysis #### 1. Compute Coordination Unauthenticated Response/Result & State Desynchronization In `src/n"
+  },
+  "excerpt": "## Summary This report covers three distinct consensus, compute-coordination, and double-spend pre-filtering bugs across `src/node/mod.rs`, `src/consensus/leader.rs`, `src/consensus/transact.rs`, and `src/compute/distribution.rs`. --- ### 1. `Node::handle_message` (`Message::ComputeJobResponse` & `Message::ComputeJobResult`): Unupdated `JobCoordinator` Pending/Active State and Unauthenticated Result Spoofing (`src/node/mod.rs`, `src/compute/distribution.rs`) - **Vulnerability**: 1. When a coordinator node dispatches a job via `Node::submit_compute_job_to_network`, `JobCoordinator::assign_job` ",
+  "ts": "2026-11-07T09:21:38.452Z"
+ },
+ {
+  "id": "paraloom-core#1483",
+  "venue": "paraloom",
+  "repo": "paraloom-core",
+  "org": "paraloom-labs",
+  "number": 1483,
+  "title": "[BUG BOUNTY] Medium: PrivateJobResult Pedersen/Poseidon commitment mismatch breaks Groth16 verification, PrivateSwapRelayer burns input note before pre-flight asset_in/asset_out & pubkey checks, TransactVerificationCoordinator accepts votes after timeout, and ingress_auth case-sensitive bearer parsing",
+  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1483",
+  "severity": "Medium",
+  "reward_usdc": 150,
+  "reward_source": "severity_table",
+  "age_seconds_since_open": 197,
+  "opened_at": "2026-11-07T09:18:10Z",
+  "competing_prs": 0,
+  "competing_pr_urls": [],
+  "ci_status": "passing",
+  "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
+  "repro_source": ".github/workflows/bridge-e2e.yml",
+  "rail": "MANUAL_MAINTAINER_REVIEW",
+  "escrow_verified": false,
+  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
+  "has_repro": false,
+  "has_stack_trace": false,
+  "has_fix_hint": false,
+  "failing_assertion": null,
+  "target_files": [
+   "src/compute/private_job.rs",
+   "src/relayer/private_swap.rs",
+   "src/relayer/onchain.rs",
+   "src/consensus/transact.rs",
+   "src/node/ingress_auth.rs"
+  ],
+  "stack_excerpt": null,
+  "claimed_in_comments": false,
+  "claim_evidence": null,
+  "excerpt": "## Summary This report covers four distinct logic, cryptographic commitment, and validation bugs across the private compute proof pipeline, private-swap relayer, transact consensus coordinator, and HTTP ingress authentication (`src/compute/private_job.rs`, `src/relayer/private_swap.rs`, `src/relayer/onchain.rs`, `src/consensus/transact.rs`, and `src/node/ingress_auth.rs`). --- ### 1. `PrivateJobResult::from_job_result` & `PrivateComputeJob::new`: Pedersen vs. Poseidon Commitment Mismatch Causes 100% of Real Groth16 Compute Proofs to Fail Verification (`src/compute/private_job.rs`) - **Vulnerab",
+  "ts": "2026-11-07T09:21:40.408Z",
+  "days_since_target_touch": 102,
+  "stale_context": true,
+  "stale_reason": "stale_target:src/compute/private_job.rs:102d"
+ },
+ {
+  "id": "paraloom-wallet#264",
+  "venue": "paraloom",
+  "repo": "paraloom-wallet",
+  "org": "paraloom-labs",
+  "number": 264,
+  "title": "[BOUNTY] Medium: classifyStrand NaN ageMs bypasses RESUME_GRACE_MS, swapOutputs overwrites createdAt/reshield metadata and lacks input/array guards, and background onMessage/senderOrigin/requestSwapApproval mishandle malformed messages and superseded swaps",
+  "url": "https://github.com/paraloom-labs/paraloom-wallet/issues/264",
+  "severity": "Medium",
+  "reward_usdc": 150,
+  "reward_source": "severity_table",
+  "age_seconds_since_open": 1519,
+  "opened_at": "2026-11-07T08:56:08Z",
+  "competing_prs": 2,
+  "competing_pr_urls": [
+   "https://github.com/paraloom-labs/paraloom-wallet/pull/266",
+   "https://github.com/paraloom-labs/paraloom-wallet/pull/267"
+  ],
+  "ci_status": "passing",
+  "repro_command": "pnpm test",
+  "repro_source": ".github/workflows/ci.yml",
+  "rail": "MANUAL_MAINTAINER_REVIEW",
+  "escrow_verified": false,
+  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
+  "has_repro": false,
+  "has_stack_trace": false,
+  "has_fix_hint": true,
+  "failing_assertion": null,
+  "target_files": [
+   "lib/paraloom/swapReconcileClassify.ts",
+   "lib/paraloom/swapOutputs.ts",
+   "src/background/index.ts"
+  ],
+  "stack_excerpt": null,
+  "claimed_in_comments": false,
+  "claim_evidence": null,
+  "excerpt": "## Summary We identified three distinct logic, storage, and background service-worker bugs across `lib/paraloom/swapReconcileClassify.ts`, `lib/paraloom/swapOutputs.ts`, and `src/background/index.ts`: ### 1. `classifyStrand` Allows `NaN` / Non-Finite `ageMs` to Bypass `RESUME_GRACE_MS` and `isNativeSolOutput` Fails on Whitespace-Padded Mints (`lib/paraloom/swapReconcileClassify.ts:21-43`) - **Root Cause**: - In `classifyStrand`, `if (args.ageMs < RESUME_GRACE_MS) return \"skip\"` evaluates to `false` when `args.ageMs` is `NaN` (e.g., when `o.createdAt` is `NaN` or corrupted so `now - o.createdAt",
+  "ts": "2026-11-07T09:21:44.409Z"
+ },
+ {
+  "id": "paraloom-wallet#263",
+  "venue": "paraloom",
+  "repo": "paraloom-wallet",
+  "org": "paraloom-labs",
+  "number": 263,
+  "title": "[BOUNTY] Medium: prover/index.ts caches failed/empty key fetches and races WASM init, bridge.ts/transact.ts wrap u64 amounts mod 2^64 and zero-pad short pubkeys/blindings, and submitTransact omits bundle/requestId validation",
+  "url": "https://github.com/paraloom-labs/paraloom-wallet/issues/263",
+  "severity": "Medium",
+  "reward_usdc": 150,
+  "reward_source": "severity_table",
+  "age_seconds_since_open": 1520,
+  "opened_at": "2026-11-07T08:56:07Z",
+  "competing_prs": 2,
+  "competing_pr_urls": [
+   "https://github.com/paraloom-labs/paraloom-wallet/pull/265",
+   "https://github.com/paraloom-labs/paraloom-wallet/pull/268"
+  ],
+  "ci_status": "passing",
+  "repro_command": "pnpm test",
+  "repro_source": ".github/workflows/ci.yml",
+  "rail": "MANUAL_MAINTAINER_REVIEW",
+  "escrow_verified": false,
+  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
+  "has_repro": false,
+  "has_stack_trace": true,
+  "has_fix_hint": true,
+  "failing_assertion": "Error: Cannot read properties of undefined (reading 'slice')` after the transaction was already submitted.",
+  "target_files": [
+   "lib/prover/index.ts",
+   "lib/paraloom/bridge.ts",
+   "lib/paraloom/transact.ts"
+  ],
+  "stack_excerpt": null,
+  "claimed_in_comments": false,
+  "claim_evidence": null,
+  "excerpt": "## Summary We identified three distinct validation and state-corruption bugs across `lib/prover/index.ts`, `lib/paraloom/bridge.ts`, and `lib/paraloom/transact.ts`: ### 1. `lib/prover/index.ts`: Concurrent `ensureInit` Race, Unchecked `fetch` Status / Empty Proving-Key Caching in `ensureReady` / `ensureTransferReady` / `ensureTransactReady`, and `v3MerklePath` Negative `leafIndex` `ToUint32` Wrap (`lib/prover/index.ts:34-72, 204-210`) - **Root Cause**: - `ensureInit()` uses a boolean `initialized` flag without an in-flight `initPromise`, so concurrent prover calls before WASM initialization co",
+  "ts": "2026-11-07T09:21:48.266Z"
+ },
+ {
+  "id": "paraloom-prover-wasm#52",
+  "venue": "paraloom",
+  "repo": "paraloom-prover-wasm",
+  "org": "paraloom-labs",
+  "number": 52,
+  "title": "[BOUNTY] Medium: spend_pubkey and v3_note_pubkey accept zero and non-canonical BN254 scalars, v3_note_commitment and provers accept zero-key pubkeys (Poseidon(0)) and zero blindings, and provers omit point-at-infinity and 128-byte proof checks",
+  "url": "https://github.com/paraloom-labs/paraloom-prover-wasm/issues/52",
+  "severity": "Medium",
+  "reward_usdc": 150,
+  "reward_source": "severity_table",
+  "age_seconds_since_open": 1521,
+  "opened_at": "2026-11-07T08:56:06Z",
+  "competing_prs": 1,
+  "competing_pr_urls": [
+   "https://github.com/paraloom-labs/paraloom-prover-wasm/pull/54"
+  ],
+  "ci_status": "unknown",
+  "repro_command": "cargo test",
+  "repro_source": "repo manifest (fallback)",
+  "rail": "MANUAL_MAINTAINER_REVIEW",
+  "escrow_verified": false,
+  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
+  "has_repro": false,
+  "has_stack_trace": false,
+  "has_fix_hint": true,
+  "failing_assertion": null,
+  "target_files": [
+   "src/lib.rs"
+  ],
+  "stack_excerpt": null,
+  "claimed_in_comments": false,
+  "claim_evidence": null,
+  "excerpt": "## Summary We identified three distinct cryptographic validation vulnerabilities in `src/lib.rs`: ### 1. `spend_pubkey` and `v3_note_pubkey` Accept All-Zero Private Keys, Non-Canonical BN254 Scalars (`>= Fr::MODULUS`), and Reserved Protocol Constants (`src/lib.rs:76-80, 405-408`) - **Root Cause**: `spend_pubkey(privkey_hex)` and `v3_note_pubkey(privkey_hex)` decode `privkey_hex` via `Fr::from_le_bytes_mod_order(&hex32(privkey_hex)?)` without rejecting `[0u8; 32]`, non-canonical 32-byte scalars `>= Fr::MODULUS` (`fr_to_le_bytes_32(sk) != privkey_bytes`), or reserved protocol constants (`ZERO_HA",
+  "ts": "2026-11-07T09:21:52.359Z"
+ },
+ {
+  "id": "paraloom-prover-wasm#51",
+  "venue": "paraloom",
+  "repo": "paraloom-prover-wasm",
+  "org": "paraloom-labs",
+  "number": 51,
+  "title": "[BOUNTY] High: prove_transact and prove_withdrawal_v2 allow protocol PDA and program/sysvar withdrawal recipients that self-transfer or lock funds, prove_transact accepts non-zero leaf_index on 0-value dummy inputs, and Merkle paths allow duplicate level siblings",
+  "url": "https://github.com/paraloom-labs/paraloom-prover-wasm/issues/51",
+  "severity": "High",
+  "reward_usdc": 400,
+  "reward_source": "severity_table",
+  "age_seconds_since_open": 1522,
+  "opened_at": "2026-11-07T08:56:05Z",
+  "competing_prs": 1,
+  "competing_pr_urls": [
+   "https://github.com/paraloom-labs/paraloom-prover-wasm/pull/53"
+  ],
+  "ci_status": "unknown",
+  "repro_command": "cargo test",
+  "repro_source": "repo manifest (fallback)",
+  "rail": "MANUAL_MAINTAINER_REVIEW",
+  "escrow_verified": false,
+  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
+  "has_repro": false,
+  "has_stack_trace": false,
+  "has_fix_hint": true,
+  "failing_assertion": null,
+  "target_files": [
+   "src/lib.rs",
+   "programs/paraloom/src/lib.rs"
+  ],
+  "stack_excerpt": null,
+  "claimed_in_comments": false,
+  "claim_evidence": null,
+  "excerpt": "## Summary We identified three distinct logic and validation vulnerabilities in `src/lib.rs`: ### 1. `prove_transact` and `prove_withdrawal_v2` Accept Protocol PDAs (`bridge_vault`, `slashed_funds_vault`, Authority/State PDAs) and Executable/Sysvar/WSOL Addresses as Withdrawal Destinations (`src/lib.rs:166-236, 486-632`) - **Root Cause**: `prove_withdrawal_v2` (`dest_recipient_hex`) and `prove_transact` (`recipient_hex` when `ext_amount < 0`) hash `recipient` directly into `ext_data_hash = sha256(recipient || amount_le)` without checking whether `recipient` is one of the bridge program's own P",
+  "ts": "2026-11-07T09:21:55.247Z"
+ },
+ {
   "id": "paraloom-core#1479",
   "venue": "paraloom",
   "repo": "paraloom-core",
@@ -10,7 +244,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 1538,
+  "age_seconds_since_open": 4612,
   "opened_at": "2026-11-07T08:04:35Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -38,7 +272,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary This report covers four distinct logic, validation, and resource-management bugs across the task validator/coordinator, WASM compute engine, and phase-2 ceremony verifier (`src/validator/mod.rs`, `src/node/mod.rs`, `src/coordinator/mod.rs`, `src/compute/engine.rs`, and `src/ceremony/verifier.rs`). --- ### 1. `Validator::handle_task_request` & `Node::handle_message`: Every Mesh Validator Executes Every Gossiped `TaskRequest` Regardless of `task.assigned_to` and Accepts Unauthenticated `coordinator_id` (`src/validator/mod.rs`, `src/node/mod.rs`) - **Vulnerability**: 1. `Coordinator::s",
-  "ts": "2026-11-07T08:30:21.848Z"
+  "ts": "2026-11-07T09:21:59.201Z"
  },
  {
   "id": "paraloom-core#1477",
@@ -51,7 +285,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 1805,
+  "age_seconds_since_open": 4879,
   "opened_at": "2026-11-07T08:00:08Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -77,7 +311,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary This report covers four distinct logic, validation, and accounting bugs across the distributed compute coordination and verification pipeline (`src/compute/distribution.rs`, `src/node/mod.rs`, `src/compute/verification.rs`, and `src/compute/manager.rs`). --- ### 1. `JobCoordinator::handle_timeouts` & `handle_validator_failure`: Retryable Timed-Out Jobs Dropped at Full Capacity, Timed-Out Validator Re-Selected Over Healthy Peers, and Inverted Lock Order (`src/compute/distribution.rs`) - **Vulnerability**: 1. In `JobCoordinator::handle_timeouts`, `let old_assignment = pending.remove(&",
-  "ts": "2026-11-07T08:30:24.792Z"
+  "ts": "2026-11-07T09:22:02.216Z"
  },
  {
   "id": "paraloom-wallet#257",
@@ -90,7 +324,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 2257,
+  "age_seconds_since_open": 5331,
   "opened_at": "2026-11-07T07:52:36Z",
   "competing_prs": 3,
   "competing_pr_urls": [
@@ -116,7 +350,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary - **Repository:** `paraloom-labs/paraloom-wallet` - **Severity:** Medium - **Affected Files:** `src/popup/index.tsx`, `lib/store/walletStore.ts` ### Payout Wallets - **Solana USDC:** `8BDgvBnecGR4E5VMPH8aRSsvZSbe751x2w7PgHvZ2KZb` - **Base / EVM USDC:** `0xA4c86F4e9d9EC8990F843aa49470083CEce5F908` --- ## Vulnerability Details ### 1. `Popup.tsx` Skips `GET_PENDING_SWAP` When `pending` Connection Exists and Transitions to `Home` Instead of `SwapApprove` After `ConnectApprove` (`src/popup/index.tsx:83–99, 133–156`) In `checkWalletState()`: ```tsx if (!p) { const psRaw = (await sendMessa",
-  "ts": "2026-11-07T08:30:33.061Z"
+  "ts": "2026-11-07T09:22:07.166Z"
  },
  {
   "id": "paraloom-wallet#256",
@@ -129,7 +363,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 2258,
+  "age_seconds_since_open": 5332,
   "opened_at": "2026-11-07T07:52:35Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -156,7 +390,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary - **Repository:** `paraloom-labs/paraloom-wallet` - **Severity:** Medium - **Affected Files:** `lib/crypto/addressChecksum.ts`, `lib/crypto/keyManagement.ts`, `lib/paraloom/bridge.ts` ### Payout Wallets - **Solana USDC:** `8BDgvBnecGR4E5VMPH8aRSsvZSbe751x2w7PgHvZ2KZb` - **Base / EVM USDC:** `0xA4c86F4e9d9EC8990F843aa49470083CEce5F908` --- ## Vulnerability Details ### 1. `parseShieldedAddress`, `withChecksum`, and `shieldedChecksum` Accept All-Zero Box/Spend Public Keys, Identical `boxPub === spendPub` Keys, and Unvalidated `bodyHex` (`lib/crypto/addressChecksum.ts:15–39`) - `parseSh",
-  "ts": "2026-11-07T08:30:37.243Z"
+  "ts": "2026-11-07T09:22:11.132Z"
  },
  {
   "id": "paraloom-prover-wasm#49",
@@ -169,7 +403,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 2495,
+  "age_seconds_since_open": 5569,
   "opened_at": "2026-11-07T07:48:38Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -193,7 +427,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary - **Repository:** `paraloom-labs/paraloom-prover-wasm` - **Severity:** Medium (Stage 1 Client-Side Groth16 Prover Scope) - **Affected Files:** `src/lib.rs` (`note_commitment`, `note_commitment_v2`, `prove_withdrawal_v2`, `prove_transfer_v2`, `v3_note_commitment`, `v3_note_commitment_asset`, `prove_transact`) ### Payout Wallets - **Solana USDC:** `8BDgvBnecGR4E5VMPH8aRSsvZSbe751x2w7PgHvZ2KZb` - **Base / EVM USDC:** `0xA4c86F4e9d9EC8990F843aa49470083CEce5F908` --- ## Vulnerability Details ### 1. Sub-400 Dust Withdrawals (`0 < |ext_amount| < 400` in `prove_transact` and `0 < amount < 4",
-  "ts": "2026-11-07T08:30:42.996Z"
+  "ts": "2026-11-07T09:22:14.062Z"
  },
  {
   "id": "paraloom-prover-wasm#47",
@@ -206,7 +440,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 2814,
+  "age_seconds_since_open": 5888,
   "opened_at": "2026-11-07T07:43:19Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -229,7 +463,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary - **Repository:** `paraloom-labs/paraloom-prover-wasm` - **Severity:** Medium (Stage 1 Client-Side Groth16 Prover Scope) - **Affected Files:** `src/lib.rs` (`prove_transfer_v2`, `prove_transact`) ### Payout Wallets - **Solana USDC:** `8BDgvBnecGR4E5VMPH8aRSsvZSbe751x2w7PgHvZ2KZb` - **Base / EVM USDC:** `0xA4c86F4e9d9EC8990F843aa49470083CEce5F908` --- ## Vulnerability Details ### 1. Missing Cross-Input Merkle Tree LCA Sibling & Ancestor Path Consistency Validation in `prove_transact` and `prove_transfer_v2` (`src/lib.rs:283–382, 486–632`) When spending two active notes (`inputs[0].am",
-  "ts": "2026-11-07T08:30:45.748Z"
+  "ts": "2026-11-07T09:22:17.022Z"
  },
  {
   "id": "paraloom-core#1475",
@@ -242,7 +476,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 4210,
+  "age_seconds_since_open": 7284,
   "opened_at": "2026-11-07T07:20:03Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -268,7 +502,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary This report covers four distinct Medium/Low security and logic bugs across `src/bridge/solana/listener.rs`, `src/network/protocol.rs`, `src/compute/private_job.rs`, and `src/bin/paraloom_cli.rs`: 1. **`EventListener::poll_events` (`src/bridge/solana/listener.rs`) leaves trailing successful deposit signatures in `seen_signatures` after an earlier failure, stranding `last_signature` behind the tip** 2. **`NetworkManager::run_event_loop` (`src/network/protocol.rs`) evicts peers on redundant connection close (`num_established > 0`) and attributes unsigned gossipsub messages to forwardin",
-  "ts": "2026-11-07T08:30:48.945Z"
+  "ts": "2026-11-07T09:22:19.922Z"
  },
  {
   "id": "paraloom-core#1473",
@@ -281,7 +515,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 4631,
+  "age_seconds_since_open": 7705,
   "opened_at": "2026-11-07T07:13:02Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -307,7 +541,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary This report covers four distinct Medium/Low security and consensus-correctness bugs in `src/node/mod.rs`, `src/consensus/vote_tally.rs`, `src/consensus/transact.rs`, and `src/consensus/leader.rs`: 1. **`cosign_settlement` (`src/node/mod.rs`) omits `req.mint.is_none()` on the `SettlementParams::Transact` arm — cross-path SOL/SPL co-signing oracle** 2. **`Node::cosign_settlement_transact_tx` (`src/node/mod.rs`) & `VoteTally::valid_voters` (`src/consensus/vote_tally.rs`) drop signed voter wallets and allow 1-of-1 leader-only quorum** 3. **`LeaderSelector::select_leader` (`src/consensus",
-  "ts": "2026-11-07T08:30:51.880Z"
+  "ts": "2026-11-07T09:22:22.898Z"
  },
  {
   "id": "paraloom-wallet#248",
@@ -320,7 +554,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 5671,
+  "age_seconds_since_open": 8745,
   "opened_at": "2026-11-07T06:55:42Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -348,238 +582,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary - **Repository:** `paraloom-labs/paraloom-wallet` - **Severity:** Medium (Wallet Consent UI, Origin Isolation & Storage Validation Scope) - **Affected Files:** `src/popup/SwapApprove.tsx`, `src/popup/ConnectApprove.tsx`, `lib/storage/connections.ts`, `lib/storage/secure.ts`, `lib/paraloom/prices.ts` ### Payout Wallets - **Solana USDC:** `8BDgvBnecGR4E5VMPH8aRSsvZSbe751x2w7PgHvZ2KZb` - **Base / EVM USDC:** `0xA4c86F4e9d9EC8990F843aa49470083CEce5F908` --- ## Vulnerability Details ### 1. `SwapApprove.tsx` Rounds Sub-Microlamport SOL Spends to `0`, Truncates `> 2^53 - 1` `u64` Amounts, ",
-  "ts": "2026-11-07T08:30:55.900Z"
- },
- {
-  "id": "paraloom-wallet#247",
-  "venue": "paraloom",
-  "repo": "paraloom-wallet",
-  "org": "paraloom-labs",
-  "number": 247,
-  "title": "[BOUNTY] Medium: scanForNotes stores 0-value filler ciphertexts as unspent notes, addNote omits commitment deduplication causing double-counted change balances, and spendV3/depositV3 lack input and u64 bounds",
-  "url": "https://github.com/paraloom-labs/paraloom-wallet/issues/247",
-  "severity": "Medium",
-  "reward_usdc": 150,
-  "reward_source": "severity_table",
-  "age_seconds_since_open": 5672,
-  "opened_at": "2026-11-07T06:55:41Z",
-  "competing_prs": 2,
-  "competing_pr_urls": [
-   "https://github.com/paraloom-labs/paraloom-wallet/pull/249",
-   "https://github.com/paraloom-labs/paraloom-wallet/pull/254"
-  ],
-  "ci_status": "passing",
-  "repro_command": "pnpm test",
-  "repro_source": ".github/workflows/ci.yml",
-  "rail": "MANUAL_MAINTAINER_REVIEW",
-  "escrow_verified": false,
-  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
-  "has_repro": false,
-  "has_stack_trace": false,
-  "has_fix_hint": true,
-  "failing_assertion": null,
-  "target_files": [
-   "lib/paraloom/scan.ts",
-   "lib/paraloom/notes.ts",
-   "lib/paraloom/transactFlow.ts",
-   "src/background/index.ts"
-  ],
-  "stack_excerpt": null,
-  "claimed_in_comments": false,
-  "claim_evidence": null,
-  "excerpt": "## Summary - **Repository:** `paraloom-labs/paraloom-wallet` - **Severity:** Medium (Wallet Shielded Accounting & Circuit v3 Orchestration Scope) - **Affected Files:** `lib/paraloom/scan.ts`, `lib/paraloom/notes.ts`, `lib/paraloom/transactFlow.ts` ### Payout Wallets - **Solana USDC:** `8BDgvBnecGR4E5VMPH8aRSsvZSbe751x2w7PgHvZ2KZb` - **Base / EVM USDC:** `0xA4c86F4e9d9EC8990F843aa49470083CEce5F908` --- ## Vulnerability Details ### 1. `scanForNotes` Accepts and Persists `0n`-Value Dummy/Filler Ciphertexts as Unspent Notes (`lib/paraloom/scan.ts:111–156`, `lib/paraloom/transactFlow.ts:278–319`) I",
-  "ts": "2026-11-07T08:30:59.665Z"
- },
- {
-  "id": "paraloom-prover-wasm#44",
-  "venue": "paraloom",
-  "repo": "paraloom-prover-wasm",
-  "org": "paraloom-labs",
-  "number": 44,
-  "title": "[BOUNTY] Medium: prove_transact, prove_transfer_v2, and prove_withdrawal_v2 omit append-only Merkle path topology and ZERO_HASHES level/direction checks, and mint_to_asset accepts WSOL and Solana program IDs",
-  "url": "https://github.com/paraloom-labs/paraloom-prover-wasm/issues/44",
-  "severity": "Medium",
-  "reward_usdc": 150,
-  "reward_source": "severity_table",
-  "age_seconds_since_open": 6100,
-  "opened_at": "2026-11-07T06:48:33Z",
-  "competing_prs": 1,
-  "competing_pr_urls": [
-   "https://github.com/paraloom-labs/paraloom-prover-wasm/pull/46"
-  ],
-  "ci_status": "unknown",
-  "repro_command": "cargo test",
-  "repro_source": "repo manifest (fallback)",
-  "rail": "MANUAL_MAINTAINER_REVIEW",
-  "escrow_verified": false,
-  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
-  "has_repro": false,
-  "has_stack_trace": false,
-  "has_fix_hint": true,
-  "failing_assertion": null,
-  "target_files": [
-   "src/lib.rs",
-   "programs/paraloom/src/merkle_tree.rs",
-   "programs/paraloom/src/lib.rs"
-  ],
-  "stack_excerpt": null,
-  "claimed_in_comments": false,
-  "claim_evidence": null,
-  "excerpt": "## Summary - **Repository:** `paraloom-labs/paraloom-prover-wasm` - **Severity:** Medium (Stage 1 Client-Side Groth16 Prover Scope) - **Affected Files:** `src/lib.rs` (`merkle_path_from`, `prove_withdrawal_v2`, `prove_transfer_v2`, `mint_to_asset`, `prove_transact`) ### Payout Wallets - **Solana USDC:** `8BDgvBnecGR4E5VMPH8aRSsvZSbe751x2w7PgHvZ2KZb` - **Base / EVM USDC:** `0xA4c86F4e9d9EC8990F843aa49470083CEce5F908` --- ## Vulnerability Details ### 1. `prove_transact` Omits On-Chain `IncrementalMerkleTree` `ZERO_HASHES` Level, Left-Sibling, and Frontier Contiguity Checks on Input Paths (`src/l",
-  "ts": "2026-11-07T08:31:02.535Z"
- },
- {
-  "id": "paraloom-prover-wasm#43",
-  "venue": "paraloom",
-  "repo": "paraloom-prover-wasm",
-  "org": "paraloom-labs",
-  "number": 43,
-  "title": "[BOUNTY] High: prove_transact and prove_transfer_v2 accept cross-version spend_pubkey/v3_note_pubkey change outputs that permanently burn balances and allow output blindings that leak input spend keys",
-  "url": "https://github.com/paraloom-labs/paraloom-prover-wasm/issues/43",
-  "severity": "High",
-  "reward_usdc": 400,
-  "reward_source": "severity_table",
-  "age_seconds_since_open": 6101,
-  "opened_at": "2026-11-07T06:48:32Z",
-  "competing_prs": 1,
-  "competing_pr_urls": [
-   "https://github.com/paraloom-labs/paraloom-prover-wasm/pull/45"
-  ],
-  "ci_status": "unknown",
-  "repro_command": "cargo test",
-  "repro_source": "repo manifest (fallback)",
-  "rail": "MANUAL_MAINTAINER_REVIEW",
-  "escrow_verified": false,
-  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
-  "has_repro": false,
-  "has_stack_trace": false,
-  "has_fix_hint": true,
-  "failing_assertion": null,
-  "target_files": [
-   "src/lib.rs"
-  ],
-  "stack_excerpt": null,
-  "claimed_in_comments": false,
-  "claim_evidence": null,
-  "excerpt": "## Summary - **Repository:** `paraloom-labs/paraloom-prover-wasm` - **Severity:** High / Medium (Stage 1 Client-Side Groth16 Prover Scope) - **Affected Files:** `src/lib.rs` (`note_commitment_v2`, `prove_withdrawal_v2`, `prove_transfer_v2`, `v3_note_commitment`, `v3_note_commitment_asset`, `prove_transact`) ### Payout Wallets - **Solana USDC:** `8BDgvBnecGR4E5VMPH8aRSsvZSbe751x2w7PgHvZ2KZb` - **Base / EVM USDC:** `0xA4c86F4e9d9EC8990F843aa49470083CEce5F908` --- ## Vulnerability Details ### 1. Cross-Version Spend Public Key Confusion (`spend_pubkey` v2 vs `v3_note_pubkey` v3) on Change/Self-Tra",
-  "ts": "2026-11-07T08:31:05.540Z"
- },
- {
-  "id": "paraloom-core#1470",
-  "venue": "paraloom",
-  "repo": "paraloom-core",
-  "org": "paraloom-labs",
-  "number": 1470,
-  "title": "[BUG BOUNTY] Medium: JobExecutor::get_job_status returns None in active-to-completed race & accepts duplicate job_ids, PrivateJobCoordinator::verify_result ignores consensus output hash, PeerRegistry resurrects Forgotten peers, and ProgramInterface::program_version omits owner check",
-  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1470",
-  "severity": "Medium",
-  "reward_usdc": 150,
-  "reward_source": "severity_table",
-  "age_seconds_since_open": 7429,
-  "opened_at": "2026-11-07T06:26:24Z",
-  "competing_prs": 2,
-  "competing_pr_urls": [
-   "https://github.com/paraloom-labs/paraloom-core/pull/1471",
-   "https://github.com/paraloom-labs/paraloom-core/pull/1472"
-  ],
-  "ci_status": "passing",
-  "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
-  "repro_source": ".github/workflows/bridge-e2e.yml",
-  "rail": "MANUAL_MAINTAINER_REVIEW",
-  "escrow_verified": false,
-  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
-  "has_repro": true,
-  "has_stack_trace": false,
-  "has_fix_hint": false,
-  "failing_assertion": null,
-  "target_files": [
-   "src/compute/executor.rs",
-   "src/compute/private_job.rs",
-   "src/network/discovery.rs",
-   "src/bridge/solana/program.rs"
-  ],
-  "stack_excerpt": null,
-  "claimed_in_comments": false,
-  "claim_evidence": null,
-  "excerpt": "## Summary This report covers 4 distinct logic and validation bugs across `compute::executor`, `compute::private_job`, `network::discovery`, and `bridge::solana::program`: 1. **`JobExecutor::get_job_status` / `get_job_result` race window & duplicate `job_id` acceptance in `src/compute/executor.rs`**: - When a worker task finishes executing a WASM job, it removes `job_id` from `active_jobs` and sends `result` over `result_tx`, while `completed_results` is only populated asynchronously when the background loop wakes up from its 100ms sleep and runs `process_results`. Any call to `get_job_status`",
-  "ts": "2026-11-07T08:31:09.385Z"
- },
- {
-  "id": "paraloom-core#1468",
-  "venue": "paraloom",
-  "repo": "paraloom-core",
-  "org": "paraloom-labs",
-  "number": 1468,
-  "title": "[BUG BOUNTY] Medium: JobCoordinator::assign_job ignores in-flight pending/active assignments, VerificationCoordinator::check_consensus treats 2 failed results as Agreed, Coordinator::handle_task_error is unauthenticated, and TransactVerificationCoordinator::cleanup strands emitted",
-  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1468",
-  "severity": "Medium",
-  "reward_usdc": 150,
-  "reward_source": "severity_table",
-  "age_seconds_since_open": 7715,
-  "opened_at": "2026-11-07T06:21:38Z",
-  "competing_prs": 1,
-  "competing_pr_urls": [
-   "https://github.com/paraloom-labs/paraloom-core/pull/1469"
-  ],
-  "ci_status": "passing",
-  "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
-  "repro_source": ".github/workflows/bridge-e2e.yml",
-  "rail": "MANUAL_MAINTAINER_REVIEW",
-  "escrow_verified": false,
-  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
-  "has_repro": true,
-  "has_stack_trace": false,
-  "has_fix_hint": false,
-  "failing_assertion": null,
-  "target_files": [
-   "src/compute/distribution.rs",
-   "src/compute/verification.rs",
-   "src/coordinator/mod.rs",
-   "src/consensus/transact.rs"
-  ],
-  "stack_excerpt": null,
-  "claimed_in_comments": false,
-  "claim_evidence": null,
-  "excerpt": "## Summary This report covers 4 distinct logic, accounting, and authorization bugs across `compute::distribution`, `compute::verification`, `coordinator`, and `consensus::transact`: 1. **`JobCoordinator::assign_job` & pending-timeout reassignment in `src/compute/distribution.rs` ignore in-flight `pending_assignments` and `active_assignments`**: - `assign_job` filters and ranks validators solely by `v.available_capacity()` and `v.load_factor()`, which read the static `CapacityAnnouncement.current_load` field rather than live `pending_assignments` + `active_assignments`. As a result, a validator",
-  "ts": "2026-11-07T08:31:12.206Z"
- },
- {
-  "id": "paraloom-wallet#242",
-  "venue": "paraloom",
-  "repo": "paraloom-wallet",
-  "org": "paraloom-labs",
-  "number": 242,
-  "title": "[BOUNTY] Medium: Home.tsx loadBalances leaks stale balances and notes across account/network switches, Withdraw/Send Max buttons round lamports above balance, Activity omits received transfers, and Unlock.tsx/Home.tsx mishandle post-decrypt errors and export brute-forcing",
-  "url": "https://github.com/paraloom-labs/paraloom-wallet/issues/242",
-  "severity": "Medium",
-  "reward_usdc": 150,
-  "reward_source": "severity_table",
-  "age_seconds_since_open": 7892,
-  "opened_at": "2026-11-07T06:18:41Z",
-  "competing_prs": 2,
-  "competing_pr_urls": [
-   "https://github.com/paraloom-labs/paraloom-wallet/pull/245",
-   "https://github.com/paraloom-labs/paraloom-wallet/pull/246"
-  ],
-  "ci_status": "passing",
-  "repro_command": "pnpm test",
-  "repro_source": ".github/workflows/ci.yml",
-  "rail": "MANUAL_MAINTAINER_REVIEW",
-  "escrow_verified": false,
-  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
-  "has_repro": false,
-  "has_stack_trace": false,
-  "has_fix_hint": false,
-  "failing_assertion": null,
-  "target_files": [
-   "src/popup/Home.tsx",
-   "src/popup/Unlock.tsx"
-  ],
-  "stack_excerpt": null,
-  "claimed_in_comments": false,
-  "claim_evidence": null,
-  "excerpt": "## Summary - **Repository:** `paraloom-labs/paraloom-wallet` - **Severity:** Medium (Stage 1 Public Beta Bug Bounty) - **Affected Files:** `src/popup/Home.tsx`, `src/popup/Unlock.tsx` ### Payout Wallets - **Solana USDC:** `8BDgvBnecGR4E5VMPH8aRSsvZSbe751x2w7PgHvZ2KZb` - **Base / EVM USDC:** `0xA4c86F4e9d9EC8990F843aa49470083CEce5F908` --- ## Vulnerability Details ### 1. `loadBalances()` in `Home.tsx` Leaks Stale Account Balances/Notes and Suffers Cross-Account Async Overwrite Races on Account/Network Switch (`src/popup/Home.tsx:287–346`) In `src/popup/Home.tsx:287–346`: - When the user switche",
-  "ts": "2026-11-07T08:31:15.916Z"
+  "ts": "2026-11-07T09:22:26.771Z"
  },
  {
   "id": "scaffold-studio-frontend#45",
@@ -592,7 +595,7 @@
   "severity": null,
   "reward_usdc": 70,
   "reward_source": "explicit",
-  "age_seconds_since_open": 2630592,
+  "age_seconds_since_open": 2633666,
   "opened_at": "2026-10-07T21:47:01Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -613,7 +616,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Context** `next.config.ts` sets `eslint: { ignoreDuringBuilds: true }`. Combined with a workflow that never runs `next build`, this means lint errors introduced in a PR are invisible on both paths, and the only remaining lint signal is the mutating `biome lint --write --unsafe` step covered by issue 31. **Proposed Change** Turn `ignoreDuringBuilds` off so `next build` fails on lint errors, and let CI run the build (issue 46) or a dedicated lint job report them. **Acceptance Criteria** - `eslint.ignoreDuringBuilds` is removed or set to `false`. - A deliberately introduced lint error is assert",
-  "ts": "2026-11-07T08:31:24.272Z"
+  "ts": "2026-11-07T09:22:38.206Z"
  },
  {
   "id": "scaffold-studio-frontend#44",
@@ -626,7 +629,7 @@
   "severity": null,
   "reward_usdc": 60,
   "reward_source": "explicit",
-  "age_seconds_since_open": 2630597,
+  "age_seconds_since_open": 2633671,
   "opened_at": "2026-10-07T21:46:56Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -652,7 +655,7 @@
    "raw_snippet": "Hi @cythecode, I noticed issue #44 is still open, along with PR #104. I'm a TypeScript developer interested in completin"
   },
   "excerpt": "**Context** `playwright.config.ts` sets `retries: 0` unconditionally. Playwright's own convention is to retry on CI and not locally, because web-server startup, animation timing and network flake are the dominant failure modes for an end-to-end suite that talks to a blockchain RPC and an LLM provider. Without retries, every transient failure blocks a PR. **Proposed Change** Set `retries: process.env.CI ? 2 : 0` and keep `workers: 1` on CI. **Acceptance Criteria** - `retries` resolves to 2 when `process.env.CI` is set and 0 otherwise. - A deliberately flaky spec is asserted to pass on retry and",
-  "ts": "2026-11-07T08:31:26.279Z"
+  "ts": "2026-11-07T09:22:40.194Z"
  },
  {
   "id": "scaffold-studio-frontend#43",
@@ -665,7 +668,7 @@
   "severity": null,
   "reward_usdc": 60,
   "reward_source": "explicit",
-  "age_seconds_since_open": 2630603,
+  "age_seconds_since_open": 2633677,
   "opened_at": "2026-10-07T21:46:50Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -689,6 +692,6 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Context** `playwright.config.ts` starts the app with `webServer.command` running the dev server, but `.github/workflows/playwright.yml` sets no environment. `lib/db/index.ts` reads `DATABASE_URL` and `lib/ai/providers.ts` constructs OpenAI models, so the server either crashes on boot or fails on the first request, which turns every end-to-end run into an environment failure rather than a test result. **Proposed Change** Add the required variables to the job's `env:` (with a disposable Postgres service container for `DATABASE_URL`) and reserve the OpenAI key for the secrets-gated path. **Acce",
-  "ts": "2026-11-07T08:31:28.214Z"
+  "ts": "2026-11-07T09:22:42.080Z"
  }
 ]
