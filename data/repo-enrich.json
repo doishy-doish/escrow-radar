@@ -9,12 +9,18 @@
   "ci": "passing",
   "repro": "pnpm test",
   "reproSrc": ".github/workflows/ci.yml",
-  "ts": "2026-11-06T11:30:17.077Z"
+  "ts": "2026-11-07T08:30:29.566Z"
  },
  "scaffold-studio-hq/scaffold-studio-frontend": {
   "ci": "unknown",
   "repro": null,
   "reproSrc": null,
   "ts": "2026-11-07T02:54:46.431Z"
+ },
+ "paraloom-labs/paraloom-prover-wasm": {
+  "ci": "unknown",
+  "repro": "cargo test",
+  "reproSrc": "repo manifest (fallback)",
+  "ts": "2026-11-07T08:30:41.304Z"
  }
 }

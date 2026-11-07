@@ -3,39 +3,71 @@
   "id": 50399933,
   "title": "Libghostty 1.0",
   "url": "https://mitchellh.com/writing/libghostty-1-0",
-  "score": 244,
+  "score": 549,
   "by": "mfiguiere",
   "time": "2026-11-06T23:30:52.000Z"
+ },
+ {
+  "id": 50401740,
+  "title": "A barbarian tribe's mythic origin story is true, ancient DNA reveals",
+  "url": "https://www.science.org/content/article/barbarian-tribe-s-mythic-origin-story-true-ancient-dna-reveals",
+  "score": 70,
+  "by": "benbreen",
+  "time": "2026-11-07T04:54:36.000Z"
  },
  {
   "id": 50397429,
   "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
   "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
-  "score": 356,
+  "score": 450,
   "by": "theanomaly",
   "time": "2026-11-06T19:48:51.000Z"
  },
  {
-  "id": 50400597,
-  "title": "I Toured Unitree's Factory. I'm More Bullish on the West",
-  "url": "https://josef.cn/blog/unitree",
-  "score": 32,
-  "by": "josefchen",
-  "time": "2026-11-07T01:05:16.000Z"
+  "id": 50401867,
+  "title": "Asahi Linux Progress Linux 7.3",
+  "url": "https://asahilinux.org/2026/11/progress-report-7-3/",
+  "score": 127,
+  "by": "ackyshake",
+  "time": "2026-11-07T05:20:18.000Z"
  },
  {
   "id": 50391456,
   "title": "Tesla to wind down Cybertruck production",
   "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
-  "score": 871,
+  "score": 984,
   "by": "PLenz",
   "time": "2026-11-06T12:13:51.000Z"
+ },
+ {
+  "id": 50402212,
+  "title": "The Components of Agent Memory",
+  "url": "https://www.anthropic.com/research/components-of-agent-memory",
+  "score": 15,
+  "by": "geoffbp",
+  "time": "2026-11-07T06:39:04.000Z"
+ },
+ {
+  "id": 50399991,
+  "title": "RealPage rent-pricing case wraps with nearly $360M to renters",
+  "url": "https://www.multifamilydive.com/news/realpage-rent-pricing-case-360m-renters/873553/",
+  "score": 113,
+  "by": "raybb",
+  "time": "2026-11-06T23:37:19.000Z"
+ },
+ {
+  "id": 50388001,
+  "title": "US FAA says it will phase out floppy disks from air traffic control by 2028",
+  "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
+  "score": 329,
+  "by": "ChrisArchitect",
+  "time": "2026-11-06T04:00:28.000Z"
  },
  {
   "id": 50360810,
   "title": "Greece has its own Pompeii: Thera buried Akrotiri in ash 17th-16th century BCE",
   "url": "https://www.smithsonianmag.com/history/greece-has-its-own-pompeii-and-the-ruins-tell-a-captivating-story-of-a-sophisticated-seafaring-bronze-age-society-180989747/",
-  "score": 31,
+  "score": 84,
   "by": "derbOac",
   "time": "2026-11-04T02:19:16.000Z"
  },
@@ -43,47 +75,31 @@
   "id": 50397219,
   "title": "Firecracker VM Escape: PwnEscape Part 2",
   "url": "https://pwn.ai/blog/firecracker-escape",
-  "score": 182,
+  "score": 222,
   "by": "SerCe",
   "time": "2026-11-06T19:33:38.000Z"
  },
  {
-  "id": 50388001,
-  "title": "US FAA says it will phase out floppy disks from air traffic control by 2028",
-  "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
-  "score": 289,
-  "by": "ChrisArchitect",
-  "time": "2026-11-06T04:00:28.000Z"
+  "id": 50352701,
+  "title": "The Flash C Compiler",
+  "url": "https://blog.adafruit.com/2026/10/31/flash-c-compiler/",
+  "score": 36,
+  "by": "AlexeyBrin",
+  "time": "2026-11-03T14:49:42.000Z"
  },
  {
-  "id": 50399991,
-  "title": "RealPage rent-pricing case wraps with nearly $360M to renters",
-  "url": "https://www.multifamilydive.com/news/realpage-rent-pricing-case-360m-renters/873553/",
-  "score": 30,
-  "by": "raybb",
-  "time": "2026-11-06T23:37:19.000Z"
- },
- {
-  "id": 50399695,
-  "title": "Outbound SIP calling is now available to all organizations",
-  "url": "https://developers.openai.com/api/docs/guides/voice-sip",
-  "score": 54,
-  "by": "arbayi",
-  "time": "2026-11-06T23:03:55.000Z"
- },
- {
-  "id": 50354097,
-  "title": "Can GROUP BY still be optimized after all these years?",
-  "url": "https://pivotlake.io/blog/know-your-limit-faster-top-k-aggregation/",
-  "score": 48,
-  "by": "ntur1337",
-  "time": "2026-11-03T16:30:23.000Z"
+  "id": 50395183,
+  "title": "Notes on San Marino",
+  "url": "https://mattlakeman.org/2026/11/05/notes-on-san-marino/",
+  "score": 55,
+  "by": "yorwba",
+  "time": "2026-11-06T17:12:05.000Z"
  },
  {
   "id": 50397994,
   "title": "AI is dramatically accelerating AI research",
   "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
-  "score": 214,
+  "score": 284,
   "by": "yurivish",
   "time": "2026-11-06T20:27:23.000Z"
  },
@@ -91,47 +107,63 @@
   "id": 50394855,
   "title": "First steps in bare-metal programming using UEFI",
   "url": "https://kevinboone.me/efitest_index.html",
-  "score": 196,
+  "score": 218,
   "by": "LaSombra",
   "time": "2026-11-06T16:50:29.000Z"
  },
  {
-  "id": 50399657,
-  "title": "Sodium-ion batteries approach cost parity with LFP",
-  "url": "https://www.pv-magazine.com/2026/11/06/sodium-ion-batteries-approach-cost-parity-with-lfp-with-70-gwh-covered-by-supply-agreements/",
-  "score": 138,
-  "by": "doener",
-  "time": "2026-11-06T23:00:46.000Z"
+  "id": 50354097,
+  "title": "Can GROUP BY still be optimized after all these years?",
+  "url": "https://pivotlake.io/blog/know-your-limit-faster-top-k-aggregation/",
+  "score": 78,
+  "by": "ntur1337",
+  "time": "2026-11-03T16:30:23.000Z"
  },
  {
-  "id": 50356722,
-  "title": "Panthera: Ampere's CPU Performance Model",
-  "url": "https://github.com/AmpereComputing/panthera",
-  "score": 8,
-  "by": "mshockwave",
-  "time": "2026-11-03T19:12:17.000Z"
+  "id": 50369283,
+  "title": "8088 Domination Post-Mortem",
+  "url": "https://trixter.oldskool.org/2014/06/19/8088-domination-post-mortem-part-1/",
+  "score": 4,
+  "by": "cosmojg",
+  "time": "2026-11-04T18:06:14.000Z"
  },
  {
-  "id": 50397017,
-  "title": "Restaurant Delivery Payment-Skimming Campaign",
-  "url": "https://www.infohawk.com/news/2026-11-05-scamwich-restaurant-skimming",
-  "score": 99,
-  "by": "fiej",
-  "time": "2026-11-06T19:19:27.000Z"
+  "id": 50397099,
+  "title": "GitHub's new Git storage architecture",
+  "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+  "score": 130,
+  "by": "DAlperin",
+  "time": "2026-11-06T19:24:21.000Z"
  },
  {
-  "id": 50398625,
-  "title": "88x31 GIF Stickers for 2026",
-  "url": "https://a90.com/experiments/88x31/",
-  "score": 38,
-  "by": "saint11",
-  "time": "2026-11-06T21:13:18.000Z"
+  "id": 50373513,
+  "title": "The great butter and cheese fire of 1991",
+  "url": "https://www.wisfarmer.com/story/opinion/columnists/2022/05/11/over-20-m-lbs-commodities-lost-great-butter-fire-1991/9650051002/",
+  "score": 13,
+  "by": "subroutine",
+  "time": "2026-11-05T00:44:16.000Z"
+ },
+ {
+  "id": 50392118,
+  "title": "Gemini Omni 1.2 Flash",
+  "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+  "score": 325,
+  "by": "thisisauserid",
+  "time": "2026-11-06T13:35:27.000Z"
+ },
+ {
+  "id": 50400597,
+  "title": "I toured Unitree's factory. I'm more bullish on the West",
+  "url": "https://josef.cn/blog/unitree",
+  "score": 107,
+  "by": "josefchen",
+  "time": "2026-11-07T01:05:16.000Z"
  },
  {
   "id": 50395450,
   "title": "Devvm.dev: One VM for every project",
   "url": "https://devvm.dev/",
-  "score": 123,
+  "score": 152,
   "by": "luispa",
   "time": "2026-11-06T17:30:22.000Z"
  },
@@ -139,104 +171,72 @@
   "id": 50397711,
   "title": "Google has acquired Crusoe's data center site in southeast Wyoming",
   "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
-  "score": 44,
+  "score": 69,
   "by": "rexbee",
   "time": "2026-11-06T20:09:14.000Z"
  },
  {
-  "id": 50397099,
-  "title": "GitHub's new Git storage architecture",
-  "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
-  "score": 75,
-  "by": "DAlperin",
-  "time": "2026-11-06T19:24:21.000Z"
+  "id": 50397017,
+  "title": "Restaurant Delivery Payment-Skimming Campaign",
+  "url": "https://www.infohawk.com/news/2026-11-05-scamwich-restaurant-skimming",
+  "score": 118,
+  "by": "fiej",
+  "time": "2026-11-06T19:19:27.000Z"
  },
  {
-  "id": 50379221,
-  "title": "Show HN: Waymark – A workflow engine that compiles jobs instead of replaying",
-  "url": "https://github.com/piercefreeman/waymark",
-  "score": 46,
-  "by": "icyfox",
-  "time": "2026-11-05T14:06:31.000Z"
- },
- {
-  "id": 50392118,
-  "title": "Gemini Omni 1.2 Flash",
-  "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-  "score": 302,
-  "by": "thisisauserid",
-  "time": "2026-11-06T13:35:27.000Z"
- },
- {
-  "id": 50399569,
-  "title": "ChatGPT silently passes data between connectors and the bounty wants an ID card",
-  "url": "https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053",
-  "score": 79,
-  "by": "Aldipower",
-  "time": "2026-11-06T22:50:43.000Z"
- },
- {
-  "id": 50355009,
-  "title": "Show HN: Tmux-restore saves tmux windows and agent sessions across reboots",
-  "url": "https://github.com/andrewboldi/tmux-restore",
-  "score": 3,
-  "by": "boldi",
-  "time": "2026-11-03T17:25:21.000Z"
- },
- {
-  "id": 50395043,
-  "title": "UpCodes (YC S17) is hiring SDR's to sell AI compliance software",
-  "url": "https://up.codes/careers?utm_source=HN",
-  "score": 1,
-  "by": "Old_Thrashbarg",
-  "time": "2026-11-06T17:03:33.000Z"
- },
- {
-  "id": 50396834,
-  "title": "Replit rebuilt its sandbox engine with microVMs",
-  "url": "https://frontier.replit.com/sandbox-engine-microvms-part-1/",
-  "score": 71,
-  "by": "gaplong",
-  "time": "2026-11-06T19:06:10.000Z"
- },
- {
-  "id": 50395919,
-  "title": "Memorilla: Latent Semantic Memory for LLMs",
-  "url": "https://arxiv.org/abs/2610.21375",
-  "score": 91,
-  "by": "handfuloflight",
-  "time": "2026-11-06T18:03:33.000Z"
- },
- {
-  "id": 50394906,
-  "title": "Anthropic IPO buyers see valuation as low as $1.1T",
-  "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
-  "score": 246,
-  "by": "dgellow",
-  "time": "2026-11-06T16:54:36.000Z"
- },
- {
-  "id": 50395869,
-  "title": "Size-It-Up (Game)",
-  "url": "https://magnitudle.com/size-it-up",
-  "score": 73,
-  "by": "whoishiding",
-  "time": "2026-11-06T17:59:59.000Z"
+  "id": 50356722,
+  "title": "Panthera: Ampere's CPU Performance Model",
+  "url": "https://github.com/AmpereComputing/panthera",
+  "score": 30,
+  "by": "mshockwave",
+  "time": "2026-11-03T19:12:17.000Z"
  },
  {
   "id": 50389570,
   "title": "Chomsky and the two cultures of statistical learning (2011)",
   "url": "https://www.norvig.com/chomsky.html",
-  "score": 103,
+  "score": 124,
   "by": "andsoitis",
   "time": "2026-11-06T08:18:36.000Z"
  },
  {
-  "id": 50392348,
-  "title": "How octopuses squeeze through too small gaps",
-  "url": "https://journals.biologists.com/jeb/article/229/21/jeb253615/373332/How-octopuses-squeeze-through-too-small-gaps",
-  "score": 54,
-  "by": "bookofjoe",
-  "time": "2026-11-06T13:57:20.000Z"
+  "id": 50355009,
+  "title": "Show HN: Tmux-restore saves tmux windows and agent sessions across reboots",
+  "url": "https://github.com/andrewboldi/tmux-restore",
+  "score": 30,
+  "by": "boldi",
+  "time": "2026-11-03T17:25:21.000Z"
+ },
+ {
+  "id": 50399657,
+  "title": "Sodium-ion batteries approach cost parity with LFP",
+  "url": "https://www.pv-magazine.com/2026/11/06/sodium-ion-batteries-approach-cost-parity-with-lfp-with-70-gwh-covered-by-supply-agreements/",
+  "score": 181,
+  "by": "doener",
+  "time": "2026-11-06T23:00:46.000Z"
+ },
+ {
+  "id": 50379221,
+  "title": "Show HN: Waymark – A workflow engine that compiles jobs instead of replaying",
+  "url": "https://github.com/piercefreeman/waymark",
+  "score": 63,
+  "by": "icyfox",
+  "time": "2026-11-05T14:06:31.000Z"
+ },
+ {
+  "id": 50388122,
+  "title": "From Linux to Wikipedia: How Volunteers Build the Internet",
+  "url": "https://thereader.mitpress.mit.edu/from-linux-to-wikipedia-how-volunteers-build-the-internet/",
+  "score": 322,
+  "by": "jonbaer",
+  "time": "2026-11-06T04:17:49.000Z"
+ },
+ {
+  "id": 50394906,
+  "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+  "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+  "score": 274,
+  "by": "dgellow",
+  "time": "2026-11-06T16:54:36.000Z"
  }
 ]

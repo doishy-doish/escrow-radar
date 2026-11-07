@@ -1,0 +1,21 @@
+{
+ "checked_at": "2026-11-07T08:31:30.261Z",
+ "taskbounty": {
+  "ok": true,
+  "count": 0,
+  "tasks": []
+ },
+ "devloot": {
+  "ok": true,
+  "total": 1,
+  "bounties": [
+   {
+    "id": 2,
+    "issue": "https://github.com/algorandfoundation/algokit-cli/issues/710",
+    "amount": 5,
+    "status": "OPEN",
+    "difficulty": "intermediate"
+   }
+  ]
+ }
+}
