@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-06T23:17:38.593Z",
+ "ts": "2026-11-07T02:54:53.547Z",
  "count": 1,
  "alerts": [
   {
@@ -13,7 +13,7 @@
    "severity": "Medium",
    "reward_usdc": 150,
    "reward_source": "severity_table",
-   "age_seconds_since_open": 12847,
+   "age_seconds_since_open": 25870,
    "opened_at": "2026-11-06T19:42:13Z",
    "competing_prs": 0,
    "competing_pr_urls": [],
@@ -32,7 +32,7 @@
    "claimed_in_comments": false,
    "claim_evidence": null,
    "excerpt": "## Summary Trailing-byte acceptance in all three client-side proving-key loads in `paraloom-prover-wasm` (in Stage-1 scope: client proof generation). Each calls `ProvingKey::<Bn254>::deserialize_compressed(proving_key)` on the full input slice without verifying the cursor is exhausted, so a corrupted or concatenated proving-key file is silently accepted at prove time. ## Root Cause & Exact File/Line References - `paraloom-prover-wasm/src/lib.rs:220` (`prove_withdrawal_v2`): `let pk = ProvingKey::<Bn254>::deserialize_compressed(proving_key)` — no trailing-byte check. - `paraloom-prover-wasm/src",
-   "ts": "2026-11-06T23:16:45.803Z",
+   "ts": "2026-11-07T02:53:57.351Z",
    "selection_rank_tier": 1,
    "est_minutes": 35,
    "reward_density": 4.29,
