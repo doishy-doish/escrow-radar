@@ -1,242 +1,242 @@
 [
  {
+  "id": 50404599,
+  "title": "The $8 Linux Computer (2022)",
+  "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
+  "score": 44,
+  "by": "zenincognito",
+  "time": "2026-11-07T14:00:20.000Z"
+ },
+ {
+  "id": 50403052,
+  "title": "Need for Speed Underground 2 online in the browser",
+  "url": "https://nfsu2.xyz/",
+  "score": 378,
+  "by": "fluxusars",
+  "time": "2026-11-07T09:36:36.000Z"
+ },
+ {
   "id": 50399933,
   "title": "Libghostty 1.0",
   "url": "https://mitchellh.com/writing/libghostty-1-0",
-  "score": 599,
+  "score": 854,
   "by": "mfiguiere",
   "time": "2026-11-06T23:30:52.000Z"
  },
  {
-  "id": 50401740,
-  "title": "A barbarian tribe's mythic origin story is true, ancient DNA reveals",
-  "url": "https://www.science.org/content/article/barbarian-tribe-s-mythic-origin-story-true-ancient-dna-reveals",
-  "score": 84,
-  "by": "benbreen",
-  "time": "2026-11-07T04:54:36.000Z"
+  "id": 50403066,
+  "title": "Running a law firm on Free software",
+  "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+  "score": 83,
+  "by": "DeepLogin",
+  "time": "2026-11-07T09:39:06.000Z"
  },
  {
-  "id": 50397429,
-  "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
-  "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
-  "score": 463,
-  "by": "theanomaly",
-  "time": "2026-11-06T19:48:51.000Z"
+  "id": 50403097,
+  "title": "Every Mac comes with an (undocumented) family member classifier",
+  "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+  "score": 330,
+  "by": "infwhispers",
+  "time": "2026-11-07T09:46:03.000Z"
  },
  {
-  "id": 50402212,
-  "title": "The Components of Agent Memory",
-  "url": "https://www.anthropic.com/research/components-of-agent-memory",
-  "score": 30,
-  "by": "geoffbp",
-  "time": "2026-11-07T06:39:04.000Z"
+  "id": 50352791,
+  "title": "British Library Legal deposit and web archiving",
+  "url": "https://www.bl.uk/services/legal-deposit/web-archiving",
+  "score": 16,
+  "by": "robtherobber",
+  "time": "2026-11-03T14:56:30.000Z"
  },
  {
   "id": 50391456,
   "title": "Tesla to wind down Cybertruck production",
   "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
-  "score": 998,
+  "score": 1082,
   "by": "PLenz",
   "time": "2026-11-06T12:13:51.000Z"
  },
  {
-  "id": 50401867,
-  "title": "Asahi Linux Progress Linux 7.3",
-  "url": "https://asahilinux.org/2026/11/progress-report-7-3/",
-  "score": 160,
-  "by": "ackyshake",
-  "time": "2026-11-07T05:20:18.000Z"
+  "id": 50397429,
+  "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+  "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+  "score": 531,
+  "by": "theanomaly",
+  "time": "2026-11-06T19:48:51.000Z"
  },
  {
-  "id": 50361765,
-  "title": "PostgreSQL Internals [pdf]",
-  "url": "https://edu.postgrespro.com/postgresql_internals-14_en.pdf",
-  "score": 14,
-  "by": "Foe",
-  "time": "2026-11-04T05:22:43.000Z"
+  "id": 50377613,
+  "title": "Show HN: Spindle – a full-featured, type-safe web framework for OCaml 5",
+  "url": "https://github.com/hyphatech/spindle",
+  "score": 27,
+  "by": "zaiev",
+  "time": "2026-11-05T10:45:28.000Z"
  },
  {
-  "id": 50399991,
-  "title": "RealPage rent-pricing case wraps with nearly $360M to renters",
-  "url": "https://www.multifamilydive.com/news/realpage-rent-pricing-case-360m-renters/873553/",
-  "score": 120,
-  "by": "raybb",
-  "time": "2026-11-06T23:37:19.000Z"
+  "id": 50356037,
+  "title": "ToothPaste",
+  "url": "https://brisk4t.github.io/blog/toothpaste/",
+  "score": 46,
+  "by": "speckx",
+  "time": "2026-11-03T18:27:27.000Z"
  },
  {
-  "id": 50388001,
-  "title": "US FAA says it will phase out floppy disks from air traffic control by 2028",
-  "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
-  "score": 335,
-  "by": "ChrisArchitect",
-  "time": "2026-11-06T04:00:28.000Z"
+  "id": 50361417,
+  "title": "Building the NBC News Big Board",
+  "url": "https://ejfox.com/projects/nbc-big-board",
+  "score": 26,
+  "by": "whalesalad",
+  "time": "2026-11-04T04:09:48.000Z"
  },
  {
-  "id": 50352701,
-  "title": "The Flash C Compiler",
-  "url": "https://blog.adafruit.com/2026/10/31/flash-c-compiler/",
-  "score": 49,
-  "by": "AlexeyBrin",
-  "time": "2026-11-03T14:49:42.000Z"
+  "id": 50358094,
+  "title": "Tasfer: a text editor drawn on a 2D canvas",
+  "url": "https://www.hamza.se/blog/tasfer",
+  "score": 5,
+  "by": "hamza512b",
+  "time": "2026-11-03T20:58:40.000Z"
  },
  {
-  "id": 50397219,
-  "title": "Firecracker VM Escape: PwnEscape Part 2",
-  "url": "https://pwn.ai/blog/firecracker-escape",
-  "score": 231,
-  "by": "SerCe",
-  "time": "2026-11-06T19:33:38.000Z"
+  "id": 50402212,
+  "title": "The Components of Agent Memory",
+  "url": "https://www.anthropic.com/research/components-of-agent-memory",
+  "score": 96,
+  "by": "geoffbp",
+  "time": "2026-11-07T06:39:04.000Z"
  },
  {
   "id": 50360810,
   "title": "Greece has its own Pompeii: Thera buried Akrotiri in ash 17th-16th century BCE",
   "url": "https://www.smithsonianmag.com/history/greece-has-its-own-pompeii-and-the-ruins-tell-a-captivating-story-of-a-sophisticated-seafaring-bronze-age-society-180989747/",
-  "score": 94,
+  "score": 157,
   "by": "derbOac",
   "time": "2026-11-04T02:19:16.000Z"
  },
  {
-  "id": 50369283,
-  "title": "8088 Domination Post-Mortem",
-  "url": "https://trixter.oldskool.org/2014/06/19/8088-domination-post-mortem-part-1/",
-  "score": 9,
-  "by": "cosmojg",
-  "time": "2026-11-04T18:06:14.000Z"
+  "id": 50388001,
+  "title": "US FAA says it will phase out floppy disks from air traffic control by 2028",
+  "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
+  "score": 367,
+  "by": "ChrisArchitect",
+  "time": "2026-11-06T04:00:28.000Z"
+ },
+ {
+  "id": 50399991,
+  "title": "RealPage rent-pricing case wraps with nearly $360M to renters",
+  "url": "https://www.multifamilydive.com/news/realpage-rent-pricing-case-360m-renters/873553/",
+  "score": 151,
+  "by": "raybb",
+  "time": "2026-11-06T23:37:19.000Z"
+ },
+ {
+  "id": 50403063,
+  "title": "Port 0: The Port That Does Not Exist",
+  "url": "https://acid.vegas/blog/the-port-that-does-not-exist/",
+  "score": 37,
+  "by": "NewCzech",
+  "time": "2026-11-07T09:38:26.000Z"
+ },
+ {
+  "id": 50397219,
+  "title": "Firecracker VM Escape: PwnEscape Part 2",
+  "url": "https://pwn.ai/blog/firecracker-escape",
+  "score": 261,
+  "by": "SerCe",
+  "time": "2026-11-06T19:33:38.000Z"
+ },
+ {
+  "id": 50403214,
+  "title": "Upload Your RAM",
+  "url": "https://uploadyourram.org",
+  "score": 224,
+  "by": "susanthenerd",
+  "time": "2026-11-07T10:15:26.000Z"
+ },
+ {
+  "id": 50401740,
+  "title": "A barbarian tribe's mythic origin story is true, ancient DNA reveals",
+  "url": "https://www.science.org/content/article/barbarian-tribe-s-mythic-origin-story-true-ancient-dna-reveals",
+  "score": 155,
+  "by": "benbreen",
+  "time": "2026-11-07T04:54:36.000Z"
+ },
+ {
+  "id": 50361765,
+  "title": "PostgreSQL Internals [pdf] (2023)",
+  "url": "https://edu.postgrespro.com/postgresql_internals-14_en.pdf",
+  "score": 58,
+  "by": "Foe",
+  "time": "2026-11-04T05:22:43.000Z"
  },
  {
   "id": 50395183,
   "title": "Notes on San Marino",
   "url": "https://mattlakeman.org/2026/11/05/notes-on-san-marino/",
-  "score": 61,
+  "score": 105,
   "by": "yorwba",
   "time": "2026-11-06T17:12:05.000Z"
  },
  {
-  "id": 50397994,
-  "title": "AI is dramatically accelerating AI research",
-  "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
-  "score": 297,
-  "by": "yurivish",
-  "time": "2026-11-06T20:27:23.000Z"
+  "id": 50369283,
+  "title": "8088 Domination Post-Mortem",
+  "url": "https://trixter.oldskool.org/2014/06/19/8088-domination-post-mortem-part-1/",
+  "score": 41,
+  "by": "cosmojg",
+  "time": "2026-11-04T18:06:14.000Z"
  },
  {
-  "id": 50402535,
-  "title": "Bong: DuckDuckGo bang alternative, open-source and self-hosted",
-  "url": "https://bong.glendalab.com",
-  "score": 9,
-  "by": "captain_bender",
-  "time": "2026-11-07T07:48:13.000Z"
+  "id": 50352701,
+  "title": "The Flash C Compiler",
+  "url": "https://blog.adafruit.com/2026/10/31/flash-c-compiler/",
+  "score": 81,
+  "by": "AlexeyBrin",
+  "time": "2026-11-03T14:49:42.000Z"
  },
  {
   "id": 50373513,
   "title": "The great butter and cheese fire of 1991",
   "url": "https://www.wisfarmer.com/story/opinion/columnists/2022/05/11/over-20-m-lbs-commodities-lost-great-butter-fire-1991/9650051002/",
-  "score": 23,
+  "score": 56,
   "by": "subroutine",
   "time": "2026-11-05T00:44:16.000Z"
- },
- {
-  "id": 50394855,
-  "title": "First steps in bare-metal programming using UEFI",
-  "url": "https://kevinboone.me/efitest_index.html",
-  "score": 219,
-  "by": "LaSombra",
-  "time": "2026-11-06T16:50:29.000Z"
- },
- {
-  "id": 50354097,
-  "title": "Can GROUP BY still be optimized after all these years?",
-  "url": "https://pivotlake.io/blog/know-your-limit-faster-top-k-aggregation/",
-  "score": 79,
-  "by": "ntur1337",
-  "time": "2026-11-03T16:30:23.000Z"
  },
  {
   "id": 50397099,
   "title": "GitHub's new Git storage architecture",
   "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
-  "score": 140,
+  "score": 183,
   "by": "DAlperin",
   "time": "2026-11-06T19:24:21.000Z"
+ },
+ {
+  "id": 50394855,
+  "title": "First steps in bare-metal programming using UEFI",
+  "url": "https://kevinboone.me/efitest_index.html",
+  "score": 236,
+  "by": "LaSombra",
+  "time": "2026-11-06T16:50:29.000Z"
  },
  {
   "id": 50392118,
   "title": "Gemini Omni 1.2 Flash",
   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-  "score": 332,
+  "score": 352,
   "by": "thisisauserid",
   "time": "2026-11-06T13:35:27.000Z"
  },
  {
-  "id": 50395450,
-  "title": "Devvm.dev: One VM for every project",
-  "url": "https://devvm.dev/",
-  "score": 153,
-  "by": "luispa",
-  "time": "2026-11-06T17:30:22.000Z"
- },
- {
-  "id": 50397711,
-  "title": "Google has acquired Crusoe's data center site in southeast Wyoming",
-  "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
-  "score": 72,
-  "by": "rexbee",
-  "time": "2026-11-06T20:09:14.000Z"
+  "id": 50354097,
+  "title": "Can GROUP BY still be optimized after all these years?",
+  "url": "https://pivotlake.io/blog/know-your-limit-faster-top-k-aggregation/",
+  "score": 106,
+  "by": "ntur1337",
+  "time": "2026-11-03T16:30:23.000Z"
  },
  {
   "id": 50397017,
   "title": "Restaurant Delivery Payment-Skimming Campaign",
   "url": "https://www.infohawk.com/news/2026-11-05-scamwich-restaurant-skimming",
-  "score": 120,
+  "score": 151,
   "by": "fiej",
   "time": "2026-11-06T19:19:27.000Z"
- },
- {
-  "id": 50400597,
-  "title": "I toured Unitree's factory. I'm more bullish on the West",
-  "url": "https://josef.cn/blog/unitree",
-  "score": 116,
-  "by": "josefchen",
-  "time": "2026-11-07T01:05:16.000Z"
- },
- {
-  "id": 50389570,
-  "title": "Chomsky and the two cultures of statistical learning (2011)",
-  "url": "https://www.norvig.com/chomsky.html",
-  "score": 126,
-  "by": "andsoitis",
-  "time": "2026-11-06T08:18:36.000Z"
- },
- {
-  "id": 50356722,
-  "title": "Panthera: Ampere's CPU Performance Model",
-  "url": "https://github.com/AmpereComputing/panthera",
-  "score": 31,
-  "by": "mshockwave",
-  "time": "2026-11-03T19:12:17.000Z"
- },
- {
-  "id": 50355009,
-  "title": "Show HN: Tmux-restore saves tmux windows and agent sessions across reboots",
-  "url": "https://github.com/andrewboldi/tmux-restore",
-  "score": 35,
-  "by": "boldi",
-  "time": "2026-11-03T17:25:21.000Z"
- },
- {
-  "id": 50379221,
-  "title": "Show HN: Waymark – A workflow engine that compiles jobs instead of replaying",
-  "url": "https://github.com/piercefreeman/waymark",
-  "score": 69,
-  "by": "icyfox",
-  "time": "2026-11-05T14:06:31.000Z"
- },
- {
-  "id": 50399657,
-  "title": "Sodium-ion batteries approach cost parity with LFP",
-  "url": "https://www.pv-magazine.com/2026/11/06/sodium-ion-batteries-approach-cost-parity-with-lfp-with-70-gwh-covered-by-supply-agreements/",
-  "score": 189,
-  "by": "doener",
-  "time": "2026-11-06T23:00:46.000Z"
  }
 ]
