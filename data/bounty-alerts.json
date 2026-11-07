@@ -1,47 +1,6 @@
 {
- "ts": "2026-11-07T15:47:53.318Z",
+ "ts": "2026-11-07T19:41:18.522Z",
  "count": 0,
  "alerts": [],
- "demoted": [
-  {
-   "id": "paraloom-core#1507",
-   "stale_reason": "stale_target:programs/paraloom/src/lib.rs:85d"
-  },
-  {
-   "id": "paraloom-core#1505",
-   "stale_reason": "stale_target:src/node/mod.rs:72d"
-  },
-  {
-   "id": "paraloom-core#1510",
-   "stale_reason": "stale_target:src/consensus/transact.rs:83d"
-  },
-  {
-   "id": "paraloom-core#1509",
-   "stale_reason": "stale_target:src/node/mod.rs:72d"
-  },
-  {
-   "id": "paraloom-core#1508",
-   "stale_reason": "stale_target:programs/paraloom/src/lib.rs:85d"
-  },
-  {
-   "id": "paraloom-core#1506",
-   "stale_reason": "stale_target:src/privacy/circuits.rs:101d"
-  },
-  {
-   "id": "paraloom-core#1503",
-   "stale_reason": "stale_target:src/privacy/nullifier.rs:119d"
-  },
-  {
-   "id": "paraloom-core#1511",
-   "stale_reason": "stale_target:src/bridge/types.rs:83d"
-  },
-  {
-   "id": "paraloom-core#1504",
-   "stale_reason": "stale_target:src/node/mod.rs:72d"
-  },
-  {
-   "id": "paraloom-core#1502",
-   "stale_reason": "stale_target:src/privacy/circuits.rs:101d"
-  }
- ]
+ "demoted": []
 }
