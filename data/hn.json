@@ -3,7 +3,7 @@
   "id": 50406563,
   "title": "The end of Microsoft Research's AI Frontiers group",
   "url": "https://hunch.net/?p=13764006",
-  "score": 294,
+  "score": 395,
   "by": "srean",
   "time": "2026-11-07T18:02:17.000Z"
  },
@@ -11,7 +11,7 @@
   "id": 50406670,
   "title": "What I run on my $10 USD OpenStick homelab",
   "url": "https://blog.bosscher.ch/posts/openstick/",
-  "score": 249,
+  "score": 348,
   "by": "LaurensBER",
   "time": "2026-11-07T18:12:12.000Z"
  },
@@ -19,224 +19,224 @@
   "id": 50406111,
   "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
   "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
-  "score": 279,
+  "score": 367,
   "by": "user_7832",
   "time": "2026-11-07T17:06:36.000Z"
- },
- {
-  "id": 50406292,
-  "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
-  "url": "https://github.com/hedgerow-dev/coldframe",
-  "score": 166,
-  "by": "hedgerow-dev",
-  "time": "2026-11-07T17:27:30.000Z"
- },
- {
-  "id": 50406222,
-  "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
-  "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
-  "score": 150,
-  "by": "antiuniverse",
-  "time": "2026-11-07T17:19:00.000Z"
- },
- {
-  "id": 50403052,
-  "title": "Need for Speed Underground 2 online in the browser",
-  "url": "https://nfsu2.xyz/",
-  "score": 741,
-  "by": "fluxusars",
-  "time": "2026-11-07T09:36:36.000Z"
- },
- {
-  "id": 50405172,
-  "title": "Retro Song Bird: Plug in any Game Boy cartridge to hear the soundtrack",
-  "url": "https://www.retrosongbird.com/",
-  "score": 20,
-  "by": "hentrep",
-  "time": "2026-11-07T15:06:54.000Z"
- },
- {
-  "id": 50377661,
-  "title": "Uranium cubes reveal why the German nuclear project failed",
-  "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
-  "score": 26,
-  "by": "rbanffy",
-  "time": "2026-11-05T10:52:04.000Z"
- },
- {
-  "id": 50407882,
-  "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
-  "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-  "score": 61,
-  "by": "shmulc",
-  "time": "2026-11-07T20:45:32.000Z"
- },
- {
-  "id": 50406319,
-  "title": "Five memorable books about programming (2008)",
-  "url": "https://prog21.dadgum.com/19.html",
-  "score": 69,
-  "by": "andsoitis",
-  "time": "2026-11-07T17:30:49.000Z"
- },
- {
-  "id": 50408350,
-  "title": "Show HN: An offline desktop companion to help maintain a healthy blink rhythm",
-  "url": "https://eyesrhythm.com/",
-  "score": 10,
-  "by": "prnysoni",
-  "time": "2026-11-07T21:47:47.000Z"
- },
- {
-  "id": 50404599,
-  "title": "The $8 Linux Computer (2022)",
-  "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
-  "score": 189,
-  "by": "zenincognito",
-  "time": "2026-11-07T14:00:20.000Z"
- },
- {
-  "id": 50403097,
-  "title": "Every Mac comes with an (undocumented) family member classifier",
-  "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
-  "score": 552,
-  "by": "infwhispers",
-  "time": "2026-11-07T09:46:03.000Z"
  },
  {
   "id": 50408713,
   "title": "Making any integer with four 2s (2025)",
   "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
-  "score": 4,
+  "score": 64,
   "by": "germanrabbit",
   "time": "2026-11-07T22:38:58.000Z"
  },
  {
-  "id": 50408082,
-  "title": "Show HN: Where Were We",
-  "url": "https://wherewerewe.app/",
-  "score": 20,
-  "by": "zkiihne",
-  "time": "2026-11-07T21:08:35.000Z"
+  "id": 50408931,
+  "title": "GitHub New pull request overview page in public preview",
+  "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+  "score": 66,
+  "by": "xiaoyu2006",
+  "time": "2026-11-07T23:09:40.000Z"
  },
  {
-  "id": 50406502,
-  "title": "GeoWorks, Microsoft Windows' Upstart '90s Competitor (2016)",
-  "url": "https://www.atlasobscura.com/articles/the-history-of-geoworks-microsoft-windows-upstart-90s-competitor",
-  "score": 34,
+  "id": 50407882,
+  "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+  "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+  "score": 190,
+  "by": "shmulc",
+  "time": "2026-11-07T20:45:32.000Z"
+ },
+ {
+  "id": 50377661,
+  "title": "Uranium cubes reveal why the German nuclear project failed",
+  "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
+  "score": 70,
+  "by": "rbanffy",
+  "time": "2026-11-05T10:52:04.000Z"
+ },
+ {
+  "id": 50406222,
+  "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+  "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+  "score": 206,
+  "by": "antiuniverse",
+  "time": "2026-11-07T17:19:00.000Z"
+ },
+ {
+  "id": 50406292,
+  "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
+  "url": "https://github.com/hedgerow-dev/coldframe",
+  "score": 193,
+  "by": "hedgerow-dev",
+  "time": "2026-11-07T17:27:30.000Z"
+ },
+ {
+  "id": 50403052,
+  "title": "Need for Speed Underground 2 online in the browser",
+  "url": "https://nfsu2.xyz/",
+  "score": 829,
+  "by": "fluxusars",
+  "time": "2026-11-07T09:36:36.000Z"
+ },
+ {
+  "id": 50408961,
+  "title": "Commodore PET – The Worlds First Personal Computer",
+  "url": "https://www.commodore.ca/commodore-products/commodore-pet-the-worlds-first-personal-computer/",
+  "score": 21,
   "by": "andsoitis",
-  "time": "2026-11-07T17:54:56.000Z"
+  "time": "2026-11-07T23:15:34.000Z"
  },
  {
-  "id": 50399933,
-  "title": "Libghostty 1.0",
-  "url": "https://mitchellh.com/writing/libghostty-1-0",
-  "score": 1010,
-  "by": "mfiguiere",
-  "time": "2026-11-06T23:30:52.000Z"
- },
- {
-  "id": 50361657,
-  "title": "Text.js: Build full-stack React apps that render inside console.log",
-  "url": "https://textjs.org/",
-  "score": 75,
-  "by": "nateb2022",
-  "time": "2026-11-04T04:59:36.000Z"
- },
- {
-  "id": 50408104,
-  "title": "Shadow of the Sun (2021)",
-  "url": "https://mattlakeman.org/2021/07/27/shadow-of-the-sun/",
-  "score": 10,
-  "by": "andsoitis",
-  "time": "2026-11-07T21:11:05.000Z"
- },
- {
-  "id": 50403507,
-  "title": "Every Windows 11 app should kill Electron, and Discord just showed why",
-  "url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/",
-  "score": 175,
-  "by": "thunderbong",
-  "time": "2026-11-07T11:11:15.000Z"
- },
- {
-  "id": 50405782,
-  "title": "Every processor die anyone has photographed and given away",
-  "url": "https://sheets.works/data-viz/cpu-dies",
-  "score": 60,
-  "by": "user_7832",
-  "time": "2026-11-07T16:21:36.000Z"
- },
- {
-  "id": 50405789,
-  "title": "How Long Can Life Wait?",
-  "url": "https://mceglowski.substack.com/p/how-long-can-life-wait",
-  "score": 109,
-  "by": "Ariarule",
-  "time": "2026-11-07T16:22:59.000Z"
+  "id": 50403097,
+  "title": "Every Mac comes with an (undocumented) family member classifier",
+  "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+  "score": 607,
+  "by": "infwhispers",
+  "time": "2026-11-07T09:46:03.000Z"
  },
  {
   "id": 50358337,
   "title": "Turning Every Radio into a Radar",
   "url": "https://tiaminetworks.com/turning-every-radio-into-a-radar/",
-  "score": 4,
+  "score": 32,
   "by": "hasley",
   "time": "2026-11-03T21:18:48.000Z"
+ },
+ {
+  "id": 50406319,
+  "title": "Five memorable books about programming (2008)",
+  "url": "https://prog21.dadgum.com/19.html",
+  "score": 87,
+  "by": "andsoitis",
+  "time": "2026-11-07T17:30:49.000Z"
+ },
+ {
+  "id": 50403507,
+  "title": "Every Windows 11 app should kill Electron, and Discord just showed why",
+  "url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/",
+  "score": 221,
+  "by": "thunderbong",
+  "time": "2026-11-07T11:11:15.000Z"
+ },
+ {
+  "id": 50361212,
+  "title": "Study solved a 150-year-old mystery into the identity of the extinct giant crane",
+  "url": "https://www.bournemouth.ac.uk/news/2026-10-28/study-has-solved-150-year-old-mystery-identity-extinct-giant-crane",
+  "score": 14,
+  "by": "gmays",
+  "time": "2026-11-04T03:30:28.000Z"
+ },
+ {
+  "id": 50404599,
+  "title": "The $8 Linux Computer (2022)",
+  "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
+  "score": 200,
+  "by": "zenincognito",
+  "time": "2026-11-07T14:00:20.000Z"
+ },
+ {
+  "id": 50408082,
+  "title": "Show HN: Where Were We",
+  "url": "https://wherewerewe.app/",
+  "score": 25,
+  "by": "zkiihne",
+  "time": "2026-11-07T21:08:35.000Z"
+ },
+ {
+  "id": 50408350,
+  "title": "Show HN: An offline desktop companion to help maintain a healthy blink rhythm",
+  "url": "https://eyesrhythm.com/",
+  "score": 27,
+  "by": "prnysoni",
+  "time": "2026-11-07T21:47:47.000Z"
+ },
+ {
+  "id": 50405172,
+  "title": "Retro Song Bird: Plug in any Game Boy cartridge to hear the soundtrack",
+  "url": "https://www.retrosongbird.com/",
+  "score": 40,
+  "by": "hentrep",
+  "time": "2026-11-07T15:06:54.000Z"
+ },
+ {
+  "id": 50408750,
+  "title": "IRA Velinsky – Commodore's Industrial Designer",
+  "url": "https://www.commodore.ca/commodore-history/ira-velinsky-commodores-amazing-industrial-designer/",
+  "score": 12,
+  "by": "erickhill",
+  "time": "2026-11-07T22:45:39.000Z"
+ },
+ {
+  "id": 50404438,
+  "title": "Cancer at Sea",
+  "url": "https://biographic.com/cancer-at-sea/",
+  "score": 11,
+  "by": "bryanrasmussen",
+  "time": "2026-11-07T13:37:27.000Z"
+ },
+ {
+  "id": 50406502,
+  "title": "GeoWorks, Microsoft Windows' Upstart '90s Competitor (2016)",
+  "url": "https://www.atlasobscura.com/articles/the-history-of-geoworks-microsoft-windows-upstart-90s-competitor",
+  "score": 43,
+  "by": "andsoitis",
+  "time": "2026-11-07T17:54:56.000Z"
+ },
+ {
+  "id": 50361657,
+  "title": "Text.js: Build full-stack React apps that render inside console.log",
+  "url": "https://textjs.org/",
+  "score": 82,
+  "by": "nateb2022",
+  "time": "2026-11-04T04:59:36.000Z"
+ },
+ {
+  "id": 50405782,
+  "title": "Every processor die anyone has photographed and given away",
+  "url": "https://sheets.works/data-viz/cpu-dies",
+  "score": 78,
+  "by": "user_7832",
+  "time": "2026-11-07T16:21:36.000Z"
  },
  {
   "id": 50405674,
   "title": "Terry Pratchett's Study",
   "url": "https://www.sussi.dk/terry-pratchetts-study",
-  "score": 77,
+  "score": 104,
   "by": "ColinWright",
   "time": "2026-11-07T16:05:45.000Z"
- },
- {
-  "id": 50403066,
-  "title": "Running a law firm on Free software",
-  "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
-  "score": 219,
-  "by": "DeepLogin",
-  "time": "2026-11-07T09:39:06.000Z"
  },
  {
   "id": 50401867,
   "title": "Asahi Linux Progress Linux 7.3",
   "url": "https://asahilinux.org/2026/11/progress-report-7-3/",
-  "score": 290,
+  "score": 325,
   "by": "ackyshake",
   "time": "2026-11-07T05:20:18.000Z"
+ },
+ {
+  "id": 50403066,
+  "title": "Running a law firm on Free software",
+  "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+  "score": 237,
+  "by": "DeepLogin",
+  "time": "2026-11-07T09:39:06.000Z"
  },
  {
   "id": 50401740,
   "title": "A barbarian tribe's mythic origin story is true, ancient DNA reveals",
   "url": "https://www.science.org/content/article/barbarian-tribe-s-mythic-origin-story-true-ancient-dna-reveals",
-  "score": 197,
+  "score": 210,
   "by": "benbreen",
   "time": "2026-11-07T04:54:36.000Z"
  },
  {
-  "id": 50408129,
-  "title": "MeccanicOS",
-  "url": "https://meccanicos.com/",
-  "score": 5,
-  "by": "tomcam",
-  "time": "2026-11-07T21:13:44.000Z"
- },
- {
-  "id": 50370787,
-  "title": "The typo generation is damaging literature",
-  "url": "https://www.metropolitanreview.org/p/the-typo-generation-is-damaging-literature",
-  "score": 51,
-  "by": "bryanrasmussen",
-  "time": "2026-11-04T20:05:56.000Z"
- },
- {
-  "id": 50405263,
-  "title": "Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8",
-  "url": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
-  "score": 49,
-  "by": "jiant",
-  "time": "2026-11-07T15:16:01.000Z"
+  "id": 50408104,
+  "title": "Shadow of the Sun (2021)",
+  "url": "https://mattlakeman.org/2021/07/27/shadow-of-the-sun/",
+  "score": 21,
+  "by": "andsoitis",
+  "time": "2026-11-07T21:11:05.000Z"
  }
 ]
