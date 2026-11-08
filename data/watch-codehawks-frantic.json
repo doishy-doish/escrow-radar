@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-08T15:56:41.250Z",
+ "checked_at": "2026-11-08T20:06:58.274Z",
  "codehawks": {
   "ok": true,
   "count": 45,
@@ -639,15 +639,22 @@
  "frantic": {
   "ok": true,
   "day": 141,
-  "open": 1,
+  "open": 2,
   "funded": 1980,
   "bounties": [
    {
     "n": 146,
     "price": 2,
     "status": "open",
-    "avail": "13/100",
+    "avail": "3/100",
     "posted": "2026-11-03"
+   },
+   {
+    "n": 97,
+    "price": 10,
+    "status": "open",
+    "avail": "2/5",
+    "posted": "2026-07-08"
    }
   ]
  }

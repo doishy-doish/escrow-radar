@@ -1,242 +1,242 @@
 [
  {
+  "id": 50415628,
+  "title": "Goldman Sachs Is Pulling Claude Code from Its Bankers and Traders",
+  "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+  "score": 235,
+  "by": "TheWiggles",
+  "time": "2026-11-08T18:16:07.000Z"
+ },
+ {
+  "id": 50416158,
+  "title": "Outlook.com Is Quietly Rejecting Email from Domains Without DMARC",
+  "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+  "score": 35,
+  "by": "xmddmx",
+  "time": "2026-11-08T19:20:32.000Z"
+ },
+ {
+  "id": 50416053,
+  "title": "Dux: Free, open-source Wayland desktop shell with file manager and theming",
+  "url": "https://duxlabs.dev/",
+  "score": 25,
+  "by": "indigodaddy",
+  "time": "2026-11-08T19:08:51.000Z"
+ },
+ {
+  "id": 50416363,
+  "title": "How I Fight AI Brain Fry",
+  "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+  "score": 9,
+  "by": "kyunez",
+  "time": "2026-11-08T19:37:42.000Z"
+ },
+ {
+  "id": 50368481,
+  "title": "Declarative Dragging",
+  "url": "https://declarative-dragging.github.io/",
+  "score": 70,
+  "by": "smusamashah",
+  "time": "2026-11-04T17:05:07.000Z"
+ },
+ {
   "id": 50411961,
   "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
   "url": "https://github.com/synchopate/llama-modchip",
-  "score": 140,
+  "score": 285,
   "by": "joshcsimmons",
   "time": "2026-11-08T10:22:04.000Z"
- },
- {
-  "id": 50366821,
-  "title": "Porting Android 16 to my blind mother's keypad phone",
-  "url": "https://z1x.us/blog/four-hundred-bucks-of-e-waste",
-  "score": 72,
-  "by": "z1xus",
-  "time": "2026-11-04T15:18:59.000Z"
- },
- {
-  "id": 50352518,
-  "title": "Quadrillion-parameter transformers and how to train them",
-  "url": "https://qlabs.sh/research/parameters",
-  "score": 46,
-  "by": "frozenseven",
-  "time": "2026-11-03T14:37:17.000Z"
  },
  {
   "id": 50412067,
   "title": "Writing as a thinking tool",
   "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
-  "score": 50,
+  "score": 194,
   "by": "jruohonen",
   "time": "2026-11-08T10:41:52.000Z"
+ },
+ {
+  "id": 50415817,
+  "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
+  "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+  "score": 48,
+  "by": "zzzeek",
+  "time": "2026-11-08T18:43:07.000Z"
+ },
+ {
+  "id": 50415172,
+  "title": "RAM Altman: Linux Script Emails Sam Altman Daily How Much Unused RAM in Your PC",
+  "url": "https://respawnfirst.com/linux-script-emails-sam-altman-unused-ram-ram-altman/",
+  "score": 36,
+  "by": "randycupertino",
+  "time": "2026-11-08T17:20:29.000Z"
+ },
+ {
+  "id": 50389923,
+  "title": "The Reconstruction of Torn Documents",
+  "url": "https://www.bundesarchiv.de/en/stasi-records-archive/the-reconstruction-of-torn-documents/",
+  "score": 66,
+  "by": "jacquesm",
+  "time": "2026-11-06T09:05:18.000Z"
+ },
+ {
+  "id": 50413769,
+  "title": "I'm not a fan of Deno's security model (2024)",
+  "url": "https://goldstein.lol/posts/deno-security/",
+  "score": 55,
+  "by": "maxloh",
+  "time": "2026-11-08T14:42:38.000Z"
+ },
+ {
+  "id": 50415135,
+  "title": "A Little Snitch for Windows",
+  "url": "https://packethound.app/",
+  "score": 42,
+  "by": "BadBoyBubby",
+  "time": "2026-11-08T17:16:07.000Z"
+ },
+ {
+  "id": 50362963,
+  "title": "Show HN: Vegetable Gardening for Engineers",
+  "url": "https://jrcpl.us/contrib/2020/gardening-for-engineers/",
+  "score": 80,
+  "by": "jrcplus",
+  "time": "2026-11-04T08:54:27.000Z"
  },
  {
   "id": 50410107,
   "title": "Goodbye Claude, hello Pi",
   "url": "https://caleb.software/posts/claude-to-pi.html",
-  "score": 504,
+  "score": 607,
   "by": "karagenit",
   "time": "2026-11-08T03:11:48.000Z"
  },
  {
-  "id": 50412318,
-  "title": "Person of Interest",
-  "url": "https://krthr.co/person-of-interest/",
-  "score": 211,
-  "by": "krthr",
-  "time": "2026-11-08T11:23:28.000Z"
+  "id": 50366821,
+  "title": "Porting Android 16 to my blind mother's keypad phone",
+  "url": "https://z1x.us/blog/four-hundred-bucks-of-e-waste",
+  "score": 118,
+  "by": "z1xus",
+  "time": "2026-11-04T15:18:59.000Z"
  },
  {
-  "id": 50412072,
-  "title": "JIT bitmap text rendering for microcontrollers",
-  "url": "https://linebender.org/blog/jit-bitmap-text/",
-  "score": 57,
-  "by": "dmit",
-  "time": "2026-11-08T10:42:15.000Z"
+  "id": 50372838,
+  "title": "Edward Hopper's Iconic Painting, \"Nighthawks",
+  "url": "https://lithub.com/the-story-behind-edward-hoppers-iconic-painting-nighthawks/",
+  "score": 6,
+  "by": "prismatic",
+  "time": "2026-11-04T23:23:08.000Z"
  },
  {
-  "id": 50413822,
-  "title": "OpenAI raises $11B at a $1.25T valuation",
-  "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
-  "score": 28,
-  "by": "armcat",
-  "time": "2026-11-08T14:49:23.000Z"
- },
- {
-  "id": 50411467,
-  "title": "Agent memory needs its OpenTelemetry moment",
-  "url": "https://www.lorekit.io/blog/open-agent-memory-format",
-  "score": 104,
-  "by": "mthines",
-  "time": "2026-11-08T08:40:23.000Z"
+  "id": 50412830,
+  "title": "How to prove equations using diagrams, part 1",
+  "url": "https://www.epatters.org/post/e-graphs-1/",
+  "score": 42,
+  "by": "frostbyte7",
+  "time": "2026-11-08T12:51:38.000Z"
  },
  {
   "id": 50406670,
   "title": "What I run on my $10 USD OpenStick homelab",
   "url": "https://blog.bosscher.ch/posts/openstick/",
-  "score": 674,
+  "score": 732,
   "by": "LaurensBER",
   "time": "2026-11-07T18:12:12.000Z"
  },
  {
-  "id": 50366902,
-  "title": "Clj.rs – a Clojure dialect implemented in Rust",
-  "url": "https://clj.rs/",
-  "score": 106,
-  "by": "simonpure",
-  "time": "2026-11-04T15:23:16.000Z"
+  "id": 50412072,
+  "title": "JIT bitmap text rendering for microcontrollers",
+  "url": "https://linebender.org/blog/jit-bitmap-text/",
+  "score": 81,
+  "by": "dmit",
+  "time": "2026-11-08T10:42:15.000Z"
  },
  {
   "id": 50407882,
   "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
   "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-  "score": 488,
+  "score": 528,
   "by": "shmulc",
   "time": "2026-11-07T20:45:32.000Z"
  },
  {
-  "id": 50387381,
-  "title": "Earliest evidence of cannabis use found in ancient Siberian tomb",
-  "url": "https://www.cnn.com/2026/11/05/science/ancient-cannabis-siberia-scli-intl",
-  "score": 37,
-  "by": "mooreds",
-  "time": "2026-11-06T02:27:08.000Z"
+  "id": 50415750,
+  "title": "Playing Zork 1 on a CP/M emulator on Linux (2021)",
+  "url": "https://kevinboone.me/cpmzork.html",
+  "score": 5,
+  "by": "linuxkernal",
+  "time": "2026-11-08T18:33:50.000Z"
  },
  {
-  "id": 50403052,
-  "title": "Need for Speed Underground 2 online in the browser",
-  "url": "https://nfsu2.xyz/",
-  "score": 1071,
-  "by": "fluxusars",
-  "time": "2026-11-07T09:36:36.000Z"
+  "id": 50415078,
+  "title": "A field guide to CAPTCHA types and how they break",
+  "url": "https://github.com/vsmutok/FuckCaptcha",
+  "score": 25,
+  "by": "vasylsmutok",
+  "time": "2026-11-08T17:09:55.000Z"
  },
  {
-  "id": 50378974,
-  "title": "Finding Xanadu: Inside a JRPG classic translation 15 years in the making",
-  "url": "https://readonlymemo.com/legend-of-xanadu-pc-engine-fan-translation-interview-making-of/",
-  "score": 49,
-  "by": "speckx",
-  "time": "2026-11-05T13:44:07.000Z"
+  "id": 50415281,
+  "title": "Ads in Popular Apps Give Police a Powerful Tool to Spy on Users",
+  "url": "https://www.bloomberg.com/features/2026-police-phone-tracking-advertising-tech/",
+  "score": 47,
+  "by": "mgh2",
+  "time": "2026-11-08T17:32:55.000Z"
  },
  {
-  "id": 50414021,
-  "title": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
-  "url": "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up",
-  "score": 6,
-  "by": "mfiguiere",
-  "time": "2026-11-08T15:19:51.000Z"
+  "id": 50366902,
+  "title": "Clj.rs – a Clojure dialect implemented in Rust",
+  "url": "https://clj.rs/",
+  "score": 137,
+  "by": "simonpure",
+  "time": "2026-11-04T15:23:16.000Z"
  },
  {
-  "id": 50371360,
-  "title": "New typeface using intricate designs from Shakespeare's First Folio (2023)",
-  "url": "https://www.itsnicethat.com/news/typeland-shakespeares-globe-amifer-folio-graphic-design-090323",
-  "score": 33,
-  "by": "bryanrasmussen",
-  "time": "2026-11-04T20:53:54.000Z"
+  "id": 50411467,
+  "title": "Agent memory needs its OpenTelemetry moment",
+  "url": "https://www.lorekit.io/blog/open-agent-memory-format",
+  "score": 148,
+  "by": "mthines",
+  "time": "2026-11-08T08:40:23.000Z"
  },
  {
-  "id": 50409856,
-  "title": "Consumer brain wave headsets threaten privacy",
-  "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F",
-  "score": 97,
-  "by": "maxall4",
-  "time": "2026-11-08T02:02:38.000Z"
+  "id": 50412152,
+  "title": "Petered",
+  "url": "https://aworkinglibrary.com/writing/petered",
+  "score": 140,
+  "by": "adrianhoward",
+  "time": "2026-11-08T10:56:43.000Z"
  },
  {
-  "id": 50377661,
-  "title": "Uranium cubes reveal why the German nuclear project failed",
-  "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
-  "score": 179,
-  "by": "rbanffy",
-  "time": "2026-11-05T10:52:04.000Z"
+  "id": 50404747,
+  "title": "The Gordon Gekko effect: The role of culture in the financial industry (2016) [pdf]",
+  "url": "https://www.newyorkfed.org/medialibrary/media/research/epr/2016/epr_2016_gordon-gekko-effect_lo.pdf",
+  "score": 76,
+  "by": "tylerdane",
+  "time": "2026-11-07T14:18:45.000Z"
  },
  {
-  "id": 50403097,
-  "title": "Every Mac comes with an (undocumented) family member classifier",
-  "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
-  "score": 787,
-  "by": "infwhispers",
-  "time": "2026-11-07T09:46:03.000Z"
+  "id": 50412318,
+  "title": "Person of Interest",
+  "url": "https://krthr.co/person-of-interest/",
+  "score": 267,
+  "by": "krthr",
+  "time": "2026-11-08T11:23:28.000Z"
  },
  {
-  "id": 50408713,
-  "title": "Making any integer with four 2s (2025)",
-  "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
-  "score": 173,
-  "by": "germanrabbit",
-  "time": "2026-11-07T22:38:58.000Z"
+  "id": 50358094,
+  "title": "Tasfer: a text editor drawn on a 2D canvas",
+  "url": "https://www.hamza.se/blog/tasfer",
+  "score": 78,
+  "by": "hamza512b",
+  "time": "2026-11-03T20:58:40.000Z"
  },
  {
   "id": 50403507,
   "title": "Every Windows 11 app should kill Electron, and Discord just showed why",
   "url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/",
-  "score": 390,
+  "score": 438,
   "by": "thunderbong",
   "time": "2026-11-07T11:11:15.000Z"
- },
- {
-  "id": 50410249,
-  "title": "ISponsorBlockTV: SponsorBlock client for all YouTube TV clients",
-  "url": "https://github.com/dmunozv04/isponsorblocktv",
-  "score": 88,
-  "by": "xnx",
-  "time": "2026-11-08T03:47:19.000Z"
- },
- {
-  "id": 50380051,
-  "title": "Mizu – zero-copy parallel R and Python over shared memory",
-  "url": "https://github.com/shikokuchuo/pymizu",
-  "score": 51,
-  "by": "cscheid",
-  "time": "2026-11-05T15:09:04.000Z"
- },
- {
-  "id": 50406222,
-  "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
-  "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
-  "score": 350,
-  "by": "antiuniverse",
-  "time": "2026-11-07T17:19:00.000Z"
- },
- {
-  "id": 50411083,
-  "title": "WaveDudeNext 2D Wave Simulator",
-  "url": "https://github.com/graealex/WaveDudeNext",
-  "score": 41,
-  "by": "sweetdingoes",
-  "time": "2026-11-08T07:09:02.000Z"
- },
- {
-  "id": 50408931,
-  "title": "GitHub New pull request overview page in public preview",
-  "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
-  "score": 166,
-  "by": "xiaoyu2006",
-  "time": "2026-11-07T23:09:40.000Z"
- },
- {
-  "id": 50410359,
-  "title": "Kirlian Photography: Building Your Own Equipment",
-  "url": "https://imagesco.com/articles/kirlian/kirlian-photography.html",
-  "score": 64,
-  "by": "joebig",
-  "time": "2026-11-08T04:14:12.000Z"
- },
- {
-  "id": 50412152,
-  "title": "Petered (what happens after the Peter Principle)",
-  "url": "https://aworkinglibrary.com/writing/petered",
-  "score": 99,
-  "by": "adrianhoward",
-  "time": "2026-11-08T10:56:43.000Z"
- },
- {
-  "id": 50406292,
-  "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
-  "url": "https://github.com/hedgerow-dev/coldframe",
-  "score": 264,
-  "by": "hedgerow-dev",
-  "time": "2026-11-07T17:27:30.000Z"
  }
 ]
