@@ -10,7 +10,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 7618,
+  "age_seconds_since_open": 14578,
   "opened_at": "2026-11-08T06:57:41Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -36,7 +36,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary This report and companion fix PR address **3 distinct security and correctness vulnerabilities** across co-sign round orchestration (`src/node/cosign_round.rs`), on-chain Groth16 wire serialization (`src/privacy/onchain_verifier.rs`), and BFT vote tallying (`src/consensus/vote_tally.rs`): --- ### 1. `src/node/cosign_round.rs` — `run_cosign_round` omits `response.request_id` verification and fails to bind `response.wallet_pubkey` to the queried `peer: NodeId` (Lines 79–95) - **Root Cause**: In `run_cosign_round`, the closure passed to `gather_signatures` sends `CoSignRequest { reques",
-  "ts": "2026-11-08T09:04:51.866Z"
+  "ts": "2026-11-08T11:00:47.311Z"
  },
  {
   "id": "paraloom-core#1516",
@@ -49,7 +49,7 @@
   "severity": null,
   "reward_usdc": null,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 62411,
+  "age_seconds_since_open": 69371,
   "opened_at": "2026-11-07T15:44:28Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -75,7 +75,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Describe the bug** In `src/bridge/solana/decoder.rs` (`extract_deposit_events`, lines 98–123), confirmed Solana transactions are scanned for Paraloom deposit instructions (`deposit_note`, `deposit_note_spl`, and legacy `deposit` / `deposit_spl`) in two separate sequential passes: 1. First, `extract_deposit_events` iterates over **all** top-level instructions (`for compiled in &raw.instructions`) and pushes every decoded top-level deposit into `events`. 2. Only after **all** top-level instructions have been processed does it iterate over `meta.inner_instructions` (`for inner_set in inner`) an",
-  "ts": "2026-11-08T09:04:53.782Z"
+  "ts": "2026-11-08T11:00:49.250Z"
  },
  {
   "id": "paraloom-core#1512",
@@ -88,7 +88,7 @@
   "severity": null,
   "reward_usdc": null,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 64584,
+  "age_seconds_since_open": 71544,
   "opened_at": "2026-11-07T15:08:15Z",
   "competing_prs": 3,
   "competing_pr_urls": [
@@ -117,7 +117,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary This security report and companion patch address **4 distinct validation, canonicality, and deserialization vulnerabilities** across the off-chain privacy proof verification engine (`src/privacy/proof.rs`), proof codec (`src/privacy/proof_codec.rs`), and phase-2 ceremony pipeline (`src/ceremony/contribute.rs`, `src/ceremony/verifier.rs`): --- ### 1. `src/privacy/proof.rs` — `ProofVerifier::verify_transact_parts` omitted duplicate nullifier check (`nullifiers[0] == nullifiers[1]`) - **Root Cause**: On-chain, `transact` in `programs/paraloom/src/lib.rs` (lines 320-323 and 545-548) str",
-  "ts": "2026-11-08T09:04:55.682Z"
+  "ts": "2026-11-08T11:00:51.255Z"
  },
  {
   "id": "paraloom-core#1511",
@@ -130,7 +130,7 @@
   "severity": null,
   "reward_usdc": 3000,
   "reward_source": "explicit",
-  "age_seconds_since_open": 67929,
+  "age_seconds_since_open": 74889,
   "opened_at": "2026-11-07T14:12:30Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -156,7 +156,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "> **Context:** repo `paraloom-labs/paraloom-core`, branch `main`, HEAD `9e8c8e6` (newer than the pinned bounty commit `468ffaa`). Program `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` (Solana devnet). Stage 1 bug bounty, $3,000 USDC pool. Severity Low: config-dependent — the default is disabled — and this is not an auth bypass on fund instructions (proof + on-chain quorum still bind). ## Summary The transact ingress defaults to **no authentication**, and nothing warns the operator (or refuses) when it is bound to a non-loopback address without a token. If an operator enables ingress on a non-",
-  "ts": "2026-11-08T09:04:58.422Z"
+  "ts": "2026-11-08T11:00:54.244Z"
  },
  {
   "id": "paraloom-core#1510",
@@ -169,7 +169,7 @@
   "severity": null,
   "reward_usdc": 3000,
   "reward_source": "explicit",
-  "age_seconds_since_open": 67931,
+  "age_seconds_since_open": 74891,
   "opened_at": "2026-11-07T14:12:28Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -194,7 +194,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "> **Context:** repo `paraloom-labs/paraloom-core`, branch `main`, HEAD `9e8c8e6` (newer than the pinned bounty commit `468ffaa`). Program `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` (Solana devnet). Stage 1 bug bounty, $3,000 USDC pool. Severity Low/informational: the real gates are on-chain proof verification + stake quorum; a persistently misbehaving validator only affects liveness and needs many colluding validators to block anything. ## Summary The reputation floor does not exist in practice: the constant and the config option are never consumed, and the reputation tracker is never upda",
-  "ts": "2026-11-08T09:05:01.272Z"
+  "ts": "2026-11-08T11:00:57.121Z"
  },
  {
   "id": "paraloom-core#1509",
@@ -207,7 +207,7 @@
   "severity": null,
   "reward_usdc": 3000,
   "reward_source": "explicit",
-  "age_seconds_since_open": 67932,
+  "age_seconds_since_open": 74892,
   "opened_at": "2026-11-07T14:12:27Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -231,7 +231,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "> **Context:** repo `paraloom-labs/paraloom-core`, branch `main`, HEAD `9e8c8e6` (newer than the pinned bounty commit `468ffaa`). Program `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` (Solana devnet). Stage 1 bug bounty, $3,000 USDC pool. Severity Low: the on-chain gate fully contains the funds risk, and mounting the attack costs a valid proof generation. ## Summary No `is_known_root` check exists anywhere off-chain (ingress, mesh handler, initiator, co-signer). A validator votes `Valid` on a proof built against any root the requester claims, even a root the attacker fabricated themselves. Th",
-  "ts": "2026-11-08T09:05:04.123Z"
+  "ts": "2026-11-08T11:01:00.011Z"
  },
  {
   "id": "paraloom-core#1508",
@@ -244,7 +244,7 @@
   "severity": null,
   "reward_usdc": 3000,
   "reward_source": "explicit",
-  "age_seconds_since_open": 67934,
+  "age_seconds_since_open": 74894,
   "opened_at": "2026-11-07T14:12:25Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -268,7 +268,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "> **Context:** repo `paraloom-labs/paraloom-core`, branch `main`, HEAD `9e8c8e6` (newer than the pinned bounty commit `468ffaa`). Program `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` (Solana devnet). Stage 1 bug bounty, $3,000 USDC pool. > > **⚠️ Should this be reported? Assessment: report as an observation only, with modest expectations.** The deposit/withdraw asymmetry is real and the fix is cheap, but exploiting it requires a malicious or compromised mint authority for an already-listed mint, and mints are chosen and listed by the upgrade authority (`init_asset_vault`). It is not a standa",
-  "ts": "2026-11-08T09:05:06.945Z"
+  "ts": "2026-11-08T11:01:02.965Z"
  },
  {
   "id": "paraloom-core#1507",
@@ -281,7 +281,7 @@
   "severity": null,
   "reward_usdc": 3000,
   "reward_source": "explicit",
-  "age_seconds_since_open": 67935,
+  "age_seconds_since_open": 74895,
   "opened_at": "2026-11-07T14:12:24Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -305,7 +305,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "> **Context:** repo `paraloom-labs/paraloom-core`, branch `main`, HEAD `9e8c8e6` (newer than the pinned bounty commit `468ffaa`). Program `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` (Solana devnet). Stage 1 bug bounty, $3,000 USDC pool. Severity Low: deposit-only liveness impact, attacker pays with their own unrecoverable funds, and the cold authority can raise the cap to recover. ## Summary The deposit cap is enforced against the **live vault balance**, not against recorded liabilities (`total_deposited - total_withdrawn`). `bridge_vault` is a plain PDA `SystemAccount` and `asset_vault` is",
-  "ts": "2026-11-08T09:05:09.772Z"
+  "ts": "2026-11-08T11:01:06.205Z"
  },
  {
   "id": "paraloom-core#1506",
@@ -318,7 +318,7 @@
   "severity": null,
   "reward_usdc": 3000,
   "reward_source": "explicit",
-  "age_seconds_since_open": 67937,
+  "age_seconds_since_open": 74897,
   "opened_at": "2026-11-07T14:12:22Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -343,7 +343,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "> **Context:** repo `paraloom-labs/paraloom-core`, branch `main`, HEAD `9e8c8e6` (newer than the pinned bounty commit `468ffaa`). Program `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` (Solana devnet). Stage 1 bug bounty, $3,000 USDC pool. > > **⚠️ Should this be reported? Assessment: borderline — report as informational/low, with modest expectations.** The circuit is genuinely wrong (see below), and `src/privacy/` is in the pinned scope. But it has **no reachable on-chain path** on the pinned deployment: there is no `withdraw` instruction and no v2 verification key in the program, so nothing ",
-  "ts": "2026-11-08T09:05:12.629Z"
+  "ts": "2026-11-08T11:01:09.097Z"
  },
  {
   "id": "paraloom-core#1505",
@@ -356,7 +356,7 @@
   "severity": null,
   "reward_usdc": 3000,
   "reward_source": "explicit",
-  "age_seconds_since_open": 67938,
+  "age_seconds_since_open": 74898,
   "opened_at": "2026-11-07T14:12:21Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -380,7 +380,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "> **Context:** repo `paraloom-labs/paraloom-core`, branch `main`, HEAD `9e8c8e6` (newer than the pinned bounty commit `468ffaa`). Program `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` (Solana devnet). Stage 1 bug bounty, $3,000 USDC pool. Severity per `docs/bug-bounty.md` (Medium: \"a griefing/liveness path that halts settlement\"). > > **Note on scope:** this is a different root cause from the \"100% co-sign threshold\" finding (threshold choice vs. budget accounting), so it is reported separately per the \"first valid report per unique root cause\" rule. The two effects reinforce each other (see ",
-  "ts": "2026-11-08T09:05:16.384Z"
+  "ts": "2026-11-08T11:01:12.826Z"
  },
  {
   "id": "paraloom-core#1504",
@@ -393,7 +393,7 @@
   "severity": null,
   "reward_usdc": 3000,
   "reward_source": "explicit",
-  "age_seconds_since_open": 67940,
+  "age_seconds_since_open": 74900,
   "opened_at": "2026-11-07T14:12:19Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -420,7 +420,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "> **Context:** repo `paraloom-labs/paraloom-core`, branch `main`, HEAD `9e8c8e6` (newer than the pinned bounty commit `468ffaa`). Program `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` (Solana devnet). Stage 1 bug bounty, $3,000 USDC pool. Severity per `docs/bug-bounty.md` (Medium: \"a griefing/liveness path that halts settlement\"). ## Summary The off-chain settlement leader demands co-signatures from **all** eligible `Valid` voters (`threshold = quorum_wallets.len()`), while the on-chain program only requires a 2/3 stake quorum (excluding the authority). A single validator that votes `Valid` a",
-  "ts": "2026-11-08T09:05:20.091Z"
+  "ts": "2026-11-08T11:01:16.730Z"
  },
  {
   "id": "paraloom-core#1503",
@@ -433,7 +433,7 @@
   "severity": null,
   "reward_usdc": 3000,
   "reward_source": "explicit",
-  "age_seconds_since_open": 67941,
+  "age_seconds_since_open": 74901,
   "opened_at": "2026-11-07T14:12:18Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -459,7 +459,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "> **Context:** repo `paraloom-labs/paraloom-core`, branch `main`, HEAD `9e8c8e6` (newer than the pinned bounty commit `468ffaa`). Program `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` (Solana devnet). Stage 1 bug bounty, $3,000 USDC pool. Severity per `docs/bug-bounty.md` (Medium: \"a griefing/liveness path that halts settlement\"). ## Summary A `transact` that has already settled can be replayed, and no validator filters it before consensus. `NullifierSet::check_batch` exists but has **no production caller** in the vote path, and the only production caller of `pool.is_spent` is a message handl",
-  "ts": "2026-11-08T09:05:23.750Z"
+  "ts": "2026-11-08T11:01:20.591Z"
  },
  {
   "id": "paraloom-core#1502",
@@ -472,7 +472,7 @@
   "severity": null,
   "reward_usdc": 3000,
   "reward_source": "explicit",
-  "age_seconds_since_open": 67943,
+  "age_seconds_since_open": 74903,
   "opened_at": "2026-11-07T14:12:16Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -500,7 +500,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "> **Context:** repo `paraloom-labs/paraloom-core`, branch `main`, HEAD `9e8c8e6` (newer than the pinned bounty commit `468ffaa`). Program `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` (Solana devnet). Stage 1 bug bounty, $3,000 USDC pool. Severity per `docs/bug-bounty.md` (Medium: \"a griefing/liveness path that halts settlement\"; here a griefing/liveness + validator-funds drain path, without theft of user funds). ## Summary A `transact` with `in_amounts = [0, 0]`, `out_amounts = [0, 0]` and `public_amount = 0` (a no-op) is a **valid** statement for `TransactCircuitV3` and settles end to end. ",
-  "ts": "2026-11-08T09:05:27.461Z"
+  "ts": "2026-11-08T11:01:24.394Z"
  },
  {
   "id": "paraloom-wallet#270",
@@ -513,7 +513,7 @@
   "severity": null,
   "reward_usdc": null,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 72733,
+  "age_seconds_since_open": 79693,
   "opened_at": "2026-11-07T12:52:26Z",
   "competing_prs": 3,
   "competing_pr_urls": [
@@ -542,7 +542,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary This consolidated security report and companion patch address **5 high-impact privacy, note-accounting, and swap-recovery bugs** across `paraloom-wallet` (`lib/paraloom/`, `lib/storage/`, and `src/popup/`): --- ### 1. `lib/paraloom/noteCrypto.ts` & `lib/storage/session.ts` — `tryDecryptNote` Accepts Trailing Ciphertext Bytes & Unbounded 32-Byte Key Inputs - **Root Cause**: `tryDecryptNote` checked only `raw.length < ENVELOPE_LEN` (`145` bytes for tagged v1 envelopes, `144` bytes for untagged legacy envelopes) rather than requiring exact envelope lengths (`145` or `144`), allowing ov",
-  "ts": "2026-11-08T09:05:33.083Z"
+  "ts": "2026-11-08T11:01:26.359Z"
  },
  {
   "id": "paraloom-prover-wasm#59",
@@ -555,7 +555,7 @@
   "severity": null,
   "reward_usdc": null,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 72777,
+  "age_seconds_since_open": 79737,
   "opened_at": "2026-11-07T12:51:42Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -580,7 +580,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary This consolidated security report and companion patch address **6 critical/high-severity client-side ZK prover vulnerabilities** in `paraloom-prover-wasm` (`src/lib.rs` and `tests/v3_native_smoke.rs`): --- ### 1. Proving Key `CircomReduction` / IC Shape Validation & Ceremony v3 VK Pinning - **Root Cause**: `prove_withdrawal_v2`, `prove_transfer_v2`, and `prove_transact` deserialized `ProvingKey<Bn254>` directly from untrusted `proving_key: &[u8]` bytes without rejecting trailing bytes, without verifying `pk.vk.gamma_abc_g1.len()` against the circuit's public-input count (`6`, `7`, o",
-  "ts": "2026-11-08T09:05:37.816Z"
+  "ts": "2026-11-08T11:01:28.290Z"
  },
  {
   "id": "scaffold-studio-frontend#45",
@@ -593,7 +593,7 @@
   "severity": null,
   "reward_usdc": 70,
   "reward_source": "explicit",
-  "age_seconds_since_open": 2719058,
+  "age_seconds_since_open": 2726018,
   "opened_at": "2026-10-07T21:47:01Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -614,7 +614,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Context** `next.config.ts` sets `eslint: { ignoreDuringBuilds: true }`. Combined with a workflow that never runs `next build`, this means lint errors introduced in a PR are invisible on both paths, and the only remaining lint signal is the mutating `biome lint --write --unsafe` step covered by issue 31. **Proposed Change** Turn `ignoreDuringBuilds` off so `next build` fails on lint errors, and let CI run the build (issue 46) or a dedicated lint job report them. **Acceptance Criteria** - `eslint.ignoreDuringBuilds` is removed or set to `false`. - A deliberately introduced lint error is assert",
-  "ts": "2026-11-08T09:05:48.928Z"
+  "ts": "2026-11-08T11:01:36.556Z"
  },
  {
   "id": "scaffold-studio-frontend#44",
@@ -627,7 +627,7 @@
   "severity": null,
   "reward_usdc": 60,
   "reward_source": "explicit",
-  "age_seconds_since_open": 2719063,
+  "age_seconds_since_open": 2726023,
   "opened_at": "2026-10-07T21:46:56Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -653,7 +653,7 @@
    "raw_snippet": "Hi @cythecode, I noticed issue #44 is still open, along with PR #104. I'm a TypeScript developer interested in completin"
   },
   "excerpt": "**Context** `playwright.config.ts` sets `retries: 0` unconditionally. Playwright's own convention is to retry on CI and not locally, because web-server startup, animation timing and network flake are the dominant failure modes for an end-to-end suite that talks to a blockchain RPC and an LLM provider. Without retries, every transient failure blocks a PR. **Proposed Change** Set `retries: process.env.CI ? 2 : 0` and keep `workers: 1` on CI. **Acceptance Criteria** - `retries` resolves to 2 when `process.env.CI` is set and 0 otherwise. - A deliberately flaky spec is asserted to pass on retry and",
-  "ts": "2026-11-08T09:05:50.949Z"
+  "ts": "2026-11-08T11:01:38.534Z"
  },
  {
   "id": "scaffold-studio-frontend#43",
@@ -666,7 +666,7 @@
   "severity": null,
   "reward_usdc": 60,
   "reward_source": "explicit",
-  "age_seconds_since_open": 2719069,
+  "age_seconds_since_open": 2726029,
   "opened_at": "2026-10-07T21:46:50Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -690,6 +690,6 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Context** `playwright.config.ts` starts the app with `webServer.command` running the dev server, but `.github/workflows/playwright.yml` sets no environment. `lib/db/index.ts` reads `DATABASE_URL` and `lib/ai/providers.ts` constructs OpenAI models, so the server either crashes on boot or fails on the first request, which turns every end-to-end run into an environment failure rather than a test result. **Proposed Change** Add the required variables to the job's `env:` (with a disposable Postgres service container for `DATABASE_URL`) and reserve the OpenAI key for the secrets-gated path. **Acce",
-  "ts": "2026-11-08T09:05:52.898Z"
+  "ts": "2026-11-08T11:01:40.469Z"
  }
 ]
