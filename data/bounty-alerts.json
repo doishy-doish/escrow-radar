@@ -1,6 +1,11 @@
 {
- "ts": "2026-11-08T23:41:23.338Z",
+ "ts": "2026-11-09T03:00:00.627Z",
  "count": 0,
  "alerts": [],
- "demoted": []
+ "demoted": [
+  {
+   "id": "paraloom-core#1548",
+   "stale_reason": "stale_target:src/bridge/solana/listener.rs:79d"
+  }
+ ]
 }

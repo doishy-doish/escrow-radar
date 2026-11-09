@@ -3,103 +3,119 @@
   "id": 50418176,
   "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
   "url": "https://ketchup3d.github.io/app/",
-  "score": 28,
+  "score": 247,
   "by": "dcoulmbe",
   "time": "2026-11-08T22:35:35.000Z"
  },
  {
-  "id": 50416053,
-  "title": "Dux: Free, open-source Wayland desktop shell with file manager and theming",
-  "url": "https://duxlabs.dev/",
-  "score": 157,
-  "by": "indigodaddy",
-  "time": "2026-11-08T19:08:51.000Z"
- },
- {
-  "id": 50417407,
-  "title": "Ask HN: What are you working on? (November 2026)",
-  "url": null,
-  "score": 69,
-  "by": "david927",
-  "time": "2026-11-08T21:20:20.000Z"
+  "id": 50419215,
+  "title": "Unlocking any car from X brand in most of the world",
+  "url": "https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/",
+  "score": 99,
+  "by": "infosecau",
+  "time": "2026-11-09T00:10:50.000Z"
  },
  {
   "id": 50418182,
   "title": "Chimera Vocal Synth",
   "url": "https://chimera-vocal-synth.vercel.app/",
-  "score": 23,
+  "score": 111,
   "by": "nmstoker",
   "time": "2026-11-08T22:36:03.000Z"
+ },
+ {
+  "id": 50416053,
+  "title": "Dux: Free, open-source Wayland desktop shell with file manager and theming",
+  "url": "https://duxlabs.dev/",
+  "score": 211,
+  "by": "indigodaddy",
+  "time": "2026-11-08T19:08:51.000Z"
  },
  {
   "id": 50368481,
   "title": "Declarative Dragging",
   "url": "https://declarative-dragging.github.io/",
-  "score": 259,
+  "score": 379,
   "by": "smusamashah",
   "time": "2026-11-04T17:05:07.000Z"
- },
- {
-  "id": 50418016,
-  "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
-  "url": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
-  "score": 213,
-  "by": "karimf",
-  "time": "2026-11-08T22:20:09.000Z"
- },
- {
-  "id": 50415628,
-  "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
-  "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
-  "score": 531,
-  "by": "TheWiggles",
-  "time": "2026-11-08T18:16:07.000Z"
  },
  {
   "id": 50416158,
   "title": "Outlook.com Is Quietly Rejecting Email from Domains Without DMARC",
   "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
-  "score": 190,
+  "score": 271,
   "by": "xmddmx",
   "time": "2026-11-08T19:20:32.000Z"
+ },
+ {
+  "id": 50417407,
+  "title": "Ask HN: What are you working on? (November 2026)",
+  "url": null,
+  "score": 149,
+  "by": "david927",
+  "time": "2026-11-08T21:20:20.000Z"
+ },
+ {
+  "id": 50418818,
+  "title": "Herb Sutter: When a language's creator and its owners strongly disagree [pdf]",
+  "url": "https://isocpp.org/files/papers/P4454R0.pdf",
+  "score": 81,
+  "by": "acossta",
+  "time": "2026-11-08T23:28:01.000Z"
  },
  {
   "id": 50416456,
   "title": "The Web Is More Than Enough, by Paul Ford",
   "url": "https://ftrain.com/aboard-the-web-is-more-than-enough",
-  "score": 42,
+  "score": 88,
   "by": "edward",
   "time": "2026-11-08T19:48:32.000Z"
+ },
+ {
+  "id": 50415628,
+  "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+  "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+  "score": 632,
+  "by": "TheWiggles",
+  "time": "2026-11-08T18:16:07.000Z"
  },
  {
   "id": 50411961,
   "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
   "url": "https://github.com/synchopate/llama-modchip",
-  "score": 340,
+  "score": 375,
   "by": "joshcsimmons",
   "time": "2026-11-08T10:22:04.000Z"
  },
  {
-  "id": 50372838,
-  "title": "Edward Hopper's Iconic Painting, \"Nighthawks",
-  "url": "https://lithub.com/the-story-behind-edward-hoppers-iconic-painting-nighthawks/",
-  "score": 56,
-  "by": "prismatic",
-  "time": "2026-11-04T23:23:08.000Z"
+  "id": 50405043,
+  "title": "Air holes turn silicon wafers into flat UV focusing mirrors for compact optics",
+  "url": "https://phys.org/news/2026-11-air-holes-silicon-wafers-flat.html",
+  "score": 31,
+  "by": "bookofjoe",
+  "time": "2026-11-07T14:51:40.000Z"
  },
  {
   "id": 50412067,
   "title": "Writing as a thinking tool",
   "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
-  "score": 255,
+  "score": 291,
   "by": "jruohonen",
   "time": "2026-11-08T10:41:52.000Z"
+ },
+ {
+  "id": 50360369,
+  "title": "Taco: The Tensor Algebra Compiler",
+  "url": "http://tensor-compiler.org/",
+  "score": 7,
+  "by": "measurablefunc",
+  "time": "2026-11-04T01:07:46.000Z"
  },
  {
   "id": 50353814,
   "title": "The History of Djgpp (1998)",
   "url": "https://www.delorie.com/djgpp/history.html",
-  "score": 29,
+  "score": 50,
   "by": "atan2",
   "time": "2026-11-03T16:10:37.000Z"
  },
@@ -107,39 +123,47 @@
   "id": 50416014,
   "title": "Playing with the STM32MP2",
   "url": "https://serd.es/2026/11/08/playing-with-stm32mp2.html",
-  "score": 24,
+  "score": 42,
   "by": "dverlaeckt80",
   "time": "2026-11-08T19:04:07.000Z"
+ },
+ {
+  "id": 50372838,
+  "title": "Edward Hopper's Iconic Painting, \"Nighthawks",
+  "url": "https://lithub.com/the-story-behind-edward-hoppers-iconic-painting-nighthawks/",
+  "score": 80,
+  "by": "prismatic",
+  "time": "2026-11-04T23:23:08.000Z"
  },
  {
   "id": 50416363,
   "title": "How I Fight AI Brain Fry",
   "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
-  "score": 125,
+  "score": 165,
   "by": "kyunez",
   "time": "2026-11-08T19:37:42.000Z"
+ },
+ {
+  "id": 50410107,
+  "title": "Goodbye Claude, hello Pi",
+  "url": "https://caleb.software/posts/claude-to-pi.html",
+  "score": 708,
+  "by": "karagenit",
+  "time": "2026-11-08T03:11:48.000Z"
  },
  {
   "id": 50362963,
   "title": "Show HN: Vegetable Gardening for Engineers",
   "url": "https://jrcpl.us/contrib/2020/gardening-for-engineers/",
-  "score": 146,
+  "score": 172,
   "by": "jrcplus",
   "time": "2026-11-04T08:54:27.000Z"
- },
- {
-  "id": 50415135,
-  "title": "A Little Snitch for Windows",
-  "url": "https://packethound.app/",
-  "score": 84,
-  "by": "BadBoyBubby",
-  "time": "2026-11-08T17:16:07.000Z"
  },
  {
   "id": 50413769,
   "title": "I'm not a fan of Deno's security model (2024)",
   "url": "https://goldstein.lol/posts/deno-security/",
-  "score": 80,
+  "score": 89,
   "by": "maxloh",
   "time": "2026-11-08T14:42:38.000Z"
  },
@@ -147,96 +171,72 @@
   "id": 50416801,
   "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
   "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
-  "score": 326,
+  "score": 413,
   "by": "vincentchau",
   "time": "2026-11-08T20:26:43.000Z"
  },
  {
-  "id": 50410107,
-  "title": "Goodbye Claude, hello Pi",
-  "url": "https://caleb.software/posts/claude-to-pi.html",
-  "score": 670,
-  "by": "karagenit",
-  "time": "2026-11-08T03:11:48.000Z"
- },
- {
-  "id": 50366821,
-  "title": "Porting Android 16 to my blind mother's keypad phone",
-  "url": "https://z1x.us/blog/four-hundred-bucks-of-e-waste",
-  "score": 143,
-  "by": "z1xus",
-  "time": "2026-11-04T15:18:59.000Z"
- },
- {
-  "id": 50415750,
-  "title": "Playing Zork 1 on a CP/M emulator on Linux (2021)",
-  "url": "https://kevinboone.me/cpmzork.html",
-  "score": 24,
-  "by": "linuxkernal",
-  "time": "2026-11-08T18:33:50.000Z"
- },
- {
-  "id": 50389923,
-  "title": "The Reconstruction of Torn Documents",
-  "url": "https://www.bundesarchiv.de/en/stasi-records-archive/the-reconstruction-of-torn-documents/",
-  "score": 84,
-  "by": "jacquesm",
-  "time": "2026-11-06T09:05:18.000Z"
- },
- {
-  "id": 50416471,
-  "title": "Starship Flight 15 on 11/13 plans to catch both booster and ship",
-  "url": "https://www.spacex.com/launches/starship-flight-15",
-  "score": 66,
-  "by": "spikels",
-  "time": "2026-11-08T19:49:46.000Z"
+  "id": 50384664,
+  "title": "The Kekulé Problem – Cormac McCarthy",
+  "url": "https://nautil.us/the-kekul-problem-236574",
+  "score": 7,
+  "by": "bearseascape",
+  "time": "2026-11-05T21:25:29.000Z"
  },
  {
   "id": 50407882,
   "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
   "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-  "score": 574,
+  "score": 594,
   "by": "shmulc",
   "time": "2026-11-07T20:45:32.000Z"
  },
  {
-  "id": 50412830,
-  "title": "How to prove equations using diagrams, part 1",
-  "url": "https://www.epatters.org/post/e-graphs-1/",
-  "score": 59,
-  "by": "frostbyte7",
-  "time": "2026-11-08T12:51:38.000Z"
+  "id": 50366821,
+  "title": "Porting Android 16 to my blind mother's keypad phone",
+  "url": "https://z1x.us/blog/four-hundred-bucks-of-e-waste",
+  "score": 162,
+  "by": "z1xus",
+  "time": "2026-11-04T15:18:59.000Z"
  },
  {
-  "id": 50415078,
-  "title": "A field guide to CAPTCHA types and how they break",
-  "url": "https://github.com/vsmutok/FuckCaptcha",
-  "score": 43,
-  "by": "vasylsmutok",
-  "time": "2026-11-08T17:09:55.000Z"
+  "id": 50418975,
+  "title": "I'm Not Convinced the AI Bubble Exists",
+  "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
+  "score": 65,
+  "by": "matteoraso",
+  "time": "2026-11-08T23:44:36.000Z"
  },
  {
-  "id": 50411467,
-  "title": "Agent memory needs its OpenTelemetry moment",
-  "url": "https://www.lorekit.io/blog/open-agent-memory-format",
-  "score": 164,
-  "by": "mthines",
-  "time": "2026-11-08T08:40:23.000Z"
+  "id": 50415135,
+  "title": "A Little Snitch for Windows",
+  "url": "https://packethound.app/",
+  "score": 98,
+  "by": "BadBoyBubby",
+  "time": "2026-11-08T17:16:07.000Z"
  },
  {
-  "id": 50412072,
-  "title": "JIT bitmap text rendering for microcontrollers",
-  "url": "https://linebender.org/blog/jit-bitmap-text/",
-  "score": 91,
-  "by": "dmit",
-  "time": "2026-11-08T10:42:15.000Z"
+  "id": 50418016,
+  "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+  "url": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
+  "score": 392,
+  "by": "karimf",
+  "time": "2026-11-08T22:20:09.000Z"
  },
  {
-  "id": 50417478,
-  "title": "Show HN: SafeScript, a safe version of JavaScript for executing untrusted code",
-  "url": "https://github.com/SafeScript/safescript",
-  "score": 6,
-  "by": "EGreg",
-  "time": "2026-11-08T21:26:33.000Z"
+  "id": 50415750,
+  "title": "Playing Zork 1 on a CP/M emulator on Linux (2021)",
+  "url": "https://kevinboone.me/cpmzork.html",
+  "score": 30,
+  "by": "linuxkernal",
+  "time": "2026-11-08T18:33:50.000Z"
+ },
+ {
+  "id": 50416471,
+  "title": "Starship Flight 15 on 11/13 plans to catch both booster and ship",
+  "url": "https://www.spacex.com/launches/starship-flight-15",
+  "score": 99,
+  "by": "spikels",
+  "time": "2026-11-08T19:49:46.000Z"
  }
 ]

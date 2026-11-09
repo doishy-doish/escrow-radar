@@ -4,13 +4,13 @@
   "gasPriceWei": "6000000",
   "gasPriceGwei": "0.01",
   "rpc": "https://mainnet.base.org",
-  "ts": "2026-11-08T23:39:59.532Z"
+  "ts": "2026-11-09T02:58:47.314Z"
  },
  {
   "chain": "ethereum",
-  "gasPriceWei": "126239908",
-  "gasPriceGwei": "0.13",
+  "gasPriceWei": "45717430",
+  "gasPriceGwei": "0.05",
   "rpc": "https://ethereum-rpc.publicnode.com",
-  "ts": "2026-11-08T23:39:59.720Z"
+  "ts": "2026-11-09T02:58:47.430Z"
  }
 ]
