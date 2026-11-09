@@ -3,7 +3,7 @@
   "ci": "failing",
   "repro": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
   "reproSrc": ".github/workflows/bridge-e2e.yml",
-  "ts": "2026-11-09T11:06:20.011Z"
+  "ts": "2026-11-09T21:25:14.877Z"
  },
  "paraloom-labs/paraloom-wallet": {
   "ci": "passing",
@@ -15,7 +15,7 @@
   "ci": "unknown",
   "repro": null,
   "reproSrc": null,
-  "ts": "2026-11-09T11:07:20.498Z"
+  "ts": "2026-11-09T21:26:12.526Z"
  },
  "paraloom-labs/paraloom-prover-wasm": {
   "ci": "unknown",
