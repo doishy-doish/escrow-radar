@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-10T11:48:59.864Z",
+ "checked_at": "2026-11-10T18:55:22.161Z",
  "codehawks": {
   "ok": true,
   "count": 45,
@@ -646,7 +646,7 @@
     "n": 146,
     "price": 2,
     "status": "open",
-    "avail": "1/100",
+    "avail": "2/100",
     "posted": "2026-11-03"
    },
    {
