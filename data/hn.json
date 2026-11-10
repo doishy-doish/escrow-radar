@@ -1,9 +1,25 @@
 [
  {
+  "id": 50445401,
+  "title": "Toyota brand Scion is back and it's going to sell a kei truck in America",
+  "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
+  "score": 250,
+  "by": "NaOH",
+  "time": "2026-11-10T19:50:46.000Z"
+ },
+ {
+  "id": 50447074,
+  "title": "After 7 Months, Glasswing Overwelms Maintainers with Underwhelming Findings",
+  "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+  "score": 91,
+  "by": "panic",
+  "time": "2026-11-10T22:17:56.000Z"
+ },
+ {
   "id": 50442736,
   "title": ".name Grandfathered",
   "url": "https://neil.fraser.name/news/2026/11/10/",
-  "score": 326,
+  "score": 634,
   "by": "p4bl0",
   "time": "2026-11-10T16:37:44.000Z"
  },
@@ -11,232 +27,216 @@
   "id": 50441707,
   "title": "Smart home devices should work without the internet",
   "url": "https://docodethatmatters.com/home-automation-overnight-success/",
-  "score": 231,
+  "score": 642,
   "by": "skittleson",
   "time": "2026-11-10T15:25:20.000Z"
+ },
+ {
+  "id": 50446246,
+  "title": "Six Math Essentials by Terence Tao",
+  "url": "https://teorth.github.io/tao-web/six-math-essentials.html",
+  "score": 92,
+  "by": "digital55",
+  "time": "2026-11-10T20:58:44.000Z"
  },
  {
   "id": 50443824,
   "title": "Synaptics patent claims stop work on DisplayLink drivers",
   "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
-  "score": 41,
+  "score": 263,
   "by": "speckx",
   "time": "2026-11-10T18:02:02.000Z"
  },
  {
-  "id": 50439193,
-  "title": "AlphaProof Code",
-  "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-  "score": 479,
-  "by": "ilreb",
-  "time": "2026-11-10T12:11:12.000Z"
+  "id": 50446714,
+  "title": "rVPN – stealth VPN with end-to-end encryption",
+  "url": "https://rvpn.org/",
+  "score": 47,
+  "by": "michaelsbradley",
+  "time": "2026-11-10T21:42:50.000Z"
  },
  {
   "id": 50443427,
   "title": "Val Town is winding down",
   "url": "https://blog.val.town/winding-down",
-  "score": 86,
+  "score": 277,
   "by": "tosh",
   "time": "2026-11-10T17:31:14.000Z"
  },
  {
-  "id": 50443090,
-  "title": "AMD's Zen 6 Family: Feeding the Beast",
-  "url": "https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast",
-  "score": 64,
-  "by": "pixelpoet",
-  "time": "2026-11-10T17:02:32.000Z"
+  "id": 50439193,
+  "title": "AlphaProof Code",
+  "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+  "score": 558,
+  "by": "ilreb",
+  "time": "2026-11-10T12:11:12.000Z"
  },
  {
   "id": 50443812,
   "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
   "url": "https://github.com/GoogleChrome/modern-web-guidance",
-  "score": 31,
+  "score": 225,
   "by": "paulirish",
   "time": "2026-11-10T18:01:15.000Z"
  },
  {
-  "id": 50442426,
-  "title": "Blender 5.3 released with Gaussian Splat support",
-  "url": "https://www.blender.org/download/releases/5-3/",
-  "score": 274,
-  "by": "amlib",
-  "time": "2026-11-10T16:15:43.000Z"
+  "id": 50445013,
+  "title": "What objective is reasoning solving?",
+  "url": "https://alexwang.ai/posts/reasoning-as-pathfinding/",
+  "score": 83,
+  "by": "gmays",
+  "time": "2026-11-10T19:25:14.000Z"
  },
  {
-  "id": 50439695,
-  "title": "Ableton Live 13",
-  "url": "https://www.ableton.com/en/live/",
-  "score": 182,
-  "by": "phaser",
-  "time": "2026-11-10T12:58:04.000Z"
+  "id": 50443090,
+  "title": "AMD's Zen 6 Family: Feeding the Beast",
+  "url": "https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast",
+  "score": 170,
+  "by": "pixelpoet",
+  "time": "2026-11-10T17:02:32.000Z"
  },
  {
-  "id": 50443838,
-  "title": "Work at the Frontier: AI's effect on freelance work",
-  "url": "https://openai.com/index/ai-effect-on-freelance-work",
-  "score": 14,
-  "by": "swolpers",
-  "time": "2026-11-10T18:02:54.000Z"
+  "id": 50446219,
+  "title": "Sherman Anti-Trust Act (1890)",
+  "url": "https://www.archives.gov/milestone-documents/sherman-anti-trust-act",
+  "score": 58,
+  "by": "hashmap",
+  "time": "2026-11-10T20:56:16.000Z"
  },
  {
-  "id": 50382401,
-  "title": "I deleted all my SSH keys",
-  "url": "https://blog.infected.systems/posts/2026-11-03-i-deleted-all-my-ssh-keys/",
-  "score": 95,
-  "by": "speckx",
-  "time": "2026-11-05T18:17:51.000Z"
+  "id": 50406224,
+  "title": "Hacking the meta ray-ban smartglasses",
+  "url": "https://p0pcycle.com/2026/11/06/hacking-the-meta-ray-ban-smartglasses/",
+  "score": 13,
+  "by": "moooooky",
+  "time": "2026-11-07T17:19:02.000Z"
  },
  {
-  "id": 50441338,
-  "title": "The Hardest Tarball?",
-  "url": "https://stoppels.ch/2026/11/07/the-hardest-tarball.html",
-  "score": 122,
-  "by": "thatslast",
-  "time": "2026-11-10T15:00:39.000Z"
+  "id": 50444684,
+  "title": "A comprehensive study of how fingerprintable users are",
+  "url": "https://fingerprinting.study/",
+  "score": 56,
+  "by": "tomrittervg",
+  "time": "2026-11-10T19:03:54.000Z"
  },
  {
   "id": 50433216,
   "title": "Process Explorer for macOS",
   "url": "https://github.com/microsoft/Procexp-Mac",
-  "score": 24,
+  "score": 115,
   "by": "ingve",
   "time": "2026-11-09T22:30:41.000Z"
  },
  {
-  "id": 50436640,
-  "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
-  "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
-  "score": 631,
-  "by": "aloukissas",
-  "time": "2026-11-10T06:01:08.000Z"
+  "id": 50439695,
+  "title": "Ableton Live 13",
+  "url": "https://www.ableton.com/en/live/",
+  "score": 260,
+  "by": "phaser",
+  "time": "2026-11-10T12:58:04.000Z"
+ },
+ {
+  "id": 50412209,
+  "title": "Stable URLs for 42,000 Huts and Peaks",
+  "url": "https://peter-hoffmann.com/2026/stable-urls-for-huts-and-peaks.html",
+  "score": 18,
+  "by": "lumpa",
+  "time": "2026-11-08T11:04:04.000Z"
  },
  {
   "id": 50441518,
   "title": "Show HN: Valencia, Spain in Sim City/Isometric View",
   "url": "https://tinyvalencia.com/",
-  "score": 76,
+  "score": 180,
   "by": "leugim",
   "time": "2026-11-10T15:12:16.000Z"
+ },
+ {
+  "id": 50442426,
+  "title": "Blender 5.3 released with Gaussian Splat support",
+  "url": "https://www.blender.org/download/releases/5-3/",
+  "score": 410,
+  "by": "amlib",
+  "time": "2026-11-10T16:15:43.000Z"
  },
  {
   "id": 50439284,
   "title": "What's new in the .NET 11 runtime",
   "url": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime",
-  "score": 150,
+  "score": 233,
   "by": "stevefan1999",
   "time": "2026-11-10T12:20:07.000Z"
- },
- {
-  "id": 50412554,
-  "title": "NetBSD 11 desktop on a Raspberry Pi 4",
-  "url": "https://neongd.com/articles/netbsd11-rpi4.gmi",
-  "score": 99,
-  "by": "jaypatelani",
-  "time": "2026-11-08T12:07:17.000Z"
- },
- {
-  "id": 50426294,
-  "title": "Taking another shot at the cheap IP camera, part 2",
-  "url": "https://ericswpark.com/blog/2026/2026-11-09-ip-camera-pt2/",
-  "score": 88,
-  "by": "ericswpark",
-  "time": "2026-11-09T14:40:42.000Z"
- },
- {
-  "id": 50437790,
-  "title": "Queens Public Library under ransomware attack",
-  "url": "https://connect.queenslibrary.org/",
-  "score": 164,
-  "by": "rustyhancock",
-  "time": "2026-11-10T09:04:39.000Z"
- },
- {
-  "id": 50438480,
-  "title": "What constant surveillance is doing to children and parents",
-  "url": "https://www.theatlantic.com/magazine/2026/12/location-tracking-apps-parental-surveillance/689031/",
-  "score": 127,
-  "by": "FinnLobsien",
-  "time": "2026-11-10T10:47:18.000Z"
  },
  {
   "id": 50438318,
   "title": "AI usage generates a fragile codebase",
   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
-  "score": 173,
+  "score": 345,
   "by": "plun9",
   "time": "2026-11-10T10:25:58.000Z"
+ },
+ {
+  "id": 50443714,
+  "title": "An Open Field Guide to Inference Engineering",
+  "url": "https://docs.modelplane.ai/guides/inference-guide",
+  "score": 64,
+  "by": "d-ramdass",
+  "time": "2026-11-10T17:55:07.000Z"
+ },
+ {
+  "id": 50446520,
+  "title": "Apple has new Mac app coming to make running local AI models easy",
+  "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+  "score": 80,
+  "by": "linolevan",
+  "time": "2026-11-10T21:25:03.000Z"
+ },
+ {
+  "id": 50443716,
+  "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+  "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+  "score": 147,
+  "by": "Yorothegoat",
+  "time": "2026-11-10T17:55:07.000Z"
+ },
+ {
+  "id": 50404969,
+  "title": "The planet Vulcan: a cautionary tale",
+  "url": "https://kevinboone.me/vulcan.html",
+  "score": 37,
+  "by": "andsoitis",
+  "time": "2026-11-07T14:42:49.000Z"
+ },
+ {
+  "id": 50438480,
+  "title": "What constant surveillance is doing to children and parents",
+  "url": "https://www.theatlantic.com/magazine/2026/12/location-tracking-apps-parental-surveillance/689031/",
+  "score": 201,
+  "by": "FinnLobsien",
+  "time": "2026-11-10T10:47:18.000Z"
  },
  {
   "id": 50437242,
   "title": "M John Harrison becomes first science fiction author to win the Booker",
   "url": "https://www.theguardian.com/books/2026/nov/09/m-john-harrison-the-end-of-everything-wins-2026-booker-prize",
-  "score": 71,
+  "score": 126,
   "by": "sorokod",
   "time": "2026-11-10T07:40:52.000Z"
  },
  {
-  "id": 50423664,
-  "title": "Variable-width Bézier curves (2025)",
-  "url": "https://luthert.web.illinois.edu/blog/posts/775.html",
-  "score": 7,
-  "by": "leduyquang753",
-  "time": "2026-11-09T10:23:30.000Z"
+  "id": 50412554,
+  "title": "NetBSD 11 desktop on a Raspberry Pi 4",
+  "url": "https://neongd.com/articles/netbsd11-rpi4.gmi",
+  "score": 123,
+  "by": "jaypatelani",
+  "time": "2026-11-08T12:07:17.000Z"
  },
  {
-  "id": 50441074,
-  "title": "The death knell of digital search",
-  "url": "https://www.newyorker.com/culture/infinite-scroll/the-death-knell-of-digital-search",
-  "score": 43,
-  "by": "bookofjoe",
-  "time": "2026-11-10T14:41:36.000Z"
- },
- {
-  "id": 50437752,
-  "title": "Fossil CO2 emissions decrease in 2026",
-  "url": "https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/fossil-co2-emissions-decrease-in-2026/",
-  "score": 134,
-  "by": "giuliomagnifico",
-  "time": "2026-11-10T08:59:41.000Z"
- },
- {
-  "id": 50442691,
-  "title": "Tailscale's DNS IPv6 spells out \"Tailscale\"",
-  "url": "https://www.reddit.com/r/Tailscale/comments/1xsr24r/tailscales_dns_ipv6_spells_out_tailscale_easter/",
-  "score": 85,
-  "by": "theanonymousone",
-  "time": "2026-11-10T16:34:45.000Z"
- },
- {
-  "id": 50408336,
-  "title": "Billion Watts in the Speaker [video]",
-  "url": "https://www.youtube.com/watch?v=PHOcTXYaMfg",
-  "score": 85,
-  "by": "Element_",
-  "time": "2026-11-07T21:45:50.000Z"
- },
- {
-  "id": 50405611,
-  "title": "A failed experiment in laptop cooling (2025)",
-  "url": "https://kevinboone.me/failed_cooling.html",
-  "score": 45,
-  "by": "andsoitis",
-  "time": "2026-11-07T15:57:29.000Z"
- },
- {
-  "id": 50414117,
-  "title": "Show HN: Ghanaian street games you can play in the browser",
-  "url": "https://www.ghanastreetgames.com/",
-  "score": 93,
-  "by": "samuelaidoo45",
-  "time": "2026-11-08T15:31:52.000Z"
- },
- {
-  "id": 50439448,
-  "title": "Let over Lambda–50 Years of Lisp (2008)",
-  "url": "https://letoverlambda.com/",
-  "score": 61,
-  "by": "theanonymousone",
-  "time": "2026-11-10T12:35:27.000Z"
+  "id": 50437790,
+  "title": "Queens Public Library under ransomware attack",
+  "url": "https://connect.queenslibrary.org/",
+  "score": 191,
+  "by": "rustyhancock",
+  "time": "2026-11-10T09:04:39.000Z"
  }
 ]
