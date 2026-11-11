@@ -1,242 +1,242 @@
 [
  {
-  "id": 50447074,
-  "title": "After 7 months, Glasswing overwelms maintainers with underwhelming findings",
-  "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
-  "score": 295,
-  "by": "panic",
-  "time": "2026-11-10T22:17:56.000Z"
- },
- {
-  "id": 50448921,
-  "title": "A great old-timey game-programming hack (2013)",
-  "url": "https://blog.moertel.com/posts/2013-12-14-great-old-timey-game-programming-hack.html",
-  "score": 31,
-  "by": "palsecam",
-  "time": "2026-11-11T01:56:31.000Z"
- },
- {
-  "id": 50442736,
-  "title": ".name Grandfathered",
-  "url": "https://neil.fraser.name/news/2026/11/10/",
-  "score": 709,
-  "by": "p4bl0",
-  "time": "2026-11-10T16:37:44.000Z"
- },
- {
-  "id": 50445401,
-  "title": "Scion is back and is going to sell a kei truck in America",
-  "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
-  "score": 356,
-  "by": "NaOH",
-  "time": "2026-11-10T19:50:46.000Z"
+  "id": 50449748,
+  "title": "Protecting SSH Keys with macOS Secure Enclave",
+  "url": "https://gatezh.com/posts/macos-secure-enclave-ssh-keys/",
+  "score": 212,
+  "by": "js2",
+  "time": "2026-11-11T04:28:57.000Z"
  },
  {
   "id": 50441707,
   "title": "Smart home devices should work without the internet",
   "url": "https://docodethatmatters.com/home-automation-overnight-success/",
-  "score": 747,
+  "score": 972,
   "by": "skittleson",
   "time": "2026-11-10T15:25:20.000Z"
  },
  {
+  "id": 50442736,
+  "title": ".name Grandfathered",
+  "url": "https://neil.fraser.name/news/2026/11/10/",
+  "score": 856,
+  "by": "p4bl0",
+  "time": "2026-11-10T16:37:44.000Z"
+ },
+ {
+  "id": 50424188,
+  "title": "Plane lifted into back garden as bunker takes shape",
+  "url": "https://www.bbc.co.uk/news/articles/cqkgjv4pj023o",
+  "score": 17,
+  "by": "edward",
+  "time": "2026-11-09T11:35:59.000Z"
+ },
+ {
+  "id": 50445401,
+  "title": "Scion is back and is going to sell a kei truck in America",
+  "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
+  "score": 481,
+  "by": "NaOH",
+  "time": "2026-11-10T19:50:46.000Z"
+ },
+ {
+  "id": 50450007,
+  "title": "Greg Kurtzer's Ginux is now a userspace kernel",
+  "url": "https://github.com/gmkurtzer/ginux",
+  "score": 74,
+  "by": "d3Xt3r",
+  "time": "2026-11-11T05:25:54.000Z"
+ },
+ {
+  "id": 50448921,
+  "title": "A great old-timey game-programming hack (2013)",
+  "url": "https://blog.moertel.com/posts/2013-12-14-great-old-timey-game-programming-hack.html",
+  "score": 174,
+  "by": "palsecam",
+  "time": "2026-11-11T01:56:31.000Z"
+ },
+ {
+  "id": 50446520,
+  "title": "Apple has new Mac app coming to make running local AI models easy",
+  "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+  "score": 270,
+  "by": "linolevan",
+  "time": "2026-11-10T21:25:03.000Z"
+ },
+ {
+  "id": 50449275,
+  "title": "To deter bioterrorism, U.S. imposes new rules on ordering synthetic DNA",
+  "url": "https://www.science.org/content/article/deter-bioterrorism-u-s-imposes-new-rules-ordering-synthetic-dna",
+  "score": 106,
+  "by": "Metacelsus",
+  "time": "2026-11-11T02:57:08.000Z"
+ },
+ {
   "id": 50446246,
-  "title": "Six Math Essentials by Terence Tao",
+  "title": "Six Math Essentials",
   "url": "https://teorth.github.io/tao-web/six-math-essentials.html",
-  "score": 149,
+  "score": 254,
   "by": "digital55",
   "time": "2026-11-10T20:58:44.000Z"
  },
  {
-  "id": 50444129,
-  "title": "Starlink Mini 2",
-  "url": "https://starlink.com/mini-2",
-  "score": 284,
-  "by": "robertjfclarke",
-  "time": "2026-11-10T18:22:32.000Z"
+  "id": 50427107,
+  "title": "Why I wrote the BEAM book (2025)",
+  "url": "https://happihacking.com/blog/posts/2025/why_I_wrote_theBEAMBook/",
+  "score": 101,
+  "by": "zenincognito",
+  "time": "2026-11-09T15:41:35.000Z"
  },
  {
   "id": 50443824,
   "title": "Synaptics patent claims stop work on DisplayLink drivers",
   "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
-  "score": 320,
+  "score": 410,
   "by": "speckx",
   "time": "2026-11-10T18:02:02.000Z"
  },
  {
-  "id": 50406224,
-  "title": "Hacking the Meta Ray-Ban smartglasses",
-  "url": "https://p0pcycle.com/2026/11/06/hacking-the-meta-ray-ban-smartglasses/",
-  "score": 60,
-  "by": "moooooky",
-  "time": "2026-11-07T17:19:02.000Z"
- },
- {
-  "id": 50443427,
-  "title": "Val Town is winding down",
-  "url": "https://blog.val.town/winding-down",
-  "score": 317,
-  "by": "tosh",
-  "time": "2026-11-10T17:31:14.000Z"
+  "id": 50444129,
+  "title": "Starlink Mini 2",
+  "url": "https://starlink.com/mini-2",
+  "score": 422,
+  "by": "robertjfclarke",
+  "time": "2026-11-10T18:22:32.000Z"
  },
  {
   "id": 50439193,
   "title": "AlphaProof Code",
   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-  "score": 585,
+  "score": 640,
   "by": "ilreb",
   "time": "2026-11-10T12:11:12.000Z"
+ },
+ {
+  "id": 50393070,
+  "title": "Why Amstrad chose the 3\" drives",
+  "url": "https://www.cpcwiki.eu/forum/amstrad-cpc-hardware/why-amstrad-chose-the-3-drives/",
+  "score": 45,
+  "by": "Skyfall106",
+  "time": "2026-11-06T14:56:07.000Z"
+ },
+ {
+  "id": 50414657,
+  "title": "A Compendium of Abandoned Greenhouses",
+  "url": "https://www.messynessychic.com/2015/01/15/a-compendium-of-abandoned-greenhouses/",
+  "score": 47,
+  "by": "ohjeez",
+  "time": "2026-11-08T16:30:04.000Z"
+ },
+ {
+  "id": 50443427,
+  "title": "Val Town is winding down",
+  "url": "https://blog.val.town/winding-down",
+  "score": 387,
+  "by": "tosh",
+  "time": "2026-11-10T17:31:14.000Z"
+ },
+ {
+  "id": 50447074,
+  "title": "Tracking Anthropic-discovered vulnerabilities",
+  "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+  "score": 405,
+  "by": "panic",
+  "time": "2026-11-10T22:17:56.000Z"
  },
  {
   "id": 50443812,
   "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
   "url": "https://github.com/GoogleChrome/modern-web-guidance",
-  "score": 278,
+  "score": 373,
   "by": "paulirish",
   "time": "2026-11-10T18:01:15.000Z"
  },
  {
-  "id": 50448340,
-  "title": "LLMs Play Zachtronics' TIS-100",
-  "url": "https://tis-100.wincon.dev/",
+  "id": 50449891,
+  "title": "Show HN: Black Ops II statically recompiled to native ARM64 macOS",
+  "url": "https://github.com/adrbn/bo2-mac",
+  "score": 28,
+  "by": "adrbn",
+  "time": "2026-11-11T04:56:47.000Z"
+ },
+ {
+  "id": 50429210,
+  "title": "A ZIP-style Prolog VM for trilog",
+  "url": "https://github.com/no382001/zipc",
   "score": 16,
-  "by": "fairestvalue",
-  "time": "2026-11-11T00:37:05.000Z"
+  "by": "triska",
+  "time": "2026-11-09T18:10:30.000Z"
  },
  {
-  "id": 50449080,
-  "title": "Hooked on Tuna",
-  "url": "https://blue-continuum.com/hooked-on-tuna",
-  "score": 5,
-  "by": "dnetesn",
-  "time": "2026-11-11T02:23:25.000Z"
+  "id": 50406224,
+  "title": "Hacking the Meta Ray-Ban smartglasses",
+  "url": "https://p0pcycle.com/2026/11/06/hacking-the-meta-ray-ban-smartglasses/",
+  "score": 120,
+  "by": "moooooky",
+  "time": "2026-11-07T17:19:02.000Z"
  },
  {
-  "id": 50410587,
-  "title": "Pinot Noir: inside the criminal gangs making fake wine",
-  "url": "https://www.economist.com/interactive/2026/11/06/pinot-noir-inside-the-criminal-gangs-making-fake-wine",
-  "score": 35,
-  "by": "axiomdata316",
-  "time": "2026-11-08T05:13:25.000Z"
- },
- {
-  "id": 50445013,
-  "title": "What objective is reasoning solving?",
-  "url": "https://alexwang.ai/posts/reasoning-as-pathfinding/",
-  "score": 113,
-  "by": "gmays",
-  "time": "2026-11-10T19:25:14.000Z"
- },
- {
-  "id": 50443090,
-  "title": "AMD's Zen 6 Family: Feeding the Beast",
-  "url": "https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast",
-  "score": 192,
-  "by": "pixelpoet",
-  "time": "2026-11-10T17:02:32.000Z"
- },
- {
-  "id": 50448174,
-  "title": "AI is an information gateway. Audiences still don't want it making their news",
-  "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
-  "score": 15,
-  "by": "rdmuser",
-  "time": "2026-11-11T00:15:33.000Z"
- },
- {
-  "id": 50447036,
-  "title": "$30M Raised to Redo the CPU",
-  "url": "https://tendrils.co/blog/2026-11-10/30m-raised",
-  "score": 40,
-  "by": "shioyama",
-  "time": "2026-11-10T22:14:03.000Z"
- },
- {
-  "id": 50439695,
-  "title": "Ableton Live 13",
-  "url": "https://www.ableton.com/en/live/",
-  "score": 285,
-  "by": "phaser",
-  "time": "2026-11-10T12:58:04.000Z"
- },
- {
-  "id": 50433216,
-  "title": "Process Explorer for macOS",
-  "url": "https://github.com/microsoft/Procexp-Mac",
-  "score": 144,
-  "by": "ingve",
-  "time": "2026-11-09T22:30:41.000Z"
- },
- {
-  "id": 50444684,
-  "title": "A comprehensive study of how fingerprintable users are",
-  "url": "https://fingerprinting.study/",
-  "score": 78,
-  "by": "tomrittervg",
-  "time": "2026-11-10T19:03:54.000Z"
- },
- {
-  "id": 50445279,
-  "title": "Research taste in history: the importance of learning Babylonian math",
-  "url": "https://resobscura.substack.com/p/research-taste-in-history-the-importance",
-  "score": 17,
-  "by": "benbreen",
-  "time": "2026-11-10T19:42:44.000Z"
- },
- {
-  "id": 50441518,
-  "title": "Show HN: Valencia, Spain in Sim City/Isometric View",
-  "url": "https://tinyvalencia.com/",
-  "score": 203,
-  "by": "leugim",
-  "time": "2026-11-10T15:12:16.000Z"
+  "id": 50443716,
+  "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+  "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+  "score": 235,
+  "by": "Yorothegoat",
+  "time": "2026-11-10T17:55:07.000Z"
  },
  {
   "id": 50438318,
   "title": "AI usage generates a fragile codebase",
   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
-  "score": 404,
+  "score": 563,
   "by": "plun9",
   "time": "2026-11-10T10:25:58.000Z"
  },
  {
-  "id": 50410329,
-  "title": "Simon Winchester has died",
-  "url": "https://www.nytimes.com/2026/11/04/obituaries/simon-winchester-dead.html",
-  "score": 75,
-  "by": "benbreen",
-  "time": "2026-11-08T04:07:21.000Z"
+  "id": 50448340,
+  "title": "LLMs Play Zachtronics' TIS-100",
+  "url": "https://tis-100.wincon.dev/",
+  "score": 72,
+  "by": "fairestvalue",
+  "time": "2026-11-11T00:37:05.000Z"
  },
  {
-  "id": 50446219,
-  "title": "Sherman Anti-Trust Act (1890)",
-  "url": "https://www.archives.gov/milestone-documents/sherman-anti-trust-act",
-  "score": 75,
-  "by": "hashmap",
-  "time": "2026-11-10T20:56:16.000Z"
+  "id": 50414004,
+  "title": "\"Jumping genes\" helped ants evolve after the extinction of the dinosaurs",
+  "url": "https://www.uni-muenster.de/news/view.php?cmdid=15659&utm_source=join1440&utm_medium=email&utm_placement=newsletter&user_id=66c4bf745d78644b3aa57b08",
+  "score": 13,
+  "by": "gmays",
+  "time": "2026-11-08T15:16:37.000Z"
  },
  {
-  "id": 50441350,
-  "title": "Show HN: Aircad – Professional drafting and 3D modeling in the browser",
-  "url": "https://aircad.com",
-  "score": 26,
-  "by": "peetle",
-  "time": "2026-11-10T15:01:19.000Z"
+  "id": 50447036,
+  "title": "$30M Raised to Redo the CPU",
+  "url": "https://tendrils.co/blog/2026-11-10/30m-raised",
+  "score": 106,
+  "by": "shioyama",
+  "time": "2026-11-10T22:14:03.000Z"
  },
  {
-  "id": 50439284,
-  "title": "What's new in the .NET 11 runtime",
-  "url": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime",
-  "score": 245,
-  "by": "stevefan1999",
-  "time": "2026-11-10T12:20:07.000Z"
+  "id": 50443090,
+  "title": "AMD's Zen 6 Family: Feeding the Beast",
+  "url": "https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast",
+  "score": 240,
+  "by": "pixelpoet",
+  "time": "2026-11-10T17:02:32.000Z"
  },
  {
-  "id": 50442426,
-  "title": "Blender 5.3 released with Gaussian Splat support",
-  "url": "https://www.blender.org/download/releases/5-3/",
-  "score": 444,
-  "by": "amlib",
-  "time": "2026-11-10T16:15:43.000Z"
+  "id": 50433216,
+  "title": "Process Explorer for macOS",
+  "url": "https://github.com/microsoft/Procexp-Mac",
+  "score": 210,
+  "by": "ingve",
+  "time": "2026-11-09T22:30:41.000Z"
+ },
+ {
+  "id": 50442225,
+  "title": "Announcing .NET 11",
+  "url": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/",
+  "score": 198,
+  "by": "runesoerensen",
+  "time": "2026-11-10T16:01:27.000Z"
  }
 ]
