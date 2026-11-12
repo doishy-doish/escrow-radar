@@ -1,242 +1,242 @@
 [
  {
   "id": 50467087,
-  "title": "NVIDIA Announces CEO Transition",
-  "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
-  "score": 1153,
+  "title": "Jensen Huang resigns",
+  "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
+  "score": 2549,
   "by": "lldb",
   "time": "2026-11-12T13:52:29.000Z"
+ },
+ {
+  "id": 50472038,
+  "title": "Rust 1.100",
+  "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+  "score": 202,
+  "by": "mbStavola",
+  "time": "2026-11-12T18:39:05.000Z"
+ },
+ {
+  "id": 50472260,
+  "title": "Gemini 4 Hydrogen and Orchestrator",
+  "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+  "score": 187,
+  "by": "jonbaer",
+  "time": "2026-11-12T18:52:01.000Z"
+ },
+ {
+  "id": 50472490,
+  "title": "Dwarf planet candidate appears which takes roughly 280 years to orbit our sun",
+  "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/",
+  "score": 131,
+  "by": "cybermango",
+  "time": "2026-11-12T19:05:33.000Z"
+ },
+ {
+  "id": 50474361,
+  "title": "Foundation Models Framework (macOS)",
+  "url": "https://developer.apple.com/foundation-models-framework/",
+  "score": 34,
+  "by": "kermatt",
+  "time": "2026-11-12T21:13:26.000Z"
+ },
+ {
+  "id": 50470488,
+  "title": "Show HN: My $300 embroidery machine needed a subscription, so I built my own app",
+  "url": "https://github.com/simpsoka/zigzag",
+  "score": 211,
+  "by": "simpsoka",
+  "time": "2026-11-12T17:02:42.000Z"
+ },
+ {
+  "id": 50471731,
+  "title": "Service degradation on Microsoft 365",
+  "url": "https://status.cloud.microsoft/",
+  "score": 320,
+  "by": "dkpk",
+  "time": "2026-11-12T18:20:48.000Z"
  },
  {
   "id": 50465829,
   "title": "Anthropic IPO",
   "url": "https://ipo.anthropic.com/us/",
-  "score": 393,
+  "score": 749,
   "by": "josephljohnston",
   "time": "2026-11-12T11:46:41.000Z"
  },
  {
-  "id": 50467618,
-  "title": "Abandoned Quake 4 expansion finished by modders and now playable",
-  "url": "https://www.moddb.com/mods/openq4/downloads/openq4-0141-windows-x64",
-  "score": 77,
-  "by": "klaussilveira",
-  "time": "2026-11-12T14:18:49.000Z"
- },
- {
-  "id": 50467460,
-  "title": "Talking Zen 6 with Mike Clark at AMD In-Depth",
-  "url": "https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at",
-  "score": 71,
-  "by": "dverlaeckt80",
-  "time": "2026-11-12T14:12:37.000Z"
- },
- {
-  "id": 50465352,
-  "title": "Why Writing Correct Software Is Hard",
-  "url": "https://pron.github.io/posts/correctness-and-complexity",
-  "score": 243,
-  "by": "AriFordsham",
-  "time": "2026-11-12T10:28:26.000Z"
- },
- {
-  "id": 50467439,
-  "title": "Libreagi – Save OSS Models",
-  "url": "https://libreagi.com/",
-  "score": 44,
-  "by": "satuke",
-  "time": "2026-11-12T14:11:58.000Z"
- },
- {
-  "id": 50468944,
-  "title": "ExcalidrawZ: Local Native Excalidraw on macOS/iOS",
-  "url": "https://github.com/chocoford/ExcalidrawZ",
-  "score": 15,
-  "by": "Qision",
-  "time": "2026-11-12T15:25:52.000Z"
- },
- {
-  "id": 50469007,
-  "title": "Show HN: Fable52.games – Play and inspect Fable 5.2 single-file HTML games",
-  "url": "https://fable52.games",
-  "score": 12,
-  "by": "felixne",
-  "time": "2026-11-12T15:30:01.000Z"
- },
- {
-  "id": 50438261,
-  "title": "Socratic Tutor",
-  "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
-  "score": 513,
-  "by": "tosh",
-  "time": "2026-11-10T10:18:22.000Z"
+  "id": 50471761,
+  "title": "22-Year-Old PostgreSQL Bug Turned into Remote Code Execution",
+  "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/",
+  "score": 90,
+  "by": "ozirus",
+  "time": "2026-11-12T18:22:22.000Z"
  },
  {
   "id": 50468888,
   "title": "I'm making LLMs work on small and old devices",
   "url": "https://github.com/hyperionaidev/smolmaxxing/",
-  "score": 8,
+  "score": 233,
   "by": "mrashad74",
   "time": "2026-11-12T15:23:10.000Z"
+ },
+ {
+  "id": 50467618,
+  "title": "Abandoned Quake 4 expansion finished by modders and now playable",
+  "url": "https://www.moddb.com/mods/openq4/downloads/openq4-0141-windows-x64",
+  "score": 215,
+  "by": "klaussilveira",
+  "time": "2026-11-12T14:18:49.000Z"
+ },
+ {
+  "id": 50458849,
+  "title": "Relax: JIT compiler for Rust to reduce build times",
+  "url": "https://makepad.github.io/relax/",
+  "score": 76,
+  "by": "adamnemecek",
+  "time": "2026-11-11T21:20:01.000Z"
+ },
+ {
+  "id": 50471431,
+  "title": "Gemini 4 Hydrogen",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+  "score": 390,
+  "by": "dvaplima",
+  "time": "2026-11-12T18:01:48.000Z"
+ },
+ {
+  "id": 50473231,
+  "title": "Data centers need power – lower income, rural residents pay the price",
+  "url": "https://news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price",
+  "score": 128,
+  "by": "PaulHoule",
+  "time": "2026-11-12T19:53:54.000Z"
+ },
+ {
+  "id": 50467460,
+  "title": "Talking Zen 6 with Mike Clark at AMD In-Depth",
+  "url": "https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at",
+  "score": 164,
+  "by": "dverlaeckt80",
+  "time": "2026-11-12T14:12:37.000Z"
+ },
+ {
+  "id": 50466410,
+  "title": "Adapting CPython for Yk",
+  "url": "https://tratt.net/laurie/blog/2026/adapting_cpython_for_yk.html",
+  "score": 28,
+  "by": "frostbyte7",
+  "time": "2026-11-12T12:51:38.000Z"
+ },
+ {
+  "id": 50465352,
+  "title": "Why writing correct software is hard and why math (alone) won’t help us (2016)",
+  "url": "https://pron.github.io/posts/correctness-and-complexity",
+  "score": 337,
+  "by": "AriFordsham",
+  "time": "2026-11-12T10:28:26.000Z"
+ },
+ {
+  "id": 50472505,
+  "title": "Distributed Ray Tracer",
+  "url": "https://ray.hatchet.run",
+  "score": 25,
+  "by": "juliusgeo",
+  "time": "2026-11-12T19:06:23.000Z"
+ },
+ {
+  "id": 50471650,
+  "title": "Show HN: AgentRun – open-source, Self-improving Managed Agents",
+  "url": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
+  "score": 59,
+  "by": "miguelrios",
+  "time": "2026-11-12T18:15:48.000Z"
+ },
+ {
+  "id": 50471281,
+  "title": "Show HN: Kapso – Iterative learning from enterprise data",
+  "url": null,
+  "score": 27,
+  "by": "alireza_msh",
+  "time": "2026-11-12T17:51:23.000Z"
+ },
+ {
+  "id": 50459508,
+  "title": "Words of warning about radiocarbon dating medieval human bones",
+  "url": "https://www.nature.com/articles/s40494-026-02958-x",
+  "score": 39,
+  "by": "gumby",
+  "time": "2026-11-11T22:18:37.000Z"
+ },
+ {
+  "id": 50439283,
+  "title": "Safety in Algae Home Experiments",
+  "url": "https://chillphysicsenjoyer.substack.com/p/algae-safety-in-home-experiments",
+  "score": 8,
+  "by": "surprisetalk",
+  "time": "2026-11-10T12:20:06.000Z"
+ },
+ {
+  "id": 50467297,
+  "title": "Our software engineering interviews are changing a little",
+  "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
+  "score": 143,
+  "by": "maitland",
+  "time": "2026-11-12T14:05:28.000Z"
+ },
+ {
+  "id": 50468944,
+  "title": "ExcalidrawZ: Local Native Excalidraw on macOS/iOS",
+  "url": "https://github.com/chocoford/ExcalidrawZ",
+  "score": 92,
+  "by": "Qision",
+  "time": "2026-11-12T15:25:52.000Z"
+ },
+ {
+  "id": 50474311,
+  "title": "AI is turning Apple's app review process into a nightmare for synth developers",
+  "url": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+  "score": 5,
+  "by": "anigbrowl",
+  "time": "2026-11-12T21:09:49.000Z"
  },
  {
   "id": 50425017,
   "title": "A live tree of systemd jobs on the boot console",
   "url": "https://codeberg.org/wvhulle/bootvine",
-  "score": 247,
+  "score": 338,
   "by": "orhunp_",
   "time": "2026-11-09T13:02:44.000Z"
  },
  {
-  "id": 50467305,
-  "title": "Electric Ship Batteries Promise Compact, Cooler Power",
-  "url": "https://spectrum.ieee.org/electric-ship-batteries",
-  "score": 24,
-  "by": "rbanffy",
-  "time": "2026-11-12T14:06:03.000Z"
+  "id": 50471621,
+  "title": "Singapore Says U.S. Not Helpful on Investigation into Suspected Spy's Company",
+  "url": "https://www.nytimes.com/2026/11/12/business/nvidia-megaspeed-alice-huang.html",
+  "score": 122,
+  "by": "tedd4u",
+  "time": "2026-11-12T18:14:18.000Z"
  },
  {
-  "id": 50465453,
-  "title": "Researchers discover rare star system that emits radio signals every 8 minutes",
-  "url": "https://www.curtin.edu.au/news/media-release/researchers-discover-rare-star-system-that-emits-radio-signals-every-eight-minutes/",
-  "score": 69,
-  "by": "giuliomagnifico",
-  "time": "2026-11-12T10:46:20.000Z"
+  "id": 50469994,
+  "title": "Nintendo Takes Down Emulators and Firmware in Massive GitHub DMCA Sweep",
+  "url": "https://www.ign.com/articles/nintendo-takes-down-switch-emulators-and-mod-chip-firmware-in-massive-github-dmca-sweep",
+  "score": 236,
+  "by": "CharlesW",
+  "time": "2026-11-12T16:29:13.000Z"
  },
  {
-  "id": 50450488,
-  "title": "Tim Peters has died",
-  "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
-  "score": 1350,
-  "by": "ayhanfuat",
-  "time": "2026-11-11T07:03:17.000Z"
+  "id": 50467439,
+  "title": "Libreagi – Save OSS Models",
+  "url": "https://libreagi.com/",
+  "score": 110,
+  "by": "satuke",
+  "time": "2026-11-12T14:11:58.000Z"
  },
  {
-  "id": 50459745,
-  "title": "93% of paint splatters are valid Perl programs (2019)",
-  "url": "https://www.mcmillen.dev/sigbovik/",
-  "score": 534,
-  "by": "zenincognito",
-  "time": "2026-11-11T22:34:23.000Z"
- },
- {
-  "id": 50462177,
-  "title": "Critical RCE Vulnerability in Apache HTTP Server",
-  "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-  "score": 314,
-  "by": "soheilpro",
-  "time": "2026-11-12T02:11:11.000Z"
- },
- {
-  "id": 50467869,
-  "title": "Running web sites makes me not want to",
-  "url": "https://lowkey.party/running-web-sites-makes-me-not-want-to",
-  "score": 11,
-  "by": "speckx",
-  "time": "2026-11-12T14:30:38.000Z"
- },
- {
-  "id": 50468720,
-  "title": "Fitting Four 32 GB Resizable Bars Behind a PCIe Switch on Linux",
-  "url": "https://doug.sh/posts/gpu-bars-behind-a-pcie-switch/",
-  "score": 8,
-  "by": "dougcalobrisi",
-  "time": "2026-11-12T15:14:52.000Z"
- },
- {
-  "id": 50456631,
-  "title": "AWS emulator",
-  "url": "https://github.com/aws/aws-emulator",
-  "score": 928,
-  "by": "super_linear",
-  "time": "2026-11-11T18:21:38.000Z"
- },
- {
-  "id": 50467297,
-  "title": "Our software engineering interviews are changing (a little)",
-  "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
-  "score": 61,
-  "by": "maitland",
-  "time": "2026-11-12T14:05:28.000Z"
- },
- {
-  "id": 50415379,
-  "title": "Show HN: Build a PC in 3D in the Browser",
-  "url": "https://www.buildcores.com",
-  "score": 28,
-  "by": "ozaiworld",
-  "time": "2026-11-08T17:45:08.000Z"
- },
- {
-  "id": 50431971,
-  "title": "Making a €40 USB-C hub work as a Nintendo Switch 2 dock",
-  "url": "http://blog.nozomi.space/posts/sw2_dock/",
-  "score": 100,
-  "by": "mkopec",
-  "time": "2026-11-09T20:54:02.000Z"
- },
- {
-  "id": 50467763,
-  "title": "PostgreSQL 18.7, 17.12, 16.16, 15.20, 14.25, and 19 RC 2 Released",
-  "url": "https://www.postgresql.org/about/news/postgresql-187-1712-1616-1520-1425-and-19-rc-2-released-3442/",
-  "score": 47,
-  "by": "plaur782",
-  "time": "2026-11-12T14:25:23.000Z"
- },
- {
-  "id": 50468687,
-  "title": "Roadside investigations of psyllids, ants and eucs",
-  "url": "https://bencology.bearblog.dev/eucalypt-psyllids-meat-ants/",
-  "score": 3,
-  "by": "caminanteblanco",
-  "time": "2026-11-12T15:13:06.000Z"
- },
- {
-  "id": 50445279,
-  "title": "Research taste in history: the importance of learning Babylonian math",
-  "url": "https://resobscura.substack.com/p/research-taste-in-history-the-importance",
-  "score": 39,
-  "by": "benbreen",
-  "time": "2026-11-10T19:42:44.000Z"
- },
- {
-  "id": 50455394,
-  "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
-  "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
-  "score": 544,
-  "by": "mbac32768",
-  "time": "2026-11-11T16:38:44.000Z"
- },
- {
-  "id": 50406043,
-  "title": "The largest open-source DLE collection",
-  "url": "https://github.com/trizoza/dles/blob/main/assets/daily-games/DLES.md",
-  "score": 6,
-  "by": "trizoza",
-  "time": "2026-11-07T16:58:23.000Z"
- },
- {
-  "id": 50456791,
-  "title": "Gemini Decisions API",
-  "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-  "score": 520,
-  "by": "iamdelirium",
-  "time": "2026-11-11T18:32:42.000Z"
- },
- {
-  "id": 50463540,
-  "title": "I'm Working on a FOSS Linux Pinbal Simulation Engine",
-  "url": "https://www.getlazarus.org/forums/topic/17/",
-  "score": 101,
-  "by": "sysrpl",
-  "time": "2026-11-12T05:49:34.000Z"
- },
- {
-  "id": 50457344,
-  "title": "Pulling the Lever in a Subway Problem",
-  "url": "https://www.jefftk.com/p/pulling-the-lever-in-a-subway-problem",
-  "score": 3,
-  "by": "NaOH",
-  "time": "2026-11-11T19:22:09.000Z"
+  "id": 50472506,
+  "title": "Vibes Don't Maintain",
+  "url": "https://roll.bybacon.com/2026/10/14/vibes-dont-maintain.html",
+  "score": 22,
+  "by": "dxs",
+  "time": "2026-11-12T19:06:29.000Z"
  }
 ]
