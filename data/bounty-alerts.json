@@ -1,19 +1,6 @@
 {
- "ts": "2026-11-12T07:45:49.396Z",
+ "ts": "2026-11-12T16:21:02.303Z",
  "count": 0,
  "alerts": [],
- "demoted": [
-  {
-   "id": "paraloom-core#1579",
-   "stale_reason": "stale_target:programs/paraloom/src/lib.rs:89d"
-  },
-  {
-   "id": "paraloom-core#1580",
-   "stale_reason": "stale_target:src/node/mod.rs:77d"
-  },
-  {
-   "id": "paraloom-core#1577",
-   "stale_reason": "repo_mismatch:lib/paraloom/prices.ts"
-  }
- ]
+ "demoted": []
 }
