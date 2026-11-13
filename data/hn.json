@@ -1,242 +1,242 @@
 [
  {
+  "id": 50489641,
+  "title": "FAA Issues National Ground Stop",
+  "url": "https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11132026&advn=111",
+  "score": 823,
+  "by": "zulln",
+  "time": "2026-11-13T21:05:53.000Z"
+ },
+ {
+  "id": 50487864,
+  "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+  "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+  "score": 233,
+  "by": "crescit_eundo",
+  "time": "2026-11-13T18:40:44.000Z"
+ },
+ {
+  "id": 50490593,
+  "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+  "url": "https://orcasairband.com/",
+  "score": 41,
+  "by": "mmaunder",
+  "time": "2026-11-13T22:04:24.000Z"
+ },
+ {
+  "id": 50488325,
+  "title": "FM-1 Workbench",
+  "url": "https://open.m-vave.com/fm1-workbench",
+  "score": 137,
+  "by": "simonebrunozzi",
+  "time": "2026-11-13T19:14:02.000Z"
+ },
+ {
   "id": 50474959,
   "title": "Reverse engineering my Coway air purifier to ditch the cloud",
   "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
-  "score": 372,
+  "score": 635,
   "by": "scottjg",
   "time": "2026-11-12T22:03:09.000Z"
  },
  {
-  "id": 50486482,
-  "title": "\"LibreOffice works 365 days a year. Just saying.\"",
-  "url": "https://twitter.com/LibreOffice/status/2121205272479998268",
-  "score": 111,
-  "by": "mksaunders2",
-  "time": "2026-11-13T17:09:58.000Z"
+  "id": 50487185,
+  "title": "After 600 experiments, here's what I discovered about JEPA world models",
+  "url": "https://haddyalchaer.com/jepa",
+  "score": 189,
+  "by": "halcdev",
+  "time": "2026-11-13T17:55:28.000Z"
  },
  {
-  "id": 50484235,
-  "title": "A technical vision for the Haskell ecosystem",
-  "url": "https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078",
-  "score": 79,
-  "by": "cosmic_quanta",
-  "time": "2026-11-13T14:43:12.000Z"
+  "id": 50490778,
+  "title": "National Weather Service reports nationwide radar website outage amid FAA stop",
+  "url": "https://www.news9.com/oklahoma-city-news/national-weather-service-reports-nationwide-radar-website-outage",
+  "score": 11,
+  "by": "galleywest200",
+  "time": "2026-11-13T22:16:11.000Z"
  },
  {
-  "id": 50483611,
-  "title": "Why Zig over C for Systems Programming",
-  "url": "https://www.mtsoukalos.eu/2026/11/why-zig-over-c-for-systems-programming/",
-  "score": 155,
-  "by": "torutofu",
-  "time": "2026-11-13T14:01:13.000Z"
+  "id": 50491097,
+  "title": "Claude Meetings",
+  "url": "https://claude.com/resources/articles/claude-meetings",
+  "score": 6,
+  "by": "hmokiguess",
+  "time": "2026-11-13T22:39:15.000Z"
  },
  {
-  "id": 50467087,
-  "title": "Jensen Huang resigns",
-  "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
-  "score": 3906,
-  "by": "lldb",
-  "time": "2026-11-12T13:52:29.000Z"
+  "id": 50488464,
+  "title": "Perplexity Decider v1.3: Training, eval, and use cases",
+  "url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
+  "score": 73,
+  "by": "gmays",
+  "time": "2026-11-13T19:24:47.000Z"
+ },
+ {
+  "id": 50488470,
+  "title": "Found: A protein that drives ageing without unleashing inflammation",
+  "url": "https://www.nature.com/articles/d41586-026-03638-3",
+  "score": 66,
+  "by": "gumby",
+  "time": "2026-11-13T19:25:21.000Z"
+ },
+ {
+  "id": 50489589,
+  "title": "Autonomous (YC F25) is hiring MTS to build AI agents that manage your wealth",
+  "url": "https://atg.science/careers",
+  "score": 1,
+  "by": "dkobran",
+  "time": "2026-11-13T21:01:11.000Z"
  },
  {
   "id": 50482379,
   "title": "Doomsday: Friday, 13 November, A.D. 2026 (1960)",
   "url": "https://www.science.org/doi/10.1126/science.132.3436.1291",
-  "score": 334,
+  "score": 419,
   "by": "voxleone",
   "time": "2026-11-13T12:10:24.000Z"
+ },
+ {
+  "id": 50488835,
+  "title": "Live-migration support in FreeBSD and bhyve coming",
+  "url": "https://gyptazy.com/blog/freebsd-bhyve-live-migration-support-rfc/",
+  "score": 39,
+  "by": "JohnDohnBohn",
+  "time": "2026-11-13T19:58:42.000Z"
+ },
+ {
+  "id": 50489652,
+  "title": "All US airports are currently ground stopped",
+  "url": "https://twitter.com/flightradar24/status/2121347654714077605",
+  "score": 103,
+  "by": "defly",
+  "time": "2026-11-13T21:06:52.000Z"
+ },
+ {
+  "id": 50487228,
+  "title": "Show HN: Isometric SF – A pixel-art map of the SF Bay Area",
+  "url": "https://isometricsf.com/",
+  "score": 123,
+  "by": "juscha1",
+  "time": "2026-11-13T17:58:37.000Z"
+ },
+ {
+  "id": 50489083,
+  "title": "Big tech is here to let us down",
+  "url": "https://blog.jsweeting.me/big-tech-is-here-to-let-us-down",
+  "score": 157,
+  "by": "speckx",
+  "time": "2026-11-13T20:20:30.000Z"
+ },
+ {
+  "id": 50487605,
+  "title": "Ctrl+C, Ctrl+v, Ctrl+cve: Bypassing Android's Clipboard Read Security Measures",
+  "url": "https://toninoble.com/post/ctrlc-ctrlv-ctrlcve",
+  "score": 50,
+  "by": "dethmasque",
+  "time": "2026-11-13T18:23:49.000Z"
+ },
+ {
+  "id": 50484235,
+  "title": "A technical vision for the Haskell ecosystem",
+  "url": "https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078",
+  "score": 161,
+  "by": "cosmic_quanta",
+  "time": "2026-11-13T14:43:12.000Z"
+ },
+ {
+  "id": 50486748,
+  "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+  "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+  "score": 280,
+  "by": "bookofjoe",
+  "time": "2026-11-13T17:30:10.000Z"
+ },
+ {
+  "id": 50484650,
+  "title": "Minnesota guitarist's \"palmfrets\" invention strikes a new chord",
+  "url": "https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord",
+  "score": 110,
+  "by": "bookofjoe",
+  "time": "2026-11-13T15:08:07.000Z"
+ },
+ {
+  "id": 50487762,
+  "title": "Models can now transmit viruses in weight-space",
+  "url": "https://www.alphaxiv.org/abs/2611.weight-space-misfolding",
+  "score": 122,
+  "by": "mkglees",
+  "time": "2026-11-13T18:33:35.000Z"
+ },
+ {
+  "id": 50487522,
+  "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+  "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+  "score": 213,
+  "by": "BobaFloutist",
+  "time": "2026-11-13T18:18:37.000Z"
+ },
+ {
+  "id": 50489678,
+  "title": "FAA issues nationwide ground stop due to \"extraordinary circumstances\"",
+  "url": "https://www.axios.com/2026/11/13/faa-nationwide-ground-stop",
+  "score": 87,
+  "by": "owenshen24",
+  "time": "2026-11-13T21:08:49.000Z"
  },
  {
   "id": 50484007,
   "title": "Lonewolf 0.3 – A standalone XMPP server written in Rust",
   "url": "https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0",
-  "score": 58,
+  "score": 120,
   "by": "ortuman",
   "time": "2026-11-13T14:28:40.000Z"
- },
- {
-  "id": 50485295,
-  "title": "Brazil's Caixa insurer breach exposes names and tax IDs of all 7.6M customers",
-  "url": "https://filemanager-cdn.mziq.com/published/3972906b-e50b-4f74-ab74-4d0d32125d11/9567a559-d20a-486e-a7ae-5c6bbc030c5e",
-  "score": 107,
-  "by": "dvaplima",
-  "time": "2026-11-13T15:52:04.000Z"
- },
- {
-  "id": 50484650,
-  "title": "Palmfrets, Minnesota guitarist's invention, strikes a new chord",
-  "url": "https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord",
-  "score": 36,
-  "by": "bookofjoe",
-  "time": "2026-11-13T15:08:07.000Z"
- },
- {
-  "id": 50478515,
-  "title": "IceWM",
-  "url": "https://ice-wm.org/",
-  "score": 323,
-  "by": "inatreecrown2",
-  "time": "2026-11-13T04:54:53.000Z"
- },
- {
-  "id": 50481187,
-  "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-  "url": "https://status.claude.com/incidents/nn11wk485zfn",
-  "score": 434,
-  "by": "__vivek",
-  "time": "2026-11-13T10:18:13.000Z"
- },
- {
-  "id": 50486258,
-  "title": "Apify Was Hacked",
-  "url": "https://status.apify.com/incidents/sxd1dj5j6749",
-  "score": 7,
-  "by": "cynicalpeace",
-  "time": "2026-11-13T16:55:59.000Z"
- },
- {
-  "id": 50472038,
-  "title": "Rust 1.100",
-  "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
-  "score": 834,
-  "by": "mbStavola",
-  "time": "2026-11-12T18:39:05.000Z"
- },
- {
-  "id": 50484496,
-  "title": "EU Digital Identity Wallet rollout: every EU state on one board",
-  "url": "https://myid.ie/business/eu-digital-wallet-tracker/",
-  "score": 78,
-  "by": "mooreds",
-  "time": "2026-11-13T14:58:07.000Z"
- },
- {
-  "id": 50477649,
-  "title": "Brave Search API now accepts agentic payments via the x402 protocol",
-  "url": "https://brave.com/blog/search-api-agentic-payments/",
-  "score": 219,
-  "by": "sjdh76",
-  "time": "2026-11-13T03:08:08.000Z"
- },
- {
-  "id": 50477714,
-  "title": "Switcher (2004)",
-  "url": "https://folklore.org/Switcher.html",
-  "score": 132,
-  "by": "sammatilda",
-  "time": "2026-11-13T03:14:59.000Z"
- },
- {
-  "id": 50486489,
-  "title": "Arm boss Rene Haas approached in Nvidia CEO search",
-  "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
-  "score": 12,
-  "by": "bazzmt",
-  "time": "2026-11-13T17:10:33.000Z"
- },
- {
-  "id": 50470488,
-  "title": "Show HN: My $300 embroidery machine needed a subscription, so I built my own app",
-  "url": "https://github.com/simpsoka/zigzag",
-  "score": 679,
-  "by": "simpsoka",
-  "time": "2026-11-12T17:02:42.000Z"
- },
- {
-  "id": 50481870,
-  "title": "AI Is Destroying the Trust Between Writers and Readers",
-  "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
-  "score": 195,
-  "by": "FinnLobsien",
-  "time": "2026-11-13T11:13:46.000Z"
- },
- {
-  "id": 50484658,
-  "title": "Jonathan Blow – If AI Solved Coding, Why Is My Software Still the Same? [video]",
-  "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-  "score": 93,
-  "by": "helloplanets",
-  "time": "2026-11-13T15:08:44.000Z"
- },
- {
-  "id": 50472260,
-  "title": "Gemini 4 Hydrogen and Orchestrator",
-  "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
-  "score": 480,
-  "by": "jonbaer",
-  "time": "2026-11-12T18:52:01.000Z"
- },
- {
-  "id": 50484960,
-  "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
-  "url": "https://text.npr.org/nx-s1-6029408",
-  "score": 72,
-  "by": "kamaraju",
-  "time": "2026-11-13T15:29:10.000Z"
- },
- {
-  "id": 50473190,
-  "title": "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
-  "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
-  "score": 407,
-  "by": "jbredeche",
-  "time": "2026-11-12T19:51:33.000Z"
  },
  {
   "id": 50483959,
   "title": "CERN Built the Large Hadron Collider's Next-Gen Magnets",
   "url": "https://spectrum.ieee.org/large-hadron-collider-superconducting-magnets",
-  "score": 7,
+  "score": 63,
   "by": "marc__1",
   "time": "2026-11-13T14:25:46.000Z"
  },
  {
-  "id": 50472490,
-  "title": "Dwarf planet candidate appears which takes roughly 280 years to orbit our sun",
-  "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/",
-  "score": 374,
-  "by": "cybermango",
-  "time": "2026-11-12T19:05:33.000Z"
+  "id": 50488769,
+  "title": "No AI Slop: A Manifesto",
+  "url": "https://www.slopmanifesto.com/",
+  "score": 141,
+  "by": "bankombinator",
+  "time": "2026-11-13T19:51:56.000Z"
  },
  {
-  "id": 50486178,
-  "title": "North Korean hackers used fake video calls in $400M crypto hack, says FBI",
-  "url": "https://www.bbc.com/news/articles/cqdj1ellpd70o",
-  "score": 14,
-  "by": "saikiran91",
-  "time": "2026-11-13T16:50:22.000Z"
+  "id": 50486258,
+  "title": "Apify Security Incident",
+  "url": "https://status.apify.com/incidents/sxd1dj5j6749",
+  "score": 79,
+  "by": "cynicalpeace",
+  "time": "2026-11-13T16:55:59.000Z"
  },
  {
-  "id": 50475713,
-  "title": "Edge0-145B: Frontier AI Capabilities on Your Own Computer",
-  "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
-  "score": 318,
-  "by": "sroussey",
-  "time": "2026-11-12T23:06:17.000Z"
+  "id": 50487184,
+  "title": "OpenAI disbands its robotics team as its general models start running robots",
+  "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+  "score": 126,
+  "by": "sshah03",
+  "time": "2026-11-13T17:55:23.000Z"
  },
  {
-  "id": 50483533,
-  "title": "US test reactor cleared for operations",
-  "url": "https://www.world-nuclear-news.org/articles/us-test-reactor-cleared-for-operations",
-  "score": 53,
-  "by": "PaulHoule",
-  "time": "2026-11-13T13:54:49.000Z"
+  "id": 50486521,
+  "title": "Concurrent Shell Command Queues",
+  "url": "https://emmer.dev/blog/concurrent-shell-command-queues/",
+  "score": 22,
+  "by": "speckx",
+  "time": "2026-11-13T17:13:01.000Z"
  },
  {
-  "id": 50468888,
-  "title": "I'm making LLMs work on small and old devices",
-  "url": "https://github.com/hyperionaidev/smolmaxxing/",
-  "score": 451,
-  "by": "mrashad74",
-  "time": "2026-11-12T15:23:10.000Z"
- },
- {
-  "id": 50471731,
-  "title": "Service degradation on Microsoft 365",
-  "url": "https://status.cloud.microsoft/",
-  "score": 1107,
-  "by": "dkpk",
-  "time": "2026-11-12T18:20:48.000Z"
+  "id": 50487688,
+  "title": "Microsoft outage gives customers a crash course in dependence on Redmond",
+  "url": "https://www.theregister.com/saas/2026/11/13/microsoft-outage-gives-customers-a-crash-course-in-dependence-on-redmond/5309805",
+  "score": 88,
+  "by": "nephihaha",
+  "time": "2026-11-13T18:29:16.000Z"
  }
 ]
