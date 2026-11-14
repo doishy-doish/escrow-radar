@@ -1,57 +1,177 @@
 [
  {
+  "id": 50440709,
+  "title": "Why get an expensive Pi when I have an old phone?",
+  "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
+  "score": 315,
+  "by": "casi",
+  "time": "2026-11-10T14:16:05.000Z"
+ },
+ {
+  "id": 50497132,
+  "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+  "url": "https://gitlab.com/snipedbywifi/terminactory",
+  "score": 46,
+  "by": "snipedbywifi",
+  "time": "2026-11-14T14:05:54.000Z"
+ },
+ {
+  "id": 50496976,
+  "title": "KDE: The Documentary on Free Software [video]",
+  "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
+  "score": 47,
+  "by": "mrkn1",
+  "time": "2026-11-14T13:43:28.000Z"
+ },
+ {
+  "id": 50496811,
+  "title": "Advancing science and engineering with Antigravity's /teamwork",
+  "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+  "score": 36,
+  "by": "acossta",
+  "time": "2026-11-14T13:20:43.000Z"
+ },
+ {
+  "id": 50441444,
+  "title": "Generative AI uses more energy on non-English text",
+  "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
+  "score": 67,
+  "by": "DeepLogin",
+  "time": "2026-11-10T15:07:28.000Z"
+ },
+ {
+  "id": 50497137,
+  "title": "Show HN: Fursoy – Out-of-order RV64IMAFDV core in SystemVerilog (Linux 6.6)",
+  "url": "https://github.com/FURSOY/fursoy-cpu",
+  "score": 14,
+  "by": "fursoy",
+  "time": "2026-11-14T14:06:34.000Z"
+ },
+ {
+  "id": 50496602,
+  "title": "Tech Companies Are Trying to Shift the Concept of Privacy (Again)",
+  "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+  "score": 161,
+  "by": "gslin",
+  "time": "2026-11-14T12:45:45.000Z"
+ },
+ {
+  "id": 50467278,
+  "title": "Testing a Trash Can Faraday Cage",
+  "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
+  "score": 21,
+  "by": "torutofu",
+  "time": "2026-11-12T14:04:27.000Z"
+ },
+ {
   "id": 50493062,
   "title": "Ggml v1.0.0",
   "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
-  "score": 249,
+  "score": 355,
   "by": "cobychapple",
   "time": "2026-11-14T02:28:29.000Z"
  },
  {
-  "id": 50493251,
-  "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-  "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-  "score": 535,
-  "by": "speckx",
-  "time": "2026-11-14T02:52:59.000Z"
+  "id": 50497155,
+  "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
+  "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+  "score": 52,
+  "by": "wondersky",
+  "time": "2026-11-14T14:09:25.000Z"
  },
  {
-  "id": 50489641,
-  "title": "FAA issues national ground stop – lifted 4.5 hours later",
-  "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
-  "score": 1532,
-  "by": "zulln",
-  "time": "2026-11-13T21:05:53.000Z"
+  "id": 50497147,
+  "title": "Show HN: Agweb – a browser for agents that stays out of your way",
+  "url": "https://github.com/paul-nameless/agweb",
+  "score": 23,
+  "by": "paul_nameless",
+  "time": "2026-11-14T14:08:12.000Z"
  },
  {
   "id": 50493904,
   "title": "Monkey Island: all 13 versions side by side",
   "url": "https://monkeyisland.pages.dev/",
-  "score": 81,
+  "score": 317,
   "by": "maximilianburke",
   "time": "2026-11-14T04:23:30.000Z"
  },
  {
-  "id": 50491980,
-  "title": "Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update",
-  "url": "https://unsloth.ai/docs/models/qwen3.8",
-  "score": 132,
-  "by": "Retro_Dev",
-  "time": "2026-11-14T00:06:04.000Z"
+  "id": 50497009,
+  "title": "Italy fines Meta $887M over Android users' data access",
+  "url": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/",
+  "score": 78,
+  "by": "giuliomagnifico",
+  "time": "2026-11-14T13:48:06.000Z"
+ },
+ {
+  "id": 50478632,
+  "title": "Let's Write a PostScript Interpreter",
+  "url": "https://beyondloom.com/blog/postscript.html",
+  "score": 51,
+  "by": "RebelPotato",
+  "time": "2026-11-13T05:12:56.000Z"
+ },
+ {
+  "id": 50496885,
+  "title": "A visual explanation of reinforcement learning",
+  "url": "https://aatishb.com/myriad/how-brains-learn/",
+  "score": 16,
+  "by": "aatish",
+  "time": "2026-11-14T13:31:06.000Z"
+ },
+ {
+  "id": 50493251,
+  "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+  "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+  "score": 873,
+  "by": "speckx",
+  "time": "2026-11-14T02:52:59.000Z"
  },
  {
   "id": 50491423,
   "title": "Terminal borders that don't cost a cell",
   "url": "https://www.joshka.net/cell-borders/",
-  "score": 235,
+  "score": 361,
   "by": "vinhnx",
   "time": "2026-11-13T23:06:40.000Z"
+ },
+ {
+  "id": 50491980,
+  "title": "Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update",
+  "url": "https://unsloth.ai/docs/models/qwen3.8",
+  "score": 211,
+  "by": "Retro_Dev",
+  "time": "2026-11-14T00:06:04.000Z"
+ },
+ {
+  "id": 50489641,
+  "title": "FAA issues national ground stop – lifted 4.5 hours later",
+  "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
+  "score": 1605,
+  "by": "zulln",
+  "time": "2026-11-13T21:05:53.000Z"
+ },
+ {
+  "id": 50484658,
+  "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+  "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+  "score": 402,
+  "by": "helloplanets",
+  "time": "2026-11-13T15:08:44.000Z"
+ },
+ {
+  "id": 50465926,
+  "title": "Bilingualism and Denaskuleco",
+  "url": "https://pgadey.ca/notes/bilingualism-and-denaskuleco/",
+  "score": 6,
+  "by": "surprisetalk",
+  "time": "2026-11-12T12:00:06.000Z"
  },
  {
   "id": 50491830,
   "title": "What happened to 3Com?",
   "url": "https://dfarq.homeip.net/what-happened-to-3com/",
-  "score": 135,
+  "score": 183,
   "by": "gvieri",
   "time": "2026-11-13T23:48:59.000Z"
  },
@@ -59,7 +179,7 @@
   "id": 50491545,
   "title": "Show HN: Live map of U.S. flights during tonight's FAA nationwide ground stop",
   "url": "https://grounds.top/",
-  "score": 142,
+  "score": 186,
   "by": "gvsi",
   "time": "2026-11-13T23:17:39.000Z"
  },
@@ -67,39 +187,39 @@
   "id": 50488470,
   "title": "Found: A protein that drives ageing without unleashing inflammation",
   "url": "https://www.nature.com/articles/d41586-026-03638-3",
-  "score": 193,
+  "score": 236,
   "by": "gumby",
   "time": "2026-11-13T19:25:21.000Z"
  },
  {
-  "id": 50484658,
-  "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
-  "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-  "score": 281,
-  "by": "helloplanets",
-  "time": "2026-11-13T15:08:44.000Z"
- },
- {
-  "id": 50440709,
-  "title": "Why get an expensive Pi when I have an old phone?",
-  "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
-  "score": 3,
-  "by": "casi",
-  "time": "2026-11-10T14:16:05.000Z"
+  "id": 50444761,
+  "title": "Show HN: I have trained 15 blood glucose forecasting models on my own data",
+  "url": "https://github.com/0xdeadf1sh/T1DMAI",
+  "score": 69,
+  "by": "0xdeadf1sh",
+  "time": "2026-11-10T19:07:53.000Z"
  },
  {
   "id": 50488325,
   "title": "FM-1 Workbench",
   "url": "https://open.m-vave.com/fm1-workbench",
-  "score": 234,
+  "score": 258,
   "by": "simonebrunozzi",
   "time": "2026-11-13T19:14:02.000Z"
+ },
+ {
+  "id": 50491400,
+  "title": "How Not to Build a Music Player",
+  "url": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player/",
+  "score": 153,
+  "by": "vinhnx",
+  "time": "2026-11-13T23:04:30.000Z"
  },
  {
   "id": 50490593,
   "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
   "url": "https://orcasairband.com/",
-  "score": 261,
+  "score": 286,
   "by": "mmaunder",
   "time": "2026-11-13T22:04:24.000Z"
  },
@@ -107,136 +227,16 @@
   "id": 50487185,
   "title": "After 600 experiments, here's what I discovered about JEPA world models",
   "url": "https://haddyalchaer.com/jepa",
-  "score": 258,
+  "score": 278,
   "by": "halcdev",
   "time": "2026-11-13T17:55:28.000Z"
  },
  {
-  "id": 50448432,
-  "title": "Extending LLDB to Debug Applications That Span CPUs and GPUs",
-  "url": "https://engineering.fb.com/2026/11/09/developer-tools/extending-lldb-to-debug-applications-that-span-cpus-and-gpus/",
-  "score": 11,
-  "by": "JDevlieghere",
-  "time": "2026-11-11T00:48:14.000Z"
- },
- {
-  "id": 50491400,
-  "title": "How Not to Build a Music Player",
-  "url": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player/",
-  "score": 105,
-  "by": "vinhnx",
-  "time": "2026-11-13T23:04:30.000Z"
- },
- {
-  "id": 50444761,
-  "title": "Show HN: I have trained 15 blood glucose forecasting models on my own data",
-  "url": "https://github.com/0xdeadf1sh/T1DMAI",
-  "score": 28,
-  "by": "0xdeadf1sh",
-  "time": "2026-11-10T19:07:53.000Z"
- },
- {
-  "id": 50488464,
-  "title": "Perplexity Decider v1.3: Training, eval, and use cases",
-  "url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
-  "score": 128,
-  "by": "gmays",
-  "time": "2026-11-13T19:24:47.000Z"
- },
- {
-  "id": 50487228,
-  "title": "Show HN: Isometric SF – A pixel-art map of the SF Bay Area",
-  "url": "https://isometricsf.com/",
-  "score": 210,
-  "by": "juscha1",
-  "time": "2026-11-13T17:58:37.000Z"
- },
- {
-  "id": 50492860,
-  "title": "Elephants found to be increasingly isolated leading to fractured social networks",
-  "url": "https://today.ucsd.edu/story/elephants-found-to-be-increasingly-isolated-leading-to-fractured-social-networks",
-  "score": 128,
-  "by": "gmays",
-  "time": "2026-11-14T02:02:42.000Z"
- },
- {
-  "id": 50488835,
-  "title": "Live-migration support in FreeBSD and bhyve coming",
-  "url": "https://gyptazy.com/blog/freebsd-bhyve-live-migration-support-rfc/",
-  "score": 102,
-  "by": "JohnDohnBohn",
-  "time": "2026-11-13T19:58:42.000Z"
- },
- {
-  "id": 50484235,
-  "title": "A technical vision for the Haskell ecosystem",
-  "url": "https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078",
-  "score": 204,
-  "by": "cosmic_quanta",
-  "time": "2026-11-13T14:43:12.000Z"
- },
- {
-  "id": 50492315,
-  "title": "Amtrak booking system experiencing major issues amid nationwide FAA ground stop",
-  "url": "https://www.fox5dc.com/news/amtrak-outage-ticket-booking-faa-ground-stop-november-13-2026",
-  "score": 163,
-  "by": "snow_mac",
-  "time": "2026-11-14T00:52:29.000Z"
- },
- {
-  "id": 50484650,
-  "title": "Minnesota guitarist's \"palmfrets\" invention strikes a new chord",
-  "url": "https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord",
-  "score": 170,
-  "by": "bookofjoe",
-  "time": "2026-11-13T15:08:07.000Z"
- },
- {
-  "id": 50474959,
-  "title": "Reverse engineering my Coway air purifier to ditch the cloud",
-  "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
-  "score": 746,
-  "by": "scottjg",
-  "time": "2026-11-12T22:03:09.000Z"
- },
- {
-  "id": 50462975,
-  "title": "The Other Nefertiti (2015)",
-  "url": "https://alloversky.com/puzzlepieces/the-other-nefertiti",
-  "score": 16,
-  "by": "dmbche",
-  "time": "2026-11-12T04:08:33.000Z"
- },
- {
-  "id": 50492950,
-  "title": "Security Agencies Worldwide Found to Use Ad-Based Surveillance System",
-  "url": "https://citizenlab.ca/security-agencies-worldwide-found-to-use-ad-based-surveillance-system/",
-  "score": 92,
-  "by": "billybuckwheat",
-  "time": "2026-11-14T02:15:41.000Z"
- },
- {
-  "id": 50487605,
-  "title": "Ctrl+C, Ctrl+v, Ctrl+cve: Bypassing Android's Clipboard Read Security Measures",
-  "url": "https://toninoble.com/post/ctrlc-ctrlv-ctrlcve",
-  "score": 85,
-  "by": "dethmasque",
-  "time": "2026-11-13T18:23:49.000Z"
- },
- {
-  "id": 50487864,
-  "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
-  "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
-  "score": 352,
-  "by": "crescit_eundo",
-  "time": "2026-11-13T18:40:44.000Z"
- },
- {
-  "id": 50489589,
-  "title": "Autonomous (YC F25) is hiring MTS to build AI agents that manage your wealth",
-  "url": "https://atg.science/careers",
-  "score": 1,
-  "by": "dkobran",
-  "time": "2026-11-13T21:01:11.000Z"
+  "id": 50454791,
+  "title": "Service Crew Discovers Rare Yellow Burbot in Oswego Harbor",
+  "url": "https://www.fws.gov/story/2026-11/service-crew-discovers-rare-yellow-burbot-oswego-harbor",
+  "score": 23,
+  "by": "tart-lemonade",
+  "time": "2026-11-11T15:47:43.000Z"
  }
 ]
