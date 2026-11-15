@@ -1,242 +1,242 @@
 [
  {
-  "id": 50500963,
-  "title": "SpaceX catches the Starship to end Flight 15",
-  "url": "https://www.spacex.com/launches/starship-flight-15",
-  "score": 1385,
-  "by": "ls612",
-  "time": "2026-11-14T21:22:24.000Z"
+  "id": 50507303,
+  "title": "All AI-generated code should be Open Source",
+  "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+  "score": 822,
+  "by": "jcubic",
+  "time": "2026-11-15T14:46:58.000Z"
  },
  {
-  "id": 50505271,
-  "title": "Why did some Apollo missions carry a grenade launcher?",
-  "url": "https://space.stackexchange.com/questions/37775",
-  "score": 98,
-  "by": "Skyfall106",
-  "time": "2026-11-15T09:06:43.000Z"
+  "id": 50509308,
+  "title": "A short explainer on how El Niño works [video]",
+  "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
+  "score": 44,
+  "by": "nharada",
+  "time": "2026-11-15T18:23:21.000Z"
  },
  {
   "id": 50506719,
   "title": "The MacBook Pro's OLED PWM Problem: When a 'Better' Display Becomes Worse to Use",
   "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
-  "score": 7,
+  "score": 294,
   "by": "MacAnorak",
   "time": "2026-11-15T13:15:22.000Z"
  },
  {
-  "id": 50499017,
-  "title": "Lovable apps expose passport details and more than 200K private messages",
-  "url": "https://www.crissyfield.de/research/lovable-en/",
-  "score": 895,
-  "by": "armcat",
-  "time": "2026-11-14T17:43:10.000Z"
+  "id": 50507553,
+  "title": "Emacs Is My Browser",
+  "url": "https://joshblais.com/blog/emacs-as-my-browser/",
+  "score": 110,
+  "by": "nyc111",
+  "time": "2026-11-15T15:21:21.000Z"
+ },
+ {
+  "id": 50506894,
+  "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+  "url": "https://prog21.dadgum.com/116.html",
+  "score": 138,
+  "by": "ksec",
+  "time": "2026-11-15T13:44:16.000Z"
+ },
+ {
+  "id": 50509023,
+  "title": "'Birdbrain' Is a Misnomer. Crows Make Decisions Faster Than We Can",
+  "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
+  "score": 35,
+  "by": "gumby",
+  "time": "2026-11-15T17:53:31.000Z"
+ },
+ {
+  "id": 50463399,
+  "title": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
+  "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
+  "score": 177,
+  "by": "envoked",
+  "time": "2026-11-12T05:29:24.000Z"
+ },
+ {
+  "id": 50500963,
+  "title": "SpaceX catches the Starship to end Flight 15",
+  "url": "https://www.spacex.com/launches/starship-flight-15",
+  "score": 1557,
+  "by": "ls612",
+  "time": "2026-11-14T21:22:24.000Z"
+ },
+ {
+  "id": 50509416,
+  "title": "Eclipse Mosquitto – An open source MQTT broker",
+  "url": "https://github.com/eclipse-mosquitto/mosquitto",
+  "score": 10,
+  "by": "gregsadetsky",
+  "time": "2026-11-15T18:36:40.000Z"
  },
  {
   "id": 50506376,
   "title": "Understanding Positional Embeddings in Modern LLMs",
   "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
-  "score": 14,
+  "score": 149,
   "by": "vismit2000",
   "time": "2026-11-15T12:14:06.000Z"
+ },
+ {
+  "id": 50509411,
+  "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+  "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+  "score": 52,
+  "by": "DeepLogin",
+  "time": "2026-11-15T18:36:10.000Z"
+ },
+ {
+  "id": 50452621,
+  "title": "Notes on Mathematics for Engineers (1959) [pdf]",
+  "url": "https://websites.umich.edu/~ners311/CourseLibrary/MathNotes.pdf",
+  "score": 29,
+  "by": "the-mitr",
+  "time": "2026-11-11T12:25:42.000Z"
+ },
+ {
+  "id": 50465676,
+  "title": "Eval Awareness vs. Eval Paranoia",
+  "url": "https://www.lesswrong.com/posts/mepsi7JNKYejq9wry/eval-awareness-vs-eval-paranoia",
+  "score": 13,
+  "by": "ezrasu",
+  "time": "2026-11-12T11:23:02.000Z"
  },
  {
   "id": 50502988,
   "title": "Court denies motion to dismiss DRAM price fixing case",
   "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
-  "score": 286,
+  "score": 434,
   "by": "ybathaee",
   "time": "2026-11-15T01:18:36.000Z"
- },
- {
-  "id": 50475759,
-  "title": "Chasing an audio artifact on power loss",
-  "url": "https://subalpinecircuits.com/chasing-an-audio-artifact-on-power-loss/",
-  "score": 11,
-  "by": "ireflect",
-  "time": "2026-11-12T23:11:25.000Z"
- },
- {
-  "id": 50481321,
-  "title": "What thousands of conversations look like inside a language model",
-  "url": "https://operator0x.com/field-notes/qwen-conversation-state-space/",
-  "score": 22,
-  "by": "josip208",
-  "time": "2026-11-13T10:26:01.000Z"
- },
- {
-  "id": 50481056,
-  "title": "Strictly monotonic timestamps and gapless sequences in Rust",
-  "url": "https://tsoracle.rs/",
-  "score": 18,
-  "by": "znano",
-  "time": "2026-11-13T10:04:37.000Z"
  },
  {
   "id": 50506588,
   "title": "A NES emulator written in Odin",
   "url": "https://lucypero.com/lucynes.html",
-  "score": 3,
+  "score": 79,
   "by": "frostbyte7",
   "time": "2026-11-15T12:51:47.000Z"
  },
  {
-  "id": 50474529,
-  "title": "Handwritten 200-year-old dismissal notice found on roof tile",
-  "url": "https://www.bbc.co.uk/news/articles/c6jdmdzv25r9o",
-  "score": 35,
-  "by": "nephihaha",
-  "time": "2026-11-12T21:27:01.000Z"
+  "id": 50505271,
+  "title": "Why did some Apollo missions carry a grenade launcher?",
+  "url": "https://space.stackexchange.com/questions/37775",
+  "score": 183,
+  "by": "Skyfall106",
+  "time": "2026-11-15T09:06:43.000Z"
  },
  {
-  "id": 50501594,
-  "title": "How did Woz write the Apple 1 BASIC before building the computer?",
-  "url": "https://retrocomputing.stackexchange.com/questions/17957",
-  "score": 250,
-  "by": "Skyfall106",
-  "time": "2026-11-14T22:22:49.000Z"
+  "id": 50467539,
+  "title": "20 Years of Pyrolog",
+  "url": "https://pypy.org/posts/2026/11/20-years-of-pyrolog.html",
+  "score": 50,
+  "by": "lumpa",
+  "time": "2026-11-12T14:15:28.000Z"
+ },
+ {
+  "id": 50481321,
+  "title": "What thousands of conversations look like inside a language model",
+  "url": "https://operator0x.com/field-notes/qwen-conversation-state-space/",
+  "score": 83,
+  "by": "josip208",
+  "time": "2026-11-13T10:26:01.000Z"
  },
  {
   "id": 50506180,
   "title": "Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business",
   "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
-  "score": 50,
+  "score": 341,
   "by": "JumpCrisscross",
   "time": "2026-11-15T11:40:51.000Z"
  },
  {
-  "id": 50504277,
-  "title": "Disk encryption on NetBSD – achieving secrecy",
-  "url": "https://netbsd.org/~nia/disk-encrypt/",
-  "score": 60,
-  "by": "jaypatelani",
-  "time": "2026-11-15T05:29:54.000Z"
+  "id": 50501887,
+  "title": "The Telephone Changed the World",
+  "url": "https://lithub.com/how-the-telephone-changed-the-world/",
+  "score": 41,
+  "by": "NaOH",
+  "time": "2026-11-14T22:56:09.000Z"
  },
  {
-  "id": 50503465,
-  "title": "My favourite modern NES games",
-  "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
-  "score": 138,
-  "by": "jordigh",
-  "time": "2026-11-15T02:41:25.000Z"
+  "id": 50475759,
+  "title": "Chasing an audio artifact on power loss",
+  "url": "https://subalpinecircuits.com/chasing-an-audio-artifact-on-power-loss/",
+  "score": 43,
+  "by": "ireflect",
+  "time": "2026-11-12T23:11:25.000Z"
  },
  {
-  "id": 50496976,
-  "title": "KDE: The documentary [video]",
-  "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
-  "score": 525,
-  "by": "mrkn1",
-  "time": "2026-11-14T13:43:28.000Z"
- },
- {
-  "id": 50499038,
-  "title": "A family tree of software job titles",
-  "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
-  "score": 359,
-  "by": "umerf",
-  "time": "2026-11-14T17:45:19.000Z"
- },
- {
-  "id": 50452037,
-  "title": "Open-Source HF Communications for Remote Communities and Experimenters",
-  "url": "https://www.ardc.net/rhizomaticas-hermes-and-mercury-expand-open-source-hf-communications-for-remote-communities-while-appealing-to-experimenters/",
-  "score": 37,
-  "by": "tejtm",
-  "time": "2026-11-11T11:11:22.000Z"
- },
- {
-  "id": 50484234,
-  "title": "Semicircle Packing",
-  "url": "https://rorz.io/writing/semicircle-packing",
-  "score": 52,
-  "by": "sarreph",
-  "time": "2026-11-13T14:42:57.000Z"
+  "id": 50457979,
+  "title": "How to read codes from (many) IR remote controls with as little code as possible",
+  "url": "https://bitbanksoftware.blogspot.com/2026/11/how-to-read-codes-from-many-ir-remote.html",
+  "score": 45,
+  "by": "speckx",
+  "time": "2026-11-11T20:09:34.000Z"
  },
  {
   "id": 50482279,
   "title": "Show HN: Carton Clock – A working pendulum clock made from empty drink cartons",
   "url": "https://www.niklasroy.com/carton-clock/",
-  "score": 20,
+  "score": 59,
   "by": "r0r0",
   "time": "2026-11-13T12:00:18.000Z"
  },
  {
-  "id": 50440709,
-  "title": "Why get an expensive Pi when I have an old phone?",
-  "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
-  "score": 583,
-  "by": "casi",
-  "time": "2026-11-10T14:16:05.000Z"
+  "id": 50506940,
+  "title": "Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS",
+  "url": "https://github.com/db-branch/db-branch",
+  "score": 23,
+  "by": "nu_nu11",
+  "time": "2026-11-15T13:50:51.000Z"
  },
  {
-  "id": 50482222,
-  "title": "The Evolving Story of How Chemistry Became Biology",
-  "url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/",
+  "id": 50501594,
+  "title": "How did Woz write the Apple 1 BASIC before building the computer?",
+  "url": "https://retrocomputing.stackexchange.com/questions/17957",
+  "score": 294,
+  "by": "Skyfall106",
+  "time": "2026-11-14T22:22:49.000Z"
+ },
+ {
+  "id": 50474529,
+  "title": "Handwritten 200-year-old dismissal notice found on roof tile",
+  "url": "https://www.bbc.co.uk/news/articles/c6jdmdzv25r9o",
   "score": 64,
-  "by": "pseudolus",
-  "time": "2026-11-13T11:55:19.000Z"
+  "by": "nephihaha",
+  "time": "2026-11-12T21:27:01.000Z"
  },
  {
-  "id": 50497892,
-  "title": "PyPI's redesigned project pages with clearer security signals are now live",
-  "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
-  "score": 258,
+  "id": 50499038,
+  "title": "A family tree of software job titles",
+  "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+  "score": 419,
+  "by": "umerf",
+  "time": "2026-11-14T17:45:19.000Z"
+ },
+ {
+  "id": 50508715,
+  "title": "Clice v1.0 Released: Welcome to Modern C++",
+  "url": "https://ykiko.me/en/articles/2105384023094834022/",
+  "score": 7,
+  "by": "molenzwiebel",
+  "time": "2026-11-15T17:22:32.000Z"
+ },
+ {
+  "id": 50499017,
+  "title": "Lovable apps expose passport details and more than 200K private messages",
+  "url": "https://www.crissyfield.de/research/lovable-en/",
+  "score": 961,
+  "by": "armcat",
+  "time": "2026-11-14T17:43:10.000Z"
+ },
+ {
+  "id": 50507206,
+  "title": "The Hypertext Transfer Protocol Status Code 483 (I'm Not a Freezer)",
+  "url": "https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer/",
+  "score": 73,
   "by": "rbanffy",
-  "time": "2026-11-14T15:40:52.000Z"
- },
- {
-  "id": 50504077,
-  "title": "Kiri – The Modern Container Runtime",
-  "url": "https://runkiri.com/",
-  "score": 71,
-  "by": "nikolay",
-  "time": "2026-11-15T04:40:41.000Z"
- },
- {
-  "id": 50483431,
-  "title": "500 Lines or Less A 3D Modeller",
-  "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
-  "score": 77,
-  "by": "myth_drannon",
-  "time": "2026-11-13T13:47:42.000Z"
- },
- {
-  "id": 50504718,
-  "title": "Book list for streetfighting computer scientists",
-  "url": "https://nick-black.com/dankwiki/index.php?title=Book_list_for_streetfighting_computer_scientists",
-  "score": 62,
-  "by": "num42",
-  "time": "2026-11-15T07:08:50.000Z"
- },
- {
-  "id": 50503255,
-  "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
-  "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
-  "score": 276,
-  "by": "nobody9999",
-  "time": "2026-11-15T02:00:54.000Z"
- },
- {
-  "id": 50496051,
-  "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
-  "url": "https://projectzero.google/2026/11/disclosure-policy.html",
-  "score": 283,
-  "by": "hacb",
-  "time": "2026-11-14T11:13:17.000Z"
- },
- {
-  "id": 50441444,
-  "title": "Generative AI uses more energy on non-English text",
-  "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
-  "score": 224,
-  "by": "DeepLogin",
-  "time": "2026-11-10T15:07:28.000Z"
- },
- {
-  "id": 50497589,
-  "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
-  "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
-  "score": 251,
-  "by": "VaibhaavTiwari",
-  "time": "2026-11-14T15:04:15.000Z"
+  "time": "2026-11-15T14:31:52.000Z"
  }
 ]
