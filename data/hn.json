@@ -1,242 +1,242 @@
 [
  {
+  "id": 50521045,
+  "title": "Outages reported at Bank of America, Chase, U.S. Bank, Wells Fargo and Zelle",
+  "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
+  "score": 425,
+  "by": "samk3nny",
+  "time": "2026-11-16T18:31:30.000Z"
+ },
+ {
+  "id": 50520182,
+  "title": "Grazing sheep in fields with solar arrays",
+  "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+  "score": 139,
+  "by": "PaulHoule",
+  "time": "2026-11-16T17:27:46.000Z"
+ },
+ {
+  "id": 50519744,
+  "title": "Jiff 1.0: A datetime library for Rust",
+  "url": "https://burntsushi.net/jiff/",
+  "score": 211,
+  "by": "burntsushi",
+  "time": "2026-11-16T16:53:39.000Z"
+ },
+ {
+  "id": 50519354,
+  "title": "Frame – 31.5\" color ePaper display",
+  "url": "https://trmnl.com/blog/introducing-frame",
+  "score": 156,
+  "by": "geerlingguy",
+  "time": "2026-11-16T16:23:22.000Z"
+ },
+ {
+  "id": 50522776,
+  "title": "Launch HN: Axonnic (YC F26) – Sleeves that track fingers and estimate force",
+  "url": null,
+  "score": 6,
+  "by": "arshpatankar",
+  "time": "2026-11-16T20:29:48.000Z"
+ },
+ {
+  "id": 50515151,
+  "title": "Squircles",
+  "url": "https://linebender.org/wiki/curves/squircle/",
+  "score": 26,
+  "by": "raphlinus",
+  "time": "2026-11-16T07:55:10.000Z"
+ },
+ {
+  "id": 50520270,
+  "title": "Aristotle Expands into Rust",
+  "url": "https://www.harmonic.fun/news/aristotle-rust-verification/",
+  "score": 61,
+  "by": "maufl",
+  "time": "2026-11-16T17:34:41.000Z"
+ },
+ {
+  "id": 50516473,
+  "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+  "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
+  "score": 264,
+  "by": "sammatilda",
+  "time": "2026-11-16T11:39:31.000Z"
+ },
+ {
+  "id": 50520518,
+  "title": "Michael Mann's 'Heat' Copyright Fight Turns on a Deal with Himself",
+  "url": "https://copyrightlately.com/michael-mann-heat-copyright-termination/",
+  "score": 45,
+  "by": "speckx",
+  "time": "2026-11-16T17:52:23.000Z"
+ },
+ {
+  "id": 50520866,
+  "title": "Software is breaking down at a systemic level",
+  "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
+  "score": 234,
+  "by": "zero_shift",
+  "time": "2026-11-16T18:17:17.000Z"
+ },
+ {
+  "id": 50521870,
+  "title": "How to Intercept HTTP/3 Traffic: QUIC and Qpack",
+  "url": "https://interceptsuite.com/blog/intercept-http3-traffic-quic-qpack-explained/",
+  "score": 15,
+  "by": "anof-cyber",
+  "time": "2026-11-16T19:29:17.000Z"
+ },
+ {
+  "id": 50443844,
+  "title": "Giant Roadside Attractions Face Mounting Costs and an Uncertain Future",
+  "url": "https://www.nytimes.com/2026/11/08/world/canada/roadside-attractions-giant-dinosaur.html",
+  "score": 20,
+  "by": "bookofjoe",
+  "time": "2026-11-10T18:03:14.000Z"
+ },
+ {
+  "id": 50520804,
+  "title": "OpenAI: Strengthening the fight against online child sexual abuse",
+  "url": "https://openai.com/index/strengthening-online-child-safety/",
+  "score": 49,
+  "by": "rossant",
+  "time": "2026-11-16T18:12:48.000Z"
+ },
+ {
+  "id": 50517488,
+  "title": "Many of Amazon’s Black Friday and Cyber Monday “deals” offered no savings",
+  "url": "http://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w/",
+  "score": 699,
+  "by": "DeepLogin",
+  "time": "2026-11-16T13:39:07.000Z"
+ },
+ {
   "id": 50514470,
   "title": "How to make almost anything",
   "url": "https://pub.cba.mit.edu/863.26/site/",
-  "score": 314,
+  "score": 789,
   "by": "o4c",
   "time": "2026-11-16T05:50:37.000Z"
  },
  {
-  "id": 50513160,
-  "title": "Universal XSS in uBlock Origin from website-driven element picker",
-  "url": "https://iter.ca/post/ubo-uxss/",
-  "score": 384,
-  "by": "zaik",
-  "time": "2026-11-16T02:04:48.000Z"
+  "id": 50519345,
+  "title": "Jolt – Clojure that speaks C",
+  "url": "https://jolt-lang.net/",
+  "score": 54,
+  "by": "michaelsbradley",
+  "time": "2026-11-16T16:23:01.000Z"
+ },
+ {
+  "id": 50517321,
+  "title": "Microsoft blames monster email outage on software defect introduced in July fix",
+  "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+  "score": 88,
+  "by": "Bender",
+  "time": "2026-11-16T13:18:22.000Z"
+ },
+ {
+  "id": 50485327,
+  "title": "The Origins of the Placenta",
+  "url": "https://www.caltech.edu/about/news/uncovering-the-hidden-origins-of-the-placenta",
+  "score": 8,
+  "by": "gmays",
+  "time": "2026-11-13T15:53:09.000Z"
+ },
+ {
+  "id": 50518567,
+  "title": "Nvidia was in trouble before the Jensen Huang mess",
+  "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
+  "score": 187,
+  "by": "Brajeshwar",
+  "time": "2026-11-16T15:24:09.000Z"
+ },
+ {
+  "id": 50490159,
+  "title": "OOS – an open operating system for the Rigol Scopes",
+  "url": "https://www.eevblog.com/forum/testgear/oos-an-open-operating-system-for-the-rigol-scopes/",
+  "score": 115,
+  "by": "qwezxcrty",
+  "time": "2026-11-13T21:36:59.000Z"
+ },
+ {
+  "id": 50497746,
+  "title": "Smallest possible nopert polyhedra: the Septopert",
+  "url": "https://github.com/tom7/noperts/blob/main/septopert.md",
+  "score": 42,
+  "by": "RebelPotato",
+  "time": "2026-11-14T15:22:30.000Z"
+ },
+ {
+  "id": 50515058,
+  "title": "Interpreting claims that a theorem is correct because it was checked in Lean",
+  "url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/",
+  "score": 261,
+  "by": "matt_d",
+  "time": "2026-11-16T07:38:19.000Z"
+ },
+ {
+  "id": 50516245,
+  "title": "Coffeehouses and the Rise of Science [pdf]",
+  "url": "https://www.monirbounadi.com/Bounadi_JMP.pdf",
+  "score": 164,
+  "by": "Michelangelo11",
+  "time": "2026-11-16T11:03:16.000Z"
+ },
+ {
+  "id": 50518068,
+  "title": "A 512 KiB binary message teaching chess without a shared language",
+  "url": "https://artemlegotin.com/golden-board/",
+  "score": 39,
+  "by": "legotin",
+  "time": "2026-11-16T14:38:54.000Z"
+ },
+ {
+  "id": 50519153,
+  "title": "First phase of embedded assessments at OpenAI",
+  "url": "https://openai.com/index/our-first-phase-of-embedded-assessments/",
+  "score": 19,
+  "by": "dvaplima",
+  "time": "2026-11-16T16:07:20.000Z"
  },
  {
   "id": 50486745,
   "title": "Researchers track whole body movement with just a smartwatch",
   "url": "https://news.cornell.edu/stories/2026/11/researchers-track-whole-body-movement-just-smartwatch",
-  "score": 47,
+  "score": 188,
   "by": "PaulHoule",
   "time": "2026-11-13T17:29:49.000Z"
  },
  {
-  "id": 50513215,
-  "title": "Qwen4-Max",
-  "url": "https://qwen.ai/blog?id=qwen4-max",
-  "score": 544,
-  "by": "ilreb",
-  "time": "2026-11-16T02:14:44.000Z"
- },
- {
-  "id": 50511395,
-  "title": "Old Bitly links are being hijacked",
-  "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
-  "score": 297,
-  "by": "hspeiser",
-  "time": "2026-11-15T22:11:43.000Z"
- },
- {
-  "id": 50512235,
-  "title": "What's Next for Nvidia?",
-  "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
-  "score": 274,
-  "by": "zdw",
-  "time": "2026-11-15T23:55:55.000Z"
- },
- {
-  "id": 50512441,
-  "title": "Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack",
-  "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
-  "score": 161,
-  "by": "aillia",
-  "time": "2026-11-16T00:21:54.000Z"
- },
- {
-  "id": 50509837,
-  "title": "Protomaps: Self-hosting map tiles has gotten cheap and easy",
-  "url": "https://bruceroettgers.eu/blog/protomaps/",
-  "score": 351,
-  "by": "bcye",
-  "time": "2026-11-15T19:26:22.000Z"
- },
- {
-  "id": 50515058,
-  "title": "“…and the proof is checked in Lean”",
-  "url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/",
-  "score": 22,
-  "by": "matt_d",
-  "time": "2026-11-16T07:38:19.000Z"
- },
- {
-  "id": 50511806,
-  "title": "Preserving 30 years of Salon journalism",
-  "url": "https://blog.archive.org/2026/11/12/preserving-30-years-of-salon-journalism/",
-  "score": 155,
-  "by": "CharlesW",
-  "time": "2026-11-15T23:00:11.000Z"
- },
- {
-  "id": 50462816,
-  "title": "The Lasting Influence of John Berger",
-  "url": "https://www.newyorker.com/magazine/2026/11/16/john-berger-a-life-tom-overton-book-review",
-  "score": 25,
-  "by": "prismatic",
-  "time": "2026-11-12T03:44:33.000Z"
- },
- {
-  "id": 50509308,
-  "title": "A short explainer on how El Niño works [video]",
-  "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
-  "score": 245,
-  "by": "nharada",
-  "time": "2026-11-15T18:23:21.000Z"
- },
- {
-  "id": 50509972,
-  "title": "Handwriting, as a Font",
-  "url": "https://ductus.sorenblank.com",
-  "score": 302,
-  "by": "coinfused",
-  "time": "2026-11-15T19:42:13.000Z"
- },
- {
-  "id": 50484998,
-  "title": "Do we still have to denormalize? Have your schema and search it too",
-  "url": "https://www.paradedb.com/blog/joins",
-  "score": 77,
-  "by": "philippemnoel",
-  "time": "2026-11-13T15:31:50.000Z"
- },
- {
-  "id": 50509023,
-  "title": "Crows make decisions faster than we can",
-  "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
-  "score": 245,
-  "by": "gumby",
-  "time": "2026-11-15T17:53:31.000Z"
- },
- {
-  "id": 50456548,
-  "title": "Making Atuin sync 32x faster with packfiles",
-  "url": "https://blog.atuin.sh/making-atuin-sync-32x-faster-with-packfiles/",
-  "score": 13,
-  "by": "ossusermivami",
-  "time": "2026-11-11T18:14:36.000Z"
- },
- {
-  "id": 50467599,
-  "title": "Simple 8085 Computer",
-  "url": "https://www.hackster.io/mit41301/simple-8085-computer-9fe156",
-  "score": 43,
-  "by": "AlexeyBrin",
-  "time": "2026-11-12T14:18:04.000Z"
- },
- {
-  "id": 50510296,
-  "title": "WebGL Flight Simulator with seed generated terrain",
-  "url": "https://baron.by.dai.studio/",
-  "score": 155,
-  "by": "ranger_danger",
-  "time": "2026-11-15T20:20:05.000Z"
- },
- {
-  "id": 50489536,
-  "title": "I Can't Believe It Can Sort",
-  "url": "https://yugen-tsuki.github.io/unbelievablesort.html",
-  "score": 11,
-  "by": "Muhammad523",
-  "time": "2026-11-13T20:56:10.000Z"
- },
- {
-  "id": 50485275,
-  "title": "Artificial Intelligence for the Z80",
-  "url": "https://www.dfsantos.com/en/libro-ia-z80",
-  "score": 49,
-  "by": "AlexeyBrin",
-  "time": "2026-11-13T15:50:43.000Z"
- },
- {
-  "id": 50512231,
-  "title": "Mini.nvim Is Now on Tangled",
-  "url": "https://tangled.org/nvim-mini.org/mini.nvim",
+  "id": 50520697,
+  "title": "Just 400 US Data Centers Use More Electricity Than Michigan",
+  "url": "https://www.wired.com/story/data-centers-use-more-electricity-than-michigan/",
   "score": 71,
-  "by": "nerdypepper",
-  "time": "2026-11-15T23:55:41.000Z"
+  "by": "Betelbuddy",
+  "time": "2026-11-16T18:04:55.000Z"
  },
  {
-  "id": 50486880,
-  "title": "A quest to create the perfect whiskey glass",
-  "url": "https://www.nytimes.com/2026/11/13/dining/drinks/kurt-josef-zalto-whiskey-glass.html",
-  "score": 66,
-  "by": "Kaibeezy",
-  "time": "2026-11-13T17:37:32.000Z"
- },
- {
-  "id": 50514180,
-  "title": "Debian Becomes Unresponsive after 6.1.0-55 Kernel Update",
-  "url": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1154101",
-  "score": 100,
-  "by": "artooro",
-  "time": "2026-11-16T04:53:06.000Z"
- },
- {
-  "id": 50514257,
-  "title": "Did the Apollo Guidance Computer use 60% of the ICs in 1963?",
-  "url": "https://retrocomputing.stackexchange.com/questions/12158/did-the-apollo-guidance-computer-really-use-60-of-the-worlds-ics-in-1963",
-  "score": 15,
-  "by": "Skyfall106",
-  "time": "2026-11-16T05:05:54.000Z"
- },
- {
-  "id": 50512296,
-  "title": "Skydio's asymmetrical F10 Lightrunner solves a problem with fixed-wing drones",
-  "url": "https://spectrum.ieee.org/skydio-f10-lightrunner-asymmetrical-drone",
-  "score": 42,
-  "by": "Gaishan",
-  "time": "2026-11-16T00:03:12.000Z"
- },
- {
-  "id": 50509411,
-  "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
-  "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
-  "score": 551,
-  "by": "DeepLogin",
-  "time": "2026-11-15T18:36:10.000Z"
- },
- {
-  "id": 50507553,
-  "title": "Emacs Is My Browser",
-  "url": "https://joshblais.com/blog/emacs-as-my-browser/",
-  "score": 214,
-  "by": "nyc111",
-  "time": "2026-11-15T15:21:21.000Z"
- },
- {
-  "id": 50500963,
-  "title": "SpaceX catches the Starship to end Flight 15",
-  "url": "https://www.spacex.com/launches/starship-flight-15",
-  "score": 1701,
-  "by": "ls612",
-  "time": "2026-11-14T21:22:24.000Z"
- },
- {
-  "id": 50509416,
-  "title": "Eclipse Mosquitto – An open source MQTT broker",
-  "url": "https://github.com/eclipse-mosquitto/mosquitto",
+  "id": 50517815,
+  "title": "The Active Directory Era Is Finally Over",
+  "url": "https://infisical.com/blog/active-directory-machine-identity",
   "score": 95,
-  "by": "gregsadetsky",
-  "time": "2026-11-15T18:36:40.000Z"
+  "by": "FinnLobsien",
+  "time": "2026-11-16T14:15:31.000Z"
  },
  {
-  "id": 50512218,
-  "title": "Parcel: A desktop mail client for Linux, built with Zig",
-  "url": "https://tangled.org/rockorager.dev/parcel",
-  "score": 41,
-  "by": "nerdypepper",
-  "time": "2026-11-15T23:54:39.000Z"
+  "id": 50518690,
+  "title": "Psychic: Like fzf but learns from your actions",
+  "url": "https://klauria.tech/psychic/",
+  "score": 25,
+  "by": "articulatepang",
+  "time": "2026-11-16T15:33:34.000Z"
+ },
+ {
+  "id": 50520148,
+  "title": "How Billions in Safe Insurance Money Is Being Bet on A.I. Debt",
+  "url": "https://www.nytimes.com/2026/11/16/business/insurance-ai-debt.html",
+  "score": 44,
+  "by": "syllablehq",
+  "time": "2026-11-16T17:25:35.000Z"
  }
 ]
