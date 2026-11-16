@@ -1,25 +1,57 @@
 [
  {
+  "id": 50513160,
+  "title": "Universal XSS in uBlock Origin from website-driven element picker",
+  "url": "https://iter.ca/post/ubo-uxss/",
+  "score": 50,
+  "by": "zaik",
+  "time": "2026-11-16T02:04:48.000Z"
+ },
+ {
   "id": 50511395,
-  "title": "Old Bitly Links Are Being Hijacked",
+  "title": "Old Bitly links are being hijacked",
   "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
-  "score": 71,
+  "score": 197,
   "by": "hspeiser",
   "time": "2026-11-15T22:11:43.000Z"
  },
  {
+  "id": 50512824,
+  "title": "Coles hit by a cybersecurity incident",
+  "url": "https://www.colesgroup.com.au/updates/",
+  "score": 51,
+  "by": "sagunsh",
+  "time": "2026-11-16T01:14:35.000Z"
+ },
+ {
+  "id": 50513215,
+  "title": "Qwen4-Max",
+  "url": "https://qwen.ai/blog?id=qwen4-max",
+  "score": 28,
+  "by": "ilreb",
+  "time": "2026-11-16T02:14:44.000Z"
+ },
+ {
   "id": 50511806,
-  "title": "Preserving 30 Years of Salon Journalism",
+  "title": "Preserving 30 years of Salon journalism",
   "url": "https://blog.archive.org/2026/11/12/preserving-30-years-of-salon-journalism/",
-  "score": 13,
+  "score": 83,
   "by": "CharlesW",
   "time": "2026-11-15T23:00:11.000Z"
+ },
+ {
+  "id": 50512441,
+  "title": "Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack",
+  "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
+  "score": 46,
+  "by": "aillia",
+  "time": "2026-11-16T00:21:54.000Z"
  },
  {
   "id": 50509837,
   "title": "Protomaps: Self-hosting map tiles has gotten cheap and easy",
   "url": "https://bruceroettgers.eu/blog/protomaps/",
-  "score": 96,
+  "score": 197,
   "by": "bcye",
   "time": "2026-11-15T19:26:22.000Z"
  },
@@ -27,15 +59,15 @@
   "id": 50509308,
   "title": "A short explainer on how El Niño works [video]",
   "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
-  "score": 142,
+  "score": 184,
   "by": "nharada",
   "time": "2026-11-15T18:23:21.000Z"
  },
  {
   "id": 50509023,
-  "title": "'Birdbrain' Is a Misnomer. Crows Make Decisions Faster Than We Can",
+  "title": "Crows make decisions faster than we can",
   "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
-  "score": 132,
+  "score": 181,
   "by": "gumby",
   "time": "2026-11-15T17:53:31.000Z"
  },
@@ -43,200 +75,168 @@
   "id": 50506719,
   "title": "The MacBook Pro's OLED PWM problem",
   "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
-  "score": 389,
+  "score": 429,
   "by": "MacAnorak",
   "time": "2026-11-15T13:15:22.000Z"
  },
  {
-  "id": 50510296,
-  "title": "WebGL Flight Simulator with seed generated terrain",
-  "url": "https://baron.by.dai.studio/",
-  "score": 48,
-  "by": "ranger_danger",
-  "time": "2026-11-15T20:20:05.000Z"
- },
- {
-  "id": 50510799,
-  "title": "Your Agent Will Pick the Hackable One",
-  "url": "https://geoffstearns.com/blog/your-agent-will-pick-the-hackable-one/",
-  "score": 59,
-  "by": "tensafefrogs",
-  "time": "2026-11-15T21:10:39.000Z"
+  "id": 50512231,
+  "title": "Mini.nvim Is Now on Tangled",
+  "url": "https://tangled.org/nvim-mini.org/mini.nvim",
+  "score": 38,
+  "by": "nerdypepper",
+  "time": "2026-11-15T23:55:41.000Z"
  },
  {
   "id": 50509972,
   "title": "Handwriting, as a Font",
   "url": "https://ductus.sorenblank.com",
-  "score": 69,
+  "score": 145,
   "by": "coinfused",
   "time": "2026-11-15T19:42:13.000Z"
+ },
+ {
+  "id": 50510296,
+  "title": "WebGL Flight Simulator with seed generated terrain",
+  "url": "https://baron.by.dai.studio/",
+  "score": 96,
+  "by": "ranger_danger",
+  "time": "2026-11-15T20:20:05.000Z"
+ },
+ {
+  "id": 50484998,
+  "title": "Do we still have to denormalize? Have your schema and search it too",
+  "url": "https://www.paradedb.com/blog/joins",
+  "score": 14,
+  "by": "philippemnoel",
+  "time": "2026-11-13T15:31:50.000Z"
  },
  {
   "id": 50463399,
   "title": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
   "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
-  "score": 299,
+  "score": 357,
   "by": "envoked",
   "time": "2026-11-12T05:29:24.000Z"
  },
  {
-  "id": 50509416,
-  "title": "Eclipse Mosquitto – An open source MQTT broker",
-  "url": "https://github.com/eclipse-mosquitto/mosquitto",
-  "score": 54,
-  "by": "gregsadetsky",
-  "time": "2026-11-15T18:36:40.000Z"
- },
- {
-  "id": 50509411,
-  "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
-  "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
-  "score": 306,
-  "by": "DeepLogin",
-  "time": "2026-11-15T18:36:10.000Z"
- },
- {
-  "id": 50511505,
-  "title": "The Hofmann Wobble: Wikipedia and the problem of historical memory",
-  "url": "https://harpers.org/archive/2023/12/the-hofmann-wobble-wikipedia-and-the-problem-of-historical-memory/",
-  "score": 7,
-  "by": "lxm",
-  "time": "2026-11-15T22:26:33.000Z"
- },
- {
-  "id": 50511899,
-  "title": "Chemical spills into drainage ditch at SpaceXAI in Southaven",
-  "url": "https://wreg.com/news/chemical-spills-into-drainage-ditch-at-spacexai-in-southaven/",
-  "score": 3,
-  "by": "mikhael",
-  "time": "2026-11-15T23:12:38.000Z"
- },
- {
-  "id": 50506894,
-  "title": "Things That Turbo Pascal Is Smaller Than (2011)",
-  "url": "https://prog21.dadgum.com/116.html",
-  "score": 183,
-  "by": "ksec",
-  "time": "2026-11-15T13:44:16.000Z"
- },
- {
-  "id": 50508715,
-  "title": "Clice v1.0 Released: Welcome to Modern C++",
-  "url": "https://ykiko.me/en/articles/2105384023094834022/",
-  "score": 77,
-  "by": "molenzwiebel",
-  "time": "2026-11-15T17:22:32.000Z"
- },
- {
-  "id": 50507553,
-  "title": "Emacs Is My Browser",
-  "url": "https://joshblais.com/blog/emacs-as-my-browser/",
-  "score": 164,
-  "by": "nyc111",
-  "time": "2026-11-15T15:21:21.000Z"
+  "id": 50512950,
+  "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
+  "url": "https://www.hntrends.com/2026/november.html",
+  "score": 63,
+  "by": "myth_drannon",
+  "time": "2026-11-16T01:31:30.000Z"
  },
  {
   "id": 50511718,
   "title": "Show HN: The Last Complication, a Zachtronics-style watchmaking puzzle game",
   "url": "https://lastcomplication.com/",
-  "score": 3,
+  "score": 54,
   "by": "tdeangelis",
   "time": "2026-11-15T22:48:52.000Z"
  },
  {
-  "id": 50510442,
-  "title": "Vulcan rocket fails during return-to-flight launch, 40 Amazon satellites lost",
-  "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch",
-  "score": 81,
-  "by": "jonbaer",
-  "time": "2026-11-15T20:37:28.000Z"
+  "id": 50506894,
+  "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+  "url": "https://prog21.dadgum.com/116.html",
+  "score": 208,
+  "by": "ksec",
+  "time": "2026-11-15T13:44:16.000Z"
  },
  {
-  "id": 50465522,
-  "title": "Aspidistra: A British wartime radio transmitter used for MitM attacks",
-  "url": "https://en.wikipedia.org/wiki/Aspidistra_(transmitter)",
-  "score": 15,
-  "by": "BoxOfRain",
-  "time": "2026-11-12T10:58:00.000Z"
+  "id": 50490583,
+  "title": "1900s How do you Wash a Kimono?",
+  "url": "https://www.oldphotosjapan.com/photos/877/laundry-washing-clothes-meiji-19th-century-vintage-albumen-prints",
+  "score": 25,
+  "by": "Matrixik",
+  "time": "2026-11-13T22:03:41.000Z"
+ },
+ {
+  "id": 50509411,
+  "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+  "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+  "score": 420,
+  "by": "DeepLogin",
+  "time": "2026-11-15T18:36:10.000Z"
+ },
+ {
+  "id": 50485275,
+  "title": "Artificial Intelligence for the Z80",
+  "url": "https://www.dfsantos.com/en/libro-ia-z80",
+  "score": 5,
+  "by": "AlexeyBrin",
+  "time": "2026-11-13T15:50:43.000Z"
+ },
+ {
+  "id": 50509416,
+  "title": "Eclipse Mosquitto – An open source MQTT broker",
+  "url": "https://github.com/eclipse-mosquitto/mosquitto",
+  "score": 70,
+  "by": "gregsadetsky",
+  "time": "2026-11-15T18:36:40.000Z"
  },
  {
   "id": 50506376,
   "title": "Understanding Positional Embeddings in Modern LLMs",
   "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
-  "score": 189,
+  "score": 213,
   "by": "vismit2000",
   "time": "2026-11-15T12:14:06.000Z"
  },
  {
-  "id": 50492012,
-  "title": "Keylogger Detection and Containment [pdf]",
-  "url": "https://www.cs.vu.nl/~ast/Theses/ortolani-thesis.pdf",
-  "score": 9,
-  "by": "movsx",
-  "time": "2026-11-14T00:10:15.000Z"
+  "id": 50486880,
+  "title": "A quest to create the perfect whiskey glass",
+  "url": "https://www.nytimes.com/2026/11/13/dining/drinks/kurt-josef-zalto-whiskey-glass.html",
+  "score": 54,
+  "by": "Kaibeezy",
+  "time": "2026-11-13T17:37:32.000Z"
+ },
+ {
+  "id": 50512235,
+  "title": "What's Next for Nvidia?",
+  "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
+  "score": 86,
+  "by": "zdw",
+  "time": "2026-11-15T23:55:55.000Z"
+ },
+ {
+  "id": 50507553,
+  "title": "Emacs Is My Browser",
+  "url": "https://joshblais.com/blog/emacs-as-my-browser/",
+  "score": 184,
+  "by": "nyc111",
+  "time": "2026-11-15T15:21:21.000Z"
+ },
+ {
+  "id": 50508715,
+  "title": "Clice v1.0 Released: Welcome to Modern C++",
+  "url": "https://ykiko.me/en/articles/2105384023094834022/",
+  "score": 109,
+  "by": "molenzwiebel",
+  "time": "2026-11-15T17:22:32.000Z"
+ },
+ {
+  "id": 50465522,
+  "title": "Aspidistra: A British wartime radio transmitter used for MitM attacks",
+  "url": "https://en.wikipedia.org/wiki/Aspidistra_(transmitter)",
+  "score": 31,
+  "by": "BoxOfRain",
+  "time": "2026-11-12T10:58:00.000Z"
  },
  {
   "id": 50452621,
   "title": "Notes on Mathematics for Engineers (1959) [pdf]",
   "url": "https://websites.umich.edu/~ners311/CourseLibrary/MathNotes.pdf",
-  "score": 62,
+  "score": 77,
   "by": "the-mitr",
   "time": "2026-11-11T12:25:42.000Z"
  },
  {
-  "id": 50511072,
-  "title": "Boeing-Lockheed rocket fails mid-flight, destroys payload of Amazon satellites",
-  "url": "https://www.reuters.com/business/aerospace-defense/us-rocket-fails-after-launch-payload-amazon-internet-satellites-destroyed-2026-11-15/",
-  "score": 38,
-  "by": "rexbee",
-  "time": "2026-11-15T21:38:11.000Z"
- },
- {
-  "id": 50510042,
-  "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
-  "url": null,
-  "score": 77,
-  "by": "snirgbs",
-  "time": "2026-11-15T19:49:28.000Z"
- },
- {
-  "id": 50465676,
-  "title": "Eval Awareness vs. Eval Paranoia",
-  "url": "https://www.lesswrong.com/posts/mepsi7JNKYejq9wry/eval-awareness-vs-eval-paranoia",
-  "score": 44,
-  "by": "ezrasu",
-  "time": "2026-11-12T11:23:02.000Z"
- },
- {
-  "id": 50507303,
-  "title": "All AI-generated code should be Open Source",
-  "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-  "score": 1032,
-  "by": "jcubic",
-  "time": "2026-11-15T14:46:58.000Z"
- },
- {
-  "id": 50505271,
-  "title": "Why did some Apollo missions carry a grenade launcher? (2019)",
-  "url": "https://space.stackexchange.com/questions/37775",
-  "score": 217,
-  "by": "Skyfall106",
-  "time": "2026-11-15T09:06:43.000Z"
- },
- {
-  "id": 50506588,
-  "title": "A NES emulator written in Odin",
-  "url": "https://lucypero.com/lucynes.html",
-  "score": 103,
-  "by": "frostbyte7",
-  "time": "2026-11-15T12:51:47.000Z"
- },
- {
-  "id": 50500963,
-  "title": "SpaceX catches the Starship to end Flight 15",
-  "url": "https://www.spacex.com/launches/starship-flight-15",
-  "score": 1633,
-  "by": "ls612",
-  "time": "2026-11-14T21:22:24.000Z"
+  "id": 50510442,
+  "title": "Vulcan rocket fails during return-to-flight launch, 40 Amazon satellites lost",
+  "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch",
+  "score": 124,
+  "by": "jonbaer",
+  "time": "2026-11-15T20:37:28.000Z"
  }
 ]
