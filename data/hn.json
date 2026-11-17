@@ -1,242 +1,242 @@
 [
  {
+  "id": 50535230,
+  "title": "GPT‑6.2 Astra and Sol",
+  "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+  "score": 679,
+  "by": "jasondavies",
+  "time": "2026-11-17T17:46:43.000Z"
+ },
+ {
+  "id": 50535238,
+  "title": "Apple Services Down",
+  "url": "https://developer.apple.com/system-status/",
+  "score": 372,
+  "by": "willy_k",
+  "time": "2026-11-17T17:47:14.000Z"
+ },
+ {
+  "id": 50535885,
+  "title": "MAI Code 2 and Code 2 Flash",
+  "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+  "score": 118,
+  "by": "lemonish97",
+  "time": "2026-11-17T18:25:13.000Z"
+ },
+ {
+  "id": 50537156,
+  "title": "jQuery 4.1.0",
+  "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
+  "score": 20,
+  "by": "petecooper",
+  "time": "2026-11-17T19:50:40.000Z"
+ },
+ {
+  "id": 50535992,
+  "title": "Phrack 73 Released",
+  "url": "https://phrack.org/issues/73/introduction_md",
+  "score": 70,
+  "by": "notmine1337",
+  "time": "2026-11-17T18:31:25.000Z"
+ },
+ {
+  "id": 50536813,
+  "title": "350 years ago, this man discovered that light has a finite speed",
+  "url": "https://www.sciencenorway.no/culture-history-history-of-science/350-years-ago-this-man-discovered-that-light-has-a-finite-speed/2737969",
+  "score": 33,
+  "by": "dxs",
+  "time": "2026-11-17T19:25:27.000Z"
+ },
+ {
+  "id": 50536387,
+  "title": "Solid 2.0",
+  "url": "https://www.solidjs.com/blog/solid-2-0-the-long-hold/",
+  "score": 61,
+  "by": "pier25",
+  "time": "2026-11-17T18:56:17.000Z"
+ },
+ {
+  "id": 50532191,
+  "title": "What is the best harness for each model?",
+  "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+  "score": 269,
+  "by": "Edward40",
+  "time": "2026-11-17T14:53:43.000Z"
+ },
+ {
+  "id": 50536468,
+  "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
+  "url": "https://starsling.dev",
+  "score": 20,
+  "by": "yonasb",
+  "time": "2026-11-17T19:01:43.000Z"
+ },
+ {
+  "id": 50535208,
+  "title": "Who Builds the Machines That Build the Machines?",
+  "url": "https://read.corematter.com/p/section-232-us-machine-tools",
+  "score": 42,
+  "by": "gmays",
+  "time": "2026-11-17T17:45:39.000Z"
+ },
+ {
+  "id": 50536031,
+  "title": "Purism Launches Librem 5 v2, a RISC-V Phone to Empower People",
+  "url": "https://puri.sm/posts/purism-launches-librem-5-v2-a-risc-v-phone-to-empower-people/",
+  "score": 25,
+  "by": "gnufx",
+  "time": "2026-11-17T18:34:10.000Z"
+ },
+ {
+  "id": 50534429,
+  "title": "YC wrote software to run our internship expo – and an 8-bit SIM to show it off",
+  "url": null,
+  "score": 1,
+  "by": "ryankicks",
+  "time": "2026-11-17T17:00:24.000Z"
+ },
+ {
+  "id": 50532385,
+  "title": "Show HN: Alloy CSS, dialogs, menus and tabs that work with JavaScript off",
+  "url": "https://alloyhtml.com/example.html",
+  "score": 140,
+  "by": "prafandy",
+  "time": "2026-11-17T15:07:09.000Z"
+ },
+ {
+  "id": 50530163,
+  "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+  "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
+  "score": 1001,
+  "by": "donohoe",
+  "time": "2026-11-17T11:45:51.000Z"
+ },
+ {
+  "id": 50533089,
+  "title": "NSA Internal Network Down",
+  "url": "https://www.reuters.com/technology/highly-classified-us-national-security-communications-network-is-down-cnn-2026-11-17/",
+  "score": 307,
+  "by": "nodoodles",
+  "time": "2026-11-17T15:50:48.000Z"
+ },
+ {
+  "id": 50535898,
+  "title": "Advancing computer-use agents for healthcare teams",
+  "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams/",
+  "score": 13,
+  "by": "gmays",
+  "time": "2026-11-17T18:26:05.000Z"
+ },
+ {
+  "id": 50518328,
+  "title": "First Photos of the Poles of a Rod-Shaped Bacterium",
+  "url": "https://nautil.us/check-out-the-first-photos-of-the-poles-of-a-rod-shaped-bacterium-1286664",
+  "score": 94,
+  "by": "dustfinger",
+  "time": "2026-11-16T15:02:20.000Z"
+ },
+ {
   "id": 50529612,
   "title": "How the Claude Code team thinks about verification",
   "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
-  "score": 35,
+  "score": 209,
   "by": "craigmart",
   "time": "2026-11-17T10:20:40.000Z"
  },
  {
-  "id": 50522980,
-  "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
-  "url": "https://www.cs.cmu.edu/learn/",
-  "score": 1637,
-  "by": "pcompeau",
-  "time": "2026-11-16T20:43:36.000Z"
+  "id": 50497872,
+  "title": "Mouse Party",
+  "url": "https://aboard.com/lets-have-a-mouse-party/",
+  "score": 9,
+  "by": "bookofjoe",
+  "time": "2026-11-14T15:38:50.000Z"
+ },
+ {
+  "id": 50534631,
+  "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+  "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+  "score": 124,
+  "by": "louiereederson",
+  "time": "2026-11-17T17:12:06.000Z"
+ },
+ {
+  "id": 50515291,
+  "title": "Elephant-Goldfish Model",
+  "url": "https://egm.dev/",
+  "score": 41,
+  "by": "_tk_",
+  "time": "2026-11-16T08:23:28.000Z"
  },
  {
   "id": 50511874,
   "title": "VisualBasic.World: A gallery of Planet Source Code programs from 1997 to 2012",
   "url": "https://visualbasic.world/",
-  "score": 49,
+  "score": 190,
   "by": "broast",
   "time": "2026-11-15T23:08:30.000Z"
- },
- {
-  "id": 50508845,
-  "title": "Japan's Hometown Tax (2018)",
-  "url": "https://www.kalzumeus.com/2018/10/19/japanese-hometown-tax/",
-  "score": 56,
-  "by": "waximabbax",
-  "time": "2026-11-15T17:34:22.000Z"
- },
- {
-  "id": 50523601,
-  "title": "BugMeNot has closed",
-  "url": "https://www.bugmenot.com/",
-  "score": 576,
-  "by": "lode",
-  "time": "2026-11-16T21:32:17.000Z"
- },
- {
-  "id": 50512779,
-  "title": "Nimony: A New Compiler for Nim",
-  "url": "https://nimony.org/",
-  "score": 80,
-  "by": "Fervicus",
-  "time": "2026-11-16T01:05:22.000Z"
  },
  {
   "id": 50524767,
   "title": "Optimizely compromised, served malware on Zoom, GitLab",
   "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
-  "score": 392,
+  "score": 640,
   "by": "kristjansson",
   "time": "2026-11-16T23:00:34.000Z"
  },
  {
-  "id": 50526560,
-  "title": "If an App Asks for Full Disk Access or System and App Protection Override",
-  "url": "https://support.apple.com/en-us/149699",
-  "score": 143,
-  "by": "jshier",
-  "time": "2026-11-17T02:17:04.000Z"
+  "id": 50533270,
+  "title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
+  "url": "https://github.com/RunanywhereAI/trnrt",
+  "score": 27,
+  "by": "sanchitmonga22",
+  "time": "2026-11-17T16:01:04.000Z"
  },
  {
-  "id": 50525575,
-  "title": "Why 3dfx 1 cards had such a washed out color output?",
-  "url": "https://twitter.com/id_aa_carmack/status/2122478083319992513",
-  "score": 161,
-  "by": "mfiguiere",
-  "time": "2026-11-17T00:16:24.000Z"
+  "id": 50535268,
+  "title": "iCloud, App Store, and other Apple services hit by ongoing outage",
+  "url": "https://9to5mac.com/2026/11/17/icloud-app-store-and-other-apple-services-hit-by-ongoing-outage/",
+  "score": 58,
+  "by": "srameshc",
+  "time": "2026-11-17T17:49:01.000Z"
  },
  {
-  "id": 50523459,
-  "title": "OpenCode Browse",
-  "url": "https://opencode.ai/product/browse",
-  "score": 278,
-  "by": "mfiguiere",
-  "time": "2026-11-16T21:20:37.000Z"
+  "id": 50517375,
+  "title": "Exploiting Replay Protected Monotonic Counters to Brute-Force Windows Hello PINs",
+  "url": "https://arxiv.org/abs/2611.18126",
+  "score": 36,
+  "by": "cwerling",
+  "time": "2026-11-16T13:25:17.000Z"
  },
  {
-  "id": 50522643,
-  "title": "Chemistry is Actually Geometry",
-  "url": "https://chillphysicsenjoyer.substack.com/p/chemistry-is-actually-geometry",
-  "score": 246,
-  "by": "sebg",
-  "time": "2026-11-16T20:22:18.000Z"
+  "id": 50532773,
+  "title": "Antfly learned to stop worrying and love Apache 2.0",
+  "url": "https://antfly.io/thoughts/how-antfly-learned-to-stop-worrying-and-love-apache-2",
+  "score": 38,
+  "by": "drewlanenga",
+  "time": "2026-11-17T15:33:15.000Z"
  },
  {
   "id": 50470523,
   "title": "Rows vs. Columns: How different are they, really?",
   "url": "https://spiraldb.com/blog/rows-vs-columns",
-  "score": 7,
+  "score": 141,
   "by": "eatonphil",
   "time": "2026-11-12T17:04:41.000Z"
  },
  {
-  "id": 50519354,
-  "title": "Frame – 31.5\" color ePaper display",
-  "url": "https://trmnl.com/blog/introducing-frame",
-  "score": 438,
-  "by": "geerlingguy",
-  "time": "2026-11-16T16:23:22.000Z"
+  "id": 50522980,
+  "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+  "url": "https://www.cs.cmu.edu/learn/",
+  "score": 2214,
+  "by": "pcompeau",
+  "time": "2026-11-16T20:43:36.000Z"
  },
  {
-  "id": 50519744,
-  "title": "Jiff 1.0: A datetime library for Rust",
-  "url": "https://burntsushi.net/jiff/",
-  "score": 397,
-  "by": "burntsushi",
-  "time": "2026-11-16T16:53:39.000Z"
- },
- {
-  "id": 50523025,
-  "title": "Comcast's \"fiber-powered Wi-Fi\" is cable, AT&T says in false advertising case",
-  "url": "https://arstechnica.com/tech-policy/2026/11/comcast-falsely-advertises-cable-internet-as-fiber-powered-att-lawsuit-says/",
-  "score": 157,
-  "by": "jaredwiener",
-  "time": "2026-11-16T20:48:08.000Z"
- },
- {
-  "id": 50512576,
-  "title": "The Fossils That Haunted Lovecraft",
-  "url": "https://paleonerdish.wordpress.com/2026/10/30/halloween-special-xiv-the-fossils-that-haunted-lovecraft/",
-  "score": 44,
-  "by": "BigTTYGothGF",
-  "time": "2026-11-16T00:38:12.000Z"
- },
- {
-  "id": 50517602,
-  "title": "What is w2rt6byl5nf1opmc-a.com?",
-  "url": "https://jack.cab/blog/siterate",
-  "score": 359,
-  "by": "dverlaeckt80",
-  "time": "2026-11-16T13:51:38.000Z"
- },
- {
-  "id": 50517321,
-  "title": "Microsoft blames monster email outage on software defect introduced in July fix",
-  "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
-  "score": 342,
-  "by": "Bender",
-  "time": "2026-11-16T13:18:22.000Z"
- },
- {
-  "id": 50520182,
-  "title": "Grazing sheep in fields with solar arrays",
-  "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
-  "score": 283,
-  "by": "PaulHoule",
-  "time": "2026-11-16T17:27:46.000Z"
- },
- {
-  "id": 50514093,
-  "title": "Stop Filming in Log?",
-  "url": "https://digitalfilms.wordpress.com/2026/11/15/stop-filming-in-log/",
-  "score": 80,
-  "by": "dabinat",
-  "time": "2026-11-16T04:37:03.000Z"
- },
- {
-  "id": 50497621,
-  "title": "Formal Verification Is Not Verifiable",
-  "url": "https://alperenkeles.com/posts/formal-verification-is-not-verifiable/",
-  "score": 129,
-  "by": "zdw",
-  "time": "2026-11-14T15:07:48.000Z"
- },
- {
-  "id": 50515035,
-  "title": "Test/verification technique effectiveness with Astra",
-  "url": "https://danluu.com/astra-testing/",
-  "score": 54,
-  "by": "luu",
-  "time": "2026-11-16T07:33:51.000Z"
- },
- {
-  "id": 50496787,
-  "title": "Show HN: Zigzag, a native Mac browser for people leaving Arc",
-  "url": "https://github.com/ZigaoWang/zigzag",
-  "score": 79,
-  "by": "ZigaoWang",
-  "time": "2026-11-14T13:17:10.000Z"
- },
- {
-  "id": 50516689,
-  "title": "Do Repeat Yourself",
-  "url": "https://arcentry.com/blog/do-repeat-yourself/",
-  "score": 103,
-  "by": "max_sendfeld",
-  "time": "2026-11-16T12:06:46.000Z"
- },
- {
-  "id": 50524736,
-  "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
-  "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
-  "score": 629,
-  "by": "cwaffles",
-  "time": "2026-11-16T22:58:20.000Z"
- },
- {
-  "id": 50522776,
-  "title": "Launch HN: Axonnic (YC F26) – Sleeves that track fingers and estimate force",
-  "url": null,
-  "score": 47,
-  "by": "arshpatankar",
-  "time": "2026-11-16T20:29:48.000Z"
- },
- {
-  "id": 50515151,
-  "title": "Squircles",
-  "url": "https://linebender.org/wiki/curves/squircle/",
-  "score": 197,
-  "by": "raphlinus",
-  "time": "2026-11-16T07:55:10.000Z"
- },
- {
-  "id": 50521045,
-  "title": "Technical issue at JPMorgan Chase triggers online banking delays for US banks",
-  "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
-  "score": 783,
-  "by": "samk3nny",
-  "time": "2026-11-16T18:31:30.000Z"
- },
- {
-  "id": 50526537,
-  "title": "Mem Is Shutting Down",
-  "url": "https://get.mem.ai/blog/mem-is-shutting-down",
-  "score": 67,
-  "by": "qainsights",
-  "time": "2026-11-17T02:13:41.000Z"
- },
- {
-  "id": 50523784,
-  "title": "Spamhaus new email sender requirements in November",
-  "url": "https://www.spamhaus.org/sender-guidelines/",
-  "score": 117,
-  "by": "computer23",
-  "time": "2026-11-16T21:47:19.000Z"
+  "id": 50523601,
+  "title": "BugMeNot has closed",
+  "url": "https://www.bugmenot.com/",
+  "score": 704,
+  "by": "lode",
+  "time": "2026-11-16T21:32:17.000Z"
  }
 ]
