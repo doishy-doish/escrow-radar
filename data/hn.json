@@ -1,81 +1,105 @@
 [
  {
+  "id": 50529612,
+  "title": "How the Claude Code team thinks about verification",
+  "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+  "score": 35,
+  "by": "craigmart",
+  "time": "2026-11-17T10:20:40.000Z"
+ },
+ {
   "id": 50522980,
   "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
   "url": "https://www.cs.cmu.edu/learn/",
-  "score": 843,
+  "score": 1637,
   "by": "pcompeau",
   "time": "2026-11-16T20:43:36.000Z"
  },
  {
-  "id": 50524736,
-  "title": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use",
-  "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
-  "score": 303,
-  "by": "cwaffles",
-  "time": "2026-11-16T22:58:20.000Z"
+  "id": 50511874,
+  "title": "VisualBasic.World: A gallery of Planet Source Code programs from 1997 to 2012",
+  "url": "https://visualbasic.world/",
+  "score": 49,
+  "by": "broast",
+  "time": "2026-11-15T23:08:30.000Z"
+ },
+ {
+  "id": 50508845,
+  "title": "Japan's Hometown Tax (2018)",
+  "url": "https://www.kalzumeus.com/2018/10/19/japanese-hometown-tax/",
+  "score": 56,
+  "by": "waximabbax",
+  "time": "2026-11-15T17:34:22.000Z"
  },
  {
   "id": 50523601,
   "title": "BugMeNot has closed",
   "url": "https://www.bugmenot.com/",
-  "score": 353,
+  "score": 576,
   "by": "lode",
   "time": "2026-11-16T21:32:17.000Z"
  },
  {
-  "id": 50526152,
-  "title": "Running coding agents without handing them my credentials",
-  "url": "https://blog.antonio.cx/running-agents-with-lend",
-  "score": 38,
-  "by": "antoniomika",
-  "time": "2026-11-17T01:18:56.000Z"
+  "id": 50512779,
+  "title": "Nimony: A New Compiler for Nim",
+  "url": "https://nimony.org/",
+  "score": 80,
+  "by": "Fervicus",
+  "time": "2026-11-16T01:05:22.000Z"
  },
  {
   "id": 50524767,
-  "title": "Optimizely Compromised, Served Malware on Zoom, GitLab",
+  "title": "Optimizely compromised, served malware on Zoom, GitLab",
   "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
-  "score": 140,
+  "score": 392,
   "by": "kristjansson",
   "time": "2026-11-16T23:00:34.000Z"
+ },
+ {
+  "id": 50526560,
+  "title": "If an App Asks for Full Disk Access or System and App Protection Override",
+  "url": "https://support.apple.com/en-us/149699",
+  "score": 143,
+  "by": "jshier",
+  "time": "2026-11-17T02:17:04.000Z"
+ },
+ {
+  "id": 50525575,
+  "title": "Why 3dfx 1 cards had such a washed out color output?",
+  "url": "https://twitter.com/id_aa_carmack/status/2122478083319992513",
+  "score": 161,
+  "by": "mfiguiere",
+  "time": "2026-11-17T00:16:24.000Z"
  },
  {
   "id": 50523459,
   "title": "OpenCode Browse",
   "url": "https://opencode.ai/product/browse",
-  "score": 143,
+  "score": 278,
   "by": "mfiguiere",
   "time": "2026-11-16T21:20:37.000Z"
- },
- {
-  "id": 50526537,
-  "title": "Mem Is Shutting Down",
-  "url": "https://get.mem.ai/blog/mem-is-shutting-down",
-  "score": 13,
-  "by": "qainsights",
-  "time": "2026-11-17T02:13:41.000Z"
  },
  {
   "id": 50522643,
   "title": "Chemistry is Actually Geometry",
   "url": "https://chillphysicsenjoyer.substack.com/p/chemistry-is-actually-geometry",
-  "score": 135,
+  "score": 246,
   "by": "sebg",
   "time": "2026-11-16T20:22:18.000Z"
  },
  {
-  "id": 50524225,
-  "title": "How to Break into Security, Ptacek Edition (2012)",
-  "url": "https://krebsonsecurity.com/2012/06/how-to-break-into-security-ptacek-edition/",
-  "score": 88,
-  "by": "ronfriedhaber",
-  "time": "2026-11-16T22:19:23.000Z"
+  "id": 50470523,
+  "title": "Rows vs. Columns: How different are they, really?",
+  "url": "https://spiraldb.com/blog/rows-vs-columns",
+  "score": 7,
+  "by": "eatonphil",
+  "time": "2026-11-12T17:04:41.000Z"
  },
  {
   "id": 50519354,
   "title": "Frame – 31.5\" color ePaper display",
   "url": "https://trmnl.com/blog/introducing-frame",
-  "score": 325,
+  "score": 438,
   "by": "geerlingguy",
   "time": "2026-11-16T16:23:22.000Z"
  },
@@ -83,160 +107,136 @@
   "id": 50519744,
   "title": "Jiff 1.0: A datetime library for Rust",
   "url": "https://burntsushi.net/jiff/",
-  "score": 323,
+  "score": 397,
   "by": "burntsushi",
   "time": "2026-11-16T16:53:39.000Z"
  },
  {
-  "id": 50497621,
-  "title": "Formal Verification Is Not Verifiable",
-  "url": "https://alperenkeles.com/posts/formal-verification-is-not-verifiable/",
-  "score": 76,
-  "by": "zdw",
-  "time": "2026-11-14T15:07:48.000Z"
+  "id": 50523025,
+  "title": "Comcast's \"fiber-powered Wi-Fi\" is cable, AT&T says in false advertising case",
+  "url": "https://arstechnica.com/tech-policy/2026/11/comcast-falsely-advertises-cable-internet-as-fiber-powered-att-lawsuit-says/",
+  "score": 157,
+  "by": "jaredwiener",
+  "time": "2026-11-16T20:48:08.000Z"
  },
  {
-  "id": 50526560,
-  "title": "If an App Asks for Full Disk Access or System and App Protection Override",
-  "url": "https://support.apple.com/en-us/149699",
-  "score": 9,
-  "by": "jshier",
-  "time": "2026-11-17T02:17:04.000Z"
+  "id": 50512576,
+  "title": "The Fossils That Haunted Lovecraft",
+  "url": "https://paleonerdish.wordpress.com/2026/10/30/halloween-special-xiv-the-fossils-that-haunted-lovecraft/",
+  "score": 44,
+  "by": "BigTTYGothGF",
+  "time": "2026-11-16T00:38:12.000Z"
  },
  {
-  "id": 50520182,
-  "title": "Grazing sheep in fields with solar arrays",
-  "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
-  "score": 231,
-  "by": "PaulHoule",
-  "time": "2026-11-16T17:27:46.000Z"
- },
- {
-  "id": 50516689,
-  "title": "Do Repeat Yourself",
-  "url": "https://arcentry.com/blog/do-repeat-yourself/",
-  "score": 40,
-  "by": "max_sendfeld",
-  "time": "2026-11-16T12:06:46.000Z"
- },
- {
-  "id": 50521045,
-  "title": "Technical issue at JPMorgan Chase triggers online banking delays for US banks",
-  "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
-  "score": 728,
-  "by": "samk3nny",
-  "time": "2026-11-16T18:31:30.000Z"
- },
- {
-  "id": 50525052,
-  "title": "Show HN: Sutra-OS – A self-hosted ontology platform",
-  "url": "https://github.com/0nelight/sutra-os",
-  "score": 37,
-  "by": "0nelight",
-  "time": "2026-11-16T23:25:41.000Z"
- },
- {
-  "id": 50515151,
-  "title": "Squircles",
-  "url": "https://linebender.org/wiki/curves/squircle/",
-  "score": 140,
-  "by": "raphlinus",
-  "time": "2026-11-16T07:55:10.000Z"
- },
- {
-  "id": 50522563,
-  "title": "Rust changed me as a developer",
-  "url": "https://blog.startifact.com/posts/how-rust-changed-me/",
-  "score": 200,
-  "by": "speckx",
-  "time": "2026-11-16T20:16:50.000Z"
- },
- {
-  "id": 50507870,
-  "title": "New open source C4 Diagram tool",
-  "url": "https://www.youtube.com/watch?v=ZCAHP50Zly8",
-  "score": 22,
-  "by": "oliveralbertini",
-  "time": "2026-11-15T15:55:08.000Z"
- },
- {
-  "id": 50522776,
-  "title": "Launch HN: Axonnic (YC F26) – Sleeves that track fingers and estimate force",
-  "url": null,
-  "score": 30,
-  "by": "arshpatankar",
-  "time": "2026-11-16T20:29:48.000Z"
+  "id": 50517602,
+  "title": "What is w2rt6byl5nf1opmc-a.com?",
+  "url": "https://jack.cab/blog/siterate",
+  "score": 359,
+  "by": "dverlaeckt80",
+  "time": "2026-11-16T13:51:38.000Z"
  },
  {
   "id": 50517321,
   "title": "Microsoft blames monster email outage on software defect introduced in July fix",
   "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
-  "score": 236,
+  "score": 342,
   "by": "Bender",
   "time": "2026-11-16T13:18:22.000Z"
  },
  {
-  "id": 50523291,
-  "title": "My Quest to push native Three.js quality match AAA Game Engines",
-  "url": "https://ben3d.ca/blog/building-the-aaa-lighting-pipeline-in-threejs",
+  "id": 50520182,
+  "title": "Grazing sheep in fields with solar arrays",
+  "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+  "score": 283,
+  "by": "PaulHoule",
+  "time": "2026-11-16T17:27:46.000Z"
+ },
+ {
+  "id": 50514093,
+  "title": "Stop Filming in Log?",
+  "url": "https://digitalfilms.wordpress.com/2026/11/15/stop-filming-in-log/",
+  "score": 80,
+  "by": "dabinat",
+  "time": "2026-11-16T04:37:03.000Z"
+ },
+ {
+  "id": 50497621,
+  "title": "Formal Verification Is Not Verifiable",
+  "url": "https://alperenkeles.com/posts/formal-verification-is-not-verifiable/",
+  "score": 129,
+  "by": "zdw",
+  "time": "2026-11-14T15:07:48.000Z"
+ },
+ {
+  "id": 50515035,
+  "title": "Test/verification technique effectiveness with Astra",
+  "url": "https://danluu.com/astra-testing/",
+  "score": 54,
+  "by": "luu",
+  "time": "2026-11-16T07:33:51.000Z"
+ },
+ {
+  "id": 50496787,
+  "title": "Show HN: Zigzag, a native Mac browser for people leaving Arc",
+  "url": "https://github.com/ZigaoWang/zigzag",
+  "score": 79,
+  "by": "ZigaoWang",
+  "time": "2026-11-14T13:17:10.000Z"
+ },
+ {
+  "id": 50516689,
+  "title": "Do Repeat Yourself",
+  "url": "https://arcentry.com/blog/do-repeat-yourself/",
   "score": 103,
-  "by": "bhouston",
-  "time": "2026-11-16T21:07:43.000Z"
+  "by": "max_sendfeld",
+  "time": "2026-11-16T12:06:46.000Z"
  },
  {
-  "id": 50524165,
-  "title": "United Airlines experiencing a widespread system outage, airline says",
-  "url": "https://www.cnn.com/2026/11/16/us/united-airlines-outage",
-  "score": 188,
-  "by": "bearsyankees",
-  "time": "2026-11-16T22:14:38.000Z"
+  "id": 50524736,
+  "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+  "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+  "score": 629,
+  "by": "cwaffles",
+  "time": "2026-11-16T22:58:20.000Z"
  },
  {
-  "id": 50516473,
-  "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
-  "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life/",
-  "score": 300,
-  "by": "sammatilda",
-  "time": "2026-11-16T11:39:31.000Z"
+  "id": 50522776,
+  "title": "Launch HN: Axonnic (YC F26) – Sleeves that track fingers and estimate force",
+  "url": null,
+  "score": 47,
+  "by": "arshpatankar",
+  "time": "2026-11-16T20:29:48.000Z"
  },
  {
-  "id": 50526527,
-  "title": "Show HN: A free interactive course on AI agent governance",
-  "url": "https://studio.sinapsdata.com.br",
-  "score": 8,
-  "by": "sadrk",
-  "time": "2026-11-17T02:12:13.000Z"
+  "id": 50515151,
+  "title": "Squircles",
+  "url": "https://linebender.org/wiki/curves/squircle/",
+  "score": 197,
+  "by": "raphlinus",
+  "time": "2026-11-16T07:55:10.000Z"
  },
  {
-  "id": 50514572,
-  "title": "Large Angle Period of the Pendulum",
-  "url": "https://jslandy.com/pendulum/",
-  "score": 5,
-  "by": "efavdb",
-  "time": "2026-11-16T06:11:35.000Z"
+  "id": 50521045,
+  "title": "Technical issue at JPMorgan Chase triggers online banking delays for US banks",
+  "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
+  "score": 783,
+  "by": "samk3nny",
+  "time": "2026-11-16T18:31:30.000Z"
  },
  {
-  "id": 50520270,
-  "title": "Aristotle Expands into Rust",
-  "url": "https://www.harmonic.fun/news/aristotle-rust-verification/",
-  "score": 107,
-  "by": "maufl",
-  "time": "2026-11-16T17:34:41.000Z"
+  "id": 50526537,
+  "title": "Mem Is Shutting Down",
+  "url": "https://get.mem.ai/blog/mem-is-shutting-down",
+  "score": 67,
+  "by": "qainsights",
+  "time": "2026-11-17T02:13:41.000Z"
  },
  {
-  "id": 50525658,
-  "title": "Pentagon fails ninth straight audit despite progress in organizing finances",
-  "url": "https://www.reuters.com/business/aerospace-defense/pentagon-fails-ninth-straight-audit-despite-progress-organizing-finances-2026-11-16/",
-  "score": 51,
-  "by": "petethomas",
-  "time": "2026-11-17T00:23:21.000Z"
- },
- {
-  "id": 50526264,
-  "title": "Claude Mythos slashed software work to onboard AMD GPUs to around three days",
-  "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat",
-  "score": 19,
-  "by": "nsoonhui",
-  "time": "2026-11-17T01:35:16.000Z"
+  "id": 50523784,
+  "title": "Spamhaus new email sender requirements in November",
+  "url": "https://www.spamhaus.org/sender-guidelines/",
+  "score": 117,
+  "by": "computer23",
+  "time": "2026-11-16T21:47:19.000Z"
  }
 ]
