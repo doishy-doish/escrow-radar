@@ -1,242 +1,242 @@
 [
  {
-  "id": 50544261,
-  "title": "Codeberg.org Not Reachable",
-  "url": "https://social.anoxinon.de/@codebergstatus/117636437840688845",
-  "score": 47,
-  "by": "hans_castorp",
-  "time": "2026-11-18T10:02:17.000Z"
+  "id": 50547374,
+  "title": "Pre-auth RCE in Nginx HTTP/2 handling",
+  "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+  "score": 479,
+  "by": "speedping",
+  "time": "2026-11-18T15:19:55.000Z"
  },
  {
-  "id": 50538240,
-  "title": "Java4Shell: RCE in OpenJDK when processing Base64",
-  "url": "https://calif.io/java4shell/",
-  "score": 953,
-  "by": "werrett",
-  "time": "2026-11-17T21:11:28.000Z"
+  "id": 50548021,
+  "title": "Seven new models at scalable price-performance",
+  "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+  "score": 233,
+  "by": "gmays",
+  "time": "2026-11-18T16:08:24.000Z"
  },
  {
-  "id": 50540437,
-  "title": "ID.me terms required for IRS sign-in",
-  "url": "https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in",
-  "score": 363,
+  "id": 50547620,
+  "title": "Inside Deutsche Bank",
+  "url": "https://www.inside-db.com/",
+  "score": 297,
+  "by": "gyre007",
+  "time": "2026-11-18T15:38:33.000Z"
+ },
+ {
+  "id": 50545958,
+  "title": "Quad9 Is Leaving France: Why DNS Resolvers Are the Wrong Place to Fight Piracy",
+  "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+  "score": 402,
+  "by": "ritzaco",
+  "time": "2026-11-18T13:18:02.000Z"
+ },
+ {
+  "id": 50548004,
+  "title": "CVE-2026-99312: KVM Guest-to-Host Escape",
+  "url": "https://www.terra.security/blog/kvm-guest-to-host-escape",
+  "score": 128,
+  "by": "Kozmik1",
+  "time": "2026-11-18T16:06:21.000Z"
+ },
+ {
+  "id": 50547777,
+  "title": "AI agents ask better questions than KPMG accountants in audit trial",
+  "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+  "score": 103,
+  "by": "Betelbuddy",
+  "time": "2026-11-18T15:49:34.000Z"
+ },
+ {
+  "id": 50546914,
+  "title": "'Human' Is Cambridge Dictionary's Word of the Year 2026",
+  "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+  "score": 162,
   "by": "DeepLogin",
-  "time": "2026-11-18T00:51:45.000Z"
+  "time": "2026-11-18T14:43:52.000Z"
  },
  {
-  "id": 50540178,
-  "title": "Google's AI answers reducing search traffic by 40%",
-  "url": "https://revscope.co/blog/search-seo-geo-2026/",
-  "score": 396,
-  "by": "slashdev",
-  "time": "2026-11-18T00:17:58.000Z"
+  "id": 50548161,
+  "title": "Show HN: Take Voyager 1 apart, down to a single memory chip",
+  "url": "https://rshekhar.com/voyager/",
+  "score": 60,
+  "by": "raj-shekhar",
+  "time": "2026-11-18T16:18:51.000Z"
  },
  {
-  "id": 50538994,
-  "title": "Quad9's withdrawal from France: A canary in the coal mine",
-  "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
-  "score": 616,
-  "by": "subset",
-  "time": "2026-11-17T22:13:34.000Z"
+  "id": 50547583,
+  "title": "U.S. AirForce is looking for old storage Media (CF or PC cards)",
+  "url": "https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view",
+  "score": 93,
+  "by": "birdboat00",
+  "time": "2026-11-18T15:35:44.000Z"
  },
  {
-  "id": 50534631,
-  "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
-  "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
-  "score": 549,
-  "by": "louiereederson",
-  "time": "2026-11-17T17:12:06.000Z"
+  "id": 50549188,
+  "title": "Launch HN: Maritime (YC F26) – A managed cloud for production AI agents",
+  "url": null,
+  "score": 16,
+  "by": "ashriv",
+  "time": "2026-11-18T17:26:28.000Z"
  },
  {
-  "id": 50541790,
-  "title": "Why is Gemini 4 Carbon taking so long?",
-  "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
-  "score": 101,
-  "by": "deenadz",
-  "time": "2026-11-18T04:14:04.000Z"
+  "id": 50547980,
+  "title": "Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
+  "url": "https://exitpath-ruddy.vercel.app/",
+  "score": 54,
+  "by": "zerocool0101",
+  "time": "2026-11-18T16:04:43.000Z"
  },
  {
-  "id": 50539610,
-  "title": "Microsoft's ONNX Runtime has disappeared from GitHub",
-  "url": "https://github.com/microsoft/onnxruntime",
-  "score": 329,
-  "by": "nvader",
-  "time": "2026-11-17T23:18:49.000Z"
+  "id": 50549493,
+  "title": "Advancing chip design with OpenAI models",
+  "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+  "score": 18,
+  "by": "vighneshiyer",
+  "time": "2026-11-18T17:45:47.000Z"
  },
  {
-  "id": 50543343,
-  "title": "Talos Linux",
-  "url": "https://www.siderolabs.com/talos-linux",
-  "score": 37,
-  "by": "SweetSoftPillow",
-  "time": "2026-11-18T08:17:44.000Z"
+  "id": 50547423,
+  "title": "NGINX2Root by Xint – From Nginx visitor to root of the server host",
+  "url": "https://nginx2root.com/",
+  "score": 63,
+  "by": "purkka",
+  "time": "2026-11-18T15:24:17.000Z"
+ },
+ {
+  "id": 50546967,
+  "title": "The x86 CPU: From 4004 to 486",
+  "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
+  "score": 79,
+  "by": "ibobev",
+  "time": "2026-11-18T14:47:53.000Z"
+ },
+ {
+  "id": 50549438,
+  "title": "Lakegres: Vector search on existing Open/Hudi/Iceberg tables",
+  "url": "https://www.onehouse.ai/blog/lakegres-vector-search-on-open-table-formats",
+  "score": 20,
+  "by": "cloud8bits",
+  "time": "2026-11-18T17:41:48.000Z"
+ },
+ {
+  "id": 50546922,
+  "title": "A Primer on Fourier Series",
+  "url": "https://arxiv.org/abs/2510.18203",
+  "score": 67,
+  "by": "teleforce",
+  "time": "2026-11-18T14:44:33.000Z"
  },
  {
   "id": 50543989,
   "title": "Energy-Based Reasoners: 385x more efficient inference",
   "url": "https://energy-based-reasoners.github.io/",
-  "score": 8,
+  "score": 261,
   "by": "frenchmajesty",
   "time": "2026-11-18T09:29:32.000Z"
  },
  {
-  "id": 50532849,
-  "title": "Highly classified US national security communications network goes down",
-  "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
-  "score": 582,
-  "by": "monkeydust",
-  "time": "2026-11-17T15:38:28.000Z"
+  "id": 50548991,
+  "title": "CrossPoint Reader",
+  "url": "https://crosspointreader.com",
+  "score": 21,
+  "by": "kristianpaul",
+  "time": "2026-11-18T17:14:31.000Z"
  },
  {
-  "id": 50539747,
-  "title": "Archive Team is archiving the Apple Support Community",
-  "url": "https://wiki.archiveteam.org/index.php/Apple_Discussions",
-  "score": 197,
-  "by": "digitaldragon",
-  "time": "2026-11-17T23:32:58.000Z"
+  "id": 50517840,
+  "title": "Show HN: Nobody blocks a keyboard – Rooted Android as a physical USB Deck",
+  "url": "https://github.com/mr-anjaneyam/Emittr",
+  "score": 7,
+  "by": "mr-anjaneyam",
+  "time": "2026-11-16T14:18:15.000Z"
  },
  {
-  "id": 50542705,
-  "title": "AI is killing All About Berlin",
-  "url": "https://nicolasbouliane.com/blog/death-by-ai",
-  "score": 349,
-  "by": "grey-area",
-  "time": "2026-11-18T06:47:26.000Z"
+  "id": 50545238,
+  "title": "Evidence (YC S21) Is Hiring",
+  "url": "https://www.ycombinator.com/companies/evidence/jobs/1xb9PpP-founding-gtm-lead",
+  "score": 1,
+  "by": "amcaskill",
+  "time": "2026-11-18T12:00:16.000Z"
  },
  {
-  "id": 50541619,
-  "title": "Claude was trained on protein sequences at scale",
-  "url": "http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
-  "score": 59,
-  "by": "gmays",
-  "time": "2026-11-18T03:47:43.000Z"
+  "id": 50547236,
+  "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+  "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
+  "score": 31,
+  "by": "Bender",
+  "time": "2026-11-18T15:09:16.000Z"
  },
  {
-  "id": 50535885,
-  "title": "MAI Code 2 and Code 2 Flash",
-  "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
-  "score": 363,
-  "by": "lemonish97",
-  "time": "2026-11-17T18:25:13.000Z"
+  "id": 50550096,
+  "title": "The Magic of Partial Evaluation",
+  "url": "https://jimmyhmiller.com/magic-of-partial-evaluation",
+  "score": 3,
+  "by": "aray07",
+  "time": "2026-11-18T18:29:03.000Z"
  },
  {
-  "id": 50536813,
-  "title": "350 years ago, Ole Rømer discovered that light has a finite speed",
-  "url": "https://www.sciencenorway.no/culture-history-history-of-science/350-years-ago-this-man-discovered-that-light-has-a-finite-speed/2737969",
-  "score": 336,
-  "by": "dxs",
-  "time": "2026-11-17T19:25:27.000Z"
+  "id": 50548038,
+  "title": "SuperEMeans: Making e-means 3× faster",
+  "url": "https://www.lkuffo.com/superemeans/",
+  "score": 24,
+  "by": "lkuffo2",
+  "time": "2026-11-18T16:09:50.000Z"
  },
  {
-  "id": 50535992,
-  "title": "Phrack 73",
-  "url": "https://phrack.org/issues/73/introduction_md",
-  "score": 384,
-  "by": "notmine1337",
-  "time": "2026-11-17T18:31:25.000Z"
+  "id": 50548214,
+  "title": "RFC 2675: IPv6 Jumbograms",
+  "url": "https://www.rfc-editor.org/info/rfc2675/",
+  "score": 15,
+  "by": "caminanteblanco",
+  "time": "2026-11-18T16:22:23.000Z"
  },
  {
-  "id": 50542264,
-  "title": "Why Fibonacci?",
-  "url": "https://www.evilgeniuslabs.org/why-fibonacci",
-  "score": 38,
-  "by": "_Microft",
-  "time": "2026-11-18T05:35:02.000Z"
+  "id": 50544821,
+  "title": "Show HN: Type Fighter 2",
+  "url": "https://typefighter2.com/",
+  "score": 92,
+  "by": "torumitch",
+  "time": "2026-11-18T11:11:53.000Z"
  },
  {
-  "id": 50537156,
-  "title": "jQuery 4.1.0",
-  "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
-  "score": 325,
-  "by": "petecooper",
-  "time": "2026-11-17T19:50:40.000Z"
- },
- {
-  "id": 50538303,
-  "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
-  "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
-  "score": 187,
-  "by": "judahmeek",
-  "time": "2026-11-17T21:16:12.000Z"
- },
- {
-  "id": 50542863,
-  "title": "Australia's full national topographic library at your fingertips",
-  "url": "https://www.ga.gov.au/news/australias-full-national-topographic-library-at-your-fingertips",
-  "score": 20,
-  "by": "bryanrasmussen",
-  "time": "2026-11-18T07:10:46.000Z"
- },
- {
-  "id": 50535230,
-  "title": "GPT‑6.2 Astra and Sol",
-  "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-  "score": 1276,
-  "by": "jasondavies",
-  "time": "2026-11-17T17:46:43.000Z"
- },
- {
-  "id": 50536387,
-  "title": "Solid 2.0",
-  "url": "https://www.solidjs.com/blog/solid-2-0-the-long-hold/",
-  "score": 314,
-  "by": "pier25",
-  "time": "2026-11-17T18:56:17.000Z"
- },
- {
-  "id": 50503899,
-  "title": "Flattening Every Memory Peak in Long-Context Mixture-of-Experts Training",
-  "url": "https://arxiv.org/abs/2609.14306",
+  "id": 50549441,
+  "title": "Forking TuxGuitar into a 17-EDO tab editor",
+  "url": "https://frogwizard.bearblog.dev/tuxguitar-17edo/",
   "score": 5,
-  "by": "gmays",
-  "time": "2026-11-15T04:02:46.000Z"
+  "by": "speckx",
+  "time": "2026-11-18T17:41:57.000Z"
  },
  {
-  "id": 50536468,
-  "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
-  "url": null,
-  "score": 81,
-  "by": "yonasb",
-  "time": "2026-11-17T19:01:43.000Z"
+  "id": 50547344,
+  "title": "Poland says it thwarted false flag operation near border with Kaliningrad",
+  "url": "https://www.yahoo.com/news/world/articles/russia-reportedly-planned-mass-casualty-090500574.html",
+  "score": 216,
+  "by": "ilamont",
+  "time": "2026-11-18T15:18:30.000Z"
  },
  {
-  "id": 50540472,
-  "title": "Cerebras Disaggregated Inference",
-  "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
-  "score": 81,
-  "by": "emschwartz",
-  "time": "2026-11-18T00:56:23.000Z"
+  "id": 50508356,
+  "title": "New FreeBSD Pkgbase(8) Tool",
+  "url": "https://vermaden.wordpress.com/2026/11/10/freebsd-pkgbase-update-tool/",
+  "score": 29,
+  "by": "vermaden",
+  "time": "2026-11-15T16:46:13.000Z"
  },
  {
-  "id": 50532191,
-  "title": "What is the best harness for each model?",
-  "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
-  "score": 376,
-  "by": "Edward40",
-  "time": "2026-11-17T14:53:43.000Z"
+  "id": 50549718,
+  "title": "Show HN: BPM – Baby Plus Music Visualizer",
+  "url": "https://hberg.com/bpm/",
+  "score": 3,
+  "by": "hberg",
+  "time": "2026-11-18T18:00:55.000Z"
  },
  {
-  "id": 50503492,
-  "title": "Fun with Constrained Programming (2012)",
-  "url": "https://blog.cmpxchg8b.com/2012/09/fun-with-constrained-programming.html",
-  "score": 75,
-  "by": "colejohnson66",
-  "time": "2026-11-15T02:45:57.000Z"
- },
- {
-  "id": 50517410,
-  "title": "Show HN: Unref – A Python dead code finder built on Ruff's parser",
-  "url": "https://github.com/Apakottur/unref",
-  "score": 28,
-  "by": "McAvey",
-  "time": "2026-11-16T13:30:30.000Z"
- },
- {
-  "id": 50538184,
-  "title": "Tencent Hy4 Flash",
-  "url": "https://hy.tencent.ai/research/hy4-flash",
-  "score": 128,
-  "by": "lyra1337",
-  "time": "2026-11-17T21:06:08.000Z"
+  "id": 50548633,
+  "title": "Pikuma: Fundamentals of Computer Science and Mathematics",
+  "url": "https://pikuma.com/",
+  "score": 8,
+  "by": "gurjeet",
+  "time": "2026-11-18T16:52:08.000Z"
  }
 ]
