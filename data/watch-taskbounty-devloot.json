@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-17T20:07:08.801Z",
+ "checked_at": "2026-11-18T02:23:33.962Z",
  "taskbounty": {
   "ok": true,
   "count": 0,
@@ -7,8 +7,26 @@
  },
  "devloot": {
   "ok": true,
-  "total": 1,
+  "total": 4,
   "bounties": [
+   {
+    "id": 32,
+    "issue": "https://github.com/devloot-xyz/LootTown/issues/4",
+    "amount": 5,
+    "status": "OPEN"
+   },
+   {
+    "id": 31,
+    "issue": "https://github.com/devloot-xyz/LootTown/issues/3",
+    "amount": 5,
+    "status": "OPEN"
+   },
+   {
+    "id": 30,
+    "issue": "https://github.com/devloot-xyz/LootTown/issues/2",
+    "amount": 5,
+    "status": "OPEN"
+   },
    {
     "id": 2,
     "issue": "https://github.com/algorandfoundation/algokit-cli/issues/710",
