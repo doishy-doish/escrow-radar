@@ -1,6 +1,11 @@
 {
- "ts": "2026-11-18T02:23:33.930Z",
+ "ts": "2026-11-18T10:24:53.833Z",
  "count": 0,
  "alerts": [],
- "demoted": []
+ "demoted": [
+  {
+   "id": "paraloom-core#1620",
+   "stale_reason": "stale_target:src/node/transact_ingress.rs:83d"
+  }
+ ]
 }
