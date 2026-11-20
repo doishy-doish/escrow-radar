@@ -1,9 +1,17 @@
 [
  {
+  "id": 50568130,
+  "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+  "url": "https://git-aarvin.github.io/mei/",
+  "score": 253,
+  "by": "hn-aarvin",
+  "time": "2026-11-19T23:35:35.000Z"
+ },
+ {
   "id": 50562754,
   "title": "Anthropic’s Nasdaq debut",
   "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
-  "score": 807,
+  "score": 997,
   "by": "wslh",
   "time": "2026-11-19T17:02:40.000Z"
  },
@@ -11,23 +19,39 @@
   "id": 50563066,
   "title": "Pancreatic cancer halted by virus injection in three patients",
   "url": "https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/",
-  "score": 447,
+  "score": 668,
   "by": "cybermango",
   "time": "2026-11-19T17:25:33.000Z"
  },
  {
-  "id": 50567209,
-  "title": "Synology Security Advisory",
-  "url": "https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21",
-  "score": 65,
-  "by": "choult",
-  "time": "2026-11-19T22:13:40.000Z"
+  "id": 50569226,
+  "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
+  "url": "https://github.com/openssl/openssl/pull/33652",
+  "score": 58,
+  "by": "JacobHenner",
+  "time": "2026-11-20T02:01:09.000Z"
+ },
+ {
+  "id": 50569519,
+  "title": "What Comes After AGI?",
+  "url": "https://institute.deepmind.com/essays/what-comes-after-agi/",
+  "score": 21,
+  "by": "jdkee",
+  "time": "2026-11-20T02:44:13.000Z"
+ },
+ {
+  "id": 50568861,
+  "title": "Vint Cerf on why TCP/IP was never patented",
+  "url": "https://seremot.com/p/vint-cerf-on-why-tcpip-was-never",
+  "score": 49,
+  "by": "emot",
+  "time": "2026-11-20T01:06:12.000Z"
  },
  {
   "id": 50563148,
   "title": "Claude solves two open problems in the physics of black holes",
   "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-  "score": 339,
+  "score": 431,
   "by": "cybermango",
   "time": "2026-11-19T17:30:44.000Z"
  },
@@ -35,208 +59,184 @@
   "id": 50528119,
   "title": "How to CAD Almost Anything",
   "url": "https://ocw.mit.edu/courses/res-16-002-how-to-cad-almost-anything-january-iap-2024/",
-  "score": 53,
+  "score": 175,
   "by": "o4c",
   "time": "2026-11-17T06:29:57.000Z"
- },
- {
-  "id": 50567374,
-  "title": "RegExr: Temporarily Offline",
-  "url": "https://regexr.com/",
-  "score": 21,
-  "by": "somebudyelse",
-  "time": "2026-11-19T22:27:07.000Z"
  },
  {
   "id": 50519231,
   "title": "Garage Door Spam",
   "url": "https://blog.harrison.page/garage-door-spam/",
-  "score": 720,
+  "score": 788,
   "by": "harrisonpage",
   "time": "2026-11-16T16:13:36.000Z"
+ },
+ {
+  "id": 50569516,
+  "title": "Postgres 19 Repack: Faster, Built-In Table Bloat Cleanup",
+  "url": "https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/",
+  "score": 8,
+  "by": "craigkerstiens",
+  "time": "2026-11-20T02:43:49.000Z"
  },
  {
   "id": 50564159,
   "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
   "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
-  "score": 163,
+  "score": 232,
   "by": "dev1one1",
   "time": "2026-11-19T18:35:17.000Z"
  },
  {
-  "id": 50564366,
-  "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
-  "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
-  "score": 60,
-  "by": "sandslash",
-  "time": "2026-11-19T18:47:16.000Z"
+  "id": 50538977,
+  "title": "Weight-Space Programming builds neural networks like a 1990s researcher",
+  "url": "https://notesbylex.com/weight-space-programming-1990s",
+  "score": 33,
+  "by": "lexandstuff",
+  "time": "2026-11-17T22:11:46.000Z"
  },
  {
-  "id": 50561515,
-  "title": "Show HN: Cornhole News – A Hacker News inspired site for news across the Midwest",
-  "url": "https://cornholenews.news",
-  "score": 175,
-  "by": "cornholemedia",
-  "time": "2026-11-19T15:38:32.000Z"
- },
- {
-  "id": 50558906,
-  "title": "Someone reported java4shell bug in September 2026",
-  "url": "https://github.com/openjdk/jdk/pull/32781",
-  "score": 340,
-  "by": "notmine1337",
-  "time": "2026-11-19T11:47:03.000Z"
- },
- {
-  "id": 50562113,
-  "title": "UK government forced to admit it issued Apple a secret encryption order",
-  "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
-  "score": 455,
-  "by": "Terretta",
-  "time": "2026-11-19T16:21:03.000Z"
- },
- {
-  "id": 50566261,
-  "title": "Rebuilding my local voice assistant pipeline",
-  "url": "https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline",
-  "score": 35,
-  "by": "todsacerdoti",
-  "time": "2026-11-19T20:57:14.000Z"
+  "id": 50567374,
+  "title": "RegExr: Temporarily Offline",
+  "url": "https://regexr.com/",
+  "score": 61,
+  "by": "somebudyelse",
+  "time": "2026-11-19T22:27:07.000Z"
  },
  {
   "id": 50562320,
   "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
   "url": "https://github.com/onlook-dev/onlook/",
-  "score": 78,
+  "score": 96,
   "by": "D_R_Farrell",
   "time": "2026-11-19T16:34:04.000Z"
  },
  {
-  "id": 50559719,
-  "title": "Making 8-page foldable zines from a single A4 sheet in the browser",
-  "url": "https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/",
-  "score": 226,
-  "by": "krthr",
-  "time": "2026-11-19T13:18:11.000Z"
+  "id": 50568643,
+  "title": "Postgres 19 is out, and it's available on Neon and Databricks Lakebase",
+  "url": "https://www.databricks.com/blog/postgresql-19-available-lakebase",
+  "score": 27,
+  "by": "sp_from_db",
+  "time": "2026-11-20T00:37:31.000Z"
  },
  {
-  "id": 50517657,
-  "title": "Reverse-Engineering Kevin J. Lang's Lost OCaml Code in Apache DataSketches",
-  "url": "https://www.tisonkun.io/posts/ai-repair-program/",
-  "score": 22,
-  "by": "tison",
-  "time": "2026-11-16T13:58:56.000Z"
+  "id": 50558906,
+  "title": "Someone reported java4shell bug in September 2026",
+  "url": "https://github.com/openjdk/jdk/pull/32781",
+  "score": 390,
+  "by": "notmine1337",
+  "time": "2026-11-19T11:47:03.000Z"
  },
  {
-  "id": 50537832,
-  "title": "Computer Graphics from Scratch (2021)",
-  "url": "https://www.gabrielgambetta.com/computer-graphics-from-scratch/index.html",
-  "score": 34,
-  "by": "ibobev",
-  "time": "2026-11-17T20:37:53.000Z"
+  "id": 50567209,
+  "title": "Synology Security Advisory",
+  "url": "https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21",
+  "score": 119,
+  "by": "choult",
+  "time": "2026-11-19T22:13:40.000Z"
  },
  {
-  "id": 50556287,
-  "title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
-  "url": "https://verialabs.com/ruby2shell/",
-  "score": 374,
-  "by": "jdns",
-  "time": "2026-11-19T05:09:11.000Z"
+  "id": 50544546,
+  "title": "IRA Velinsky, industrial designer for Commodore and Atari",
+  "url": "https://dfarq.homeip.net/ira-velinsky-industrial-designer-of-the-commodore-64/",
+  "score": 10,
+  "by": "onename",
+  "time": "2026-11-18T10:39:16.000Z"
  },
  {
-  "id": 50561508,
-  "title": "Pete warden on local AI, open models, voice interfaces, the future of hardware",
-  "url": "https://thedataexchange.media/pete-warden-moonshine/",
-  "score": 201,
-  "by": "datascientist",
-  "time": "2026-11-19T15:38:12.000Z"
- },
- {
-  "id": 50547048,
-  "title": "Nintendo takes Picofly firmware down from GitHub [video]",
-  "url": "https://www.youtube.com/watch?v=-TLCGUpoD6c",
-  "score": 244,
-  "by": "cowlevel",
-  "time": "2026-11-18T14:56:04.000Z"
- },
- {
-  "id": 50558533,
-  "title": "How the European Commission rolled out Matrix to more than 40k staff",
-  "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
-  "score": 643,
-  "by": "liotier",
-  "time": "2026-11-19T10:58:29.000Z"
- },
- {
-  "id": 50536950,
-  "title": "An Oregon library ditched Dewey Decimal and got people excited about books again",
-  "url": "https://www.fastcompany.com/91597520/oregon-library-ditched-dewey-decimal-wayfinding-system",
-  "score": 178,
-  "by": "bookofjoe",
-  "time": "2026-11-17T19:35:12.000Z"
- },
- {
-  "id": 50557661,
-  "title": "Do not buy RAM, compress",
-  "url": "https://curiousbits.nl/blog/do-not-buy-ram-compress/",
-  "score": 232,
-  "by": "Ecno92",
-  "time": "2026-11-19T08:56:47.000Z"
- },
- {
-  "id": 50557870,
-  "title": "What's New in PHP 8.6",
-  "url": "https://www.php.net/releases/8.6/en.php",
-  "score": 265,
-  "by": "netol",
-  "time": "2026-11-19T09:27:15.000Z"
- },
- {
-  "id": 50559179,
-  "title": "Unblockable communication with gravity",
-  "url": "https://www.science.org/doi/10.1126/sciadv.aee0802",
-  "score": 135,
-  "by": "rbanffy",
-  "time": "2026-11-19T12:22:00.000Z"
- },
- {
-  "id": 50521083,
-  "title": "Adding Fortran Support to LLDB (GSoC 2026)",
-  "url": "https://blog.llvm.org/posts/2026-09-07-gsoc-add-fortran-support-to-lldb/",
-  "score": 29,
-  "by": "JDevlieghere",
-  "time": "2026-11-16T18:34:37.000Z"
- },
- {
-  "id": 50567735,
-  "title": "Court: 4th Amendment Disallows Use Of AI-Generated 'Probable Cause'",
-  "url": "https://www.techdirt.com/2026/11/19/court-tells-cops-that-the-4th-amendment-doesnt-cover-ai-generated-probable-cause/",
+  "id": 50530132,
+  "title": "Talking Venice with Mahesh Subramony at AMD In-Depth",
+  "url": "https://chipsandcheese.com/p/talking-venice-with-mahesh-subramony",
   "score": 21,
-  "by": "defrost",
-  "time": "2026-11-19T22:56:59.000Z"
+  "by": "rbanffy",
+  "time": "2026-11-17T11:41:08.000Z"
  },
  {
-  "id": 50557537,
-  "title": "Distributed, high-performance blob storage on SQLite",
-  "url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage/",
-  "score": 248,
-  "by": "ghostfoxgod",
-  "time": "2026-11-19T08:39:45.000Z"
+  "id": 50561515,
+  "title": "Show HN: Cornhole News – A Hacker News inspired site for news across the Midwest",
+  "url": "https://cornholenews.news",
+  "score": 201,
+  "by": "cornholemedia",
+  "time": "2026-11-19T15:38:32.000Z"
  },
  {
-  "id": 50561170,
-  "title": "How to Make the Ink Used to Write Hamlet and the Declaration of Independence",
-  "url": "https://lithub.com/how-to-make-the-ink-used-to-write-hamlet-the-declaration-of-independence-and-beethovens-fifth/",
-  "score": 66,
-  "by": "ohjeez",
-  "time": "2026-11-19T15:13:23.000Z"
+  "id": 50564366,
+  "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
+  "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
+  "score": 89,
+  "by": "sandslash",
+  "time": "2026-11-19T18:47:16.000Z"
+ },
+ {
+  "id": 50562113,
+  "title": "UK government forced to admit it issued Apple a secret encryption order",
+  "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
+  "score": 563,
+  "by": "Terretta",
+  "time": "2026-11-19T16:21:03.000Z"
  },
  {
   "id": 50568082,
   "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
   "url": "https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87",
-  "score": 7,
+  "score": 136,
   "by": "mikhael",
   "time": "2026-11-19T23:32:11.000Z"
+ },
+ {
+  "id": 50559719,
+  "title": "Making 8-page foldable zines from a single A4 sheet in the browser",
+  "url": "https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/",
+  "score": 264,
+  "by": "krthr",
+  "time": "2026-11-19T13:18:11.000Z"
+ },
+ {
+  "id": 50566261,
+  "title": "Rebuilding my local voice assistant pipeline",
+  "url": "https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline",
+  "score": 73,
+  "by": "todsacerdoti",
+  "time": "2026-11-19T20:57:14.000Z"
+ },
+ {
+  "id": 50547048,
+  "title": "Nintendo takes Picofly firmware down from GitHub [video]",
+  "url": "https://www.youtube.com/watch?v=-TLCGUpoD6c",
+  "score": 266,
+  "by": "cowlevel",
+  "time": "2026-11-18T14:56:04.000Z"
+ },
+ {
+  "id": 50536950,
+  "title": "An Oregon library ditched Dewey Decimal and got people excited about books again",
+  "url": "https://www.fastcompany.com/91597520/oregon-library-ditched-dewey-decimal-wayfinding-system",
+  "score": 212,
+  "by": "bookofjoe",
+  "time": "2026-11-17T19:35:12.000Z"
+ },
+ {
+  "id": 50541489,
+  "title": "Unlocking Stable On-Policy RL on TPU with Bitwise-Zero Train–Inference Mismatch",
+  "url": "https://developers.googleblog.com/unlocking-stable-on-policy-rl-on-tpu-with-bitwise-zero-traininference-mismatch/",
+  "score": 5,
+  "by": "gmays",
+  "time": "2026-11-18T03:28:39.000Z"
+ },
+ {
+  "id": 50558533,
+  "title": "How the European Commission rolled out Matrix to more than 40k staff",
+  "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
+  "score": 676,
+  "by": "liotier",
+  "time": "2026-11-19T10:58:29.000Z"
+ },
+ {
+  "id": 50537832,
+  "title": "Computer Graphics from Scratch (2021)",
+  "url": "https://www.gabrielgambetta.com/computer-graphics-from-scratch/index.html",
+  "score": 69,
+  "by": "ibobev",
+  "time": "2026-11-17T20:37:53.000Z"
  }
 ]
