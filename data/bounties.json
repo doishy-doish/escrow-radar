@@ -1,5 +1,117 @@
 [
  {
+  "id": "paraloom-core#1625",
+  "venue": "paraloom",
+  "repo": "paraloom-core",
+  "org": "paraloom-labs",
+  "number": 1625,
+  "title": "[BOUNTY] Medium: deactivate_validator double-decrements registry stake counters when reconciling accounts excluded by reset_validator_registry, halting settlement quorum",
+  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1625",
+  "severity": "Medium",
+  "reward_usdc": 150,
+  "reward_source": "explicit",
+  "age_seconds_since_open": 1388,
+  "opened_at": "2026-11-20T12:50:36Z",
+  "competing_prs": 0,
+  "competing_pr_urls": [],
+  "ci_status": "failing",
+  "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
+  "repro_source": ".github/workflows/bridge-e2e.yml",
+  "rail": "MANUAL_MAINTAINER_REVIEW",
+  "escrow_verified": false,
+  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
+  "has_repro": false,
+  "has_stack_trace": true,
+  "has_fix_hint": true,
+  "failing_assertion": null,
+  "target_files": [
+   "programs/paraloom/src/lib.rs",
+   "programs/paraloom/src/quorum.rs",
+   "lib.rs"
+  ],
+  "stack_excerpt": null,
+  "claimed_in_comments": false,
+  "claim_evidence": null,
+  "excerpt": "# `deactivate_validator` Double-Decrements Registry Stake Counters When Reconciling Accounts Excluded by `reset_validator_registry`, Halting Settlement Quorum **Program:** Paraloom Bug Bounty — Stage 1 (Solana devnet) **Program ID:** `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` **Target Commit:** `9e8c8e6d403a4793b841ac1c569eefd11d60c9ad` (upstream/main) **Severity:** Medium (Stage 1: up to $150 USDC — on-chain accounting divergence & liveness halt of settlement) **Status:** CONFIRMED by local simulation and programmatic analysis against `programs/paraloom/src/lib.rs` and `programs/paraloom/",
+  "ts": "2026-11-20T13:13:55.545Z",
+  "days_since_target_touch": 98,
+  "stale_context": true,
+  "stale_reason": "stale_target:programs/paraloom/src/lib.rs:98d"
+ },
+ {
+  "id": "paraloom-core#1624",
+  "venue": "paraloom",
+  "repo": "paraloom-core",
+  "org": "paraloom-labs",
+  "number": 1624,
+  "title": "Mainnet program closed 2026-09-23 — ~3.3 SOL + ~2.6 USDC locked with no recovery path (please confirm intentional decommission or incident)",
+  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1624",
+  "severity": null,
+  "reward_usdc": 1000,
+  "reward_source": "explicit",
+  "age_seconds_since_open": 17132,
+  "opened_at": "2026-11-20T08:28:12Z",
+  "competing_prs": 0,
+  "competing_pr_urls": [],
+  "ci_status": "failing",
+  "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
+  "repro_source": ".github/workflows/bridge-e2e.yml",
+  "rail": "MANUAL_MAINTAINER_REVIEW",
+  "escrow_verified": false,
+  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
+  "has_repro": false,
+  "has_stack_trace": false,
+  "has_fix_hint": false,
+  "failing_assertion": null,
+  "target_files": [],
+  "stack_excerpt": null,
+  "claimed_in_comments": false,
+  "claim_evidence": null,
+  "excerpt": "# Mainnet Program Closed 2026-09-23 — ~3.3 SOL + ~2.6 USDC Locked With No Recovery Path (please confirm intentional decommission or incident) **Program:** Paraloom Bug Bounty — Stage 1 (Solana) **Program ID:** `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` **Severity:** Left to triage — Critical ($1,000) if this was an incident, $0 if an intentional decommission **Status:** OBSERVED on-chain (read-only RPC; no transaction sent by the reporter) **Researcher payout wallet (Solana, USDC):** `CTGkdyMpzseuhWnvbCxnN6dh1w6W7suZ6hQkwAqSY7z8` **Report date:** 2026-11-20 ## 1. Summary The Paraloom progr",
+  "ts": "2026-11-20T13:13:57.396Z",
+  "stale_context": false
+ },
+ {
+  "id": "paraloom-core#1623",
+  "venue": "paraloom",
+  "repo": "paraloom-core",
+  "org": "paraloom-labs",
+  "number": 1623,
+  "title": "reset_validator_registry leaves excluded validators active — they can still decide a settlement quorum (Medium)",
+  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1623",
+  "severity": null,
+  "reward_usdc": 150,
+  "reward_source": "explicit",
+  "age_seconds_since_open": 17436,
+  "opened_at": "2026-11-20T08:23:08Z",
+  "competing_prs": 0,
+  "competing_pr_urls": [],
+  "ci_status": "failing",
+  "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
+  "repro_source": ".github/workflows/bridge-e2e.yml",
+  "rail": "MANUAL_MAINTAINER_REVIEW",
+  "escrow_verified": false,
+  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
+  "has_repro": true,
+  "has_stack_trace": true,
+  "has_fix_hint": true,
+  "failing_assertion": null,
+  "target_files": [
+   "programs/paraloom/src/lib.rs",
+   "programs/paraloom/src/quorum.rs",
+   "lib.rs",
+   "programs/paraloom/tests/reset_quorum_excluded_validator_test.rs"
+  ],
+  "stack_excerpt": null,
+  "claimed_in_comments": false,
+  "claim_evidence": null,
+  "excerpt": "# `reset_validator_registry` Leaves Excluded Validators Active — They Can Still Decide a Settlement Quorum (paraloom) **Program:** Paraloom Bug Bounty — Stage 1 (Solana devnet) **Program ID:** `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` **Severity:** Medium (Stage 1: up to $150) **Status:** CONFIRMED by local execution (solana-program-test fork, in-process; no devnet/mainnet transaction) **Researcher payout wallet (Solana, USDC):** `CTGkdyMpzseuhWnvbCxnN6dh1w6W7suZ6hQkwAqSY7z8` **Report date:** 2026-11-20 ## 1. Summary `reset_validator_registry` rebuilds the registry's stake counters from e",
+  "ts": "2026-11-20T13:13:59.399Z",
+  "days_since_target_touch": 98,
+  "stale_context": true,
+  "stale_reason": "stale_target:programs/paraloom/src/lib.rs:98d"
+ },
+ {
   "id": "paraloom-core#1620",
   "venue": "paraloom",
   "repo": "paraloom-core",
@@ -10,7 +122,7 @@
   "severity": null,
   "reward_usdc": 50,
   "reward_source": "explicit",
-  "age_seconds_since_open": 152888,
+  "age_seconds_since_open": 184907,
   "opened_at": "2026-11-18T09:51:57Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -37,7 +149,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Severity claimed: Low ($50 per the Stage 1 table). Honest floor: Informative/$0** — see \"Why Low, not Medium\" below. Please grade accordingly; this is a waste/DoS-adjacent finding, not a funds-at-risk one. **Program:** Paraloom Devnet Stage 1 Bounty · **Scope pin:** `468ffaa` or later · **Tested against:** prebuilt `paraloom-node` v0.6.0 (official release, SHA256 `1869171f3c6ddeac11f06ce33a0471e1410788228c44cf2fc0845494ecd375f5`) and source at HEAD `9e8c8e6` (the commit the bounty issues cite). The admission code is identical in both: `src/node/transact_ingress.rs` `submit_handler` has no pr",
-  "ts": "2026-11-20T04:20:12.795Z"
+  "ts": "2026-11-20T13:14:02.310Z"
  },
  {
   "id": "paraloom-core#1612",
@@ -50,7 +162,7 @@
   "severity": null,
   "reward_usdc": null,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 375988,
+  "age_seconds_since_open": 408007,
   "opened_at": "2026-11-15T19:53:37Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -76,7 +188,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Asset:** off-chain validator node, `src/network/protocol.rs` (AutoNAT behaviour wiring), plus pinned dependencies `libp2p-autonat 0.15.0`, `libp2p-quic 0.13.0`, and `quinn-proto 0.11.15` in `Cargo.lock`, in `github.com/paraloom-labs/paraloom-core` **Deployed:** program `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` on Solana devnet (2026-08-02 build, window commit `b6732a8`); this finding is in the off-chain node binary built from the same source tree and lockfile, not in the on-chain program **Proof:** the steering is executed: in a local two-node harness with the exact pinned dependency ve",
-  "ts": "2026-11-20T04:20:14.791Z"
+  "ts": "2026-11-20T13:14:04.334Z"
  },
  {
   "id": "paraloom-core#1611",
@@ -89,7 +201,7 @@
   "severity": null,
   "reward_usdc": null,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 376051,
+  "age_seconds_since_open": 408070,
   "opened_at": "2026-11-15T19:52:34Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -114,7 +226,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Asset:** off-chain validator node, `src/consensus/transact.rs` (`TransactVerificationCoordinator`), plus pinned dependency `tokio 1.48.0`, in `github.com/paraloom-labs/paraloom-core` **Deployed:** program `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` on Solana devnet (2026-08-02 build, window commit `b6732a8`); this finding is in the off-chain node binary built from the same source tree and lockfile, not in the on-chain program **Proof:** full-crate loop test against the real coordinator: an uncoordinated free-race harness driving the real `TransactVerificationCoordinator` from the window t",
-  "ts": "2026-11-20T04:20:16.747Z"
+  "ts": "2026-11-20T13:14:06.274Z"
  },
  {
   "id": "paraloom-core#1610",
@@ -127,7 +239,7 @@
   "severity": null,
   "reward_usdc": null,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 376138,
+  "age_seconds_since_open": 408157,
   "opened_at": "2026-11-15T19:51:07Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -154,7 +266,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Asset:** off-chain validator node, `src/network/protocol.rs`, plus pinned dependency `yamux 0.13.8` (via `libp2p-yamux 0.47.0`) in `Cargo.lock`, in `github.com/paraloom-labs/paraloom-core` **Deployed:** program `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` on Solana devnet (2026-08-02 build, window commit `b6732a8`); this finding is in the off-chain node binary built from the same source tree and lockfile, not in the on-chain program **Proof:** executed proof of concept in a release-profile harness driving the real pinned yamux 0.13.8: the exact two-frame sequence panics the connection task",
-  "ts": "2026-11-20T04:20:18.756Z"
+  "ts": "2026-11-20T13:14:08.262Z"
  },
  {
   "id": "paraloom-core#1609",
@@ -167,7 +279,7 @@
   "severity": null,
   "reward_usdc": null,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 376222,
+  "age_seconds_since_open": 408241,
   "opened_at": "2026-11-15T19:49:43Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -194,7 +306,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Asset:** off-chain validator node, `src/network/protocol.rs`, plus pinned dependency `libp2p-gossipsub 0.49.2` in `Cargo.lock`, in `github.com/paraloom-labs/paraloom-core` **Deployed:** program `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` on Solana devnet (2026-08-02 build, window commit `b6732a8`); this finding is in the off-chain node binary built from the same source tree and lockfile, not in the on-chain program **Proof:** executed proof of concept: a two-node loopback harness with the victim running the verbatim window gossipsub configuration and the production bare-spawn event-loop s",
-  "ts": "2026-11-20T04:20:20.828Z"
+  "ts": "2026-11-20T13:14:10.252Z"
  },
  {
   "id": "paraloom-core#1606",
@@ -207,7 +319,7 @@
   "severity": "High",
   "reward_usdc": 400,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 486950,
+  "age_seconds_since_open": 518969,
   "opened_at": "2026-11-14T13:04:15Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -237,7 +349,7 @@
    "raw_snippet": "Submitted complete fix in PR #1608: https://github.com/paraloom-labs/paraloom-core/pull/1608 ### Summary of Fix: 1. **Pr"
   },
   "excerpt": "> ### 🔒 MAINTAINER ESCROW NOTICE: Original First-in-Time Discovery & Canonical Fix is **PR #1607** by **`@sonnyman2014`** > *(Verified `VERDICT: VIABLE` — Please merge **PR #1607** and ignore late automated `/attempt` bots below)* --- ## Summary `src/bin/reconcile_validators.rs` is the redeploy migration tool intended to transition a pre-dual-stake validator set (`129`-byte `ValidatorAccount` PDAs and a `72`-byte `ValidatorRegistry` PDA) to the current dual-stake layout (`145`-byte `ValidatorAccount` PDAs and a `112`-byte `ValidatorRegistry` PDA). However, three bugs in `src/bin/reconcile_val",
-  "ts": "2026-11-20T04:20:22.963Z"
+  "ts": "2026-11-20T13:14:12.354Z"
  },
  {
   "id": "paraloom-core#1604",
@@ -250,7 +362,7 @@
   "severity": null,
   "reward_usdc": null,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 508963,
+  "age_seconds_since_open": 540982,
   "opened_at": "2026-11-14T06:57:22Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -279,7 +391,7 @@
    "raw_snippet": "### 🔒 First-in-Time Discovery & Canonical Fix Attribution Notice (`@sonnyman2014`) For `@paraloom-labs` maintainers rev"
   },
   "excerpt": "> ### 🔒 MAINTAINER ESCROW NOTICE: Original First-in-Time Discovery & Canonical Fix is **PR #1605** by **`@sonnyman2014`** > *(Verified `VERDICT: VIABLE` — Please merge **PR #1605** and ignore late automated `/attempt` bots below)* --- ## Summary Following the dual-stake validator lifecycle and settlement fee claim additions in `src/bin/paraloom_cli.rs` (commit `9e8c8e6d403a4793b841ac1c569eefd11d60c9ad`), three closely related state-decoding and pre-flight validation bugs exist in the `paraloom validator` CLI subcommands (`withdraw-unbonded`, `claim-rewards`, `list`, and `status`): 1. **`Valid",
-  "ts": "2026-11-20T04:20:25.047Z"
+  "ts": "2026-11-20T13:14:14.402Z"
  },
  {
   "id": "paraloom-core#1599",
@@ -292,7 +404,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 613664,
+  "age_seconds_since_open": 645683,
   "opened_at": "2026-11-13T01:52:21Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -319,7 +431,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary `NetworkManager::run_event_loop` wraps the `libp2p::Swarm` in a `tokio::sync::Mutex` and holds the mutex guard **across `swarm_lock.next().await`** inside its `tokio::select!` event arm (`src/network/protocol.rs:651-657`). Whenever no `SwarmEvent` is ready and no message arrives on `message_receiver`, `run_event_loop` parks inside `Poll::Pending` while retaining exclusive ownership of `self.swarm.lock()`. Every external `NetworkManager` method that acquires `self.swarm.lock().await` is then blocked until an external `SwarmEvent` (such as the 15s `libp2p-ping` timer) or an outbound g",
-  "ts": "2026-11-20T04:20:27.239Z"
+  "ts": "2026-11-20T13:14:16.403Z"
  },
  {
   "id": "paraloom-core#1580",
@@ -332,7 +444,7 @@
   "severity": "Low",
   "reward_usdc": 50,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 690965,
+  "age_seconds_since_open": 722984,
   "opened_at": "2026-11-12T04:24:00Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -357,7 +469,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Severity:** Low — \"limited-impact edge case\" (program Low tier; see severity justification) **Component:** off-chain node, `src/node/mod.rs:1177-1241` (`settle_approved_transacts`) **Repo:** `paraloom-labs/paraloom-core` @ `9e8c8e6` **Reporter:** frankyhd ## Summary The node drains its settlement-approval channel with a single serial loop. Each approval's full settle-via-cosign (co-sign round + on-chain submit) runs to completion — including up to 3 attempts with 2s backoffs — **inside** the loop, before the next queued approval is even started. One stuck approval (slow co-sign round, expire",
-  "ts": "2026-11-20T04:20:29.552Z"
+  "ts": "2026-11-20T13:14:18.577Z"
  },
  {
   "id": "paraloom-core#1579",
@@ -370,7 +482,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 693736,
+  "age_seconds_since_open": 725755,
   "opened_at": "2026-11-12T03:37:49Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -396,7 +508,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity: Medium Permanent loss of one validator's full PARALOOM token stake (≥ 1,000,000 PARALOOM) through a documented, intended admin operation. Trigger requires the cold registry authority key, and the SOL half is unaffected — hence Medium, not High. (Case for High: the trigger is the documented reconciliation flow after `reset_validator_registry`, so it is likely to be hit in normal operations, and the loss is permanent and total for the token half.) **Reporter:** Ari Kurniawan **Date:** 2026-11-12 **Commit audited:** `9e8c8e6d403a4793b841ac1c569eefd11d60c9ad` (main, 2026-09-29; the pr",
-  "ts": "2026-11-20T04:20:31.497Z"
+  "ts": "2026-11-20T13:14:20.581Z"
  },
  {
   "id": "paraloom-core#1577",
@@ -409,7 +521,7 @@
   "severity": "Low",
   "reward_usdc": 50,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 693927,
+  "age_seconds_since_open": 725946,
   "opened_at": "2026-11-12T03:34:38Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -436,24 +548,24 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary Every time the wallet popup opens (and every time the shielded-token set changes), the wallet sends an HTTPS GET to **Jupiter's price API** (`lite-api.jup.ag` — a third party unrelated to Paraloom) whose query string is the exact set of SPL mints the user holds **unspent shielded notes** for, plus SOL. No consent, no opt-out, no proxying through Paraloom infrastructure. The request fires automatically — the user never asks for prices and cannot disable it. ## Impact The shielded pool's promise is unlinkability of holdings. The wallet voluntarily discloses holdings metadata to a thir",
-  "ts": "2026-11-20T04:20:33.762Z"
+  "ts": "2026-11-20T13:14:22.768Z"
  },
  {
-  "id": "paraloom-core#1573",
+  "id": "paraloom-core#1575",
   "venue": "paraloom",
   "repo": "paraloom-core",
   "org": "paraloom-labs",
-  "number": 1573,
-  "title": "`AdaptiveBatchVerifier::verify` skips the `proofs`/`public_inputs` length check on the 1–2 proof path (silently returns `AllValid`)",
-  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1573",
-  "severity": null,
-  "reward_usdc": null,
+  "number": 1575,
+  "title": "Bridge listener never decodes deposit_note — the only deposit instruction in the pinned program — so the listener-fed shielded pool stays empty for 100% of deposits",
+  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1575",
+  "severity": "Low",
+  "reward_usdc": 50,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 696178,
-  "opened_at": "2026-11-12T02:57:07Z",
+  "age_seconds_since_open": 726033,
+  "opened_at": "2026-11-12T03:33:11Z",
   "competing_prs": 1,
   "competing_pr_urls": [
-   "https://github.com/paraloom-labs/paraloom-core/pull/1593"
+   "https://github.com/paraloom-labs/paraloom-core/pull/1622"
   ],
   "ci_status": "failing",
   "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
@@ -463,139 +575,25 @@
   "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
   "has_repro": true,
   "has_stack_trace": false,
-  "has_fix_hint": false,
-  "failing_assertion": "assert_eq!( result, BatchVerificationResult::AllValid, \"adaptive verify should reject mismatched lengths, got {:?}\", result )",
-  "target_files": [
-   "src/privacy/batch.rs",
-   "src/privacy/mod.rs"
-  ],
-  "stack_excerpt": null,
-  "claimed_in_comments": false,
-  "claim_evidence": null,
-  "excerpt": "## Component `src/privacy/batch.rs` — `AdaptiveBatchVerifier::verify` + `BatchVerifier::verify_individually` ## Severity (per `docs/bug-bounty.md`) **Low** — \"unvalidated input without an exploit path\" ## Summary `BatchVerifier::verify_batch` rejects a length mismatch between `proofs` and `public_inputs` with a typed `Error`: ```rust // batch.rs:70 if proofs.len() != public_inputs.len() { return BatchVerificationResult::Error { reason: \"Mismatched number of proofs and public inputs\".to_string(), }; } ``` But `AdaptiveBatchVerifier::verify` routes the `1..=2` case straight to `verify_individual",
-  "ts": "2026-11-20T04:20:35.692Z"
- },
- {
-  "id": "paraloom-core#1570",
-  "venue": "paraloom",
-  "repo": "paraloom-core",
-  "org": "paraloom-labs",
-  "number": 1570,
-  "title": "[BOUNTY] High: Post-swap SlippageExceeded abort in withdraw_then_swap and unreserved realized_native fallback permanently strand user funds",
-  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1570",
-  "severity": "High",
-  "reward_usdc": 200,
-  "reward_source": "explicit",
-  "age_seconds_since_open": 721595,
-  "opened_at": "2026-11-11T19:53:30Z",
-  "competing_prs": 3,
-  "competing_pr_urls": [
-   "https://github.com/paraloom-labs/paraloom-core/pull/1571",
-   "https://github.com/paraloom-labs/paraloom-core/pull/1590",
-   "https://github.com/paraloom-labs/paraloom-core/pull/1603"
-  ],
-  "ci_status": "failing",
-  "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
-  "repro_source": ".github/workflows/bridge-e2e.yml",
-  "rail": "MANUAL_MAINTAINER_REVIEW",
-  "escrow_verified": false,
-  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
-  "has_repro": false,
-  "has_stack_trace": true,
   "has_fix_hint": true,
   "failing_assertion": null,
   "target_files": [
-   "src/relayer/private_swap.rs",
-   "src/relayer/jupiter.rs"
-  ],
-  "stack_excerpt": null,
-  "claimed_in_comments": false,
-  "claim_evidence": null,
-  "excerpt": "# [BOUNTY] High: Post-swap `SlippageExceeded` abort in `withdraw_then_swap` and unreserved `realized_native` fallback in `jupiter.rs` permanently strand user funds in dropped ephemeral keypairs - **Target Repository:** [`paraloom-labs/paraloom-core`](https://github.com/paraloom-labs/paraloom-core) - **Severity:** High ($200 – $300 USDC — Stage 1 Devnet Bug Bounty) - **Affected Components:** - `src/relayer/private_swap.rs` (`PrivateSwapRelayer::withdraw_then_swap`, `execute`, lines 452–473, 491–530) - `src/relayer/jupiter.rs` (`JupiterSwapProvider::swap`, lines 633–640) - **Verified Against:** ",
-  "ts": "2026-11-20T04:20:37.941Z"
- },
- {
-  "id": "paraloom-core#1568",
-  "venue": "paraloom",
-  "repo": "paraloom-core",
-  "org": "paraloom-labs",
-  "number": 1568,
-  "title": "[BOUNTY] Medium: swap_router::route_handler lacks identical in/out asset validation, causing SOL/WSOL alias collision and 502 Bad Gateway",
-  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1568",
-  "severity": "Medium",
-  "reward_usdc": 50,
-  "reward_source": "explicit",
-  "age_seconds_since_open": 726319,
-  "opened_at": "2026-11-11T18:34:46Z",
-  "competing_prs": 3,
-  "competing_pr_urls": [
-   "https://github.com/paraloom-labs/paraloom-core/pull/1569",
-   "https://github.com/paraloom-labs/paraloom-core/pull/1595",
-   "https://github.com/paraloom-labs/paraloom-core/pull/1602"
-  ],
-  "ci_status": "failing",
-  "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
-  "repro_source": ".github/workflows/bridge-e2e.yml",
-  "rail": "MANUAL_MAINTAINER_REVIEW",
-  "escrow_verified": false,
-  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
-  "has_repro": false,
-  "has_stack_trace": true,
-  "has_fix_hint": false,
-  "failing_assertion": null,
-  "target_files": [
-   "src/relayer/swap_router.rs",
-   "src/relayer/jupiter.rs"
-  ],
-  "stack_excerpt": null,
-  "claimed_in_comments": false,
-  "claim_evidence": null,
-  "excerpt": "- **Target Repository:** [`paraloom-labs/paraloom-core`](https://github.com/paraloom-labs/paraloom-core) - **Severity:** Medium / Low ($50 - $150 USDC — Stage 1 Devnet Bug Bounty) - **Affected Component:** `src/relayer/swap_router.rs` (`route_handler`, lines 89–123) and `src/relayer/jupiter.rs` (`mint_to_asset`, lines 580–595) - **Verified Against:** `main` (`9e8c8e6d403a4793b841ac1c569eefd11d60c9ad`) --- ## Vulnerability Details In `src/relayer/swap_router.rs`, the non-custodial routing service exposes `POST /swap/route` for clients to build unsigned Jupiter swaps for ephemeral addresses. In ",
-  "ts": "2026-11-20T04:20:39.999Z"
- },
- {
-  "id": "paraloom-core#1566",
-  "venue": "paraloom",
-  "repo": "paraloom-core",
-  "org": "paraloom-labs",
-  "number": 1566,
-  "title": "[BOUNTY] Medium: JupiterSwapProvider::swap counts pre-existing account balances as swap output, bypassing min_out_amount slippage floor and inflating realized proceeds",
-  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1566",
-  "severity": "Medium",
-  "reward_usdc": 150,
-  "reward_source": "severity_table",
-  "age_seconds_since_open": 737829,
-  "opened_at": "2026-11-11T15:22:56Z",
-  "competing_prs": 3,
-  "competing_pr_urls": [
-   "https://github.com/paraloom-labs/paraloom-core/pull/1567",
-   "https://github.com/paraloom-labs/paraloom-core/pull/1572",
-   "https://github.com/paraloom-labs/paraloom-core/pull/1596"
-  ],
-  "ci_status": "failing",
-  "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
-  "repro_source": ".github/workflows/bridge-e2e.yml",
-  "rail": "MANUAL_MAINTAINER_REVIEW",
-  "escrow_verified": false,
-  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
-  "has_repro": true,
-  "has_stack_trace": true,
-  "has_fix_hint": true,
-  "failing_assertion": null,
-  "target_files": [
-   "src/relayer/jupiter.rs",
-   "src/relayer/private_swap.rs"
+   "src/bridge/solana/decoder.rs",
+   "src/bridge/solana/listener.rs",
+   "src/bridge/solana/instructions.rs",
+   "src/node/mod.rs",
+   "src/privacy/path_server.rs"
   ],
   "stack_excerpt": null,
   "claimed_in_comments": true,
   "claim_evidence": {
    "type": "pr_reference",
-   "author": "ocakciomursel-pixel",
-   "target_ref": "#1567",
-   "raw_snippet": "Submitted author fix PR #1567: https://github.com/paraloom-labs/paraloom-core/pull/1567"
+   "author": "IVANLI2412",
+   "target_ref": "#1622",
+   "raw_snippet": "Claiming this bounty. PR #1622 adds regression tests verifying the decoder correctly handles deposit_note and deposit_no"
   },
-  "excerpt": "### Summary **Severity:** Medium (Stage 1 Bug Bounty — Incorrect Swap / Re-Shield Accounting & `min_out_amount` Slippage Floor Bypass) **Affected Components:** `src/relayer/jupiter.rs` (`SwapSubmitter`, `RpcSwapSubmitter`, `JupiterSwapProvider::swap`, lines `609-652`) and `src/relayer/private_swap.rs` (`PrivateSwapRelayer::withdraw_then_swap`, `execute`, `execute_swap_out`, lines `444-473`) **Verified Against:** `main` (`9e8c8e6d403a4793b841ac1c569eefd11d60c9ad`) --- ### Root Cause In `JupiterSwapProvider::swap` (`src/relayer/jupiter.rs:609-652`), the provider never snapshots `signer`'s pre-sw",
-  "ts": "2026-11-20T04:20:42.120Z"
+  "excerpt": "## Summary The bridge listener builds the node's off-chain shielded pool by decoding deposit instructions from chain history. Its decoder recognises only the legacy `deposit` and `deposit_spl` discriminators. The pinned program no longer has those instructions: its only deposit instruction is `deposit_note`, whose discriminator is defined in the codebase but never matched by the decoder. The listener therefore indexes nothing — for every deposit that can actually occur on this program version — and the pool it feeds stays empty while real deposits accumulate on-chain. I want to be precise abou",
+  "ts": "2026-11-20T13:14:24.786Z"
  },
  {
   "id": "scaffold-studio-frontend#45",
@@ -608,7 +606,7 @@
   "severity": null,
   "reward_usdc": 70,
   "reward_source": "explicit",
-  "age_seconds_since_open": 3738784,
+  "age_seconds_since_open": 3770803,
   "opened_at": "2026-10-07T21:47:01Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -629,7 +627,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Context** `next.config.ts` sets `eslint: { ignoreDuringBuilds: true }`. Combined with a workflow that never runs `next build`, this means lint errors introduced in a PR are invisible on both paths, and the only remaining lint signal is the mutating `biome lint --write --unsafe` step covered by issue 31. **Proposed Change** Turn `ignoreDuringBuilds` off so `next build` fails on lint errors, and let CI run the build (issue 46) or a dedicated lint job report them. **Acceptance Criteria** - `eslint.ignoreDuringBuilds` is removed or set to `false`. - A deliberately introduced lint error is assert",
-  "ts": "2026-11-20T04:20:50.580Z"
+  "ts": "2026-11-20T13:14:36.124Z"
  },
  {
   "id": "scaffold-studio-frontend#44",
@@ -642,7 +640,7 @@
   "severity": null,
   "reward_usdc": 60,
   "reward_source": "explicit",
-  "age_seconds_since_open": 3738789,
+  "age_seconds_since_open": 3770808,
   "opened_at": "2026-10-07T21:46:56Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -668,7 +666,7 @@
    "raw_snippet": "Hi @cythecode, I noticed issue #44 is still open, along with PR #104. I'm a TypeScript developer interested in completin"
   },
   "excerpt": "**Context** `playwright.config.ts` sets `retries: 0` unconditionally. Playwright's own convention is to retry on CI and not locally, because web-server startup, animation timing and network flake are the dominant failure modes for an end-to-end suite that talks to a blockchain RPC and an LLM provider. Without retries, every transient failure blocks a PR. **Proposed Change** Set `retries: process.env.CI ? 2 : 0` and keep `workers: 1` on CI. **Acceptance Criteria** - `retries` resolves to 2 when `process.env.CI` is set and 0 otherwise. - A deliberately flaky spec is asserted to pass on retry and",
-  "ts": "2026-11-20T04:20:52.681Z"
+  "ts": "2026-11-20T13:14:38.208Z"
  },
  {
   "id": "scaffold-studio-frontend#43",
@@ -681,7 +679,7 @@
   "severity": null,
   "reward_usdc": 60,
   "reward_source": "explicit",
-  "age_seconds_since_open": 3738795,
+  "age_seconds_since_open": 3770814,
   "opened_at": "2026-10-07T21:46:50Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -705,6 +703,6 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Context** `playwright.config.ts` starts the app with `webServer.command` running the dev server, but `.github/workflows/playwright.yml` sets no environment. `lib/db/index.ts` reads `DATABASE_URL` and `lib/ai/providers.ts` constructs OpenAI models, so the server either crashes on boot or fails on the first request, which turns every end-to-end run into an environment failure rather than a test result. **Proposed Change** Add the required variables to the job's `env:` (with a disposable Postgres service container for `DATABASE_URL`) and reserve the OpenAI key for the secrets-gated path. **Acce",
-  "ts": "2026-11-20T04:20:54.670Z"
+  "ts": "2026-11-20T13:14:40.227Z"
  }
 ]
