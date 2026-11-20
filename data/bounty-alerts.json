@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-20T13:14:44.666Z",
+ "ts": "2026-11-20T21:08:07.403Z",
  "count": 1,
  "alerts": [
   {
@@ -13,7 +13,7 @@
    "severity": null,
    "reward_usdc": 1000,
    "reward_source": "explicit",
-   "age_seconds_since_open": 17132,
+   "age_seconds_since_open": 45536,
    "opened_at": "2026-11-20T08:28:12Z",
    "competing_prs": 0,
    "competing_pr_urls": [],
@@ -32,21 +32,12 @@
    "claimed_in_comments": false,
    "claim_evidence": null,
    "excerpt": "# Mainnet Program Closed 2026-09-23 — ~3.3 SOL + ~2.6 USDC Locked With No Recovery Path (please confirm intentional decommission or incident) **Program:** Paraloom Bug Bounty — Stage 1 (Solana) **Program ID:** `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP` **Severity:** Left to triage — Critical ($1,000) if this was an incident, $0 if an intentional decommission **Status:** OBSERVED on-chain (read-only RPC; no transaction sent by the reporter) **Researcher payout wallet (Solana, USDC):** `CTGkdyMpzseuhWnvbCxnN6dh1w6W7suZ6hQkwAqSY7z8` **Report date:** 2026-11-20 ## 1. Summary The Paraloom progr",
-   "ts": "2026-11-20T13:13:57.396Z",
+   "ts": "2026-11-20T21:07:21.350Z",
    "selection_rank_tier": 1,
    "est_minutes": 35,
    "reward_density": 28.57,
    "stale_context": false
   }
  ],
- "demoted": [
-  {
-   "id": "paraloom-core#1625",
-   "stale_reason": "stale_target:programs/paraloom/src/lib.rs:98d"
-  },
-  {
-   "id": "paraloom-core#1623",
-   "stale_reason": "stale_target:programs/paraloom/src/lib.rs:98d"
-  }
- ]
+ "demoted": []
 }

@@ -1,242 +1,242 @@
 [
  {
-  "id": 50572503,
-  "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
-  "url": "https://architectlabs.com/blog/frostbite",
-  "score": 224,
-  "by": "shioyama",
-  "time": "2026-11-20T10:01:41.000Z"
+  "id": 50579568,
+  "title": "Hurried Announcement: Alessandro Masullo GRH",
+  "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
+  "score": 878,
+  "by": "jasondavies",
+  "time": "2026-11-20T18:33:14.000Z"
+ },
+ {
+  "id": 50581260,
+  "title": "Inkling 2 Mini",
+  "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+  "score": 184,
+  "by": "jasondavies",
+  "time": "2026-11-20T20:12:19.000Z"
+ },
+ {
+  "id": 50574968,
+  "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+  "url": "https://alpo.ge/remark.pdf",
+  "score": 2055,
+  "by": "iamronaldo",
+  "time": "2026-11-20T14:16:21.000Z"
+ },
+ {
+  "id": 50578358,
+  "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
+  "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
+  "score": 192,
+  "by": "archon1410",
+  "time": "2026-11-20T17:21:36.000Z"
+ },
+ {
+  "id": 50579331,
+  "title": "We promoted developers into architects without informing them",
+  "url": "https://manidoraisamy.com/developer-to-architect.html",
+  "score": 129,
+  "by": "QueensGambit",
+  "time": "2026-11-20T18:17:51.000Z"
+ },
+ {
+  "id": 50577265,
+  "title": "Language Models Can Rewrite Their Own Weights",
+  "url": "https://arxiv.org/abs/2611.21885",
+  "score": 268,
+  "by": "lwhsiao",
+  "time": "2026-11-20T16:29:06.000Z"
+ },
+ {
+  "id": 50581084,
+  "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
+  "url": "https://scottaaronson.blog/?p=10344",
+  "score": 39,
+  "by": "stratos123",
+  "time": "2026-11-20T20:03:07.000Z"
+ },
+ {
+  "id": 50579297,
+  "title": "Vibecoding an inference chip",
+  "url": "https://ankitg.me/blog/vibecoding-inference-chip/",
+  "score": 61,
+  "by": "ankitvgupta",
+  "time": "2026-11-20T18:15:16.000Z"
+ },
+ {
+  "id": 50576232,
+  "title": "Finite-time blow-up for the Navier–Stokes equations",
+  "url": "https://github.com/tristanbuckmaster/navier-stokes/",
+  "score": 202,
+  "by": "trotro",
+  "time": "2026-11-20T15:34:31.000Z"
+ },
+ {
+  "id": 50580536,
+  "title": "Winedroid – run Android apps without Android (WASM demo)",
+  "url": "https://winedroid.soham.sh/demo/",
+  "score": 37,
+  "by": "sohzm",
+  "time": "2026-11-20T19:30:16.000Z"
  },
  {
   "id": 50572355,
   "title": "If you can't explain something in simple terms, you don't understand it (2017)",
   "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it",
-  "score": 122,
+  "score": 554,
   "by": "sammatilda",
   "time": "2026-11-20T09:43:19.000Z"
+ },
+ {
+  "id": 50550430,
+  "title": "Microsoft announces Windows Server 2028 with hardened security",
+  "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
+  "score": 12,
+  "by": "N19PEDL2",
+  "time": "2026-11-18T18:50:35.000Z"
+ },
+ {
+  "id": 50572503,
+  "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+  "url": "https://architectlabs.com/blog/frostbite",
+  "score": 567,
+  "by": "shioyama",
+  "time": "2026-11-20T10:01:41.000Z"
+ },
+ {
+  "id": 50581242,
+  "title": "Combatting Adversarial Distillation",
+  "url": "https://openai.com/index/combatting-adversarial-distillation/",
+  "score": 12,
+  "by": "pretext",
+  "time": "2026-11-20T20:11:14.000Z"
+ },
+ {
+  "id": 50572348,
+  "title": "Signal Is Serious About Protecting Your Privacy",
+  "url": "https://signal.org/blog/protecting-your-privacy/",
+  "score": 406,
+  "by": "dotcoma",
+  "time": "2026-11-20T09:42:16.000Z"
+ },
+ {
+  "id": 50577613,
+  "title": "I'm Peter Roberts, immigration attorney who does work for YC and startups. AMA",
+  "url": null,
+  "score": 74,
+  "by": "proberts",
+  "time": "2026-11-20T16:45:25.000Z"
+ },
+ {
+  "id": 50581438,
+  "title": "Nvidia accounting under SEC investigation, sources say",
+  "url": "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html",
+  "score": 57,
+  "by": "ftchd",
+  "time": "2026-11-20T20:22:41.000Z"
+ },
+ {
+  "id": 50578233,
+  "title": "Running two PSP emulators on one Switch 2 and sharing one via GameShare",
+  "url": "https://github.com/XITRIX/ppsspp-nx2/blob/master/SWITCH2-GAMESHARE.md",
+  "score": 43,
+  "by": "khalidkhair",
+  "time": "2026-11-20T17:14:03.000Z"
+ },
+ {
+  "id": 50526023,
+  "title": "Show HN: I made an audio-to-MIDI model 60x more efficient",
+  "url": "https://kobi.music/research/dettato",
+  "score": 198,
+  "by": "hidude562",
+  "time": "2026-11-17T01:03:05.000Z"
+ },
+ {
+  "id": 50581177,
+  "title": "And Yet, It Moves",
+  "url": "https://signoregalilei.com/2026/11/20/and-yet-it-moves/",
+  "score": 8,
+  "by": "notfried",
+  "time": "2026-11-20T20:07:55.000Z"
+ },
+ {
+  "id": 50577901,
+  "title": "Google Workers Tell Their Employer Not to Punish Schools That Don't Want AI",
+  "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+  "score": 175,
+  "by": "cdrnsf",
+  "time": "2026-11-20T16:59:27.000Z"
+ },
+ {
+  "id": 50578117,
+  "title": "PostgreSQL 19: A hands-on tour with runnable browser examples",
+  "url": "https://certuvia.com/blog/postgres-19",
+  "score": 32,
+  "by": "petrpravda",
+  "time": "2026-11-20T17:08:56.000Z"
+ },
+ {
+  "id": 50546676,
+  "title": "LZ-RDO lands in ARM's astc-encoder",
+  "url": "https://www.jonolick.com/home/lz-rdo-lands-in-arms-astc-encoder",
+  "score": 8,
+  "by": "dverlaeckt80",
+  "time": "2026-11-18T14:23:24.000Z"
+ },
+ {
+  "id": 50575644,
+  "title": "Why there are still no non-WebKit browsers on iOS",
+  "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
+  "score": 287,
+  "by": "lapcat",
+  "time": "2026-11-20T15:03:31.000Z"
+ },
+ {
+  "id": 50527444,
+  "title": "The G1 Garbage Collector",
+  "url": "https://dev.java/learn/jvm/tool/garbage-collection/g1gc-overview/",
+  "score": 77,
+  "by": "ejboy",
+  "time": "2026-11-17T04:29:07.000Z"
+ },
+ {
+  "id": 50581403,
+  "title": "Show HN: OpenComputer – an open source alternative to Devin",
+  "url": "https://github.com/diggerhq/opencomputer",
+  "score": 12,
+  "by": "iacguy",
+  "time": "2026-11-20T20:19:56.000Z"
+ },
+ {
+  "id": 50560595,
+  "title": "Floppy3.5: A portable 3.5-inch floppy WiFi NAS",
+  "url": "https://github.com/bigcrimping/floppy3.5",
+  "score": 118,
+  "by": "fortran77",
+  "time": "2026-11-19T14:29:49.000Z"
+ },
+ {
+  "id": 50545262,
+  "title": "Teskooano: A 3D N-body simulator in the browser",
+  "url": "https://teskooano.space/",
+  "score": 10,
+  "by": "robin_reala",
+  "time": "2026-11-18T12:02:59.000Z"
  },
  {
   "id": 50572822,
   "title": "The Making of Oxygene",
   "url": "https://jeanmicheljarre.com/aaa/the-making-of-oxygene",
-  "score": 59,
+  "score": 182,
   "by": "hggh",
   "time": "2026-11-20T10:41:10.000Z"
  },
  {
-  "id": 50561199,
-  "title": "Show HN: Fast deterministic natural language search for OpenStreetMap data",
-  "url": "https://hippomaps.ch/?q=cafes+by+the+Limmat+100+m+from+the+lake+in+zurich#map=15.02/47.36708/8.54935",
-  "score": 14,
-  "by": "vihren",
-  "time": "2026-11-19T15:16:02.000Z"
- },
- {
-  "id": 50569226,
-  "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
-  "url": "https://github.com/openssl/openssl/pull/33652",
-  "score": 298,
-  "by": "JacobHenner",
-  "time": "2026-11-20T02:01:09.000Z"
- },
- {
-  "id": 50572448,
-  "title": "What people are building, discovered through new domains",
-  "url": "https://startups.novumsignals.com/",
-  "score": 46,
-  "by": "walterschnitzel",
-  "time": "2026-11-20T09:54:33.000Z"
- },
- {
-  "id": 50572116,
-  "title": "Carnival Cruises emits ten times more sulphur oxide than all of Europe's cars (2019)",
-  "url": "https://ecohustler.com/article/one-corporation-to-pollute-them-all/",
-  "score": 217,
-  "by": "sammatilda",
-  "time": "2026-11-20T09:13:09.000Z"
- },
- {
-  "id": 50521550,
-  "title": "I can’t believe it’s 1!",
-  "url": "https://aperiodical.com/2026/11/i-cant-believe-its-1/",
-  "score": 9,
-  "by": "ColinWright",
-  "time": "2026-11-16T19:07:13.000Z"
- },
- {
-  "id": 50541568,
-  "title": "Show HN: Tinnitus frequency finder and audio notch tool",
-  "url": "https://trynotched.com/find",
-  "score": 50,
-  "by": "brianrhea",
-  "time": "2026-11-18T03:40:01.000Z"
- },
- {
-  "id": 50572430,
-  "title": "UK fridges secured from hackers",
-  "url": "https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o",
-  "score": 72,
-  "by": "tomnext",
-  "time": "2026-11-20T09:52:20.000Z"
- },
- {
-  "id": 50523241,
-  "title": "The Strongest Sokoban Solver",
-  "url": "https://healeycodes.com/introducing-the-worlds-strongest-sokoban-solver",
-  "score": 89,
-  "by": "ibobev",
-  "time": "2026-11-16T21:04:01.000Z"
- },
- {
-  "id": 50569998,
-  "title": "FFmpeg 9.1 'Gauss'",
-  "url": "https://ffmpeg.org/download.html#release_9.1",
-  "score": 190,
-  "by": "gyan",
-  "time": "2026-11-20T04:02:39.000Z"
- },
- {
-  "id": 50545818,
-  "title": "µ-Wire – USB on an ATtiny 10",
-  "url": "https://cpldcpu.com/2014/03/19/%c2%b5-wire-usb-on-an-attiny-10/",
-  "score": 66,
-  "by": "mofosyne",
-  "time": "2026-11-18T13:02:08.000Z"
- },
- {
-  "id": 50569516,
-  "title": "Postgres 19 Repack: Faster, Built-In Table Bloat Cleanup",
-  "url": "https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/",
-  "score": 132,
-  "by": "craigkerstiens",
-  "time": "2026-11-20T02:43:49.000Z"
- },
- {
-  "id": 50571189,
-  "title": "\"I can tell you wrote this yourself\"",
-  "url": "https://em-online.bearblog.dev/i-can-tell-you-wrote-this-yourself/",
-  "score": 263,
-  "by": "BrunoBernardino",
-  "time": "2026-11-20T07:13:21.000Z"
- },
- {
-  "id": 50563148,
-  "title": "Claude solves two open problems in the physics of black holes",
-  "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-  "score": 517,
-  "by": "cybermango",
-  "time": "2026-11-19T17:30:44.000Z"
- },
- {
-  "id": 50528119,
-  "title": "How to CAD Almost Anything",
-  "url": "https://ocw.mit.edu/courses/res-16-002-how-to-cad-almost-anything-january-iap-2024/",
-  "score": 305,
-  "by": "o4c",
-  "time": "2026-11-17T06:29:57.000Z"
- },
- {
-  "id": 50495392,
-  "title": "Why the Airbus A321XLR often gets stuck climbing for first few hours of flight",
-  "url": "https://simpleflying.com/airbus-a321xlr-often-stuck-climbing-1st-few-hours-flight/",
-  "score": 5,
-  "by": "edward",
-  "time": "2026-11-14T09:13:24.000Z"
- },
- {
-  "id": 50569890,
-  "title": "PostgreSQL 19",
-  "url": "https://www.postgresql.org/docs/release/19.0/",
-  "score": 262,
-  "by": "linzhangrun",
-  "time": "2026-11-20T03:45:45.000Z"
- },
- {
-  "id": 50570628,
-  "title": "Jujutsu Primer",
-  "url": "https://ethanlowman.com/posts/jj-primer/",
-  "score": 157,
-  "by": "renehsz",
-  "time": "2026-11-20T05:46:01.000Z"
- },
- {
-  "id": 50500000,
-  "title": "Show HN: Radiotherapy Delivery Demo",
-  "url": "https://tps.neuralrad.com",
-  "score": 9,
-  "by": "coolwulf",
-  "time": "2026-11-14T19:30:16.000Z"
- },
- {
-  "id": 50569519,
-  "title": "What Comes After AGI?",
-  "url": "https://institute.deepmind.com/essays/what-comes-after-agi/",
-  "score": 91,
-  "by": "jdkee",
-  "time": "2026-11-20T02:44:13.000Z"
- },
- {
-  "id": 50568861,
-  "title": "Vint Cerf on why TCP/IP was never patented",
-  "url": "https://seremot.com/p/vint-cerf-on-why-tcpip-was-never",
-  "score": 122,
-  "by": "emot",
-  "time": "2026-11-20T01:06:12.000Z"
- },
- {
-  "id": 50521512,
-  "title": "Bit Shifting in Basic",
-  "url": "https://subethasoftware.com/2020/06/11/bit-shifting-in-basic/",
-  "score": 53,
-  "by": "efren6",
-  "time": "2026-11-16T19:04:36.000Z"
- },
- {
-  "id": 50563066,
-  "title": "Pancreatic cancer halted by virus injection in three patients",
-  "url": "https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/",
-  "score": 812,
-  "by": "cybermango",
-  "time": "2026-11-19T17:25:33.000Z"
- },
- {
-  "id": 50567209,
-  "title": "Synology Security Advisory",
-  "url": "https://www.synology.com/en-uk/security/advisory/Synology_SA_26_21",
-  "score": 163,
-  "by": "choult",
-  "time": "2026-11-19T22:13:40.000Z"
- },
- {
-  "id": 50484268,
-  "title": "The Specialization of Desire",
-  "url": "https://summerlightning.substack.com/p/the-specialization-of-desire",
-  "score": 3,
-  "by": "jger15",
-  "time": "2026-11-13T14:45:22.000Z"
- },
- {
-  "id": 50561508,
-  "title": "Pete Warden on local AI, open models, voice interfaces, the future of hardware",
-  "url": "https://thedataexchange.media/pete-warden-moonshine/",
-  "score": 260,
-  "by": "datascientist",
-  "time": "2026-11-19T15:38:12.000Z"
- },
- {
-  "id": 50537492,
-  "title": "Automatic Checking of Compiler Correctness with E-Graphs",
-  "url": "https://stng.substack.com/p/automatic-checking-of-compiler-correctness",
-  "score": 49,
-  "by": "g0xA52A2A",
-  "time": "2026-11-17T20:12:34.000Z"
- },
- {
-  "id": 50558906,
-  "title": "Someone reported java4shell bug in September 2026",
-  "url": "https://github.com/openjdk/jdk/pull/32781",
-  "score": 441,
-  "by": "notmine1337",
-  "time": "2026-11-19T11:47:03.000Z"
+  "id": 50581165,
+  "title": "Reverse Engineering my cat's litter box",
+  "url": "https://master--ytulsiani.netlify.app/blog/furrytails/",
+  "score": 4,
+  "by": "allidoisvim",
+  "time": "2026-11-20T20:07:14.000Z"
  }
 ]
