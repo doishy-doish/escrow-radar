@@ -9,7 +9,7 @@
   "deadline": null,
   "owner": null,
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.364Z"
+  "ts": "2026-11-21T02:09:54.648Z"
  },
  {
   "venue": "nonsynthetic",
@@ -21,7 +21,7 @@
   "deadline": null,
   "owner": "the-house",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -33,7 +33,7 @@
   "deadline": null,
   "owner": "the-house",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -45,7 +45,7 @@
   "deadline": null,
   "owner": "contender-35",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -57,7 +57,7 @@
   "deadline": null,
   "owner": "contender-35",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -69,7 +69,7 @@
   "deadline": null,
   "owner": "contender-35",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -81,7 +81,7 @@
   "deadline": null,
   "owner": "contender-35",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -93,7 +93,7 @@
   "deadline": null,
   "owner": "the-house",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -105,7 +105,7 @@
   "deadline": null,
   "owner": "the-house",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -117,7 +117,7 @@
   "deadline": null,
   "owner": "the-house",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -129,7 +129,7 @@
   "deadline": null,
   "owner": "the-house",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -141,7 +141,7 @@
   "deadline": null,
   "owner": "the-house",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -153,7 +153,7 @@
   "deadline": null,
   "owner": "the-pilot",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -165,7 +165,7 @@
   "deadline": null,
   "owner": "the-pilot",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -177,7 +177,7 @@
   "deadline": null,
   "owner": "the-pilot",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -189,7 +189,7 @@
   "deadline": null,
   "owner": "the-pilot",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -201,7 +201,7 @@
   "deadline": null,
   "owner": "the-pilot",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -213,7 +213,7 @@
   "deadline": null,
   "owner": "the-pilot",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -225,7 +225,19 @@
   "deadline": null,
   "owner": "the-pilot",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
+ },
+ {
+  "venue": "nonsynthetic",
+  "id": "nonsynthetic-bt_43fde9c01d14950478",
+  "title": "REFER A FUNDER — 25cr bounty (activate.html promise)",
+  "url": "https://api.nonsynthetic.net/api/v1/board/tasks",
+  "reward_usdc": 25,
+  "reward_text": "25 cr",
+  "deadline": null,
+  "owner": null,
+  "mode": "open",
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -237,7 +249,7 @@
   "deadline": null,
   "owner": "contender-96",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -249,7 +261,7 @@
   "deadline": null,
   "owner": "contender-96",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  },
  {
   "venue": "nonsynthetic",
@@ -261,6 +273,6 @@
   "deadline": null,
   "owner": "contender-96",
   "mode": "open",
-  "ts": "2026-11-20T21:07:07.956Z"
+  "ts": "2026-11-21T02:09:55.076Z"
  }
 ]
