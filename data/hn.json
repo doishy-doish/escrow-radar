@@ -1,33 +1,73 @@
 [
  {
-  "id": 50588982,
-  "title": "Derek Lowe: Detonating a Pile of Lead Azide",
-  "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
-  "score": 263,
-  "by": "beginning_end",
-  "time": "2026-11-21T13:23:14.000Z"
+  "id": 50582069,
+  "title": "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
+  "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
+  "score": 260,
+  "by": "rafaelc",
+  "time": "2026-11-20T21:03:12.000Z"
+ },
+ {
+  "id": 50591853,
+  "title": "Inkling-2-Mini in 5.4 GB Memory",
+  "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+  "score": 269,
+  "by": "k__",
+  "time": "2026-11-21T18:02:19.000Z"
  },
  {
   "id": 50589618,
-  "title": "Lean Verification of the Riemann Hypothesis - Joint statement by...",
+  "title": "Lean verification of the Riemann Hypothesis",
   "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
-  "score": 276,
+  "score": 680,
   "by": "g-b-r",
   "time": "2026-11-21T14:36:45.000Z"
+ },
+ {
+  "id": 50588982,
+  "title": "Detonating a pile of lead azide",
+  "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
+  "score": 453,
+  "by": "beginning_end",
+  "time": "2026-11-21T13:23:14.000Z"
  },
  {
   "id": 50532613,
   "title": "Brazil's tax authority open-sources its tax calculator on GitHub under MIT",
   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria",
-  "score": 406,
+  "score": 640,
   "by": "dvaplima",
   "time": "2026-11-17T15:22:57.000Z"
  },
  {
+  "id": 50583028,
+  "title": "Getting the mind to steer the body to steer you",
+  "url": "https://notnottalmud.substack.com/p/getting-the-mind-to-steer-the-body",
+  "score": 53,
+  "by": "jger15",
+  "time": "2026-11-20T22:11:05.000Z"
+ },
+ {
+  "id": 50591260,
+  "title": "PostgreSQL Extensions in Go",
+  "url": "https://jespino.github.io/gopgext/",
+  "score": 96,
+  "by": "valyala",
+  "time": "2026-11-21T17:08:04.000Z"
+ },
+ {
+  "id": 50593679,
+  "title": "Tasklet (YC P26) Is Hiring Product and Agent Infra Engineers",
+  "url": "https://tasklet.ai/careers",
+  "score": 1,
+  "by": "mayop100",
+  "time": "2026-11-21T21:11:08.000Z"
+ },
+ {
   "id": 50587875,
-  "title": "My Monitor Was Cutting My Download Speed by 75%",
+  "title": "My monitor was cutting my download speed by 75%",
   "url": "https://blog.tymscar.com/posts/studiodisplayethernet/",
-  "score": 227,
+  "score": 404,
   "by": "soheilpro",
   "time": "2026-11-21T10:36:32.000Z"
  },
@@ -35,39 +75,63 @@
   "id": 50579568,
   "title": "Hurried Announcement: Alessandro Masullo GRH",
   "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
-  "score": 2295,
+  "score": 2364,
   "by": "jasondavies",
   "time": "2026-11-20T18:33:14.000Z"
  },
  {
-  "id": 50574968,
-  "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
-  "url": "https://alpo.ge/remark.pdf",
-  "score": 2806,
-  "by": "iamronaldo",
-  "time": "2026-11-20T14:16:21.000Z"
+  "id": 50532417,
+  "title": "Tropical Rainforests Species may be surprisingly young",
+  "url": "https://phys.org/news/2026-11-species-tropical-rainforests-young-emergence.html",
+  "score": 28,
+  "by": "PaulHoule",
+  "time": "2026-11-17T15:08:54.000Z"
+ },
+ {
+  "id": 50592097,
+  "title": "Upload2Shell · CVE-2026-125396",
+  "url": "https://pwn.ai/upload2shell",
+  "score": 49,
+  "by": "f311a",
+  "time": "2026-11-21T18:29:29.000Z"
+ },
+ {
+  "id": 50546495,
+  "title": "Exponential Behavior in Magic: The Gathering",
+  "url": "https://levineuwirth.org/essays/exponential-magic/",
+  "score": 72,
+  "by": "neuwirth",
+  "time": "2026-11-18T14:07:09.000Z"
+ },
+ {
+  "id": 50590441,
+  "title": "Verification files for the Lean proof of the Riemann Hypothesis",
+  "url": "https://math.mit.edu/~drew/grh/",
+  "score": 70,
+  "by": "Bluestein",
+  "time": "2026-11-21T15:54:34.000Z"
  },
  {
   "id": 50590279,
-  "title": "Show HN: Zero C#, Power of C# without any GC",
+  "title": "Show HN: Zero C# – C# without a runtime or GC",
   "url": "https://onurgumus.github.io/zero-csharp/index.html",
-  "score": 27,
+  "score": 103,
   "by": "reverseblade2",
   "time": "2026-11-21T15:39:09.000Z"
  },
  {
-  "id": 50587208,
-  "title": "RCE in Gnupg",
-  "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
-  "score": 149,
-  "by": "gdgghhhhh",
-  "time": "2026-11-21T08:32:58.000Z"
+  "id": 50593637,
+  "title": "The Emergence of Inequality in the Czech Corded Ware Culture",
+  "url": "https://www.jna.uni-kiel.de/index.php/jna/article/view/1560/1746",
+  "score": 5,
+  "by": "marojejian",
+  "time": "2026-11-21T21:06:14.000Z"
  },
  {
   "id": 50581260,
   "title": "Inkling 2 Mini",
   "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
-  "score": 1205,
+  "score": 1332,
   "by": "jasondavies",
   "time": "2026-11-20T20:12:19.000Z"
  },
@@ -75,168 +139,104 @@
   "id": 50577991,
   "title": "I'm quite pleased by the tech architecture of my art website",
   "url": "https://klauria.tech/klauria-art/",
-  "score": 38,
+  "score": 122,
   "by": "evakhoury",
   "time": "2026-11-20T17:03:39.000Z"
  },
  {
-  "id": 50574264,
-  "title": "Deterministic Simulation Testing Is for Everyone",
-  "url": "https://outdata.net/blog/261120",
-  "score": 21,
-  "by": "pgraug",
-  "time": "2026-11-20T13:19:48.000Z"
+  "id": 50587208,
+  "title": "RCE in Gnupg",
+  "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+  "score": 208,
+  "by": "gdgghhhhh",
+  "time": "2026-11-21T08:32:58.000Z"
  },
  {
-  "id": 50579331,
-  "title": "We promoted developers into architects without informing them",
-  "url": "https://manidoraisamy.com/developer-to-architect.html",
-  "score": 526,
-  "by": "QueensGambit",
-  "time": "2026-11-20T18:17:51.000Z"
+  "id": 50548136,
+  "title": "Context-Generic Programming v0.8.0 – Pluggable trait implementations for Rust",
+  "url": "https://contextgeneric.dev/blog/v0.8.0-release/",
+  "score": 7,
+  "by": "maybevoid",
+  "time": "2026-11-18T16:17:41.000Z"
  },
  {
-  "id": 50588916,
-  "title": "Astra 6.2 and Sol 6.2 flop at Simple Bench",
-  "url": "https://simple-bench.com/",
-  "score": 97,
-  "by": "algoth1",
-  "time": "2026-11-21T13:16:12.000Z"
+  "id": 50533517,
+  "title": "Bolt's Scooters Are Becoming Accessibility Sensors",
+  "url": "https://geoawesome.com/bolt-scooters-accessibility-mapping-wheels4wheels/",
+  "score": 9,
+  "by": "chippy",
+  "time": "2026-11-17T16:12:11.000Z"
+ },
+ {
+  "id": 50575644,
+  "title": "Why there are still no non-WebKit browsers on iOS",
+  "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
+  "score": 418,
+  "by": "lapcat",
+  "time": "2026-11-20T15:03:31.000Z"
  },
  {
   "id": 50583761,
   "title": "Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?",
   "url": null,
-  "score": 403,
+  "score": 558,
   "by": "LetThingsBeDiff",
   "time": "2026-11-20T23:18:32.000Z"
+ },
+ {
+  "id": 50550015,
+  "title": "How I made a custom game engine for Satelital",
+  "url": "https://spectralorbit.com/blog/satelital_game_engine",
+  "score": 22,
+  "by": "todsacerdoti",
+  "time": "2026-11-18T18:23:03.000Z"
  },
  {
   "id": 50546587,
   "title": "LLMs can read and write executables byte by byte from a hex dump",
   "url": "https://sgiannopoulos.github.io/blog/machine-code-programming/",
-  "score": 84,
+  "score": 155,
   "by": "fortran77",
   "time": "2026-11-18T14:15:58.000Z"
+ },
+ {
+  "id": 50579331,
+  "title": "We promoted developers into architects without informing them",
+  "url": "https://manidoraisamy.com/developer-to-architect.html",
+  "score": 565,
+  "by": "QueensGambit",
+  "time": "2026-11-20T18:17:51.000Z"
+ },
+ {
+  "id": 50574264,
+  "title": "Deterministic Simulation Testing Is for Everyone",
+  "url": "https://outdata.net/blog/261120",
+  "score": 62,
+  "by": "pgraug",
+  "time": "2026-11-20T13:19:48.000Z"
  },
  {
   "id": 50578358,
   "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
   "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
-  "score": 508,
+  "score": 528,
   "by": "archon1410",
   "time": "2026-11-20T17:21:36.000Z"
  },
  {
-  "id": 50586292,
-  "title": "ClawDOS – An AI coding agent for DOS",
-  "url": "http://ricapar.net/ClawDOS/",
-  "score": 128,
-  "by": "Ricapar",
-  "time": "2026-11-21T05:38:01.000Z"
- },
- {
-  "id": 50583274,
-  "title": "NINLIVE: The Nine Inch Nails live archive",
-  "url": "https://ninlive.com/",
-  "score": 322,
-  "by": "CharlesW",
-  "time": "2026-11-20T22:30:47.000Z"
- },
- {
-  "id": 50585376,
-  "title": "Clojure will affect the way you think about programming (2017)",
-  "url": "https://eli.thegreenplace.net/2017/clojure-the-perfect-language-to-expand-your-brain/",
-  "score": 161,
-  "by": "sammatilda",
-  "time": "2026-11-21T02:40:39.000Z"
+  "id": 50574968,
+  "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+  "url": "https://alpo.ge/remark.pdf",
+  "score": 2853,
+  "by": "iamronaldo",
+  "time": "2026-11-20T14:16:21.000Z"
  },
  {
   "id": 50541047,
   "title": "Show HN: An ASCII cell aquarium for your terminal",
   "url": "https://github.com/kborer/cells/",
-  "score": 12,
+  "score": 37,
   "by": "kborer",
   "time": "2026-11-18T02:18:29.000Z"
- },
- {
-  "id": 50577265,
-  "title": "Language Models Can Rewrite Their Own Weights",
-  "url": "https://arxiv.org/abs/2611.21885",
-  "score": 456,
-  "by": "lwhsiao",
-  "time": "2026-11-20T16:29:06.000Z"
- },
- {
-  "id": 50576012,
-  "title": "Slopstrap – Make your site look hastily vibecoded",
-  "url": "https://slopstrap.mikelacher.com/",
-  "score": 481,
-  "by": "mlacher",
-  "time": "2026-11-20T15:24:11.000Z"
- },
- {
-  "id": 50586648,
-  "title": "Surprisingly Adorable Insect Portraits",
-  "url": "https://amateurphotographer.com/latest/these-astonishing-insect-portraits-reveal-a-hidden-world-you-never-knew-existed/",
-  "score": 111,
-  "by": "NordStreamYacht",
-  "time": "2026-11-21T06:44:14.000Z"
- },
- {
-  "id": 50574383,
-  "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
-  "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-  "score": 427,
-  "by": "cdrnsf",
-  "time": "2026-11-20T13:29:59.000Z"
- },
- {
-  "id": 50587859,
-  "title": "FBI reportedly investigating apparent hack of its criminal database",
-  "url": "https://www.bbc.com/news/articles/cvze7de86pk3o",
-  "score": 126,
-  "by": "theanonymousone",
-  "time": "2026-11-21T10:33:57.000Z"
- },
- {
-  "id": 50583768,
-  "title": "Sir Brian May adds new dimension to Hera asteroid",
-  "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/sir-brian-may-adds-new-dimension-to-hera-asteroid",
-  "score": 141,
-  "by": "mooreds",
-  "time": "2026-11-20T23:19:44.000Z"
- },
- {
-  "id": 50546873,
-  "title": "Defcon 5's California Caravan Program/Zine",
-  "url": "https://netninja.com/2026/06/08/defcon-5s-california-caravan-program-zine/",
-  "score": 22,
-  "by": "speckx",
-  "time": "2026-11-18T14:40:07.000Z"
- },
- {
-  "id": 50534387,
-  "title": "Valkey kills the skiplist, cuts sorted set overhead by up to 43%",
-  "url": "https://valkey.io/blog/from-skiplist-to-b+tree/",
-  "score": 177,
-  "by": "reconditerose",
-  "time": "2026-11-17T16:58:30.000Z"
- },
- {
-  "id": 50581110,
-  "title": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
-  "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
-  "score": 258,
-  "by": "facundo_olano",
-  "time": "2026-11-20T20:03:59.000Z"
- },
- {
-  "id": 50576232,
-  "title": "Finite-time blow-up for the Navier–Stokes equations",
-  "url": "https://github.com/tristanbuckmaster/navier-stokes/",
-  "score": 308,
-  "by": "trotro",
-  "time": "2026-11-20T15:34:31.000Z"
  }
 ]
