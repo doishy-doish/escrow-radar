@@ -3,240 +3,240 @@
   "id": 50579568,
   "title": "Hurried Announcement: Alessandro Masullo GRH",
   "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
-  "score": 1590,
+  "score": 2042,
   "by": "jasondavies",
   "time": "2026-11-20T18:33:14.000Z"
- },
- {
-  "id": 50581260,
-  "title": "Inkling 2 Mini",
-  "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
-  "score": 693,
-  "by": "jasondavies",
-  "time": "2026-11-20T20:12:19.000Z"
  },
  {
   "id": 50574968,
   "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
   "url": "https://alpo.ge/remark.pdf",
-  "score": 2381,
+  "score": 2625,
   "by": "iamronaldo",
   "time": "2026-11-20T14:16:21.000Z"
  },
  {
-  "id": 50583274,
-  "title": "NINLIVE: The Nine Inch Nails live archive",
-  "url": "https://ninlive.com/",
-  "score": 130,
-  "by": "CharlesW",
-  "time": "2026-11-20T22:30:47.000Z"
+  "id": 50581260,
+  "title": "Inkling 2 Mini",
+  "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+  "score": 977,
+  "by": "jasondavies",
+  "time": "2026-11-20T20:12:19.000Z"
+ },
+ {
+  "id": 50586292,
+  "title": "ClawDOS – An AI coding agent for DOS",
+  "url": "http://ricapar.net/ClawDOS/",
+  "score": 57,
+  "by": "Ricapar",
+  "time": "2026-11-21T05:38:01.000Z"
  },
  {
   "id": 50579331,
   "title": "We promoted developers into architects without informing them",
   "url": "https://manidoraisamy.com/developer-to-architect.html",
-  "score": 308,
+  "score": 425,
   "by": "QueensGambit",
   "time": "2026-11-20T18:17:51.000Z"
+ },
+ {
+  "id": 50583274,
+  "title": "NINLIVE: The Nine Inch Nails live archive",
+  "url": "https://ninlive.com/",
+  "score": 256,
+  "by": "CharlesW",
+  "time": "2026-11-20T22:30:47.000Z"
+ },
+ {
+  "id": 50585376,
+  "title": "Clojure will affect the way you think about programming (2017)",
+  "url": "https://eli.thegreenplace.net/2017/clojure-the-perfect-language-to-expand-your-brain/",
+  "score": 87,
+  "by": "sammatilda",
+  "time": "2026-11-21T02:40:39.000Z"
  },
  {
   "id": 50578358,
   "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
   "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
-  "score": 346,
+  "score": 442,
   "by": "archon1410",
   "time": "2026-11-20T17:21:36.000Z"
  },
  {
-  "id": 50534387,
-  "title": "Valkey kills the skiplist, cuts sorted set overhead by up to 43%",
-  "url": "https://valkey.io/blog/from-skiplist-to-b+tree/",
-  "score": 38,
-  "by": "reconditerose",
-  "time": "2026-11-17T16:58:30.000Z"
- },
- {
-  "id": 50577265,
-  "title": "Language Models Can Rewrite Their Own Weights",
-  "url": "https://arxiv.org/abs/2611.21885",
-  "score": 343,
-  "by": "lwhsiao",
-  "time": "2026-11-20T16:29:06.000Z"
+  "id": 50586648,
+  "title": "Surprisingly Adorable Insect Portraits",
+  "url": "https://amateurphotographer.com/latest/these-astonishing-insect-portraits-reveal-a-hidden-world-you-never-knew-existed/",
+  "score": 31,
+  "by": "NordStreamYacht",
+  "time": "2026-11-21T06:44:14.000Z"
  },
  {
   "id": 50583768,
   "title": "Sir Brian May adds new dimension to Hera asteroid",
   "url": "https://www.esa.int/articles/about-us/directorates/operations/space-safety/hera/sir-brian-may-adds-new-dimension-to-hera-asteroid",
-  "score": 38,
+  "score": 103,
   "by": "mooreds",
   "time": "2026-11-20T23:19:44.000Z"
+ },
+ {
+  "id": 50577265,
+  "title": "Language Models Can Rewrite Their Own Weights",
+  "url": "https://arxiv.org/abs/2611.21885",
+  "score": 408,
+  "by": "lwhsiao",
+  "time": "2026-11-20T16:29:06.000Z"
+ },
+ {
+  "id": 50583761,
+  "title": "Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?",
+  "url": null,
+  "score": 170,
+  "by": "LetThingsBeDiff",
+  "time": "2026-11-20T23:18:32.000Z"
+ },
+ {
+  "id": 50534387,
+  "title": "Valkey kills the skiplist, cuts sorted set overhead by up to 43%",
+  "url": "https://valkey.io/blog/from-skiplist-to-b+tree/",
+  "score": 127,
+  "by": "reconditerose",
+  "time": "2026-11-17T16:58:30.000Z"
  },
  {
   "id": 50581110,
   "title": "DreamCoder: Coding harness and IDE from the author of Mastering Emacs",
   "url": "https://www.masteringemacs.org/article/announcing-dreamcoder",
-  "score": 111,
+  "score": 211,
   "by": "facundo_olano",
   "time": "2026-11-20T20:03:59.000Z"
+ },
+ {
+  "id": 50556482,
+  "title": "Fewer slides, more dragons",
+  "url": "https://www.breakingchange.blog/p/fewer-slides-more-dragons",
+  "score": 27,
+  "by": "firloop",
+  "time": "2026-11-19T05:46:36.000Z"
  },
  {
   "id": 50576232,
   "title": "Finite-time blow-up for the Navier–Stokes equations",
   "url": "https://github.com/tristanbuckmaster/navier-stokes/",
-  "score": 260,
+  "score": 286,
   "by": "trotro",
   "time": "2026-11-20T15:34:31.000Z"
  },
  {
-  "id": 50572355,
-  "title": "If you can't explain something in simple terms, you don't understand it (2017)",
-  "url": "https://kottke.org/17/06/if-you-cant-explain-something-in-simple-terms-you-dont-understand-it",
-  "score": 628,
-  "by": "sammatilda",
-  "time": "2026-11-20T09:43:19.000Z"
+  "id": 50584082,
+  "title": "Catching Crumbs from the Table [pdf]",
+  "url": "https://gwern.net/doc/fiction/science-fiction/2000-chiang.pdf",
+  "score": 7,
+  "by": "gchamonlive",
+  "time": "2026-11-20T23:52:54.000Z"
  },
  {
-  "id": 50581177,
-  "title": "And yet, it moves",
-  "url": "https://signoregalilei.com/2026/11/20/and-yet-it-moves/",
-  "score": 90,
-  "by": "notfried",
-  "time": "2026-11-20T20:07:55.000Z"
+  "id": 50574383,
+  "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+  "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+  "score": 307,
+  "by": "cdrnsf",
+  "time": "2026-11-20T13:29:59.000Z"
  },
  {
-  "id": 50583982,
-  "title": "Re: Riemann",
-  "url": "https://borretti.me/article/re-riemann",
-  "score": 121,
-  "by": "_dain_",
-  "time": "2026-11-20T23:42:44.000Z"
+  "id": 50540342,
+  "title": "3-legged Persian leopard's 150-mile journey highlights Caucasus border hazards",
+  "url": "https://news.mongabay.com/short-article/2026/11/three-legged-persian-leopards-150-mile-journey-highlights-caucasus-border-hazards/",
+  "score": 21,
+  "by": "rguiscard",
+  "time": "2026-11-18T00:39:18.000Z"
  },
  {
   "id": 50579297,
   "title": "Vibecoding an inference chip",
   "url": "https://ankitg.me/blog/vibecoding-inference-chip/",
-  "score": 116,
+  "score": 146,
   "by": "ankitvgupta",
   "time": "2026-11-20T18:15:16.000Z"
  },
  {
-  "id": 50581084,
-  "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
-  "url": "https://scottaaronson.blog/?p=10344",
-  "score": 219,
-  "by": "stratos123",
-  "time": "2026-11-20T20:03:07.000Z"
+  "id": 50541568,
+  "title": "Show HN: Tinnitus frequency finder and audio notch tool",
+  "url": "https://trynotched.com/find",
+  "score": 173,
+  "by": "brianrhea",
+  "time": "2026-11-18T03:40:01.000Z"
  },
  {
-  "id": 50572348,
-  "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
-  "url": "https://signal.org/blog/protecting-your-privacy/",
-  "score": 512,
-  "by": "dotcoma",
-  "time": "2026-11-20T09:42:16.000Z"
- },
- {
-  "id": 50580536,
-  "title": "Winedroid – run Android apps without Android (WASM demo)",
-  "url": "https://winedroid.soham.sh/demo/",
-  "score": 104,
-  "by": "sohzm",
-  "time": "2026-11-20T19:30:16.000Z"
- },
- {
-  "id": 50583117,
-  "title": "The Hungry Butler Effect: Concealed Commercial Incentives in LLMs",
-  "url": "https://www.researchgate.net/publication/418143113_The_Hungry_Butler_Effect_Concealed_Commercial_Incentives_and_the_Erosion_of_Epistemic_Rigour_in_Large_Language_Models",
-  "score": 18,
-  "by": "undefinedmethod",
-  "time": "2026-11-20T22:18:20.000Z"
- },
- {
-  "id": 50549441,
-  "title": "Forking TuxGuitar into a 17-EDO tab editor",
-  "url": "https://frogwizard.bearblog.dev/tuxguitar-17edo/",
-  "score": 6,
-  "by": "speckx",
-  "time": "2026-11-18T17:41:57.000Z"
- },
- {
-  "id": 50581403,
-  "title": "Show HN: OpenComputer – an open source alternative to Devin",
-  "url": "https://github.com/diggerhq/opencomputer",
-  "score": 69,
-  "by": "iacguy",
-  "time": "2026-11-20T20:19:56.000Z"
+  "id": 50585593,
+  "title": "Backblaze Notice at Collection and Privacy Policy",
+  "url": "https://www.backblaze.com/company/policy/privacy",
+  "score": 189,
+  "by": "meysamazad",
+  "time": "2026-11-21T03:23:16.000Z"
  },
  {
   "id": 50495392,
   "title": "Why the Airbus A321XLR often gets stuck climbing for first few hours of flight",
   "url": "https://simpleflying.com/airbus-a321xlr-often-stuck-climbing-1st-few-hours-flight/",
-  "score": 87,
+  "score": 117,
   "by": "edward",
   "time": "2026-11-14T09:13:24.000Z"
  },
  {
-  "id": 50581438,
-  "title": "US SEC's Nvidia probe is examining potential accounting issues – sources",
-  "url": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
-  "score": 227,
-  "by": "ftchd",
-  "time": "2026-11-20T20:22:41.000Z"
+  "id": 50576012,
+  "title": "Slopstrap – Make your site look hastily vibecoded",
+  "url": "https://slopstrap.mikelacher.com/",
+  "score": 250,
+  "by": "mlacher",
+  "time": "2026-11-20T15:24:11.000Z"
  },
  {
-  "id": 50584776,
-  "title": "Integrals of Polynomials with Galois Group S_p",
-  "url": "https://m-slee.netlify.app/posts/integrals-galois-polynomials",
-  "score": 3,
-  "by": "richard_chase",
-  "time": "2026-11-21T01:17:05.000Z"
+  "id": 50581084,
+  "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
+  "url": "https://scottaaronson.blog/?p=10344",
+  "score": 288,
+  "by": "stratos123",
+  "time": "2026-11-20T20:03:07.000Z"
+ },
+ {
+  "id": 50543887,
+  "title": "Microsoft's SideWinder Strategic Commander was a failed attempt",
+  "url": "https://www.rockpapershotgun.com/microsofts-sidewinder-strategic-commander-was-a-failed-attempt-to-reimagine-rts-controls-23-years-later-why-are-some-players-still-using-it",
+  "score": 6,
+  "by": "Tomte",
+  "time": "2026-11-18T09:18:11.000Z"
+ },
+ {
+  "id": 50583856,
+  "title": "Serious cyberattack thought backed by wealthy operators",
+  "url": "https://www.ruv.is/english/2026-11-20-serious-cyberattack-thought-backed-by-wealthy-operators-493411",
+  "score": 80,
+  "by": "Bender",
+  "time": "2026-11-20T23:29:30.000Z"
+ },
+ {
+  "id": 50559116,
+  "title": "Worlds largest beaver dam in Northern Alberta",
+  "url": "https://substack.com/@canadianreturnee/note/c-319574497",
+  "score": 23,
+  "by": "bookofjoe",
+  "time": "2026-11-19T12:14:27.000Z"
  },
  {
   "id": 50521550,
-  "title": "I can’t believe it’s 1!",
+  "title": "I can’t believe it’s 1",
   "url": "https://aperiodical.com/2026/11/i-cant-believe-its-1/",
-  "score": 46,
+  "score": 67,
   "by": "ColinWright",
   "time": "2026-11-16T19:07:13.000Z"
  },
  {
-  "id": 50526023,
-  "title": "Show HN: I made an audio-to-MIDI model 60x more efficient",
-  "url": "https://kobi.music/research/dettato",
-  "score": 242,
-  "by": "hidude562",
-  "time": "2026-11-17T01:03:05.000Z"
- },
- {
-  "id": 50577613,
-  "title": "I'm Peter Roberts, immigration attorney who does work for YC and startups. AMA",
-  "url": null,
-  "score": 96,
-  "by": "proberts",
-  "time": "2026-11-20T16:45:25.000Z"
- },
- {
-  "id": 50583134,
-  "title": "Merkle Tree Certificates",
-  "url": "https://datatracker.ietf.org/doc/draft-ietf-plants-merkle-tree-certs/",
-  "score": 13,
-  "by": "mooreds",
-  "time": "2026-11-20T22:19:23.000Z"
- },
- {
-  "id": 50532515,
-  "title": "Show HN: An API for word timestamps from speech, 75% within 20ms",
-  "url": "https://quebec.yarn.so",
-  "score": 64,
-  "by": "jasperstory",
-  "time": "2026-11-17T15:16:45.000Z"
- },
- {
-  "id": 50535504,
-  "title": "Replacing implicit optionals with a None type in TypeDB",
-  "url": "https://typedb.com/blog/replacing-implicit-optionals-with-a-none-type-in-typedb",
-  "score": 8,
-  "by": "flyingsilverfin",
-  "time": "2026-11-17T18:03:18.000Z"
+  "id": 50580536,
+  "title": "Winedroid – run Android apps without Android (WASM demo)",
+  "url": "https://winedroid.soham.sh/demo/",
+  "score": 136,
+  "by": "sohzm",
+  "time": "2026-11-20T19:30:16.000Z"
  }
 ]
