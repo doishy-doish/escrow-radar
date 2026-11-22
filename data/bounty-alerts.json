@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-22T09:42:27.886Z",
+ "ts": "2026-11-22T17:25:14.093Z",
  "count": 0,
  "alerts": [],
  "demoted": [
@@ -8,32 +8,8 @@
    "stale_reason": "stale_target:programs/paraloom/src/lib.rs:99d"
   },
   {
-   "id": "paraloom-core#1638",
-   "stale_reason": "stale_target:src/node/mod.rs:87d"
-  },
-  {
-   "id": "paraloom-core#1639",
-   "stale_reason": "stale_target:src/node/mod.rs:87d"
-  },
-  {
-   "id": "paraloom-core#1636",
-   "stale_reason": "stale_target:programs/paraloom/src/lib.rs:99d"
-  },
-  {
-   "id": "paraloom-core#1645",
-   "stale_reason": "stale_target:src/privacy/nullifier.rs:134d"
-  },
-  {
    "id": "paraloom-core#1646",
    "stale_reason": "repo_mismatch:lib/paraloom/notes.ts"
-  },
-  {
-   "id": "paraloom-core#1632",
-   "stale_reason": "repo_mismatch:lib/paraloom/transactFlow.ts"
-  },
-  {
-   "id": "paraloom-core#1643",
-   "stale_reason": "stale_target:src/node/mod.rs:87d"
   },
   {
    "id": "paraloom-core#1647",
@@ -42,10 +18,6 @@
   {
    "id": "paraloom-core#1644",
    "stale_reason": "stale_target:programs/paraloom/src/lib.rs:100d"
-  },
-  {
-   "id": "paraloom-core#1633",
-   "stale_reason": "stale_target:src/bridge/solana/decoder.rs:92d"
   }
  ]
 }

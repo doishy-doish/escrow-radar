@@ -3,19 +3,19 @@
   "ci": "failing",
   "repro": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
   "reproSrc": ".github/workflows/bridge-e2e.yml",
-  "ts": "2026-11-22T09:41:27.732Z"
+  "ts": "2026-11-22T17:24:16.882Z"
  },
  "paraloom-labs/paraloom-wallet": {
   "ci": "passing",
   "repro": "pnpm test",
   "reproSrc": ".github/workflows/ci.yml",
-  "ts": "2026-11-22T09:41:42.673Z"
+  "ts": "2026-11-22T17:24:22.332Z"
  },
  "scaffold-studio-hq/scaffold-studio-frontend": {
   "ci": "unknown",
   "repro": null,
   "reproSrc": null,
-  "ts": "2026-11-22T09:42:11.391Z"
+  "ts": "2026-11-22T17:25:04.817Z"
  },
  "paraloom-labs/paraloom-prover-wasm": {
   "ci": "unknown",
