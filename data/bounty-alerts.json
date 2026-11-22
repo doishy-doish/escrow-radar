@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-22T17:25:14.093Z",
+ "ts": "2026-11-22T22:39:03.362Z",
  "count": 0,
  "alerts": [],
  "demoted": [
@@ -10,6 +10,10 @@
   {
    "id": "paraloom-core#1646",
    "stale_reason": "repo_mismatch:lib/paraloom/notes.ts"
+  },
+  {
+   "id": "paraloom-core#1664",
+   "stale_reason": "stale_target:src/node/mod.rs:87d"
   },
   {
    "id": "paraloom-core#1647",

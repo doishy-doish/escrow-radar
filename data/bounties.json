@@ -1,5 +1,42 @@
 [
  {
+  "id": "paraloom-core#1664",
+  "venue": "paraloom",
+  "repo": "paraloom-core",
+  "org": "paraloom-labs",
+  "number": 1664,
+  "title": "[Medium] Co-sign budget can be burned under the real bridge authority — targeted settlement freeze",
+  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1664",
+  "severity": null,
+  "reward_usdc": 150,
+  "reward_source": "explicit",
+  "age_seconds_since_open": 13652,
+  "opened_at": "2026-11-22T18:50:33Z",
+  "competing_prs": 0,
+  "competing_pr_urls": [],
+  "ci_status": "failing",
+  "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
+  "repro_source": ".github/workflows/bridge-e2e.yml",
+  "rail": "MANUAL_MAINTAINER_REVIEW",
+  "escrow_verified": false,
+  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
+  "has_repro": false,
+  "has_stack_trace": false,
+  "has_fix_hint": true,
+  "failing_assertion": null,
+  "target_files": [
+   "src/node/mod.rs"
+  ],
+  "stack_excerpt": null,
+  "claimed_in_comments": false,
+  "claim_evidence": null,
+  "excerpt": "**Program:** Paraloom bug bounty, Stage 1 (devnet) **Component:** `src/node/` — settlement / co-sign path (`cosign_settlement`, `handle_cosign_request`) **Source:** `main` at HEAD `9e8c8e6` (present since the #723 fix) **Severity:** Medium — \"a griefing/liveness path that halts settlement\" (bounty doc), up to $150 ## Summary The per-nullifier co-sign cap (`MAX_COSIGNS_PER_SETTLEMENT = 4`, never reset) is keyed on `(nullifier, payload.authority)` since the #723 fix. That fix isolates budgets *per authority value*, but nothing authenticates that the co-sign requester actually controls the author",
+  "ts": "2026-11-22T22:38:11.299Z",
+  "days_since_target_touch": 87,
+  "stale_context": true,
+  "stale_reason": "stale_target:src/node/mod.rs:87d"
+ },
+ {
   "id": "paraloom-core#1661",
   "venue": "paraloom",
   "repo": "paraloom-core",
@@ -10,7 +47,7 @@
   "severity": "Medium",
   "reward_usdc": 0.02,
   "reward_source": "explicit",
-  "age_seconds_since_open": 8720,
+  "age_seconds_since_open": 27558,
   "opened_at": "2026-11-22T14:58:47Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -34,7 +71,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity: Medium Per the program's own severity definitions, Medium covers \"griefing/liveness that halts settlement\". This is exactly that: a victim's note becomes unspendable until they re-prove against a newer root. It is NOT High: no funds are stolen, no value is created or destroyed, and the freeze is not permanent (see \"Re-prove analysis\" below). ## Summary `transact` only accepts proofs against roots still present in the `IncrementalMerkleTree`'s 64-slot root history (`ROOT_HISTORY_SIZE = 64`). Anyone can push 64 dust deposits (1 lamport each) and evict the root a victim's note was cr",
-  "ts": "2026-11-22T17:24:17.644Z"
+  "ts": "2026-11-22T22:38:13.129Z"
  },
  {
   "id": "paraloom-wallet#303",
@@ -47,7 +84,7 @@
   "severity": "Low",
   "reward_usdc": 50,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 21336,
+  "age_seconds_since_open": 40174,
   "opened_at": "2026-11-22T11:28:31Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -74,7 +111,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "# Ingress fetches in `scanForNotes` and `submitTransact` have no timeout: a hung node hangs the scan forever and strands the background scanner **Repository:** `paraloom-labs/paraloom-wallet` **Commit tested:** `1e79eec` (HEAD, PR #25) **Severity:** Low **Scope note:** `lib/paraloom/scan.ts` and `lib/paraloom/transact.ts` are both present at `cf07683` (version 1.3.1, 28 Jul 2026) with the same bare `fetch()` calls and no timeout. The shipped 1.3.0 source (22 Jun 2026) is not in the repository — no tag or commit carries version 1.3.0 — so presence at 1.3.0 cannot be confirmed or ruled out. Unde",
-  "ts": "2026-11-22T17:24:24.031Z"
+  "ts": "2026-11-22T22:38:16.264Z"
  },
  {
   "id": "paraloom-core#1654",
@@ -87,7 +124,7 @@
   "severity": "Low",
   "reward_usdc": 50,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 21396,
+  "age_seconds_since_open": 40234,
   "opened_at": "2026-11-22T11:27:31Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -113,7 +150,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "# Transact ingress accepts submissions on a node without a settlement keypair, returning 200 OK for requests that can never settle ## 1. Summary A bridge-enabled node without a settlement keypair (`bridge.authority_keypair_path` unset or unloadable — a configuration `Node::new` explicitly supports) still serves the transact ingress: `POST /transact/submit` returns `200 OK { \"request_id\": ... }` for a transact the node can provably never settle. `Node::initiate_transact_verification` never checks for a co-sign keypair — it starts the round, self-verifies, skips the self-vote, broadcasts, and re",
-  "ts": "2026-11-22T17:24:27.793Z"
+  "ts": "2026-11-22T22:38:20.061Z"
  },
  {
   "id": "paraloom-core#1653",
@@ -126,7 +163,7 @@
   "severity": null,
   "reward_usdc": null,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 22320,
+  "age_seconds_since_open": 41158,
   "opened_at": "2026-11-22T11:12:07Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -152,7 +189,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "Summary Paraloom CLI (src/bin/paraloom_cli.rs, binary paraloom v0.6.0) and privacy library (src/privacy), main at commit 9e8c8e6 as cloned 22 Nov 2026 (program scope pin: commit 468ffaa or later), tested 22 Nov 2026: `wallet new-address` derives the shielded address as SHA256(private_key) while every spend path in the repo derives the spend public key as Poseidon(private_key), so a note paid to a CLI generated address can never be spent with the stored key. Steps to Reproduce I proved this with the real compiled CLI binary and a Rust integration test against the repo privacy code. The PoC file",
-  "ts": "2026-11-22T17:24:29.874Z"
+  "ts": "2026-11-22T22:38:22.162Z"
  },
  {
   "id": "paraloom-wallet#300",
@@ -165,7 +202,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 25971,
+  "age_seconds_since_open": 44809,
   "opened_at": "2026-11-22T10:11:16Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -188,7 +225,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "# [BOUNTY] Medium: `privateSwap` signs router-supplied transaction bytes with zero validation — a malicious or compromised swap router can drain the entire fresh address **Affected:** `paraloom-labs/paraloom-wallet` (`main` @ `1e79eec`, package 1.7.15) — `lib/paraloom/privateSwap.ts` (`routeSwap` consumers at ~L199-208, ~L368-379, ~L580-591; `executeSwapLeg` used by `resumeSwapAtFreshAddress`) **Severity:** Medium — theft of user funds requires a malicious/compromised `SWAP_ROUTER_URL` (`https://node.paraloom.io`) or an on-path response, but the wallet's core \"non-custodial\" guarantee is broke",
-  "ts": "2026-11-22T17:24:32.646Z"
+  "ts": "2026-11-22T22:38:25.051Z"
  },
  {
   "id": "paraloom-core#1648",
@@ -201,7 +238,7 @@
   "severity": null,
   "reward_usdc": null,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 26436,
+  "age_seconds_since_open": 45274,
   "opened_at": "2026-11-22T10:03:31Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -226,7 +263,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "Summary Paraloom node and consensus code (src/node, src/consensus), main at commit 9e8c8e6 as cloned 22 Nov 2026 (program scope pin: commit 468ffaa or later), tested 22 Nov 2026: a stake less mesh peer that advertises a real validator wallet in Discovery passes both settlement gates and burns a co signer per nullifier co sign budget, halting that settlement until the co signer restarts. Steps to Reproduce I proved this with an integration test against the real node code, modeled on the repo own tests/transact_cosign_e2e.rs. The PoC file is spoofed_discovery_cosign_budget_test.rs (attached). Co",
-  "ts": "2026-11-22T17:24:34.591Z"
+  "ts": "2026-11-22T22:38:27.070Z"
  },
  {
   "id": "paraloom-core#1647",
@@ -239,7 +276,7 @@
   "severity": "Low",
   "reward_usdc": 3000,
   "reward_source": "explicit",
-  "age_seconds_since_open": 31340,
+  "age_seconds_since_open": 50178,
   "opened_at": "2026-11-22T08:41:47Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -261,7 +298,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary `prove_transact` in `paraloom-prover-wasm` gained a seventh parameter, `asset_id_hex`, when SPL asset support was added (#779, commit `91426ed`). The crate's only end-to-end test, `tests/v3_native_smoke.rs`, was never updated: both of its `prove_transact` call sites (lines 109 and 244) still pass six arguments. As a result `cargo test` fails to compile with E0061 before any test runs, while the library itself builds fine — so the crate ships with zero executable coverage of its full transact round-trip, and the README still advertises \"a full transact round-trip\" as covered. The tes",
-  "ts": "2026-11-22T17:24:37.294Z",
+  "ts": "2026-11-22T22:38:29.875Z",
   "stale_context": true,
   "stale_reason": "repo_mismatch:tests/v3_native_smoke.rs"
  },
@@ -276,7 +313,7 @@
   "severity": "Low",
   "reward_usdc": 3000,
   "reward_source": "explicit",
-  "age_seconds_since_open": 31344,
+  "age_seconds_since_open": 50182,
   "opened_at": "2026-11-22T08:41:43Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -297,7 +334,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary The wallet stores its full shielded-note map — every note's exact `amount`, its per-note `blinding` secret, `assetId`/`mint`, `commitment`, and `leafIndex` — as plain JSON in `chrome.storage.local` under the key `paraloom_notes`, keyed by the owner's shielded address. This is inconsistent with the wallet's own key handling: the seed vault is encrypted (scrypt + secretbox in `keyManagement.ts`) and decrypted keys are kept only in memory-only `chrome.storage.session`. The note store, which the code itself describes as keeping \"the randomness needed to spend it in a later withdrawal\", ",
-  "ts": "2026-11-22T17:24:39.075Z",
+  "ts": "2026-11-22T22:38:31.676Z",
   "stale_context": true,
   "stale_reason": "repo_mismatch:lib/paraloom/notes.ts"
  },
@@ -312,7 +349,7 @@
   "severity": "Low",
   "reward_usdc": 50,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 33615,
+  "age_seconds_since_open": 52453,
   "opened_at": "2026-11-22T08:03:52Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -339,7 +376,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "### Summary The off-chain nullifier pre-filter that issue #624 was supposed to provide does not exist on the v3 transact path at HEAD (`9e8c8e6`). `NullifierSet::check_batch` has zero production callers, and `ShieldedPool::record_spent` writes nullifiers that nothing ever reads for admission. As a result, anyone who can reach the transact ingress (or any registered validator via gossip) can replay a settled spend — proof, nullifiers, and commitments are all public — and force every validator through a full consensus round plus a co-sign round, every time, before the on-chain submit finally fai",
-  "ts": "2026-11-22T17:24:41.895Z"
+  "ts": "2026-11-22T22:38:34.507Z"
  },
  {
   "id": "paraloom-core#1644",
@@ -352,7 +389,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 35056,
+  "age_seconds_since_open": 53894,
   "opened_at": "2026-11-22T07:39:51Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -374,7 +411,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity Medium — a validator's legitimate fee becomes unclaimable and blocks its exit until a new deposit arrives. No funds are stolen. ## Summary `transact` (native withdraw) explicitly guards the vault payout on `payout + rent_floor` (issue #761: the runtime rejects a transfer that would drop the vault below rent-exemption). `claim_rewards` has no equivalent guard and no partial-claim option — it transfers the full `pending_rewards` out of `bridge_vault` via a system transfer CPI. A system transfer fails when the source ends non-zero but below the rent-exempt minimum (vault is a 0-byte a",
-  "ts": "2026-11-22T17:24:43.597Z",
+  "ts": "2026-11-22T22:38:36.226Z",
   "days_since_target_touch": 100,
   "stale_context": true,
   "stale_reason": "stale_target:programs/paraloom/src/lib.rs:100d"
@@ -390,7 +427,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 35091,
+  "age_seconds_since_open": 53929,
   "opened_at": "2026-11-22T07:39:16Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -413,7 +450,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity Medium — griefing / liveness halt of settlement (no funds move or are stolen). ## Summary `handle_cosign_request` only checks that the sender is a registered validator. It never binds the authenticated libp2p `source` (NodeId) to `payload.authority` (the bridge-authority / leader wallet), and `cosign_settlement` never receives `source` at all. The per-settlement co-sign cap is keyed by `(nullifier, authority)` (`MAX_COSIGNS_PER_SETTLEMENT = 4`). The authority value is public (in `BridgeState`, in gossiped `TransactVerificationRequest`s, in any payload). So one registered validator ",
-  "ts": "2026-11-22T17:24:46.310Z"
+  "ts": "2026-11-22T22:38:39.127Z"
  },
  {
   "id": "paraloom-core#1642",
@@ -426,7 +463,7 @@
   "severity": null,
   "reward_usdc": null,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 35213,
+  "age_seconds_since_open": 54051,
   "opened_at": "2026-11-22T07:37:14Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -449,7 +486,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Paraloom Bug Bounty — Stage 1 (devnet) — Medium severity report** **Claimed severity:** Medium — \"a griefing/liveness path that halts settlement\" **Component:** `src/node/` — co-sign path (`cosign_settlement`, `handle_cosign_request`) **Source audited:** paraloom-core main @ `9e8c8e6d403a4793b841ac1c569eefd11d60c9ad` ## Summary A co-signer approves a settlement by matching its public parameters (recipient, nullifiers, output commitments, root, ext_amount) against a transact it verified — but the match does **not** bind `payload.authority`, and nothing checks that the authenticated requester ",
-  "ts": "2026-11-22T17:24:48.211Z"
+  "ts": "2026-11-22T22:38:41.085Z"
  },
  {
   "id": "paraloom-wallet#298",
@@ -462,7 +499,7 @@
   "severity": null,
   "reward_usdc": null,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 35505,
+  "age_seconds_since_open": 54343,
   "opened_at": "2026-11-22T07:32:22Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -487,7 +524,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Description & Root Cause Every private swap creates a fresh ed25519 keypair that controls the withdrawn/swapped funds until they are re-shielded. That keypair's secret key is stored as plain hex in `chrome.storage.local` under the key `\"paraloom_swap_outputs\"`: - `lib/paraloom/swapOutputs.ts` — `saveSwapOutput`, `listSwapOutputs`, `KEY = \"paraloom_swap_outputs\"` - `lib/paraloom/privateSwap.ts` — `privateSwap`, `privateSwapFromToken`, `resumeSwapAtFreshAddress` write `saveSwapOutput({ freshSecretKeyHex: Buffer.from(fresh.secretKey).toString(\"hex\"), ... })` - `lib/paraloom/swapReconcile.ts` a",
-  "ts": "2026-11-22T17:24:49.980Z"
+  "ts": "2026-11-22T22:38:42.902Z"
  },
  {
   "id": "paraloom-core#1640",
@@ -500,7 +537,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 37293,
+  "age_seconds_since_open": 56131,
   "opened_at": "2026-11-22T07:02:34Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -521,49 +558,10 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary `deactivate_validator` moves the SOL half of a validator's dual stake into unbonding but never touches the token half: `token_stake_amount` is never moved into `token_unbonding_amount`. After the unbonding wait, `withdraw_unbonded_stake` returns only `token_unbonding_amount` (0) and closes the PDA. The validator's entire token stake — at the floor, 1,000,000 PARALOOM — stays in the shared `stake_token_vault` with no account referencing it: permanently locked, returnable by no instruction. **Severity: Medium — CVSS 3.1 `AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N` = 4.9** ## Affected compone",
-  "ts": "2026-11-22T17:24:51.697Z",
+  "ts": "2026-11-22T22:38:44.802Z",
   "days_since_target_touch": 99,
   "stale_context": true,
   "stale_reason": "stale_target:programs/paraloom/src/lib.rs:99d"
- },
- {
-  "id": "paraloom-core#1639",
-  "venue": "paraloom",
-  "repo": "paraloom-core",
-  "org": "paraloom-labs",
-  "number": 1639,
-  "title": "[BOUNTY] Medium: Co-sign round demands unanimity of all Valid voters; one declining voter vetoes settlement the on-chain 2/3-stake quorum would accept",
-  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1639",
-  "severity": "Medium",
-  "reward_usdc": 150,
-  "reward_source": "severity_table",
-  "age_seconds_since_open": 37327,
-  "opened_at": "2026-11-22T07:02:00Z",
-  "competing_prs": 1,
-  "competing_pr_urls": [
-   "https://github.com/paraloom-labs/paraloom-core/pull/1651"
-  ],
-  "ci_status": "failing",
-  "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
-  "repro_source": ".github/workflows/bridge-e2e.yml",
-  "rail": "MANUAL_MAINTAINER_REVIEW",
-  "escrow_verified": false,
-  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
-  "has_repro": true,
-  "has_stack_trace": false,
-  "has_fix_hint": true,
-  "failing_assertion": "assert!(result.is_err(), \"B-02: one declining Valid voter must fail the unanimity round\")",
-  "target_files": [
-   "src/node/mod.rs",
-   "src/node/cosign_round.rs",
-   "src/bridge/solana/cosign_assembly.rs",
-   "programs/paraloom/src/quorum.rs"
-  ],
-  "stack_excerpt": null,
-  "claimed_in_comments": false,
-  "claim_evidence": null,
-  "excerpt": "## Summary The off-chain co-sign round demands **unanimity of every Valid voter** (`threshold = quorum_wallets.len()`), while the on-chain program only needs a 2/3 stake-weighted supermajority. One registered validator can therefore vote Valid (free, automatic) and then decline every co-sign request — vetoing a settlement its own vote approved, even when the remaining signers already clear the on-chain threshold. Declining is silent: no failure is recorded, no reputation penalty, no equivocation. **Severity: Medium — CVSS 3.1 `AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H` = 6.5** ## Affected component ",
-  "ts": "2026-11-22T17:24:54.438Z"
  },
  {
   "id": "scaffold-studio-frontend#45",
@@ -576,7 +574,7 @@
   "severity": null,
   "reward_usdc": 70,
   "reward_source": "explicit",
-  "age_seconds_since_open": 3958626,
+  "age_seconds_since_open": 3977464,
   "opened_at": "2026-10-07T21:47:01Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -597,7 +595,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Context** `next.config.ts` sets `eslint: { ignoreDuringBuilds: true }`. Combined with a workflow that never runs `next build`, this means lint errors introduced in a PR are invisible on both paths, and the only remaining lint signal is the mutating `biome lint --write --unsafe` step covered by issue 31. **Proposed Change** Turn `ignoreDuringBuilds` off so `next build` fails on lint errors, and let CI run the build (issue 46) or a dedicated lint job report them. **Acceptance Criteria** - `eslint.ignoreDuringBuilds` is removed or set to `false`. - A deliberately introduced lint error is assert",
-  "ts": "2026-11-22T17:25:05.577Z"
+  "ts": "2026-11-22T22:38:53.157Z"
  },
  {
   "id": "scaffold-studio-frontend#44",
@@ -610,7 +608,7 @@
   "severity": null,
   "reward_usdc": 60,
   "reward_source": "explicit",
-  "age_seconds_since_open": 3958631,
+  "age_seconds_since_open": 3977469,
   "opened_at": "2026-10-07T21:46:56Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -636,7 +634,7 @@
    "raw_snippet": "Hi @cythecode, I noticed issue #44 is still open, along with PR #104. I'm a TypeScript developer interested in completin"
   },
   "excerpt": "**Context** `playwright.config.ts` sets `retries: 0` unconditionally. Playwright's own convention is to retry on CI and not locally, because web-server startup, animation timing and network flake are the dominant failure modes for an end-to-end suite that talks to a blockchain RPC and an LLM provider. Without retries, every transient failure blocks a PR. **Proposed Change** Set `retries: process.env.CI ? 2 : 0` and keep `workers: 1` on CI. **Acceptance Criteria** - `retries` resolves to 2 when `process.env.CI` is set and 0 otherwise. - A deliberately flaky spec is asserted to pass on retry and",
-  "ts": "2026-11-22T17:25:07.558Z"
+  "ts": "2026-11-22T22:38:55.209Z"
  },
  {
   "id": "scaffold-studio-frontend#43",
@@ -649,7 +647,7 @@
   "severity": null,
   "reward_usdc": 60,
   "reward_source": "explicit",
-  "age_seconds_since_open": 3958637,
+  "age_seconds_since_open": 3977475,
   "opened_at": "2026-10-07T21:46:50Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -673,6 +671,6 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Context** `playwright.config.ts` starts the app with `webServer.command` running the dev server, but `.github/workflows/playwright.yml` sets no environment. `lib/db/index.ts` reads `DATABASE_URL` and `lib/ai/providers.ts` constructs OpenAI models, so the server either crashes on boot or fails on the first request, which turns every end-to-end run into an environment failure rather than a test result. **Proposed Change** Add the required variables to the job's `env:` (with a disposable Postgres service container for `DATABASE_URL`) and reserve the OpenAI key for the secrets-gated path. **Acce",
-  "ts": "2026-11-22T17:25:09.472Z"
+  "ts": "2026-11-22T22:38:57.218Z"
  }
 ]
