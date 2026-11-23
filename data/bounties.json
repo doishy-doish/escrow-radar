@@ -1,5 +1,41 @@
 [
  {
+  "id": "paraloom-core#1686",
+  "venue": "paraloom",
+  "repo": "paraloom-core",
+  "org": "paraloom-labs",
+  "number": 1686,
+  "title": "reset_validator_registry re-pins stake_mint without migrating the vault — register/slash bricked with MintMismatch",
+  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1686",
+  "severity": "Medium",
+  "reward_usdc": 150,
+  "reward_source": "explicit",
+  "age_seconds_since_open": 30156,
+  "opened_at": "2026-11-23T03:56:10Z",
+  "competing_prs": 0,
+  "competing_pr_urls": [],
+  "ci_status": "failing",
+  "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
+  "repro_source": ".github/workflows/bridge-e2e.yml",
+  "rail": "MANUAL_MAINTAINER_REVIEW",
+  "escrow_verified": false,
+  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
+  "has_repro": true,
+  "has_stack_trace": false,
+  "has_fix_hint": true,
+  "failing_assertion": null,
+  "target_files": [
+   "lib.rs"
+  ],
+  "stack_excerpt": null,
+  "claimed_in_comments": false,
+  "claim_evidence": null,
+  "excerpt": "## Summary `reset_validator_registry` accepts a bare `stake_mint: Pubkey` and writes it to the validator registry without checking it against the mint of the existing stake token vault, and without migrating the vault. The vault's mint is locked at creation (the `InitStakeTokenVault` account uses an `init` constraint on the PDA with seeds `[b\"stake_token_vault\"]`, so a second vault cannot be created). After a re-pin to a different mint, `register_validator` and `slash_validator` fail with `MintMismatch` — dual-stake registration and slashing are bricked. ## Affected code (repo paraloom-labs/pa",
+  "ts": "2026-11-23T12:18:57.447Z",
+  "stale_context": true,
+  "stale_reason": "repo_mismatch:lib.rs"
+ },
+ {
   "id": "paraloom-core#1685",
   "venue": "paraloom",
   "repo": "paraloom-core",
@@ -10,7 +46,7 @@
   "severity": null,
   "reward_usdc": 50,
   "reward_source": "explicit",
-  "age_seconds_since_open": 550,
+  "age_seconds_since_open": 33714,
   "opened_at": "2026-11-23T02:56:52Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -32,7 +68,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Low** — build / test-only, limited-impact edge case (program Low definition). Reward up to $50 USDC at triage discretion. ## Summary The `paraloom-prover-wasm` repo's own smoke test (`tests/v3_native_smoke.rs`) does not compile at HEAD `d8950b0`. Both test call sites invoke `prove_transact` with **6 arguments**; `src/lib.rs:486` defines it with **7** — the missing 5th parameter is `asset_id_hex: &str`, added by the SPL merge (#779, 2026-08-12). The test file was updated for the proof-tag fix (#686, 2026-08-01) but never for the SPL parameter. The repo has no CI workflow, and the ",
-  "ts": "2026-11-23T03:06:12.837Z",
+  "ts": "2026-11-23T12:18:59.593Z",
   "stale_context": true,
   "stale_reason": "repo_mismatch:tests/v3_native_smoke.rs"
  },
@@ -47,7 +83,7 @@
   "severity": null,
   "reward_usdc": 50,
   "reward_source": "explicit",
-  "age_seconds_since_open": 631,
+  "age_seconds_since_open": 33795,
   "opened_at": "2026-11-23T02:55:31Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -70,7 +106,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Low** — build / reproducibility only, limited-impact edge case (program Low definition). Reward up to $50 USDC at triage discretion. ## Summary The `paraloom-prover-wasm` crate (the client proof-generation code, in scope per `SCOPE.md`) includes six `paraloom-core` source files by relative path with **no version pin anywhere** — no `.gitmodules`, no Cargo dependency on core, and the README only says \"the build expects `paraloom-core` checked out as a sibling directory\" without naming a commit. Against core at the scope-pinned commit `468ffaa` — the commit the bounty program names",
-  "ts": "2026-11-23T03:06:14.644Z",
+  "ts": "2026-11-23T12:19:01.662Z",
   "days_since_target_touch": 112,
   "stale_context": true,
   "stale_reason": "stale_target:src/privacy/mod.rs:112d"
@@ -86,7 +122,7 @@
   "severity": null,
   "reward_usdc": 50,
   "reward_source": "explicit",
-  "age_seconds_since_open": 713,
+  "age_seconds_since_open": 33877,
   "opened_at": "2026-11-23T02:54:09Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -108,7 +144,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Low** — local-state-only defect; the live v3 settlement path never touches this code. Reward up to $50 USDC at triage discretion. ## Summary In `withdraw_asset`, the nullifier is inserted (persist-first) *before* the `supply < amount` check. A withdrawal that fails the supply check therefore leaves the nullifier marked spent in the local pool even though no funds moved and the note is still unspent on-chain; every retry with the same nullifier is then rejected as a double-spend. ## Affected component - `src/privacy/pool.rs:232-262` — `withdraw_asset` ## Impact Low — and the audit",
-  "ts": "2026-11-23T03:06:16.421Z",
+  "ts": "2026-11-23T12:19:03.742Z",
   "days_since_target_touch": 118,
   "stale_context": true,
   "stale_reason": "stale_target:src/privacy/pool.rs:118d"
@@ -124,10 +160,13 @@
   "severity": null,
   "reward_usdc": 50,
   "reward_source": "explicit",
-  "age_seconds_since_open": 770,
+  "age_seconds_since_open": 33934,
   "opened_at": "2026-11-23T02:53:12Z",
-  "competing_prs": 0,
-  "competing_pr_urls": [],
+  "competing_prs": 2,
+  "competing_pr_urls": [
+   "https://github.com/paraloom-labs/paraloom-core/pull/1692",
+   "https://github.com/paraloom-labs/paraloom-core/pull/1701"
+  ],
   "ci_status": "failing",
   "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
   "repro_source": ".github/workflows/bridge-e2e.yml",
@@ -145,10 +184,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Low** — limited-impact edge case (program Low definition). Reward up to $50 USDC at triage discretion. ## Summary `count_eligible_votes` counts every vote. With `min = 2`, two eligible `Invalid` votes make `has_consensus` return true — a quorum of `Invalid` votes \"reaches consensus\", which is semantically wrong (consensus should mean agreement on validity). ## Affected component - `src/consensus/vote_tally.rs` — `count_eligible_votes` counts every vote ## Impact Low — semantically wrong consensus result; limited impact (no funds at risk and no settlement-halt impact claimed in th",
-  "ts": "2026-11-23T03:06:18.198Z",
-  "days_since_target_touch": 99,
-  "stale_context": true,
-  "stale_reason": "stale_target:src/consensus/vote_tally.rs:99d"
+  "ts": "2026-11-23T12:19:08.170Z"
  },
  {
   "id": "paraloom-core#1681",
@@ -161,7 +197,7 @@
   "severity": null,
   "reward_usdc": 50,
   "reward_source": "explicit",
-  "age_seconds_since_open": 818,
+  "age_seconds_since_open": 33982,
   "opened_at": "2026-11-23T02:52:24Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -182,7 +218,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Low** — limited-impact edge case (program Low definition). Reward up to $50 USDC at triage discretion. ## Summary `VoteTally::submit_vote` compares the full vote (including the reason string) for equivocation. An honest validator that votes `Invalid` twice with different reason strings (e.g. a re-vote after re-checking, or a second validator-side evaluation producing a different message) is flagged as equivocating — a false positive that can penalise honest behaviour. ## Affected component - `src/consensus/vote_tally.rs` — `VoteTally::submit_vote` compares the full vote (includin",
-  "ts": "2026-11-23T03:06:20.078Z",
+  "ts": "2026-11-23T12:19:10.040Z",
   "days_since_target_touch": 99,
   "stale_context": true,
   "stale_reason": "stale_target:src/consensus/vote_tally.rs:99d"
@@ -198,10 +234,12 @@
   "severity": null,
   "reward_usdc": 150,
   "reward_source": "explicit",
-  "age_seconds_since_open": 861,
+  "age_seconds_since_open": 34025,
   "opened_at": "2026-11-23T02:51:41Z",
-  "competing_prs": 0,
-  "competing_pr_urls": [],
+  "competing_prs": 1,
+  "competing_pr_urls": [
+   "https://github.com/paraloom-labs/paraloom-core/pull/1702"
+  ],
   "ci_status": "failing",
   "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
   "repro_source": ".github/workflows/bridge-e2e.yml",
@@ -220,10 +258,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Medium** — griefing / liveness halt of settlement (program Medium definition). Reward up to $150 USDC at triage discretion. ## Summary A validator's settlement wallet is self-advertised via gossip Discovery and stored without any proof that the advertiser holds the key. Two `NodeId`s can therefore map to the same wallet — maliciously (a validator votes `Valid` and advertises a co-voter's wallet) or innocently (an operator runs two node instances on one settlement keypair). The leader then builds `quorum_wallets = [leader, W, W]` and `threshold = 3`, but `gather_signatures` dedups",
-  "ts": "2026-11-23T03:06:21.956Z",
-  "days_since_target_touch": 88,
-  "stale_context": true,
-  "stale_reason": "stale_target:src/node/mod.rs:88d"
+  "ts": "2026-11-23T12:19:13.266Z"
  },
  {
   "id": "paraloom-core#1679",
@@ -236,7 +271,7 @@
   "severity": null,
   "reward_usdc": 150,
   "reward_source": "explicit",
-  "age_seconds_since_open": 912,
+  "age_seconds_since_open": 34076,
   "opened_at": "2026-11-23T02:50:50Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -259,7 +294,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Medium** — liveness halt of settlement (program Medium definition: \"griefing/liveness halt of settlement\"). Reward up to $150 USDC at triage discretion. ## Summary Two compounding layers, plus a dropped-approval defect: (1) The leader sets the gather threshold to the full valid-voter count (`let threshold = quorum_wallets.len();`), although the on-chain quorum is a *supermajority* of registered validators and the code's own comment describes the threshold as \"the on-chain quorum size\". Any single valid voter that goes offline, declines, or times out between voting and co-signing ",
-  "ts": "2026-11-23T03:06:23.730Z",
+  "ts": "2026-11-23T12:19:15.201Z",
   "days_since_target_touch": 88,
   "stale_context": true,
   "stale_reason": "stale_target:src/node/mod.rs:88d"
@@ -275,7 +310,7 @@
   "severity": null,
   "reward_usdc": 150,
   "reward_source": "explicit",
-  "age_seconds_since_open": 970,
+  "age_seconds_since_open": 34134,
   "opened_at": "2026-11-23T02:49:52Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -296,7 +331,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Medium** — funds locked in the vault with no shielded note, recoverable only by operator intervention; liveness/accounting defect. Reward up to $150 USDC at triage discretion. ## Summary In `fetch_events`, a `get_transaction` error is logged and skipped (`continue`) — the signature is neither added to `seen_signatures` nor recorded as a failed outcome. In `poll_events`, the cursor advances through the unbroken run of *processed* outcomes. If an older deposit's fetch fails while a newer deposit in the same batch processes successfully, the cursor advances past the failed signature",
-  "ts": "2026-11-23T03:06:25.522Z",
+  "ts": "2026-11-23T12:19:17.073Z",
   "days_since_target_touch": 93,
   "stale_context": true,
   "stale_reason": "stale_target:src/bridge/solana/listener.rs:93d"
@@ -312,7 +347,7 @@
   "severity": null,
   "reward_usdc": 150,
   "reward_source": "explicit",
-  "age_seconds_since_open": 1019,
+  "age_seconds_since_open": 34183,
   "opened_at": "2026-11-23T02:49:03Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -333,7 +368,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Medium** — liveness halt of settlement (program Medium definition: \"griefing/liveness halt of settlement\"). Reward up to $150 USDC at triage discretion. ## Summary After a `reset_validator_registry` that drops a validator without deactivating its PDA, the orphaned PDA still counts in the eligible-stake denominator (it is `is_active` with stake) but can never sign as part of the current quorum set. A single orphaned active PDA therefore makes the supermajority bound unreachable even when every honest, live validator signs — the settlement is vetoed by a validator that no longer ex",
-  "ts": "2026-11-23T03:06:27.361Z",
+  "ts": "2026-11-23T12:19:18.976Z",
   "days_since_target_touch": 123,
   "stale_context": true,
   "stale_reason": "stale_target:programs/paraloom/src/quorum.rs:123d"
@@ -349,7 +384,7 @@
   "severity": null,
   "reward_usdc": 150,
   "reward_source": "explicit",
-  "age_seconds_since_open": 1078,
+  "age_seconds_since_open": 34242,
   "opened_at": "2026-11-23T02:48:04Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -370,7 +405,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Medium** — a validator's stake is bricked behind an admin action; self-service exit (the designed path) fails. Reward up to $150 USDC at triage discretion. ## Summary After `reset_validator_registry` rebuilds the counters from only the PDAs passed in `remaining_accounts`, a dropped validator's PDA stays `is_active` on-chain. Its self-service `unregister_validator` then computes `active_validators -= 1` on an already-rebuilt counter and panics on underflow (0 − 1, `ProgramFailedToComplete`), so the stake cannot exit without admin `deactivate_validator`. This is **one report** (aud",
-  "ts": "2026-11-23T03:06:29.155Z",
+  "ts": "2026-11-23T12:19:21.026Z",
   "days_since_target_touch": 100,
   "stale_context": true,
   "stale_reason": "stale_target:programs/paraloom/src/lib.rs:100d"
@@ -386,7 +421,7 @@
   "severity": null,
   "reward_usdc": 150,
   "reward_source": "explicit",
-  "age_seconds_since_open": 1126,
+  "age_seconds_since_open": 34290,
   "opened_at": "2026-11-23T02:47:16Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -407,7 +442,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Medium** — liveness halt of settlement (program Medium definition: \"griefing/liveness halt of settlement\"). Reward up to $150 USDC at triage discretion. ## Summary Two defects in the transact verification coordinator, in one report (audit dedup: C-01 + D-05 folded into M-03 — D-05 is the same mechanism, a second execution of it; do not file D-05 separately): (a) `start_verification` unconditionally replaces the pending entry for a `request_id`, discarding all votes collected so far. `request_id` is `transact-{timestamp}-{full nullifier hex}`, so a resubmission of the same transac",
-  "ts": "2026-11-23T03:06:30.949Z",
+  "ts": "2026-11-23T12:19:22.948Z",
   "days_since_target_touch": 99,
   "stale_context": true,
   "stale_reason": "stale_target:src/consensus/transact.rs:99d"
@@ -423,7 +458,7 @@
   "severity": null,
   "reward_usdc": 150,
   "reward_source": "explicit",
-  "age_seconds_since_open": 1198,
+  "age_seconds_since_open": 34362,
   "opened_at": "2026-11-23T02:46:04Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -446,7 +481,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Medium** — incorrect accounting without loss (program Medium definition). Reward up to $150 USDC at triage discretion. ## Summary `transact` never updates `BridgeState.total_withdrawn`. `deposit_note` maintains its side of the ledger (`total_deposited.checked_add(amount)`, `deposit_count += 1`) and `transact` maintains `withdrawal_count` (`= settlement_id`), but no instruction ever writes `total_withdrawn` — a repo-wide grep shows it is written only once, at `initialize` (`= 0`). A real settlement paying 499 lamports net (500 gross − 1 fee) leaves `total_withdrawn == 0` while `wi",
-  "ts": "2026-11-23T03:06:32.716Z",
+  "ts": "2026-11-23T12:19:24.860Z",
   "days_since_target_touch": 100,
   "stale_context": true,
   "stale_reason": "stale_target:programs/paraloom/src/lib.rs:100d"
@@ -462,7 +497,7 @@
   "severity": null,
   "reward_usdc": 150,
   "reward_source": "explicit",
-  "age_seconds_since_open": 1269,
+  "age_seconds_since_open": 34433,
   "opened_at": "2026-11-23T02:44:53Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -487,7 +522,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Medium** — liveness / incorrect accounting without loss (program Medium definition: \"incorrect accounting without loss; griefing/liveness halt of settlement\"). Reward up to $150 USDC at triage discretion. ## Summary The deposit listener cannot index a single v3 deposit, for two independent reasons in the same flow: 1. **Decoder layer:** `decode_compiled_deposit` matches only the retired `deposit` / `deposit_spl` discriminators. The program's only deposit instruction at the pinned commit is `deposit_note`; legacy `deposit`/`deposit_spl` no longer exist on-chain. Every real `deposi",
-  "ts": "2026-11-23T03:06:34.535Z",
+  "ts": "2026-11-23T12:19:26.658Z",
   "days_since_target_touch": 93,
   "stale_context": true,
   "stale_reason": "stale_target:src/bridge/solana/decoder.rs:93d"
@@ -503,7 +538,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 8144,
+  "age_seconds_since_open": 41308,
   "opened_at": "2026-11-23T00:50:18Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -526,44 +561,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity: Medium (Settlement liveness DoS across validator connectivity flaps & stale pre-snapshot admission) ## Affected component - `paraloom-core`: `src/consensus/transact.rs` (`sync_onchain_stakes` lines 698–724, `start_verification` lines 789–811) ## Summary Recent hardening intentionally migrated transact vote counting and driver authentication off the flap-prone active `NodeId` vector (`self.validators`) onto the on-chain staked wallet set (`self.onchain_wallets` / `eligible_wallets()`, while `unregister_validator` deletes from `self.validators` and only deactivates in `leader_select",
-  "ts": "2026-11-23T03:06:37.501Z"
- },
- {
-  "id": "paraloom-core#1670",
-  "venue": "paraloom",
-  "repo": "paraloom-core",
-  "org": "paraloom-labs",
-  "number": 1670,
-  "title": "[BOUNTY] Medium: fetchV3Leaves infers TransactEvent leaf indices from reverse-signature order and skips payload length checks — same-slot DepositNoteEvent + TransactEvent ordering shifts transactLeafCursor and permanently freezes wallet spends (paraloom-wallet)",
-  "url": "https://github.com/paraloom-labs/paraloom-core/issues/1670",
-  "severity": "Medium",
-  "reward_usdc": 150,
-  "reward_source": "severity_table",
-  "age_seconds_since_open": 8227,
-  "opened_at": "2026-11-23T00:48:55Z",
-  "competing_prs": 0,
-  "competing_pr_urls": [],
-  "ci_status": "failing",
-  "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
-  "repro_source": ".github/workflows/bridge-e2e.yml",
-  "rail": "MANUAL_MAINTAINER_REVIEW",
-  "escrow_verified": false,
-  "escrow_note": "reporter settlement wallet only; venue pays post-merge from treasury; no per-ticket escrow contract",
-  "has_repro": true,
-  "has_stack_trace": true,
-  "has_fix_hint": false,
-  "failing_assertion": "Error: Offset is outside the bounds of the DataView` (or pushes truncated `< 32`-byte commitment hex on short `TransactEvent`).",
-  "target_files": [
-   "lib/paraloom/transact.ts",
-   "tests/transact.test.ts"
-  ],
-  "stack_excerpt": null,
-  "claimed_in_comments": false,
-  "claim_evidence": null,
-  "excerpt": "## Severity: Medium (Settlement / spend liveness freeze + missing bounds validation) ## Affected component - `paraloom-wallet`: `lib/paraloom/transact.ts` (`fetchV3Leaves`, lines 182–256) ## Summary `fetchV3Leaves` rebuilds the local v3 Merkle tree from Solana RPC `getSignaturesForAddress` history by reversing signatures (`[...sigs].reverse()`) and tracking a running `transactLeafCursor`: ```ts if (startsWith(payload, DEPOSIT_NOTE_EVENT_DISCRIMINATOR)) { const body = payload.slice(8) const commitment = body.slice(40, 72) const leafIndex = Number(new DataView(body.buffer, body.byteOffset + 72, ",
-  "ts": "2026-11-23T03:06:40.212Z",
-  "stale_context": true,
-  "stale_reason": "repo_mismatch:lib/paraloom/transact.ts"
+  "ts": "2026-11-23T12:19:29.802Z"
  },
  {
   "id": "scaffold-studio-frontend#45",
@@ -576,7 +574,7 @@
   "severity": null,
   "reward_usdc": 70,
   "reward_source": "explicit",
-  "age_seconds_since_open": 3993541,
+  "age_seconds_since_open": 4026705,
   "opened_at": "2026-10-07T21:47:01Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -597,7 +595,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Context** `next.config.ts` sets `eslint: { ignoreDuringBuilds: true }`. Combined with a workflow that never runs `next build`, this means lint errors introduced in a PR are invisible on both paths, and the only remaining lint signal is the mutating `biome lint --write --unsafe` step covered by issue 31. **Proposed Change** Turn `ignoreDuringBuilds` off so `next build` fails on lint errors, and let CI run the build (issue 46) or a dedicated lint job report them. **Acceptance Criteria** - `eslint.ignoreDuringBuilds` is removed or set to `false`. - A deliberately introduced lint error is assert",
-  "ts": "2026-11-23T03:06:51.726Z"
+  "ts": "2026-11-23T12:19:41.813Z"
  },
  {
   "id": "scaffold-studio-frontend#44",
@@ -610,7 +608,7 @@
   "severity": null,
   "reward_usdc": 60,
   "reward_source": "explicit",
-  "age_seconds_since_open": 3993546,
+  "age_seconds_since_open": 4026710,
   "opened_at": "2026-10-07T21:46:56Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -636,7 +634,7 @@
    "raw_snippet": "Hi @cythecode, I noticed issue #44 is still open, along with PR #104. I'm a TypeScript developer interested in completin"
   },
   "excerpt": "**Context** `playwright.config.ts` sets `retries: 0` unconditionally. Playwright's own convention is to retry on CI and not locally, because web-server startup, animation timing and network flake are the dominant failure modes for an end-to-end suite that talks to a blockchain RPC and an LLM provider. Without retries, every transient failure blocks a PR. **Proposed Change** Set `retries: process.env.CI ? 2 : 0` and keep `workers: 1` on CI. **Acceptance Criteria** - `retries` resolves to 2 when `process.env.CI` is set and 0 otherwise. - A deliberately flaky spec is asserted to pass on retry and",
-  "ts": "2026-11-23T03:06:53.790Z"
+  "ts": "2026-11-23T12:19:44.052Z"
  },
  {
   "id": "scaffold-studio-frontend#43",
@@ -649,7 +647,7 @@
   "severity": null,
   "reward_usdc": 60,
   "reward_source": "explicit",
-  "age_seconds_since_open": 3993552,
+  "age_seconds_since_open": 4026716,
   "opened_at": "2026-10-07T21:46:50Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -673,6 +671,6 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Context** `playwright.config.ts` starts the app with `webServer.command` running the dev server, but `.github/workflows/playwright.yml` sets no environment. `lib/db/index.ts` reads `DATABASE_URL` and `lib/ai/providers.ts` constructs OpenAI models, so the server either crashes on boot or fails on the first request, which turns every end-to-end run into an environment failure rather than a test result. **Proposed Change** Add the required variables to the job's `env:` (with a disposable Postgres service container for `DATABASE_URL`) and reserve the OpenAI key for the secrets-gated path. **Acce",
-  "ts": "2026-11-23T03:06:55.717Z"
+  "ts": "2026-11-23T12:19:46.163Z"
  }
 ]
