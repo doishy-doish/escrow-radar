@@ -1,242 +1,242 @@
 [
  {
-  "id": 50611576,
-  "title": "Nvidia Reinstates Jensen Huang as CEO",
-  "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
-  "score": 1943,
-  "by": "jaz",
-  "time": "2026-11-23T14:00:18.000Z"
- },
- {
-  "id": 50620349,
-  "title": "Stalwart is now a drop-in replacement for Microsoft Exchange",
-  "url": "https://stalw.art/blog/microsoft-exchange-replacement/",
-  "score": 97,
-  "by": "shaunpud",
-  "time": "2026-11-23T22:32:29.000Z"
+  "id": 50624497,
+  "title": "2035 Came Early",
+  "url": "https://fzakaria.com/2026/11/23/2035-came-early",
+  "score": 170,
+  "by": "setheron",
+  "time": "2026-11-24T06:30:33.000Z"
  },
  {
   "id": 50614249,
   "title": "Ladybird is now in alpha",
   "url": "https://ladybird.org/posts/alpha/",
-  "score": 1309,
+  "score": 1926,
   "by": "janvdberg",
   "time": "2026-11-23T16:13:12.000Z"
+ },
+ {
+  "id": 50620349,
+  "title": "Stalwart is now a drop-in replacement for Microsoft Exchange",
+  "url": "https://stalw.art/blog/microsoft-exchange-replacement/",
+  "score": 461,
+  "by": "shaunpud",
+  "time": "2026-11-23T22:32:29.000Z"
+ },
+ {
+  "id": 50624061,
+  "title": "AMD EPYC Zen 6 vs. Zen 1 Performance: 12.1x Geo Mean in Less Than 10 Years",
+  "url": "https://www.phoronix.com/review/amd-epyc-9006-7601",
+  "score": 72,
+  "by": "zdw",
+  "time": "2026-11-24T05:15:22.000Z"
+ },
+ {
+  "id": 50611576,
+  "title": "Nvidia Reinstates Jensen Huang as CEO",
+  "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+  "score": 2549,
+  "by": "jaz",
+  "time": "2026-11-23T14:00:18.000Z"
+ },
+ {
+  "id": 50623515,
+  "title": "Drone Maps of Salvage Yards",
+  "url": "https://salvageyarddrone.wordpress.com/",
+  "score": 80,
+  "by": "uptrails",
+  "time": "2026-11-24T04:00:28.000Z"
+ },
+ {
+  "id": 50604710,
+  "title": "Modernizing iperf/iperf3 and introducing fireperf",
+  "url": "https://blog.daniel-baumann.ch/posts/20261122-1.html",
+  "score": 97,
+  "by": "edward",
+  "time": "2026-11-22T22:37:51.000Z"
+ },
+ {
+  "id": 50592307,
+  "title": "Arctic: A Practical Lock-Free Adaptive Radix Tree",
+  "url": "https://www.usenix.org/conference/osdi26/presentation/ni",
+  "score": 30,
+  "by": "grep_it",
+  "time": "2026-11-21T18:49:45.000Z"
+ },
+ {
+  "id": 50593006,
+  "title": "Ride the SQL curve from basics to mastery",
+  "url": "https://sqlride.com/",
+  "score": 31,
+  "by": "michaelsbradley",
+  "time": "2026-11-21T19:56:36.000Z"
+ },
+ {
+  "id": 50622774,
+  "title": "New York Bans Subscription and Post-Purchase Fees on Cars",
+  "url": "https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-signs-bill-restricting-exploitative-vehicle-subscription",
+  "score": 344,
+  "by": "DeepLogin",
+  "time": "2026-11-24T02:27:02.000Z"
+ },
+ {
+  "id": 50607512,
+  "title": "Lowering Perplexity Without Scaling",
+  "url": "https://micjm.com/blog/lowering-perplexity-without-scaling/",
+  "score": 46,
+  "by": "qlte",
+  "time": "2026-11-23T04:33:50.000Z"
  },
  {
   "id": 50619103,
   "title": "GPUI is getting its own repository",
   "url": "https://github.com/zed-industries/gpui",
-  "score": 78,
+  "score": 252,
   "by": "EvilGoose",
   "time": "2026-11-23T20:52:54.000Z"
- },
- {
-  "id": 50620102,
-  "title": "VP ≠ VNP over Every Field",
-  "url": "https://github.com/anthropics/formal-math/tree/main/vp-vnp",
-  "score": 162,
-  "by": "mikeryan52",
-  "time": "2026-11-23T22:09:10.000Z"
- },
- {
-  "id": 50617499,
-  "title": "Per Arm's request, this site will be discontinued on 4 December 2026 :(",
-  "url": "https://arm.jonpalmisc.com/",
-  "score": 785,
-  "by": "tech234a",
-  "time": "2026-11-23T19:17:55.000Z"
- },
- {
-  "id": 50609685,
-  "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
-  "url": "https://z.ai/blog/glm-5.4",
-  "score": 1025,
-  "by": "foohis",
-  "time": "2026-11-23T10:06:43.000Z"
  },
  {
   "id": 50619207,
   "title": "Bored.com: Fun, interesting and cool websites to explore when bored",
   "url": "https://www.bored.com/",
-  "score": 66,
+  "score": 239,
   "by": "susam",
   "time": "2026-11-23T21:01:16.000Z"
  },
  {
   "id": 50615308,
-  "title": "Dario is hyping the dangers so OSS models are illegal and he stays in control",
+  "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
   "url": "https://twitter.com/ylecun/status/2124550037912920090",
-  "score": 997,
+  "score": 1648,
   "by": "MrBuddyCasino",
   "time": "2026-11-23T17:07:26.000Z"
  },
  {
-  "id": 50618798,
-  "title": "Next gaming monitor should still be an OLED",
-  "url": "https://www.rockpapershotgun.com/theyre-more-complicated-and-more-expensive-than-lcd-screens-but-your-next-gaming-monitor-should-still-be-an-oled",
-  "score": 16,
-  "by": "Tomte",
-  "time": "2026-11-23T20:30:46.000Z"
+  "id": 50622934,
+  "title": "Making a dumb TV just smart enough",
+  "url": "https://qsantos.fr/2026/11/19/making-a-dumb-tv-just-smart-enough/",
+  "score": 72,
+  "by": "andai",
+  "time": "2026-11-24T02:46:54.000Z"
+ },
+ {
+  "id": 50625004,
+  "title": "I'm not excited about tech anymore",
+  "url": "https://www.coryd.dev/posts/2026/im-not-excited-about-tech-anymore",
+  "score": 42,
+  "by": "mikez302",
+  "time": "2026-11-24T07:46:12.000Z"
+ },
+ {
+  "id": 50617499,
+  "title": "Per Arm's request, this site will be discontinued on 4 December 2026 :(",
+  "url": "https://arm.jonpalmisc.com/",
+  "score": 1034,
+  "by": "tech234a",
+  "time": "2026-11-23T19:17:55.000Z"
+ },
+ {
+  "id": 50606611,
+  "title": "Becoming a Magician",
+  "url": "https://autotranslucence.wordpress.com/2018/03/30/becoming-a-magician/",
+  "score": 9,
+  "by": "robertvc",
+  "time": "2026-11-23T02:04:25.000Z"
+ },
+ {
+  "id": 50610170,
+  "title": "New material gets stronger the more it bends",
+  "url": "https://source.washu.edu/2026/11/breakthrough-material-gets-stronger-the-more-it-bends/",
+  "score": 27,
+  "by": "giuliomagnifico",
+  "time": "2026-11-23T11:12:33.000Z"
  },
  {
   "id": 50620721,
   "title": "Freeing the iPod Nano 5G",
   "url": "https://viktorkrapivin.com/blog/nano5g-priv-prvd",
-  "score": 12,
+  "score": 105,
   "by": "rpm_conservatio",
   "time": "2026-11-23T23:03:13.000Z"
- },
- {
-  "id": 50611402,
-  "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
-  "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
-  "score": 107,
-  "by": "toebee",
-  "time": "2026-11-23T13:42:38.000Z"
- },
- {
-  "id": 50587439,
-  "title": "Spacecraft reaches Mercury on second-ever mission to enter its orbit",
-  "url": "https://www.theguardian.com/science/2026/nov/20/spacecraft-mercury-second-ever-mission-orbit-bepicolombo",
-  "score": 278,
-  "by": "geden",
-  "time": "2026-11-21T09:14:02.000Z"
- },
- {
-  "id": 50594935,
-  "title": "Derivative Flipping",
-  "url": "http://blog.sigfpe.com/2026/11/derivative-flipping.html",
-  "score": 64,
-  "by": "dmit",
-  "time": "2026-11-22T00:13:17.000Z"
- },
- {
-  "id": 50615481,
-  "title": "Kagi Mail (public beta)",
-  "url": "https://blog.kagi.com/kagi-mail-public-beta",
-  "score": 323,
-  "by": "rdmuser",
-  "time": "2026-11-23T17:17:01.000Z"
- },
- {
-  "id": 50620250,
-  "title": "Levent Alpöge comments on his Riemann Hypothesis proof",
-  "url": "https://twitter.com/__alpoge__/status/2124987173439209561",
-  "score": 56,
-  "by": "Dylan1312",
-  "time": "2026-11-23T22:22:56.000Z"
- },
- {
-  "id": 50595365,
-  "title": "What does it mean to understand what we built?",
-  "url": "https://brooker.co.za/blog/2026/11/16/understanding.html",
-  "score": 20,
-  "by": "luu",
-  "time": "2026-11-22T01:34:57.000Z"
- },
- {
-  "id": 50619186,
-  "title": "The horse made the state",
-  "url": "https://aeon.co/essays/the-origins-of-the-state-are-not-agrarian-but-pastoralist",
-  "score": 51,
-  "by": "ersinesen",
-  "time": "2026-11-23T20:59:12.000Z"
- },
- {
-  "id": 50610318,
-  "title": "Nospeaker ─ Make your MacBook's trackpad talk using its haptic motor",
-  "url": "https://github.com/os6/nospeaker",
-  "score": 265,
-  "by": "yakkomajuri",
-  "time": "2026-11-23T11:31:54.000Z"
- },
- {
-  "id": 50615161,
-  "title": "EasyPost (YC S13) Is Hiring",
-  "url": "https://www.easypost.com/careers/",
-  "score": 1,
-  "by": "jstreebin",
-  "time": "2026-11-23T17:00:05.000Z"
- },
- {
-  "id": 50600838,
-  "title": "C++26 is done (again): ISO C++ meeting trip report",
-  "url": "https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil/",
-  "score": 96,
-  "by": "dverlaeckt80",
-  "time": "2026-11-22T15:59:59.000Z"
  },
  {
   "id": 50606192,
   "title": "Free alternative TV network built from the Internet Archive's forgotten videos",
   "url": "https://spelunkr.tv",
-  "score": 924,
+  "score": 997,
   "by": "SockThief",
   "time": "2026-11-23T01:13:51.000Z"
  },
  {
-  "id": 50620822,
-  "title": "Huang's Return Is the Biggest National Security Scandal in U.S. History",
-  "url": "https://foreignpolicy.com/2026/11/23/jensen-huang-nvidia-return-ceo-national-security-scandal/",
-  "score": 19,
-  "by": "ortusdux",
-  "time": "2026-11-23T23:11:38.000Z"
- },
- {
-  "id": 50610743,
-  "title": "Win4wine – Run Windows Shell as the Linux Desktop on Wine",
-  "url": "https://github.com/mikuta0407/win4wine",
-  "score": 208,
-  "by": "hard_times",
-  "time": "2026-11-23T12:28:11.000Z"
- },
- {
-  "id": 50616933,
-  "title": "Apple removed my open-source app from EU App Stores after 9 years",
-  "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
-  "score": 467,
-  "by": "fluder",
-  "time": "2026-11-23T18:48:10.000Z"
- },
- {
-  "id": 50620530,
-  "title": "The Beauty of Artists' Studios",
-  "url": "https://spectator.com/article/the-beauty-of-artists-studios/",
-  "score": 7,
-  "by": "promulgator",
-  "time": "2026-11-23T22:48:33.000Z"
- },
- {
-  "id": 50602561,
-  "title": "Show HN: Type-C – variants, options, generics and pattern matching for C",
-  "url": "https://github.com/stass/type-c",
-  "score": 16,
-  "by": "stass",
-  "time": "2026-11-22T18:40:57.000Z"
- },
- {
-  "id": 50548763,
-  "title": "Show HN: PlaceBench – Testing AI on opening and closing hours (and last trains)",
-  "url": "https://github.com/voygr-tech/placebench",
-  "score": 7,
-  "by": "ymarkov",
-  "time": "2026-11-18T17:00:13.000Z"
- },
- {
-  "id": 50609708,
-  "title": "Show HN: Hermit CRM – Free open-source CRM for solopreneurs",
-  "url": "https://hermitcrm.io/",
-  "score": 34,
-  "by": "gijsbos",
-  "time": "2026-11-23T10:09:02.000Z"
- },
- {
-  "id": 50615520,
-  "title": "How should an LLM see a computer?",
-  "url": "https://www.greptile.com/blog/trex-computer-use",
+  "id": 50622804,
+  "title": "Rune: Rust VM for Emacs",
+  "url": "https://github.com/CeleritasCelery/rune",
   "score": 39,
-  "by": "dakshgupta",
-  "time": "2026-11-23T17:19:25.000Z"
+  "by": "whacked_new",
+  "time": "2026-11-24T02:30:47.000Z"
+ },
+ {
+  "id": 50582698,
+  "title": "How photos were transmitted by wire in the 1930s (2024)",
+  "url": "https://kottke.org/24/03/how-photos-were-transmitted-by-wire-in-the-1930s",
+  "score": 60,
+  "by": "sammatilda",
+  "time": "2026-11-20T21:47:06.000Z"
+ },
+ {
+  "id": 50611402,
+  "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
+  "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+  "score": 169,
+  "by": "toebee",
+  "time": "2026-11-23T13:42:38.000Z"
+ },
+ {
+  "id": 50621466,
+  "title": "The Power of GraphQL, Without GraphQL",
+  "url": "https://cobalt27.dev/",
+  "score": 54,
+  "by": "Shoetp",
+  "time": "2026-11-24T00:03:59.000Z"
+ },
+ {
+  "id": 50620328,
+  "title": "Latent Introspection: LLMs Can Detect Prior Concept Injections",
+  "url": "https://arxiv.org/abs/2602.20031",
+  "score": 58,
+  "by": "joecobb",
+  "time": "2026-11-23T22:29:48.000Z"
+ },
+ {
+  "id": 50609685,
+  "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+  "url": "https://z.ai/blog/glm-5.4",
+  "score": 1121,
+  "by": "foohis",
+  "time": "2026-11-23T10:06:43.000Z"
+ },
+ {
+  "id": 50620831,
+  "title": "The search for a top dark matter candidate",
+  "url": "https://www.smithsonianmag.com/science-nature/the-search-for-a-top-dark-matter-candidate-was-losing-hope-then-came-a-potential-signal-will-it-be-enough-to-energize-the-struggling-field-180989923/",
+  "score": 45,
+  "by": "apophatic",
+  "time": "2026-11-23T23:12:40.000Z"
+ },
+ {
+  "id": 50600838,
+  "title": "C++26 is done (again): ISO C++ meeting trip report",
+  "url": "https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil/",
+  "score": 126,
+  "by": "dverlaeckt80",
+  "time": "2026-11-22T15:59:59.000Z"
+ },
+ {
+  "id": 50615481,
+  "title": "Kagi Mail (public beta)",
+  "url": "https://blog.kagi.com/kagi-mail-public-beta",
+  "score": 423,
+  "by": "rdmuser",
+  "time": "2026-11-23T17:17:01.000Z"
  }
 ]
