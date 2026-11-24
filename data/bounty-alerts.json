@@ -1,19 +1,11 @@
 {
- "ts": "2026-11-24T09:43:38.460Z",
+ "ts": "2026-11-24T20:22:34.027Z",
  "count": 0,
  "alerts": [],
  "demoted": [
   {
    "id": "paraloom-core#1676",
    "stale_reason": "stale_target:programs/paraloom/src/lib.rs:100d"
-  },
-  {
-   "id": "paraloom-core#1686",
-   "stale_reason": "repo_mismatch:lib.rs"
-  },
-  {
-   "id": "paraloom-core#1678",
-   "stale_reason": "stale_target:src/bridge/solana/listener.rs:93d"
   },
   {
    "id": "paraloom-core#1677",
