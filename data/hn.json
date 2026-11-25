@@ -1,17 +1,137 @@
 [
  {
+  "id": 50644817,
+  "title": "1Password Security Incident",
+  "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+  "score": 922,
+  "by": "lxhrstn",
+  "time": "2026-11-25T17:18:26.000Z"
+ },
+ {
+  "id": 50648050,
+  "title": "Much shorter version of GRH Lean verification from Anthropic",
+  "url": "https://github.com/lsernau/grh-lean",
+  "score": 76,
+  "by": "nb-t",
+  "time": "2026-11-25T21:48:10.000Z"
+ },
+ {
+  "id": 50601280,
+  "title": "GPT-6.2 Astra is the first model to beat Googlers' code golf records",
+  "url": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard",
+  "score": 137,
+  "by": "bjin",
+  "time": "2026-11-22T16:44:48.000Z"
+ },
+ {
+  "id": 50646108,
+  "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
+  "url": "https://scottaaronson.blog/?p=10379",
+  "score": 691,
+  "by": "Kotlopou",
+  "time": "2026-11-25T19:11:27.000Z"
+ },
+ {
+  "id": 50643129,
+  "title": "A few questions for the guy who went snorkeling in a Home Depot retention pond",
+  "url": "https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts",
+  "score": 413,
+  "by": "gumby",
+  "time": "2026-11-25T15:14:32.000Z"
+ },
+ {
+  "id": 50589784,
+  "title": "SSH is a GUI framework",
+  "url": "https://zydra.sh/articles/ssh-is-a-gui-framework/",
+  "score": 98,
+  "by": "teledream",
+  "time": "2026-11-21T14:52:41.000Z"
+ },
+ {
+  "id": 50647673,
+  "title": "The New York Times tells photographers not to use the latest Photoshop",
+  "url": "https://www.dpreview.com/news/new-york-times-adobe-photoshop-2027-restriction-ai/",
+  "score": 34,
+  "by": "rmason",
+  "time": "2026-11-25T21:18:02.000Z"
+ },
+ {
+  "id": 50648035,
+  "title": "Defang Security Incident",
+  "url": "https://defang.io/blog/post/security-incident-november-2026/",
+  "score": 26,
+  "by": "gregsadetsky",
+  "time": "2026-11-25T21:47:16.000Z"
+ },
+ {
+  "id": 50647161,
+  "title": "Nfs2root: A 12-year-old pre-auth remote root in the Linux kernel's NFS server",
+  "url": "https://opensec.in/blog/nfs2root-cve-2026-99362",
+  "score": 34,
+  "by": "dm",
+  "time": "2026-11-25T20:35:50.000Z"
+ },
+ {
+  "id": 50647158,
+  "title": "72-Hour Fasting Can Reset Your Immune System, USC Study Shows",
+  "url": "https://scienceinhand.com/72-hour-fasting-can-reset-your-entire-immune-system-usc-study-shows/",
+  "score": 28,
+  "by": "handfuloflight",
+  "time": "2026-11-25T20:35:39.000Z"
+ },
+ {
+  "id": 50647181,
+  "title": "Slow Ubuntu security response times",
+  "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
+  "score": 38,
+  "by": "gslin",
+  "time": "2026-11-25T20:38:00.000Z"
+ },
+ {
+  "id": 50644980,
+  "title": "The polynomial Hirsch conjecture is false [pdf]",
+  "url": "https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf",
+  "score": 93,
+  "by": "acossta",
+  "time": "2026-11-25T17:34:34.000Z"
+ },
+ {
+  "id": 50642939,
+  "title": "I checked Clojure's core with Lean and found unreported bugs",
+  "url": "https://s.conao3.com/blog/2026/e4f733",
+  "score": 161,
+  "by": "encyclopedism",
+  "time": "2026-11-25T14:56:52.000Z"
+ },
+ {
+  "id": 50645074,
+  "title": "Britain's ghost stations",
+  "url": "https://spectator.com/article/britains-ghost-stations-are-fascinating/",
+  "score": 73,
+  "by": "translocator",
+  "time": "2026-11-25T17:43:46.000Z"
+ },
+ {
+  "id": 50642086,
+  "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+  "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+  "score": 416,
+  "by": "rgwohlbold",
+  "time": "2026-11-25T13:33:07.000Z"
+ },
+ {
   "id": 50641171,
   "title": "Windows Loudness Equalization, reverse-engineered and ported to PipeWire",
   "url": "https://github.com/xoxorwr/pw-loudness-eq",
-  "score": 98,
+  "score": 299,
   "by": "ThrowNotAway",
   "time": "2026-11-25T11:34:25.000Z"
  },
  {
   "id": 50637220,
-  "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
+  "title": "The matrix multiplication exponent is nine fourths [pdf]",
   "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
-  "score": 758,
+  "score": 1004,
   "by": "E-Reverance",
   "time": "2026-11-25T01:19:26.000Z"
  },
@@ -19,49 +139,73 @@
   "id": 50638032,
   "title": "Button Sounds – collection of professionally-recorded button clicks and presses",
   "url": "https://buttons.joshwcomeau.com/",
-  "score": 517,
+  "score": 819,
   "by": "gaurang_tandon",
   "time": "2026-11-25T03:23:07.000Z"
  },
  {
-  "id": 50607849,
-  "title": "The short age of dragon riders",
-  "url": "https://atilloy.com/2026/11/16/the-short-age-of-dragon-riders/",
-  "score": 62,
-  "by": "synapsomorphy",
-  "time": "2026-11-23T05:33:34.000Z"
+  "id": 50624446,
+  "title": "Porting Rockbox to an undocumented $9 AliExpress 'YP3' MP3 player with LLMs",
+  "url": "https://jayd.ml/2026/11/14/rockbox-on-yp3.html",
+  "score": 193,
+  "by": "jaydenmilne",
+  "time": "2026-11-24T06:22:36.000Z"
+ },
+ {
+  "id": 50619073,
+  "title": "The undocumented 249-file limit for Googlebot rendering",
+  "url": "https://www.fullstackoptimization.com/a/googlebot-249-file-rendering-limit",
+  "score": 20,
+  "by": "franze",
+  "time": "2026-11-23T20:50:20.000Z"
+ },
+ {
+  "id": 50635783,
+  "title": "Predicting LoRA size for any dataset",
+  "url": "https://engram.com/blog/lora-size",
+  "score": 101,
+  "by": "jxmorris12",
+  "time": "2026-11-24T22:34:29.000Z"
+ },
+ {
+  "id": 50611593,
+  "title": "Show HN: An agent skill that optimizes code with falsifiable hypotheses",
+  "url": "https://chszlab.github.io/AgenticAlgorithmEngineering/",
+  "score": 49,
+  "by": "0x23",
+  "time": "2026-11-23T14:02:15.000Z"
+ },
+ {
+  "id": 50624684,
+  "title": "Show HN: Rchive – Every drive I've owned since the 90s, searchable in one window",
+  "url": "https://www.rchive.computer/",
+  "score": 16,
+  "by": "kevinsync",
+  "time": "2026-11-24T07:03:33.000Z"
+ },
+ {
+  "id": 50639698,
+  "title": "Smart people who give a shit use tools",
+  "url": "https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools",
+  "score": 237,
+  "by": "matthewsinclair",
+  "time": "2026-11-25T07:46:43.000Z"
+ },
+ {
+  "id": 50643199,
+  "title": "In C++, = default and {} are not the same constructor",
+  "url": "https://lemire.me/blog/2026/11/02/default-and-braces-are-not-the-same-constructor/",
+  "score": 92,
+  "by": "surprisetalk",
+  "time": "2026-11-25T15:20:15.000Z"
  },
  {
   "id": 50637686,
   "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
   "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
-  "score": 303,
+  "score": 440,
   "by": "gmays",
   "time": "2026-11-25T02:34:21.000Z"
- },
- {
-  "id": 50627726,
-  "title": "Getting old Java phones online again",
-  "url": "https://antcating.github.io/2026/11/23/getting-old-java-phones-online-again.html",
-  "score": 86,
-  "by": "waximabbax",
-  "time": "2026-11-24T13:14:37.000Z"
- },
- {
-  "id": 50638503,
-  "title": "Show HN: Old Nvidia and ATI tech demos, running again in the browser",
-  "url": "https://gpu-demo-gallery.pages.dev/",
-  "score": 195,
-  "by": "arkits",
-  "time": "2026-11-25T04:31:48.000Z"
- },
- {
-  "id": 50628517,
-  "title": "1,615 New TLDs Are Coming. Is Your DNS Ready for a Bigger Namespace?",
-  "url": "https://www.akamai.com/blog/security/2026/nov/1615-new-tlds-dns-ready-for-bigger-namespace",
-  "score": 31,
-  "by": "ksec",
-  "time": "2026-11-24T14:14:47.000Z"
  },
  {
   "id": 50641323,
@@ -72,171 +216,27 @@
   "time": "2026-11-25T12:00:34.000Z"
  },
  {
-  "id": 50633922,
-  "title": "Ternary Bonsai 2.5 27B",
-  "url": "https://prismml.com/news/bonsai-2-5-27b",
-  "score": 485,
-  "by": "b0m",
-  "time": "2026-11-24T20:08:03.000Z"
+  "id": 50643065,
+  "title": "Rumors swirling that labs might have cracked Factoring in P",
+  "url": "https://www.reddit.com/r/singularity/comments/1y59ef1/rumor_that_openai_or_anthropic_found_a_way_to/",
+  "score": 435,
+  "by": "lilytweed",
+  "time": "2026-11-25T15:08:44.000Z"
  },
  {
-  "id": 50637890,
-  "title": "Bypassing iOS Safari's 60 FPS Limit to Build Web Applications That Feel Native",
-  "url": "https://rida.dev/blog/bypassing-ios-safari-60-fps-limit",
-  "score": 275,
-  "by": "vinhnx",
-  "time": "2026-11-25T03:04:37.000Z"
- },
- {
-  "id": 50639698,
-  "title": "Smart People Who Give a Shit Use Tools",
-  "url": "https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools",
-  "score": 48,
-  "by": "matthewsinclair",
-  "time": "2026-11-25T07:46:43.000Z"
- },
- {
-  "id": 50637056,
-  "title": "PenGPT: A Generative Transformer for Handwriting and Sketches",
-  "url": "https://greydanus.github.io/2026/11/12/pengpt/",
-  "score": 298,
-  "by": "smusamashah",
-  "time": "2026-11-25T00:54:49.000Z"
- },
- {
-  "id": 50638478,
-  "title": "Taking over US Treasury subdomains for $3 each",
-  "url": "https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each",
-  "score": 130,
-  "by": "negura",
-  "time": "2026-11-25T04:27:55.000Z"
- },
- {
-  "id": 50638220,
-  "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
-  "url": "https://www.marginalia.nu/log/a_141_marginalia_update/",
-  "score": 163,
-  "by": "Curiositry",
-  "time": "2026-11-25T03:47:42.000Z"
- },
- {
-  "id": 50623866,
-  "title": "The algebra of dependent types (2025)",
-  "url": "https://dotat.at/@/2025-05-28-types.html",
-  "score": 50,
-  "by": "todsacerdoti",
-  "time": "2026-11-24T04:49:58.000Z"
- },
- {
-  "id": 50634658,
-  "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-  "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
-  "score": 296,
-  "by": "acossta",
-  "time": "2026-11-24T21:02:22.000Z"
- },
- {
-  "id": 50598555,
-  "title": "The Spray Bottle",
-  "url": "https://mechanical-pencil.com/products/spray-bottle",
-  "score": 523,
-  "by": "vinhnx",
-  "time": "2026-11-22T11:16:30.000Z"
- },
- {
-  "id": 50627079,
-  "title": "The Shapes of Rivers",
-  "url": "https://dominicroye.github.io/shapes-of-rivers/",
-  "score": 92,
-  "by": "joexov",
-  "time": "2026-11-24T12:14:25.000Z"
- },
- {
-  "id": 50613769,
-  "title": "When in Doubt, Flail About",
-  "url": "https://www.seangoedecke.com/when-in-doubt-flail-about/",
-  "score": 64,
-  "by": "zdw",
-  "time": "2026-11-23T15:45:11.000Z"
- },
- {
-  "id": 50634426,
-  "title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
-  "url": null,
-  "score": 93,
-  "by": "harshithl1777",
-  "time": "2026-11-24T20:44:15.000Z"
- },
- {
-  "id": 50637871,
-  "title": "Top open problems in mathematics ranked by LLM-assessed importance",
-  "url": "https://www.proofatlas.ai/open-problems/",
-  "score": 70,
-  "by": "ijidak",
-  "time": "2026-11-25T03:01:36.000Z"
- },
- {
-  "id": 50637891,
-  "title": "Macrohistory in Six Facts",
-  "url": "https://basilhalperin.com/essays/macrohistory.html",
-  "score": 99,
-  "by": "tptacek",
-  "time": "2026-11-25T03:04:46.000Z"
- },
- {
-  "id": 50638070,
-  "title": "Serving Qwen via AWS Lambdas for fun and 80x negative profit",
-  "url": "https://noahbuilt.it/writing/qwen-on-5600-lambdas",
-  "score": 92,
-  "by": "octember",
-  "time": "2026-11-25T03:28:06.000Z"
- },
- {
-  "id": 50630594,
-  "title": "Active intrusion campaign against Check Point security management servers",
-  "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
-  "score": 290,
-  "by": "louiereederson",
-  "time": "2026-11-24T16:32:17.000Z"
- },
- {
-  "id": 50630809,
-  "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
-  "url": null,
-  "score": 349,
-  "by": "weli",
-  "time": "2026-11-24T16:45:44.000Z"
- },
- {
-  "id": 50637888,
-  "title": "Lua for data representation (2025)",
-  "url": "https://citrons.xyz/journal/2025-07-23",
-  "score": 75,
-  "by": "vinhnx",
-  "time": "2026-11-25T03:04:12.000Z"
- },
- {
-  "id": 50610820,
-  "title": "An Italian folding bicycle design that fits into a suitcase",
-  "url": "https://www.core77.com/posts/145766/An-Italian-Folding-Bicycle-Design-that-Fits-Into-a-Suitcase",
-  "score": 200,
+  "id": 50610682,
+  "title": "A Beer Brewer's Noise Estimation",
+  "url": "https://chillphysicsenjoyer.substack.com/p/a-beer-brewers-noise-estimation",
+  "score": 9,
   "by": "surprisetalk",
-  "time": "2026-11-23T12:40:08.000Z"
+  "time": "2026-11-23T12:20:15.000Z"
  },
  {
-  "id": 50627783,
-  "title": "GTA 6 Running on Windows",
-  "url": "https://twitter.com/raul_bs3/status/2125213756238291075",
-  "score": 441,
-  "by": "andrem",
-  "time": "2026-11-24T13:19:31.000Z"
- },
- {
-  "id": 50638075,
-  "title": "A faster algorithm for extracting hexadecimal digits of π",
-  "url": "https://www.stylewarning.com/posts/faster-digit-extraction/",
-  "score": 54,
-  "by": "vinhnx",
-  "time": "2026-11-25T03:28:42.000Z"
+  "id": 50639929,
+  "title": "The industrialization of noise: Automated proof-solving is the same old dead end [pdf]",
+  "url": "https://arxiv.org/abs/2611.31286",
+  "score": 63,
+  "by": "pseudohadamard",
+  "time": "2026-11-25T08:23:34.000Z"
  }
 ]
