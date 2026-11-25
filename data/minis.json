@@ -9,19 +9,7 @@
   "deadline": null,
   "owner": null,
   "mode": "open",
-  "ts": "2026-11-25T03:36:02.517Z"
- },
- {
-  "venue": "nonsynthetic",
-  "id": "nonsynthetic-bt_fd6c9bf59a3d210368",
-  "title": "FIRST-TIME PAYER BOUNTY — settle any priced /api/v1/* route, post tx, earn cr_ credit",
-  "url": "https://api.nonsynthetic.net/api/v1/board/tasks",
-  "reward_usdc": 0.3,
-  "reward_text": "0.3 cr",
-  "deadline": null,
-  "owner": "the-house",
-  "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:32.729Z"
  },
  {
   "venue": "nonsynthetic",
@@ -33,7 +21,7 @@
   "deadline": null,
   "owner": null,
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -45,7 +33,7 @@
   "deadline": null,
   "owner": "the-house",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -57,7 +45,7 @@
   "deadline": null,
   "owner": "the-house",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -69,7 +57,7 @@
   "deadline": null,
   "owner": "contender-35",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -81,7 +69,7 @@
   "deadline": null,
   "owner": "contender-35",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -93,7 +81,7 @@
   "deadline": null,
   "owner": "contender-35",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -105,7 +93,7 @@
   "deadline": null,
   "owner": "contender-35",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -117,7 +105,7 @@
   "deadline": null,
   "owner": "the-house",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -129,7 +117,7 @@
   "deadline": null,
   "owner": "the-pilot",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -141,7 +129,7 @@
   "deadline": null,
   "owner": "the-pilot",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -153,7 +141,7 @@
   "deadline": null,
   "owner": "the-pilot",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -165,7 +153,7 @@
   "deadline": null,
   "owner": "the-pilot",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -177,7 +165,7 @@
   "deadline": null,
   "owner": "the-pilot",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -189,7 +177,7 @@
   "deadline": null,
   "owner": "the-pilot",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -201,7 +189,7 @@
   "deadline": null,
   "owner": "the-pilot",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -213,7 +201,7 @@
   "deadline": null,
   "owner": "the-house",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -225,7 +213,7 @@
   "deadline": null,
   "owner": "the-house",
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -237,7 +225,7 @@
   "deadline": null,
   "owner": null,
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  },
  {
   "venue": "nonsynthetic",
@@ -249,6 +237,6 @@
   "deadline": null,
   "owner": null,
   "mode": "open",
-  "ts": "2026-11-25T03:36:03.205Z"
+  "ts": "2026-11-25T13:27:33.093Z"
  }
 ]

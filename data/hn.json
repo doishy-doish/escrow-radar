@@ -1,242 +1,242 @@
 [
  {
+  "id": 50641171,
+  "title": "Windows Loudness Equalization, reverse-engineered and ported to PipeWire",
+  "url": "https://github.com/xoxorwr/pw-loudness-eq",
+  "score": 98,
+  "by": "ThrowNotAway",
+  "time": "2026-11-25T11:34:25.000Z"
+ },
+ {
   "id": 50637220,
   "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
   "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
-  "score": 212,
+  "score": 758,
   "by": "E-Reverance",
   "time": "2026-11-25T01:19:26.000Z"
  },
  {
-  "id": 50633922,
-  "title": "Ternary Bonsai 2.5 27B",
-  "url": "https://prismml.com/news/bonsai-2-5-27b",
-  "score": 368,
-  "by": "b0m",
-  "time": "2026-11-24T20:08:03.000Z"
+  "id": 50638032,
+  "title": "Button Sounds – collection of professionally-recorded button clicks and presses",
+  "url": "https://buttons.joshwcomeau.com/",
+  "score": 517,
+  "by": "gaurang_tandon",
+  "time": "2026-11-25T03:23:07.000Z"
  },
  {
-  "id": 50637056,
-  "title": "PenGPT: A Generative Transformer for Handwriting and Sketches",
-  "url": "https://greydanus.github.io/2026/11/12/pengpt/",
-  "score": 96,
-  "by": "smusamashah",
-  "time": "2026-11-25T00:54:49.000Z"
- },
- {
-  "id": 50634658,
-  "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-  "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
-  "score": 197,
-  "by": "acossta",
-  "time": "2026-11-24T21:02:22.000Z"
+  "id": 50607849,
+  "title": "The short age of dragon riders",
+  "url": "https://atilloy.com/2026/11/16/the-short-age-of-dragon-riders/",
+  "score": 62,
+  "by": "synapsomorphy",
+  "time": "2026-11-23T05:33:34.000Z"
  },
  {
   "id": 50637686,
   "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
   "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
-  "score": 22,
+  "score": 303,
   "by": "gmays",
   "time": "2026-11-25T02:34:21.000Z"
  },
  {
-  "id": 50634426,
-  "title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
-  "url": null,
-  "score": 74,
-  "by": "harshithl1777",
-  "time": "2026-11-24T20:44:15.000Z"
+  "id": 50627726,
+  "title": "Getting old Java phones online again",
+  "url": "https://antcating.github.io/2026/11/23/getting-old-java-phones-online-again.html",
+  "score": 86,
+  "by": "waximabbax",
+  "time": "2026-11-24T13:14:37.000Z"
+ },
+ {
+  "id": 50638503,
+  "title": "Show HN: Old Nvidia and ATI tech demos, running again in the browser",
+  "url": "https://gpu-demo-gallery.pages.dev/",
+  "score": 195,
+  "by": "arkits",
+  "time": "2026-11-25T04:31:48.000Z"
+ },
+ {
+  "id": 50628517,
+  "title": "1,615 New TLDs Are Coming. Is Your DNS Ready for a Bigger Namespace?",
+  "url": "https://www.akamai.com/blog/security/2026/nov/1615-new-tlds-dns-ready-for-bigger-namespace",
+  "score": 31,
+  "by": "ksec",
+  "time": "2026-11-24T14:14:47.000Z"
+ },
+ {
+  "id": 50641323,
+  "title": "Hazel (YC W24) Is Hiring a Product Designer",
+  "url": "https://www.ycombinator.com/companies/hazel-2/jobs/8EhsvYE-product-designer-contract",
+  "score": 1,
+  "by": "augustschen",
+  "time": "2026-11-25T12:00:34.000Z"
+ },
+ {
+  "id": 50633922,
+  "title": "Ternary Bonsai 2.5 27B",
+  "url": "https://prismml.com/news/bonsai-2-5-27b",
+  "score": 485,
+  "by": "b0m",
+  "time": "2026-11-24T20:08:03.000Z"
+ },
+ {
+  "id": 50637890,
+  "title": "Bypassing iOS Safari's 60 FPS Limit to Build Web Applications That Feel Native",
+  "url": "https://rida.dev/blog/bypassing-ios-safari-60-fps-limit",
+  "score": 275,
+  "by": "vinhnx",
+  "time": "2026-11-25T03:04:37.000Z"
+ },
+ {
+  "id": 50639698,
+  "title": "Smart People Who Give a Shit Use Tools",
+  "url": "https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools",
+  "score": 48,
+  "by": "matthewsinclair",
+  "time": "2026-11-25T07:46:43.000Z"
+ },
+ {
+  "id": 50637056,
+  "title": "PenGPT: A Generative Transformer for Handwriting and Sketches",
+  "url": "https://greydanus.github.io/2026/11/12/pengpt/",
+  "score": 298,
+  "by": "smusamashah",
+  "time": "2026-11-25T00:54:49.000Z"
+ },
+ {
+  "id": 50638478,
+  "title": "Taking over US Treasury subdomains for $3 each",
+  "url": "https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each",
+  "score": 130,
+  "by": "negura",
+  "time": "2026-11-25T04:27:55.000Z"
+ },
+ {
+  "id": 50638220,
+  "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
+  "url": "https://www.marginalia.nu/log/a_141_marginalia_update/",
+  "score": 163,
+  "by": "Curiositry",
+  "time": "2026-11-25T03:47:42.000Z"
+ },
+ {
+  "id": 50623866,
+  "title": "The algebra of dependent types (2025)",
+  "url": "https://dotat.at/@/2025-05-28-types.html",
+  "score": 50,
+  "by": "todsacerdoti",
+  "time": "2026-11-24T04:49:58.000Z"
+ },
+ {
+  "id": 50634658,
+  "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+  "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+  "score": 296,
+  "by": "acossta",
+  "time": "2026-11-24T21:02:22.000Z"
  },
  {
   "id": 50598555,
   "title": "The Spray Bottle",
   "url": "https://mechanical-pencil.com/products/spray-bottle",
-  "score": 386,
+  "score": 523,
   "by": "vinhnx",
   "time": "2026-11-22T11:16:30.000Z"
+ },
+ {
+  "id": 50627079,
+  "title": "The Shapes of Rivers",
+  "url": "https://dominicroye.github.io/shapes-of-rivers/",
+  "score": 92,
+  "by": "joexov",
+  "time": "2026-11-24T12:14:25.000Z"
+ },
+ {
+  "id": 50613769,
+  "title": "When in Doubt, Flail About",
+  "url": "https://www.seangoedecke.com/when-in-doubt-flail-about/",
+  "score": 64,
+  "by": "zdw",
+  "time": "2026-11-23T15:45:11.000Z"
+ },
+ {
+  "id": 50634426,
+  "title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
+  "url": null,
+  "score": 93,
+  "by": "harshithl1777",
+  "time": "2026-11-24T20:44:15.000Z"
+ },
+ {
+  "id": 50637871,
+  "title": "Top open problems in mathematics ranked by LLM-assessed importance",
+  "url": "https://www.proofatlas.ai/open-problems/",
+  "score": 70,
+  "by": "ijidak",
+  "time": "2026-11-25T03:01:36.000Z"
+ },
+ {
+  "id": 50637891,
+  "title": "Macrohistory in Six Facts",
+  "url": "https://basilhalperin.com/essays/macrohistory.html",
+  "score": 99,
+  "by": "tptacek",
+  "time": "2026-11-25T03:04:46.000Z"
+ },
+ {
+  "id": 50638070,
+  "title": "Serving Qwen via AWS Lambdas for fun and 80x negative profit",
+  "url": "https://noahbuilt.it/writing/qwen-on-5600-lambdas",
+  "score": 92,
+  "by": "octember",
+  "time": "2026-11-25T03:28:06.000Z"
  },
  {
   "id": 50630594,
   "title": "Active intrusion campaign against Check Point security management servers",
   "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
-  "score": 271,
+  "score": 290,
   "by": "louiereederson",
   "time": "2026-11-24T16:32:17.000Z"
  },
  {
-  "id": 50625265,
-  "title": "Gödel Enigma",
-  "url": "https://www.helsinki.fi/en/researchgroups/godel-enigma/research/project-description",
-  "score": 101,
-  "by": "benbreen",
-  "time": "2026-11-24T08:16:02.000Z"
+  "id": 50630809,
+  "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+  "url": null,
+  "score": 349,
+  "by": "weli",
+  "time": "2026-11-24T16:45:44.000Z"
  },
  {
-  "id": 50636925,
-  "title": "Here in the World: Letters of Albert Camus, 1944–1959",
-  "url": "https://literaryreview.co.uk/here-in-the-world",
-  "score": 30,
-  "by": "lermontov",
-  "time": "2026-11-25T00:36:43.000Z"
- },
- {
-  "id": 50609483,
-  "title": "Calculate how many mesh radio nodes your city needs",
-  "url": "https://meshcoveragecalculator.lalala.ing/",
-  "score": 89,
-  "by": "joshcsimmons",
-  "time": "2026-11-23T09:46:57.000Z"
- },
- {
-  "id": 50626430,
-  "title": "New Rewritable Antimony Elenide Display Shows an Image for Months Without Power",
-  "url": "https://tmos.org.au/news/new-rewritable-displays-can-show-an-image-for-months-without-power/",
-  "score": 5,
-  "by": "giuliomagnifico",
-  "time": "2026-11-24T10:52:12.000Z"
- },
- {
-  "id": 50633424,
-  "title": "From CUDA and Jax to TorchTPU: Lessons from a Cayley Graph Solver",
-  "url": "https://andlukyane.com/blog/cayley-graphs-and-torchtpu",
+  "id": 50637888,
+  "title": "Lua for data representation (2025)",
+  "url": "https://citrons.xyz/journal/2025-07-23",
   "score": 75,
-  "by": "Artgor",
-  "time": "2026-11-24T19:40:43.000Z"
- },
- {
-  "id": 50606655,
-  "title": "Hierarchical Bayesian Neural Networks: When Structure Meets Flexibility",
-  "url": "https://statwonk.com/hierarchical-bayesian-neural-network.html",
-  "score": 28,
-  "by": "RA_Fisher",
-  "time": "2026-11-23T02:10:39.000Z"
- },
- {
-  "id": 50627783,
-  "title": "GTA 6 Running on Windows",
-  "url": "https://twitter.com/raul_bs3/status/2125213756238291075",
-  "score": 314,
-  "by": "andrem",
-  "time": "2026-11-24T13:19:31.000Z"
- },
- {
-  "id": 50630462,
-  "title": "Jetty Pro",
-  "url": "http://hypercritical.co/2026/11/23/jetty-pro",
-  "score": 284,
-  "by": "zdw",
-  "time": "2026-11-24T16:23:02.000Z"
- },
- {
-  "id": 50635271,
-  "title": "Heart attack and stroke risk detectable decades in advance",
-  "url": "https://www.ed.ac.uk/news/heart-attack-and-stroke-risk-detectable-decades-in-advance",
-  "score": 176,
-  "by": "gmays",
-  "time": "2026-11-24T21:51:21.000Z"
+  "by": "vinhnx",
+  "time": "2026-11-25T03:04:12.000Z"
  },
  {
   "id": 50610820,
   "title": "An Italian folding bicycle design that fits into a suitcase",
   "url": "https://www.core77.com/posts/145766/An-Italian-Folding-Bicycle-Design-that-Fits-Into-a-Suitcase",
-  "score": 139,
+  "score": 200,
   "by": "surprisetalk",
   "time": "2026-11-23T12:40:08.000Z"
  },
  {
-  "id": 50629231,
-  "title": "A training engine for your local model, using your idle compute",
-  "url": "https://github.com/sous-labs/songe",
-  "score": 191,
-  "by": "bluepeter",
-  "time": "2026-11-24T15:03:40.000Z"
+  "id": 50627783,
+  "title": "GTA 6 Running on Windows",
+  "url": "https://twitter.com/raul_bs3/status/2125213756238291075",
+  "score": 441,
+  "by": "andrem",
+  "time": "2026-11-24T13:19:31.000Z"
  },
  {
-  "id": 50625384,
-  "title": "Quad9 pulled their DNS service from France",
-  "url": "https://quad9.net/news/blog/quad9-service-deactivation-in-france/",
-  "score": 367,
-  "by": "farrokhi",
-  "time": "2026-11-24T08:33:14.000Z"
- },
- {
-  "id": 50604355,
-  "title": "Cento fine foods has been sued for “tomato fraud”",
-  "url": "https://slate.com/life/2026/11/cento-san-marzano-tomato-sauce-recipes-lawsuit.html",
-  "score": 142,
-  "by": "ncr100",
-  "time": "2026-11-22T21:59:09.000Z"
- },
- {
-  "id": 50637661,
-  "title": "A 1:1 replica of the London DLR",
-  "url": "https://jabza.github.io/labs/dlr-rider/",
-  "score": 3,
-  "by": "jabza",
-  "time": "2026-11-25T02:31:49.000Z"
- },
- {
-  "id": 50626620,
-  "title": "The Artificial Monkey Mind",
-  "url": "https://eamonnsullivan.co.uk/posts/the-artificial-monkey-mind/",
-  "score": 9,
-  "by": "eamonnsullivan",
-  "time": "2026-11-24T11:19:00.000Z"
- },
- {
-  "id": 50591024,
-  "title": "Show HN: PQCrypta Proxy: Rust proxy with HTTP/3, QUIC, hybrid post-quantum TLS",
-  "url": "https://github.com/PQCrypta/pqcrypta-proxy",
-  "score": 37,
-  "by": "pqpdf",
-  "time": "2026-11-21T16:46:43.000Z"
- },
- {
-  "id": 50629106,
-  "title": "Splitting USB-C: USB 3 and USB 2 on one port",
-  "url": "https://www.frankchiarulli.com/blog/splitting-usb-c/",
-  "score": 141,
-  "by": "fcjr",
-  "time": "2026-11-24T14:54:10.000Z"
- },
- {
-  "id": 50631041,
-  "title": "Weave (YC W25) is hiring ML, AI, product, & design engineers",
-  "url": "https://jobs.ashbyhq.com/weave-os",
-  "score": 1,
-  "by": "adchurch",
-  "time": "2026-11-24T17:00:55.000Z"
- },
- {
-  "id": 50626413,
-  "title": "Worshipping at the altar of Brendan Gregg",
-  "url": "https://fzakaria.com/2026/11/12/worshipping-at-the-altar-of-brendan-gregg",
-  "score": 228,
-  "by": "kqr",
-  "time": "2026-11-24T10:50:14.000Z"
- },
- {
-  "id": 50620530,
-  "title": "The Beauty of Artists' Studios",
-  "url": "https://spectator.com/article/the-beauty-of-artists-studios/",
-  "score": 14,
-  "by": "promulgator",
-  "time": "2026-11-23T22:48:33.000Z"
- },
- {
-  "id": 50627340,
-  "title": "LLM agents work for their parent companies, not for you",
-  "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
-  "score": 939,
-  "by": "surprisetalk",
-  "time": "2026-11-24T12:40:15.000Z"
- },
- {
-  "id": 50599458,
-  "title": "How a Mechanical Watch Keeps Time",
-  "url": "https://martincmartin.github.io/slidev-stem/watches/article/1/",
-  "score": 231,
-  "by": "martincmartin",
-  "time": "2026-11-22T13:21:25.000Z"
+  "id": 50638075,
+  "title": "A faster algorithm for extracting hexadecimal digits of π",
+  "url": "https://www.stylewarning.com/posts/faster-digit-extraction/",
+  "score": 54,
+  "by": "vinhnx",
+  "time": "2026-11-25T03:28:42.000Z"
  }
 ]
