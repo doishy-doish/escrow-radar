@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-25T22:41:11.210Z",
+ "ts": "2026-11-26T04:24:03.437Z",
  "count": 0,
  "alerts": [],
  "demoted": [
@@ -8,20 +8,12 @@
    "stale_reason": "stale_target:programs/paraloom/src/quorum.rs:123d"
   },
   {
-   "id": "paraloom-core#1675",
-   "stale_reason": "stale_target:src/consensus/transact.rs:99d"
-  },
-  {
    "id": "paraloom-core#1685",
    "stale_reason": "repo_mismatch:tests/v3_native_smoke.rs"
   },
   {
    "id": "paraloom-core#1681",
    "stale_reason": "stale_target:src/consensus/vote_tally.rs:99d"
-  },
-  {
-   "id": "paraloom-core#1674",
-   "stale_reason": "stale_target:programs/paraloom/src/lib.rs:100d"
   },
   {
    "id": "paraloom-core#1684",
@@ -34,6 +26,14 @@
   {
    "id": "paraloom-core#1679",
    "stale_reason": "stale_target:src/node/mod.rs:88d"
+  },
+  {
+   "id": "paraloom-core#1724",
+   "stale_reason": "repo_mismatch:lib/paraloom/swapOutputs.ts"
+  },
+  {
+   "id": "paraloom-core#1723",
+   "stale_reason": "repo_mismatch:src/background/index.ts"
   }
  ]
 }
