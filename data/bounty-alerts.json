@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-26T14:06:58.123Z",
+ "ts": "2026-11-26T22:57:20.569Z",
  "count": 0,
  "alerts": [],
  "demoted": [
@@ -22,10 +22,6 @@
   {
    "id": "paraloom-core#1683",
    "stale_reason": "stale_target:src/privacy/pool.rs:118d"
-  },
-  {
-   "id": "paraloom-core#1679",
-   "stale_reason": "stale_target:src/node/mod.rs:88d"
   },
   {
    "id": "paraloom-core#1724",
