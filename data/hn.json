@@ -1,9 +1,25 @@
 [
  {
+  "id": 50654289,
+  "title": "Euro-Office comes to your desktop with the Nextcloud Office Desktop app",
+  "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
+  "score": 125,
+  "by": "e12e",
+  "time": "2026-11-26T11:50:49.000Z"
+ },
+ {
+  "id": 50653667,
+  "title": "Intel One Mono font",
+  "url": "https://github.com/intel/intel-one-mono",
+  "score": 204,
+  "by": "saikatsg",
+  "time": "2026-11-26T10:11:01.000Z"
+ },
+ {
   "id": 50646108,
   "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
   "url": "https://scottaaronson.blog/?p=10379",
-  "score": 1107,
+  "score": 1720,
   "by": "Kotlopou",
   "time": "2026-11-25T19:11:27.000Z"
  },
@@ -11,232 +27,216 @@
   "id": 50644817,
   "title": "1Password Security Incident",
   "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
-  "score": 1258,
+  "score": 1525,
   "by": "lxhrstn",
   "time": "2026-11-25T17:18:26.000Z"
  },
  {
-  "id": 50648050,
-  "title": "Much shorter version of GRH Lean verification from Anthropic",
-  "url": "https://github.com/lsernau/grh-lean",
-  "score": 339,
-  "by": "nb-t",
-  "time": "2026-11-25T21:48:10.000Z"
- },
- {
-  "id": 50598636,
-  "title": "The Great Automatic Grammatizator (By Roald Dahl), 1954 [pdf]",
-  "url": "https://gwern.net/doc/fiction/science-fiction/1953-dahl-thegreatautomaticgrammatizator.pdf",
-  "score": 17,
-  "by": "Michelangelo11",
-  "time": "2026-11-22T11:29:44.000Z"
- },
- {
-  "id": 50649864,
-  "title": "Tell HN: Lots of Ask HNs again",
-  "url": null,
-  "score": 149,
-  "by": "dang",
-  "time": "2026-11-26T00:43:34.000Z"
- },
- {
-  "id": 50601280,
-  "title": "GPT-6.2 Astra is the first model to beat Googlers' code golf records",
-  "url": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard",
-  "score": 292,
-  "by": "bjin",
-  "time": "2026-11-22T16:44:48.000Z"
- },
- {
-  "id": 50647181,
-  "title": "Slow Ubuntu security response times",
-  "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
-  "score": 184,
-  "by": "gslin",
-  "time": "2026-11-25T20:38:00.000Z"
- },
- {
-  "id": 50643129,
-  "title": "A few questions for the guy who went snorkeling in a Home Depot retention pond",
-  "url": "https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts",
-  "score": 453,
-  "by": "gumby",
-  "time": "2026-11-25T15:14:32.000Z"
- },
- {
-  "id": 50637448,
-  "title": "How did pinwheel calculators work?",
-  "url": "https://blog.coredump.cx/p/how-did-pinwheel-calculators-work",
-  "score": 39,
-  "by": "surprisetalk",
-  "time": "2026-11-25T02:00:08.000Z"
+  "id": 50651719,
+  "title": "Lions' Commentary on Unix: Why It Was Secretly Copied for 20 Years",
+  "url": "https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix/",
+  "score": 157,
+  "by": "joonehur",
+  "time": "2026-11-26T05:12:59.000Z"
  },
  {
   "id": 50647673,
   "title": "The New York Times warns photographers not to update Photoshop over AI features",
   "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-  "score": 259,
+  "score": 479,
   "by": "rmason",
   "time": "2026-11-25T21:18:02.000Z"
  },
  {
-  "id": 50649834,
-  "title": "Collection of preserved UI style guides",
-  "url": "https://aresluna.org/ui-style-guides/",
-  "score": 41,
-  "by": "sohkamyung",
-  "time": "2026-11-26T00:40:00.000Z"
- },
- {
-  "id": 50626466,
-  "title": "What VP ≠ VNP Means (In 3 Minutes)",
-  "url": "https://www.friedgil.com/vpvnp",
-  "score": 21,
-  "by": "vinhnx",
-  "time": "2026-11-24T10:56:56.000Z"
- },
- {
-  "id": 50648323,
-  "title": "Deploying a payphone on a tiny Pacific Island for fun and zero profit",
-  "url": "https://nickvsnetworking.com/deploying-a-payphone-on-a-tiny-pacific-island-for-fun-and-zero-profit/",
-  "score": 68,
-  "by": "qzervaas",
-  "time": "2026-11-25T22:12:25.000Z"
- },
- {
-  "id": 50648365,
-  "title": "Bare Metal Qwen",
-  "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
-  "score": 88,
-  "by": "miohtama",
-  "time": "2026-11-25T22:15:34.000Z"
- },
- {
-  "id": 50647161,
-  "title": "Nfs2root: A 12-year-old pre-auth remote root in the Linux kernel's NFS server",
-  "url": "https://opensec.in/blog/nfs2root-cve-2026-99362",
-  "score": 107,
-  "by": "dm",
-  "time": "2026-11-25T20:35:50.000Z"
- },
- {
-  "id": 50589784,
-  "title": "SSH is a GUI framework",
-  "url": "https://zydra.sh/articles/ssh-is-a-gui-framework/",
-  "score": 155,
-  "by": "teledream",
-  "time": "2026-11-21T14:52:41.000Z"
- },
- {
-  "id": 50651158,
-  "title": "Qualcomm's Oryon 3 Reaches the Top",
-  "url": "https://chipsandcheese.com/p/qualcomms-oryon-3-reaches-the-top",
-  "score": 4,
-  "by": "wmf",
-  "time": "2026-11-26T03:43:24.000Z"
- },
- {
-  "id": 50611889,
-  "title": "Linear scan register allocation in Datalog",
-  "url": "https://bernsteinbear.com/blog/lsra-datalog/",
-  "score": 9,
-  "by": "torutofu",
-  "time": "2026-11-23T14:17:34.000Z"
- },
- {
-  "id": 50620991,
-  "title": "Hkust 3D Prints a Titanium Alloy That Keeps Hardening",
-  "url": "https://3dprinting.com/news/hkust-researchers-3d-print-a-titanium-alloy-that-keeps-hardening-under-strain/",
+  "id": 50619466,
+  "title": "Discovery of curse ritual in trash dump surprises Egyptologist",
+  "url": "https://phys.org/news/2026-11-discovery-curse-ritual-trash-dump.html",
   "score": 15,
-  "by": "rbanffy",
-  "time": "2026-11-23T23:25:26.000Z"
- },
- {
-  "id": 50642086,
-  "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
-  "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
-  "score": 463,
-  "by": "rgwohlbold",
-  "time": "2026-11-25T13:33:07.000Z"
+  "by": "PaulHoule",
+  "time": "2026-11-23T21:18:49.000Z"
  },
  {
   "id": 50650892,
   "title": "Minipg: PostgreSQL as a Single Executable",
   "url": "https://progrium.github.io/minipg/",
-  "score": 8,
+  "score": 189,
   "by": "rguiscard",
   "time": "2026-11-26T03:00:48.000Z"
  },
  {
-  "id": 50644980,
-  "title": "The polynomial Hirsch conjecture is false [pdf]",
-  "url": "https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf",
-  "score": 134,
-  "by": "acossta",
-  "time": "2026-11-25T17:34:34.000Z"
+  "id": 50649834,
+  "title": "Collection of preserved UI style guides",
+  "url": "https://aresluna.org/ui-style-guides/",
+  "score": 282,
+  "by": "sohkamyung",
+  "time": "2026-11-26T00:40:00.000Z"
  },
  {
-  "id": 50610682,
-  "title": "A beer brewer's noise estimation",
-  "url": "https://chillphysicsenjoyer.substack.com/p/a-beer-brewers-noise-estimation",
-  "score": 20,
+  "id": 50654353,
+  "title": "Head of Software Engineering – NOX Metals",
+  "url": null,
+  "score": 1,
+  "by": "zane_heng",
+  "time": "2026-11-26T12:00:00.000Z"
+ },
+ {
+  "id": 50652184,
+  "title": "Moat: Your OpenRouter Replacement",
+  "url": "https://commandcode.ai/moat",
+  "score": 130,
+  "by": "amanverasia",
+  "time": "2026-11-26T06:32:48.000Z"
+ },
+ {
+  "id": 50649864,
+  "title": "Tell HN: Lots of Ask HNs again",
+  "url": null,
+  "score": 320,
+  "by": "dang",
+  "time": "2026-11-26T00:43:34.000Z"
+ },
+ {
+  "id": 50647181,
+  "title": "Slow Ubuntu security response times",
+  "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
+  "score": 342,
+  "by": "gslin",
+  "time": "2026-11-25T20:38:00.000Z"
+ },
+ {
+  "id": 50648050,
+  "title": "Much shorter version of GRH Lean verification from Anthropic",
+  "url": "https://github.com/lsernau/grh-lean",
+  "score": 491,
+  "by": "nb-t",
+  "time": "2026-11-25T21:48:10.000Z"
+ },
+ {
+  "id": 50642977,
+  "title": "Limiting Charging to 80 Percent",
+  "url": "https://www.jefftk.com/p/limiting-charging-to-80",
+  "score": 7,
   "by": "surprisetalk",
-  "time": "2026-11-23T12:20:15.000Z"
+  "time": "2026-11-25T15:00:05.000Z"
  },
  {
-  "id": 50616473,
-  "title": "The trouble with serendipity: Scientific discoveries don't happen how you think",
-  "url": "https://www.worksinprogress.news/p/the-trouble-with-serendipity",
+  "id": 50623232,
+  "title": "Show HN: Synth Patch Hero",
+  "url": "https://swarkentin.github.io/synth-patch-hero/",
+  "score": 85,
+  "by": "kaidon",
+  "time": "2026-11-24T03:24:22.000Z"
+ },
+ {
+  "id": 50601280,
+  "title": "GPT-6.2 Astra is the first model to beat Googlers' code golf records",
+  "url": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard",
+  "score": 412,
+  "by": "bjin",
+  "time": "2026-11-22T16:44:48.000Z"
+ },
+ {
+  "id": 50626466,
+  "title": "What VP ≠ VNP Means (In 3 Minutes)",
+  "url": "https://www.friedgil.com/vpvnp",
+  "score": 169,
+  "by": "vinhnx",
+  "time": "2026-11-24T10:56:56.000Z"
+ },
+ {
+  "id": 50651863,
+  "title": "An algebraic quantization of gravity from the null cone",
+  "url": "https://arxiv.org/abs/2611.34924",
+  "score": 84,
+  "by": "hecmmm",
+  "time": "2026-11-26T05:37:51.000Z"
+ },
+ {
+  "id": 50621638,
+  "title": "Training on Documents About Monitoring Leads to Cot Obfuscation",
+  "url": "https://arxiv.org/abs/2605.15257",
   "score": 28,
-  "by": "crescit_eundo",
-  "time": "2026-11-23T18:18:08.000Z"
+  "by": "sonabinu",
+  "time": "2026-11-24T00:19:50.000Z"
  },
  {
-  "id": 50641171,
-  "title": "Windows Loudness Equalization, reverse-engineered and ported to PipeWire",
-  "url": "https://github.com/xoxorwr/pw-loudness-eq",
-  "score": 325,
-  "by": "ThrowNotAway",
-  "time": "2026-11-25T11:34:25.000Z"
+  "id": 50598636,
+  "title": "The Great Automatic Grammatizator (By Roald Dahl), 1954 [pdf]",
+  "url": "https://gwern.net/doc/fiction/science-fiction/1953-dahl-thegreatautomaticgrammatizator.pdf",
+  "score": 115,
+  "by": "Michelangelo11",
+  "time": "2026-11-22T11:29:44.000Z"
  },
  {
-  "id": 50648823,
-  "title": "Jev is probably Qwen3.5-35B-A3B",
-  "url": "https://modaic.dev/blog/latency-doesnt-lie",
-  "score": 259,
-  "by": "csoham",
-  "time": "2026-11-25T22:57:04.000Z"
+  "id": 50634381,
+  "title": "The history of civilization is the history of wheat",
+  "url": "https://asteriskmag.com/issues/16/marginal-grains",
+  "score": 73,
+  "by": "NaOH",
+  "time": "2026-11-24T20:40:18.000Z"
  },
  {
-  "id": 50623020,
-  "title": "Hacking radiators",
-  "url": "https://qsantos.fr/2026/11/20/hacking-radiators-for-fun-and-no-profit/",
-  "score": 42,
-  "by": "andai",
-  "time": "2026-11-24T02:56:41.000Z"
+  "id": 50647161,
+  "title": "Nfs2root: A 12-year-old pre-auth remote root in the Linux kernel's NFS server",
+  "url": "https://opensec.in/blog/nfs2root-cve-2026-99362",
+  "score": 174,
+  "by": "dm",
+  "time": "2026-11-25T20:35:50.000Z"
  },
  {
-  "id": 50624446,
-  "title": "Porting Rockbox to an undocumented $9 AliExpress 'YP3' MP3 player with LLMs",
-  "url": "https://jayd.ml/2026/11/14/rockbox-on-yp3.html",
-  "score": 242,
-  "by": "jaydenmilne",
-  "time": "2026-11-24T06:22:36.000Z"
+  "id": 50648365,
+  "title": "Bare Metal Qwen",
+  "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
+  "score": 186,
+  "by": "miohtama",
+  "time": "2026-11-25T22:15:34.000Z"
  },
  {
-  "id": 50642939,
-  "title": "I checked Clojure's core with Lean and found unreported bugs",
-  "url": "https://s.conao3.com/blog/2026/e4f733",
-  "score": 200,
-  "by": "encyclopedism",
-  "time": "2026-11-25T14:56:52.000Z"
+  "id": 50651117,
+  "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+  "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+  "score": 356,
+  "by": "Herrera",
+  "time": "2026-11-26T03:36:58.000Z"
  },
  {
-  "id": 50645074,
-  "title": "Britain's ghost stations",
-  "url": "https://spectator.com/article/britains-ghost-stations-are-fascinating/",
-  "score": 112,
-  "by": "translocator",
-  "time": "2026-11-25T17:43:46.000Z"
+  "id": 50651627,
+  "title": "Unconditional Integer Factorization in Subexponential Time",
+  "url": "https://github.com/google-research/google-research/tree/4a7bc8ab0bc770e71a259b7966c500496b99010a/cogentic_research_papers/integer_factorization",
+  "score": 76,
+  "by": "_alternator_",
+  "time": "2026-11-26T04:59:56.000Z"
+ },
+ {
+  "id": 50648323,
+  "title": "Deploying a payphone on a tiny Pacific Island for fun and zero profit",
+  "url": "https://nickvsnetworking.com/deploying-a-payphone-on-a-tiny-pacific-island-for-fun-and-zero-profit/",
+  "score": 130,
+  "by": "qzervaas",
+  "time": "2026-11-25T22:12:25.000Z"
+ },
+ {
+  "id": 50620120,
+  "title": "MCP Gateway: How Snap Checks Both the Person and the Agent",
+  "url": "https://eng.snap.com/mcp-gateway",
+  "score": 15,
+  "by": "Kaedon",
+  "time": "2026-11-23T22:10:43.000Z"
+ },
+ {
+  "id": 50651158,
+  "title": "Qualcomm's Oryon 3 Reaches the Top",
+  "url": "https://chipsandcheese.com/p/qualcomms-oryon-3-reaches-the-top",
+  "score": 61,
+  "by": "wmf",
+  "time": "2026-11-26T03:43:24.000Z"
+ },
+ {
+  "id": 50589784,
+  "title": "SSH is a GUI framework",
+  "url": "https://zydra.sh/articles/ssh-is-a-gui-framework/",
+  "score": 220,
+  "by": "teledream",
+  "time": "2026-11-21T14:52:41.000Z"
  }
 ]

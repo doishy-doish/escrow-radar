@@ -10,7 +10,7 @@
   "severity": "Low",
   "reward_usdc": 50,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 14158,
+  "age_seconds_since_open": 49121,
   "opened_at": "2026-11-26T00:27:01Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -35,7 +35,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Target Information - Component: `paraloom-wallet` @ `1e79eec` (`lib/paraloom/swapOutputs.ts`, `lib/paraloom/notes.ts`) - Severity: Low - Settlement wallet (Base / EVM, for USDC): 0x45d26ECc2fB262DCfe6751bdFd5D3D30BC640Ab1 ## Summary The wallet's main keys are protected by a scrypt + NaCl secretbox vault, and locking the wallet wipes the decrypted session. Two equally sensitive secrets bypass that model entirely and are written in plaintext to `chrome.storage.local`, where they persist indefinitely and remain readable while the wallet is locked: (1) `freshSecretKeyHex` — the full secret key ",
-  "ts": "2026-11-26T04:23:06.297Z",
+  "ts": "2026-11-26T14:05:54.147Z",
   "stale_context": true,
   "stale_reason": "repo_mismatch:lib/paraloom/swapOutputs.ts"
  },
@@ -50,7 +50,7 @@
   "severity": "Low",
   "reward_usdc": 50,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 14220,
+  "age_seconds_since_open": 49183,
   "opened_at": "2026-11-26T00:25:59Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -75,7 +75,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Target Information - Components: `paraloom-wallet` @ `1e79eec` (`src/background/index.ts`, `lib/paraloom/privateSwap.ts`, `src/popup/SwapApprove.tsx`) and the core relayer `src/relayer/swap_router.rs` in paraloom-core @ `9e8c8e6` - Severity: Low - Settlement wallet (Base / EVM, for USDC): 0x45d26ECc2fB262DCfe6751bdFd5D3D30BC640Ab1 ## Summary The wallet accepts a `slippageBps` parameter for private swaps and forwards it through its own background layer (defaulting to 100 bps), but the value is never read again: `routeSwap` builds the `/swap/route` request body as `{input_mint, output_mint, a",
-  "ts": "2026-11-26T04:23:08.278Z",
+  "ts": "2026-11-26T14:05:56.107Z",
   "stale_context": true,
   "stale_reason": "repo_mismatch:src/background/index.ts"
  },
@@ -90,7 +90,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 14957,
+  "age_seconds_since_open": 49920,
   "opened_at": "2026-11-26T00:13:42Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -116,7 +116,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Target Information - Repository: paraloom-labs/paraloom-core, `main` @ `9e8c8e6` (bounty scope pin `468ffaa` or later) - Component: `src/bridge/solana/cosign_message.rs` — `build_settlement_message`, `TransactSpl` arm - Severity: Medium (per `docs/bug-bounty.md`: \"a griefing/liveness path that halts settlement\" — halt is per asset class; see severity note) - Settlement wallet: To be provided in a follow-up comment on this issue. ## Summary The on-chain program is token-program-agnostic: `TransactSpl.token_program` is `Interface<TokenInterface>` and `deposit_note_spl` moves funds with the To",
-  "ts": "2026-11-26T04:23:12.200Z"
+  "ts": "2026-11-26T14:06:00.532Z"
  },
  {
   "id": "paraloom-core#1717",
@@ -129,11 +129,12 @@
   "severity": "Low",
   "reward_usdc": 50,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 47896,
+  "age_seconds_since_open": 82859,
   "opened_at": "2026-11-25T15:04:43Z",
-  "competing_prs": 1,
+  "competing_prs": 2,
   "competing_pr_urls": [
-   "https://github.com/paraloom-labs/paraloom-core/pull/1718"
+   "https://github.com/paraloom-labs/paraloom-core/pull/1718",
+   "https://github.com/paraloom-labs/paraloom-core/pull/1729"
   ],
   "ci_status": "failing",
   "repro_command": "cargo test --test bridge_e2e_smoke -- --ignored --nocapture --test-threads=1",
@@ -152,10 +153,15 @@
    "src/consensus/transact.rs"
   ],
   "stack_excerpt": null,
-  "claimed_in_comments": false,
-  "claim_evidence": null,
+  "claimed_in_comments": true,
+  "claim_evidence": {
+   "type": "intent_claim",
+   "author": "jon112-eng",
+   "target_ref": null,
+   "raw_snippet": "Hi, I'm the reporter of this issue and I'm already working on a fix — classifying deterministic reverts (e.g. invalid si"
+  },
   "excerpt": "**Severity:** Low — \"limited-impact edge case\" (program severity table, `docs/bug-bounty.md`). Raw CVSS 5.3 (AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L). **Component:** off-chain node, `src/node/mod.rs` (`settle_approved_transacts`, `is_replay_error`) **Repo:** `paraloom-labs/paraloom-core` @ `9e8c8e6d403a4793b841ac1c569eefd11d60c9ad` **Program:** Solana devnet `8gPsRSm1CAw38mfzc1bcLMUXyFN7LnS8k6CV5hPUTWrP`, Stage 1 shielded-pool/settlement stack ## Summary `settle_approved_transacts` (`src/node/mod.rs:1177-1230`) retries every non-replay failure 3× with a 2 s backoff, and `is_replay_error` (`mod.rs:",
-  "ts": "2026-11-26T04:23:15.291Z"
+  "ts": "2026-11-26T14:06:03.001Z"
  },
  {
   "id": "paraloom-core#1705",
@@ -168,7 +174,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "severity_table",
-  "age_seconds_since_open": 213662,
+  "age_seconds_since_open": 248625,
   "opened_at": "2026-11-23T17:01:57Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -193,7 +199,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary The NodeId→wallet binding that authorizes a mesh peer to drive co-sign rounds is the peer's own self-declared `wallet_pubkey` string from its Discovery advertisement. It is never bound to the peer by any proof of possession. An unprivileged mesh peer (no stake, no validator keys) can advertise an honest validator's staked wallet, pass the `source_is_onchain_validator` gate on every honest node, and — using a genuine settlement's public parameters — spend the per-(nullifier, authority) co-sign budget (`MAX_COSIGNS_PER_SETTLEMENT = 4`) on every validator before the legitimate leader's",
-  "ts": "2026-11-26T04:23:18.174Z"
+  "ts": "2026-11-26T14:06:06.354Z"
  },
  {
   "id": "paraloom-core#1686",
@@ -206,7 +212,7 @@
   "severity": "Medium",
   "reward_usdc": 150,
   "reward_source": "explicit",
-  "age_seconds_since_open": 260809,
+  "age_seconds_since_open": 295772,
   "opened_at": "2026-11-23T03:56:10Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -229,7 +235,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Summary `reset_validator_registry` accepts a bare `stake_mint: Pubkey` and writes it to the validator registry without checking it against the mint of the existing stake token vault, and without migrating the vault. The vault's mint is locked at creation (the `InitStakeTokenVault` account uses an `init` constraint on the PDA with seeds `[b\"stake_token_vault\"]`, so a second vault cannot be created). After a re-pin to a different mint, `register_validator` and `slash_validator` fail with `MintMismatch` — dual-stake registration and slashing are bricked. ## Affected code (repo paraloom-labs/pa",
-  "ts": "2026-11-26T04:23:21.222Z"
+  "ts": "2026-11-26T14:06:09.740Z"
  },
  {
   "id": "paraloom-core#1685",
@@ -242,7 +248,7 @@
   "severity": null,
   "reward_usdc": 50,
   "reward_source": "explicit",
-  "age_seconds_since_open": 264367,
+  "age_seconds_since_open": 299330,
   "opened_at": "2026-11-23T02:56:52Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -264,7 +270,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Low** — build / test-only, limited-impact edge case (program Low definition). Reward up to $50 USDC at triage discretion. ## Summary The `paraloom-prover-wasm` repo's own smoke test (`tests/v3_native_smoke.rs`) does not compile at HEAD `d8950b0`. Both test call sites invoke `prove_transact` with **6 arguments**; `src/lib.rs:486` defines it with **7** — the missing 5th parameter is `asset_id_hex: &str`, added by the SPL merge (#779, 2026-08-12). The test file was updated for the proof-tag fix (#686, 2026-08-01) but never for the SPL parameter. The repo has no CI workflow, and the ",
-  "ts": "2026-11-26T04:23:23.228Z",
+  "ts": "2026-11-26T14:06:11.812Z",
   "stale_context": true,
   "stale_reason": "repo_mismatch:tests/v3_native_smoke.rs"
  },
@@ -279,7 +285,7 @@
   "severity": null,
   "reward_usdc": 50,
   "reward_source": "explicit",
-  "age_seconds_since_open": 264448,
+  "age_seconds_since_open": 299411,
   "opened_at": "2026-11-23T02:55:31Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -302,7 +308,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Low** — build / reproducibility only, limited-impact edge case (program Low definition). Reward up to $50 USDC at triage discretion. ## Summary The `paraloom-prover-wasm` crate (the client proof-generation code, in scope per `SCOPE.md`) includes six `paraloom-core` source files by relative path with **no version pin anywhere** — no `.gitmodules`, no Cargo dependency on core, and the README only says \"the build expects `paraloom-core` checked out as a sibling directory\" without naming a commit. Against core at the scope-pinned commit `468ffaa` — the commit the bounty program names",
-  "ts": "2026-11-26T04:23:25.167Z",
+  "ts": "2026-11-26T14:06:13.973Z",
   "days_since_target_touch": 112,
   "stale_context": true,
   "stale_reason": "stale_target:src/privacy/mod.rs:112d"
@@ -318,7 +324,7 @@
   "severity": null,
   "reward_usdc": 50,
   "reward_source": "explicit",
-  "age_seconds_since_open": 264530,
+  "age_seconds_since_open": 299493,
   "opened_at": "2026-11-23T02:54:09Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -340,7 +346,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Low** — local-state-only defect; the live v3 settlement path never touches this code. Reward up to $50 USDC at triage discretion. ## Summary In `withdraw_asset`, the nullifier is inserted (persist-first) *before* the `supply < amount` check. A withdrawal that fails the supply check therefore leaves the nullifier marked spent in the local pool even though no funds moved and the note is still unspent on-chain; every retry with the same nullifier is then rejected as a double-spend. ## Affected component - `src/privacy/pool.rs:232-262` — `withdraw_asset` ## Impact Low — and the audit",
-  "ts": "2026-11-26T04:23:27.187Z",
+  "ts": "2026-11-26T14:06:16.110Z",
   "days_since_target_touch": 118,
   "stale_context": true,
   "stale_reason": "stale_target:src/privacy/pool.rs:118d"
@@ -356,7 +362,7 @@
   "severity": null,
   "reward_usdc": 50,
   "reward_source": "explicit",
-  "age_seconds_since_open": 264587,
+  "age_seconds_since_open": 299550,
   "opened_at": "2026-11-23T02:53:12Z",
   "competing_prs": 2,
   "competing_pr_urls": [
@@ -380,7 +386,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Low** — limited-impact edge case (program Low definition). Reward up to $50 USDC at triage discretion. ## Summary `count_eligible_votes` counts every vote. With `min = 2`, two eligible `Invalid` votes make `has_consensus` return true — a quorum of `Invalid` votes \"reaches consensus\", which is semantically wrong (consensus should mean agreement on validity). ## Affected component - `src/consensus/vote_tally.rs` — `count_eligible_votes` counts every vote ## Impact Low — semantically wrong consensus result; limited impact (no funds at risk and no settlement-halt impact claimed in th",
-  "ts": "2026-11-26T04:23:31.119Z"
+  "ts": "2026-11-26T14:06:20.445Z"
  },
  {
   "id": "paraloom-core#1681",
@@ -393,7 +399,7 @@
   "severity": null,
   "reward_usdc": 50,
   "reward_source": "explicit",
-  "age_seconds_since_open": 264635,
+  "age_seconds_since_open": 299598,
   "opened_at": "2026-11-23T02:52:24Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -414,7 +420,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Low** — limited-impact edge case (program Low definition). Reward up to $50 USDC at triage discretion. ## Summary `VoteTally::submit_vote` compares the full vote (including the reason string) for equivocation. An honest validator that votes `Invalid` twice with different reason strings (e.g. a re-vote after re-checking, or a second validator-side evaluation producing a different message) is flagged as equivocating — a false positive that can penalise honest behaviour. ## Affected component - `src/consensus/vote_tally.rs` — `VoteTally::submit_vote` compares the full vote (includin",
-  "ts": "2026-11-26T04:23:32.958Z",
+  "ts": "2026-11-26T14:06:22.406Z",
   "days_since_target_touch": 99,
   "stale_context": true,
   "stale_reason": "stale_target:src/consensus/vote_tally.rs:99d"
@@ -430,7 +436,7 @@
   "severity": null,
   "reward_usdc": 150,
   "reward_source": "explicit",
-  "age_seconds_since_open": 264678,
+  "age_seconds_since_open": 299641,
   "opened_at": "2026-11-23T02:51:41Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -454,7 +460,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Medium** — griefing / liveness halt of settlement (program Medium definition). Reward up to $150 USDC at triage discretion. ## Summary A validator's settlement wallet is self-advertised via gossip Discovery and stored without any proof that the advertiser holds the key. Two `NodeId`s can therefore map to the same wallet — maliciously (a validator votes `Valid` and advertises a co-voter's wallet) or innocently (an operator runs two node instances on one settlement keypair). The leader then builds `quorum_wallets = [leader, W, W]` and `threshold = 3`, but `gather_signatures` dedups",
-  "ts": "2026-11-26T04:23:35.990Z"
+  "ts": "2026-11-26T14:06:25.621Z"
  },
  {
   "id": "paraloom-core#1679",
@@ -467,7 +473,7 @@
   "severity": null,
   "reward_usdc": 150,
   "reward_source": "explicit",
-  "age_seconds_since_open": 264729,
+  "age_seconds_since_open": 299692,
   "opened_at": "2026-11-23T02:50:50Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -490,7 +496,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Medium** — liveness halt of settlement (program Medium definition: \"griefing/liveness halt of settlement\"). Reward up to $150 USDC at triage discretion. ## Summary Two compounding layers, plus a dropped-approval defect: (1) The leader sets the gather threshold to the full valid-voter count (`let threshold = quorum_wallets.len();`), although the on-chain quorum is a *supermajority* of registered validators and the code's own comment describes the threshold as \"the on-chain quorum size\". Any single valid voter that goes offline, declines, or times out between voting and co-signing ",
-  "ts": "2026-11-26T04:23:37.760Z",
+  "ts": "2026-11-26T14:06:27.565Z",
   "days_since_target_touch": 88,
   "stale_context": true,
   "stale_reason": "stale_target:src/node/mod.rs:88d"
@@ -506,7 +512,7 @@
   "severity": null,
   "reward_usdc": 150,
   "reward_source": "explicit",
-  "age_seconds_since_open": 264787,
+  "age_seconds_since_open": 299750,
   "opened_at": "2026-11-23T02:49:52Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -529,7 +535,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Medium** — funds locked in the vault with no shielded note, recoverable only by operator intervention; liveness/accounting defect. Reward up to $150 USDC at triage discretion. ## Summary In `fetch_events`, a `get_transaction` error is logged and skipped (`continue`) — the signature is neither added to `seen_signatures` nor recorded as a failed outcome. In `poll_events`, the cursor advances through the unbroken run of *processed* outcomes. If an older deposit's fetch fails while a newer deposit in the same batch processes successfully, the cursor advances past the failed signature",
-  "ts": "2026-11-26T04:23:40.570Z"
+  "ts": "2026-11-26T14:06:30.847Z"
  },
  {
   "id": "paraloom-core#1677",
@@ -542,7 +548,7 @@
   "severity": null,
   "reward_usdc": 150,
   "reward_source": "explicit",
-  "age_seconds_since_open": 264836,
+  "age_seconds_since_open": 299799,
   "opened_at": "2026-11-23T02:49:03Z",
   "competing_prs": 0,
   "competing_pr_urls": [],
@@ -563,7 +569,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "## Severity **Medium** — liveness halt of settlement (program Medium definition: \"griefing/liveness halt of settlement\"). Reward up to $150 USDC at triage discretion. ## Summary After a `reset_validator_registry` that drops a validator without deactivating its PDA, the orphaned PDA still counts in the eligible-stake denominator (it is `is_active` with stake) but can never sign as part of the current quorum set. A single orphaned active PDA therefore makes the supermajority bound unreachable even when every honest, live validator signs — the settlement is vetoed by a validator that no longer ex",
-  "ts": "2026-11-26T04:23:42.299Z",
+  "ts": "2026-11-26T14:06:32.785Z",
   "days_since_target_touch": 123,
   "stale_context": true,
   "stale_reason": "stale_target:programs/paraloom/src/quorum.rs:123d"
@@ -579,7 +585,7 @@
   "severity": null,
   "reward_usdc": 70,
   "reward_source": "explicit",
-  "age_seconds_since_open": 4257358,
+  "age_seconds_since_open": 4292321,
   "opened_at": "2026-10-07T21:47:01Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -600,7 +606,7 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Context** `next.config.ts` sets `eslint: { ignoreDuringBuilds: true }`. Combined with a workflow that never runs `next build`, this means lint errors introduced in a PR are invisible on both paths, and the only remaining lint signal is the mutating `biome lint --write --unsafe` step covered by issue 31. **Proposed Change** Turn `ignoreDuringBuilds` off so `next build` fails on lint errors, and let CI run the build (issue 46) or a dedicated lint job report them. **Acceptance Criteria** - `eslint.ignoreDuringBuilds` is removed or set to `false`. - A deliberately introduced lint error is assert",
-  "ts": "2026-11-26T04:23:50.684Z"
+  "ts": "2026-11-26T14:06:44.841Z"
  },
  {
   "id": "scaffold-studio-frontend#44",
@@ -613,7 +619,7 @@
   "severity": null,
   "reward_usdc": 60,
   "reward_source": "explicit",
-  "age_seconds_since_open": 4257363,
+  "age_seconds_since_open": 4292326,
   "opened_at": "2026-10-07T21:46:56Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -639,7 +645,7 @@
    "raw_snippet": "Hi @cythecode, I noticed issue #44 is still open, along with PR #104. I'm a TypeScript developer interested in completin"
   },
   "excerpt": "**Context** `playwright.config.ts` sets `retries: 0` unconditionally. Playwright's own convention is to retry on CI and not locally, because web-server startup, animation timing and network flake are the dominant failure modes for an end-to-end suite that talks to a blockchain RPC and an LLM provider. Without retries, every transient failure blocks a PR. **Proposed Change** Set `retries: process.env.CI ? 2 : 0` and keep `workers: 1` on CI. **Acceptance Criteria** - `retries` resolves to 2 when `process.env.CI` is set and 0 otherwise. - A deliberately flaky spec is asserted to pass on retry and",
-  "ts": "2026-11-26T04:23:52.739Z"
+  "ts": "2026-11-26T14:06:47.139Z"
  },
  {
   "id": "scaffold-studio-frontend#43",
@@ -652,7 +658,7 @@
   "severity": null,
   "reward_usdc": 60,
   "reward_source": "explicit",
-  "age_seconds_since_open": 4257369,
+  "age_seconds_since_open": 4292332,
   "opened_at": "2026-10-07T21:46:50Z",
   "competing_prs": 1,
   "competing_pr_urls": [
@@ -676,6 +682,6 @@
   "claimed_in_comments": false,
   "claim_evidence": null,
   "excerpt": "**Context** `playwright.config.ts` starts the app with `webServer.command` running the dev server, but `.github/workflows/playwright.yml` sets no environment. `lib/db/index.ts` reads `DATABASE_URL` and `lib/ai/providers.ts` constructs OpenAI models, so the server either crashes on boot or fails on the first request, which turns every end-to-end run into an environment failure rather than a test result. **Proposed Change** Add the required variables to the job's `env:` (with a disposable Postgres service container for `DATABASE_URL`) and reserve the OpenAI key for the secrets-gated path. **Acce",
-  "ts": "2026-11-26T04:23:54.757Z"
+  "ts": "2026-11-26T14:06:49.200Z"
  }
 ]
