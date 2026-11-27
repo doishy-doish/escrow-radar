@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-27T04:45:31.436Z",
+ "ts": "2026-11-27T14:26:28.307Z",
  "count": 0,
  "alerts": [],
  "demoted": [
@@ -22,10 +22,6 @@
   {
    "id": "paraloom-core#1683",
    "stale_reason": "stale_target:src/privacy/pool.rs:118d"
-  },
-  {
-   "id": "paraloom-core#1724",
-   "stale_reason": "repo_mismatch:lib/paraloom/swapOutputs.ts"
   },
   {
    "id": "paraloom-core#1723",
