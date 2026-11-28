@@ -1,17 +1,49 @@
 [
  {
+  "id": 50672565,
+  "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+  "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+  "score": 204,
+  "by": "ComputedCamp995",
+  "time": "2026-11-27T23:06:29.000Z"
+ },
+ {
   "id": 50643158,
   "title": "GPT 6.2 Astra Solves a Historical Mystery",
   "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
-  "score": 172,
+  "score": 370,
   "by": "dr_red_dog",
   "time": "2026-11-25T15:16:53.000Z"
+ },
+ {
+  "id": 50657346,
+  "title": "The Balatro Timeline",
+  "url": "https://localthunk.com/blog/balatro-timeline-3aarh",
+  "score": 149,
+  "by": "sheepscreek",
+  "time": "2026-11-26T17:20:27.000Z"
+ },
+ {
+  "id": 50674218,
+  "title": "Unkernel: Real Linux kernel, compiled to WebAssembly",
+  "url": "https://unkernel.dev",
+  "score": 23,
+  "by": "nreece",
+  "time": "2026-11-28T03:19:20.000Z"
+ },
+ {
+  "id": 50673688,
+  "title": "Atari Homebrew Awards Cancelled",
+  "url": "https://forums.atariage.com/topic/394894-atari-homebrew-awards-cancelled/",
+  "score": 121,
+  "by": "bpierre",
+  "time": "2026-11-28T02:03:25.000Z"
  },
  {
   "id": 50668145,
   "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
   "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
-  "score": 351,
+  "score": 467,
   "by": "scanr",
   "time": "2026-11-27T15:40:31.000Z"
  },
@@ -19,15 +51,23 @@
   "id": 50669765,
   "title": "Convex skills send the user's app idea to a remote server without telling them",
   "url": "https://github.com/convex/convex-backend-skill/issues/64",
-  "score": 182,
+  "score": 254,
   "by": "MickyTheMouse",
   "time": "2026-11-27T18:02:45.000Z"
+ },
+ {
+  "id": 50644213,
+  "title": "Cyberpunk Television Shows",
+  "url": "https://shellzine.net/cyberpunk-television/",
+  "score": 58,
+  "by": "zdw",
+  "time": "2026-11-25T16:32:28.000Z"
  },
  {
   "id": 50672008,
   "title": "9/UX: a Macintosh-inspired desktop for 9front",
   "url": "https://progrium.github.io/9ux/",
-  "score": 21,
+  "score": 91,
   "by": "rbanffy",
   "time": "2026-11-27T21:48:14.000Z"
  },
@@ -35,39 +75,31 @@
   "id": 50662313,
   "title": "Citroën Hydraulic System",
   "url": "https://www.citroenet.org.uk/miscellaneous/hydraulics/hydraulics-1.html",
-  "score": 84,
+  "score": 148,
   "by": "o4c",
   "time": "2026-11-27T03:10:19.000Z"
  },
  {
-  "id": 50672142,
-  "title": "Source Control from Hell",
-  "url": "https://frantic.im/git/",
-  "score": 12,
-  "by": "emschwartz",
-  "time": "2026-11-27T22:06:44.000Z"
+  "id": 50631823,
+  "title": "Build your own amp modeler: $78 DIY pedal kit from TONE3000",
+  "url": "https://www.guitarworld.com/gear/guitar-pedals/tone3000-daisy-audio-diy-pedal-kit",
+  "score": 59,
+  "by": "gregsadetsky",
+  "time": "2026-11-24T17:55:27.000Z"
  },
  {
-  "id": 50670841,
-  "title": "The AT&T Unix PC (3B1) VM",
-  "url": "https://virtuallyfun.com/2026/11/22/the-ultimate-att-unix-pc-3b1-vm-w-tcp-ip-and-apps/",
-  "score": 38,
-  "by": "ok123456",
-  "time": "2026-11-27T19:40:33.000Z"
- },
- {
-  "id": 50670757,
-  "title": "Michael Nielsen took down his book on neural nets",
-  "url": "https://neuralnetworksanddeeplearning.com/",
-  "score": 278,
-  "by": "brandonb",
-  "time": "2026-11-27T19:31:01.000Z"
+  "id": 50654773,
+  "title": "How WinHelp Files Work",
+  "url": "https://quin.fyi/posts/how-winhelp-files-work.html",
+  "score": 18,
+  "by": "frostbyte7",
+  "time": "2026-11-26T12:51:37.000Z"
  },
  {
   "id": 50667726,
   "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
   "url": "https://bouncemarket.minhanhday.com/",
-  "score": 308,
+  "score": 341,
   "by": "mday404",
   "time": "2026-11-27T15:01:50.000Z"
  },
@@ -75,168 +107,136 @@
   "id": 50657392,
   "title": "First images of the impact of DART asteroid deflection experiment",
   "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
-  "score": 174,
+  "score": 195,
   "by": "Bender",
   "time": "2026-11-26T17:24:37.000Z"
  },
  {
-  "id": 50669673,
-  "title": "Show HN: DragDropMath – Learn math by feel",
-  "url": "https://dragdropmath.com/",
-  "score": 71,
-  "by": "ziofill",
-  "time": "2026-11-27T17:56:28.000Z"
+  "id": 50672521,
+  "title": "Tabernetes: A Kubernetes cluster whose nodes are browser tabs",
+  "url": "https://tabernet.es/",
+  "score": 53,
+  "by": "mmcclure",
+  "time": "2026-11-27T23:00:30.000Z"
  },
  {
-  "id": 50667989,
-  "title": "False computer-checked proofs",
-  "url": "https://cr.yp.to/proofs/falseccp.html",
-  "score": 152,
-  "by": "_tk_",
-  "time": "2026-11-27T15:26:09.000Z"
- },
- {
-  "id": 50670855,
-  "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
-  "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
-  "score": 160,
-  "by": "DeepLogin",
-  "time": "2026-11-27T19:42:25.000Z"
- },
- {
-  "id": 50671301,
-  "title": "I am scared: Careless People – Sarah Wynn-Williams on living under a gag order",
-  "url": "https://www.theguardian.com/books/2026/nov/27/careless-people-author-sarah-wynn-williams-the-silence-is-mine-it-doesnt-have-to-be-yours",
-  "score": 102,
-  "by": "Lio",
-  "time": "2026-11-27T20:25:15.000Z"
- },
- {
-  "id": 50663595,
-  "title": "Group chat where your AI talks behind your back",
-  "url": "https://construct22.com/",
-  "score": 664,
-  "by": "utiiiD",
-  "time": "2026-11-27T06:44:34.000Z"
- },
- {
-  "id": 50671275,
-  "title": "Prospero: Bloat-free, native AI coding harness with ImGui",
-  "url": "https://github.com/skeeto/prospero",
-  "score": 12,
-  "by": "ingve",
-  "time": "2026-11-27T20:23:14.000Z"
- },
- {
-  "id": 50665888,
-  "title": "Doing It the Hard Way",
-  "url": "https://terraformindustries.wordpress.com/2026/11/04/doing-it-the-hard-way/",
-  "score": 5,
-  "by": "surprisetalk",
-  "time": "2026-11-27T12:00:06.000Z"
- },
- {
-  "id": 50670340,
-  "title": "Scrapheap America",
-  "url": "https://dansinker.com/posts/2026-11-20-scrapheap/",
-  "score": 33,
-  "by": "only_in_america",
-  "time": "2026-11-27T18:50:26.000Z"
- },
- {
-  "id": 50660180,
-  "title": "AI made self-hosting fun again",
-  "url": "https://janlukas.blog/posts/ai-self-hosting",
-  "score": 1075,
-  "by": "jlelse",
-  "time": "2026-11-26T21:47:45.000Z"
- },
- {
-  "id": 50647400,
-  "title": "Atlantic 1866: information and shipping in the age of the telegraph",
-  "url": "https://atlantic-1866.com/",
-  "score": 11,
-  "by": "libraryofbabel",
-  "time": "2026-11-25T20:55:26.000Z"
+  "id": 50670841,
+  "title": "The AT&T Unix PC (3B1) VM",
+  "url": "https://virtuallyfun.com/2026/11/22/the-ultimate-att-unix-pc-3b1-vm-w-tcp-ip-and-apps/",
+  "score": 69,
+  "by": "ok123456",
+  "time": "2026-11-27T19:40:33.000Z"
  },
  {
   "id": 50667371,
   "title": "Rayshader 1.0: Exit the Matrix",
   "url": "https://www.tylermw.com/posts/rayverse/rayshader-1-0-exit-the-matrix.html",
-  "score": 54,
+  "score": 90,
   "by": "tylermw",
   "time": "2026-11-27T14:30:20.000Z"
  },
  {
-  "id": 50638593,
-  "title": "Lydian Chromatic Concept of Tonal Organization",
-  "url": "https://en.wikipedia.org/wiki/Lydian_Chromatic_Concept_of_Tonal_Organization",
-  "score": 25,
-  "by": "benbreen",
-  "time": "2026-11-25T04:46:49.000Z"
+  "id": 50670855,
+  "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+  "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+  "score": 313,
+  "by": "DeepLogin",
+  "time": "2026-11-27T19:42:25.000Z"
  },
  {
-  "id": 50670443,
-  "title": "Show HN: Getting 101 tok/s from Inkling 2 Mini in vLLM on one GB10",
-  "url": "https://runtimenotes.com/blog/getting-101-tok-s-from-inkling-2-mini-in-vllm-on-one-gb10/",
-  "score": 14,
-  "by": "runtimenotes",
-  "time": "2026-11-27T18:59:55.000Z"
+  "id": 50667989,
+  "title": "False computer-checked proofs",
+  "url": "https://cr.yp.to/proofs/falseccp.html",
+  "score": 199,
+  "by": "_tk_",
+  "time": "2026-11-27T15:26:09.000Z"
  },
  {
-  "id": 50663089,
-  "title": "The need for a formally verifiable mainstream programming language",
-  "url": "https://blainehansen.me/post/mainstream-verifiable-language/",
-  "score": 301,
-  "by": "todsacerdoti",
-  "time": "2026-11-27T05:22:06.000Z"
+  "id": 50672142,
+  "title": "Source Control from Hell",
+  "url": "https://frantic.im/git/",
+  "score": 77,
+  "by": "emschwartz",
+  "time": "2026-11-27T22:06:44.000Z"
  },
  {
-  "id": 50667062,
-  "title": "Making a 3D fantasy map like a 16th-Century atlas",
-  "url": "https://www.spritefusion.com/blog/making-a-fantasy-map-like-a-16th-century-atlas",
-  "score": 85,
-  "by": "HugoDz",
-  "time": "2026-11-27T14:02:52.000Z"
+  "id": 50670757,
+  "title": "Michael Nielsen took down his book on neural nets",
+  "url": "https://neuralnetworksanddeeplearning.com/",
+  "score": 439,
+  "by": "brandonb",
+  "time": "2026-11-27T19:31:01.000Z"
  },
  {
-  "id": 50670088,
-  "title": "Euclidean geometry in the asymptotic spectrum of tensors [pdf]",
-  "url": "https://github.com/openai/math/blob/main/preprints/Euclidean-geometry-in-the-asymptotic-spectrum-of-tensors-November-24-2026/paper.pdf",
-  "score": 25,
-  "by": "pfdietz",
-  "time": "2026-11-27T18:28:29.000Z"
+  "id": 50669673,
+  "title": "Show HN: DragDropMath – Learn math by feel",
+  "url": "https://dragdropmath.com/",
+  "score": 115,
+  "by": "ziofill",
+  "time": "2026-11-27T17:56:28.000Z"
  },
  {
-  "id": 50667452,
-  "title": "Show HN: I restored Palm's last device, and brought its OS to other platforms",
-  "url": "https://www.webosarchive.org/pivot/2026/11/27/the-story-so-far/",
-  "score": 62,
-  "by": "codepoet80",
-  "time": "2026-11-27T14:37:02.000Z"
+  "id": 50633531,
+  "title": "Show HN: Analysis of Hacker News predictions since 2008",
+  "url": "https://hnpredictions.com/",
+  "score": 66,
+  "by": "mv4",
+  "time": "2026-11-24T19:46:54.000Z"
+ },
+ {
+  "id": 50671275,
+  "title": "Prospero: Bloat-free, native AI coding harness with ImGui",
+  "url": "https://github.com/skeeto/prospero",
+  "score": 45,
+  "by": "ingve",
+  "time": "2026-11-27T20:23:14.000Z"
  },
  {
   "id": 50671651,
   "title": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
   "url": "https://sessiongraph.ai/",
-  "score": 7,
+  "score": 37,
   "by": "arvindell",
   "time": "2026-11-27T21:07:34.000Z"
  },
  {
-  "id": 50666375,
-  "title": "US Air Force's cloud computing platform hacked",
-  "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
-  "score": 305,
-  "by": "freakynit",
-  "time": "2026-11-27T12:54:11.000Z"
+  "id": 50638593,
+  "title": "Lydian Chromatic Concept of Tonal Organization",
+  "url": "https://en.wikipedia.org/wiki/Lydian_Chromatic_Concept_of_Tonal_Organization",
+  "score": 50,
+  "by": "benbreen",
+  "time": "2026-11-25T04:46:49.000Z"
  },
  {
-  "id": 50665968,
-  "title": "A Deterministic Subexponential-Time Algorithm for the Discrete Logarithm Problem [pdf]",
-  "url": "https://eprint.iacr.org/2026/3020.pdf",
-  "score": 199,
-  "by": "yuvadam",
-  "time": "2026-11-27T12:08:51.000Z"
+  "id": 50657300,
+  "title": "fplotlib – Fortran Plotting Library",
+  "url": "https://github.com/fortran-lang/fplotlib",
+  "score": 6,
+  "by": "AlexeyBrin",
+  "time": "2026-11-26T17:15:43.000Z"
+ },
+ {
+  "id": 50647400,
+  "title": "Atlantic 1866: information and shipping in the age of the telegraph",
+  "url": "https://atlantic-1866.com/",
+  "score": 36,
+  "by": "libraryofbabel",
+  "time": "2026-11-25T20:55:26.000Z"
+ },
+ {
+  "id": 50673521,
+  "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
+  "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+  "score": 100,
+  "by": "Tiwariparth6165",
+  "time": "2026-11-28T01:32:56.000Z"
+ },
+ {
+  "id": 50667062,
+  "title": "Making a 3D fantasy map like a 16th-Century atlas",
+  "url": "https://www.spritefusion.com/blog/making-a-fantasy-map-like-a-16th-century-atlas",
+  "score": 107,
+  "by": "HugoDz",
+  "time": "2026-11-27T14:02:52.000Z"
  }
 ]

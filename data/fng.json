@@ -1,44 +1,44 @@
 [
  {
+  "value": "10",
+  "classification": "Extreme Fear",
+  "date": "2026-11-28",
+  "ts": "2026-11-28T04:19:40.279Z"
+ },
+ {
   "value": "12",
   "classification": "Extreme Fear",
   "date": "2026-11-27",
-  "ts": "2026-11-27T22:49:03.810Z"
+  "ts": "2026-11-28T04:19:40.279Z"
  },
  {
   "value": "11",
   "classification": "Extreme Fear",
   "date": "2026-11-26",
-  "ts": "2026-11-27T22:49:03.810Z"
+  "ts": "2026-11-28T04:19:40.279Z"
  },
  {
   "value": "13",
   "classification": "Extreme Fear",
   "date": "2026-11-25",
-  "ts": "2026-11-27T22:49:03.810Z"
+  "ts": "2026-11-28T04:19:40.279Z"
  },
  {
   "value": "11",
   "classification": "Extreme Fear",
   "date": "2026-11-24",
-  "ts": "2026-11-27T22:49:03.810Z"
+  "ts": "2026-11-28T04:19:40.279Z"
  },
  {
   "value": "11",
   "classification": "Extreme Fear",
   "date": "2026-11-23",
-  "ts": "2026-11-27T22:49:03.810Z"
+  "ts": "2026-11-28T04:19:40.279Z"
  },
  {
   "value": "11",
   "classification": "Extreme Fear",
   "date": "2026-11-22",
-  "ts": "2026-11-27T22:49:03.810Z"
- },
- {
-  "value": "12",
-  "classification": "Extreme Fear",
-  "date": "2026-11-21",
-  "ts": "2026-11-27T22:49:03.810Z"
+  "ts": "2026-11-28T04:19:40.279Z"
  }
 ]

@@ -1,12 +1,8 @@
 {
- "ts": "2026-11-27T22:50:15.708Z",
+ "ts": "2026-11-28T04:20:44.452Z",
  "count": 0,
  "alerts": [],
  "demoted": [
-  {
-   "id": "paraloom-core#1677",
-   "stale_reason": "stale_target:programs/paraloom/src/quorum.rs:123d"
-  },
   {
    "id": "paraloom-core#1685",
    "stale_reason": "repo_mismatch:tests/v3_native_smoke.rs"
